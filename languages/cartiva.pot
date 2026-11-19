@@ -581,7 +581,7 @@ msgstr ""
 msgid "Thoughtfully made products, delivered fast. Built with Cartiva — a free, lightweight block theme for WooCommerce."
 msgstr ""
 
-#: patterns/footer.php:38 patterns/footer-simple.php:20
+#: patterns/footer.php:38 patterns/footer-simple.php:20 inc/settings.php:113
 msgid "Shop"
 msgstr ""
 
@@ -1191,7 +1191,7 @@ msgstr ""
 msgid "Sticky"
 msgstr ""
 
-#: functions.php:122
+#: functions.php:122 inc/settings.php:48 inc/settings.php:151
 msgid "Pill"
 msgstr ""
 
@@ -1231,63 +1231,315 @@ msgstr ""
 msgid "General page sections."
 msgstr ""
 
-#: functions.php:227
+#: functions.php:228
 msgid "Search results"
 msgstr ""
 
-#: functions.php:228
+#: functions.php:229
 msgid "Searching…"
 msgstr ""
 
 #. translators: %s: Search query.
-#: functions.php:230
+#: functions.php:231
 msgid "No results for “%s”"
 msgstr ""
 
 #. translators: %s: Search query.
-#: functions.php:232
+#: functions.php:233
 msgid "See all results for “%s”"
 msgstr ""
 
-#: functions.php:233
+#: functions.php:234
 msgid "1 result found"
 msgstr ""
 
 #. translators: %d: Number of results.
-#: functions.php:235
+#: functions.php:236
 msgid "%d results found"
 msgstr ""
 
-#: functions.php:236
+#: functions.php:237
 msgid "Out of stock"
 msgstr ""
 
-#: inc/woocommerce.php:102
+#: inc/settings.php:27
+msgid "Design"
+msgstr ""
+
+#: inc/settings.php:28
+msgid "Shape and width of the whole site. Colors and fonts are set in Appearance > Editor > Styles."
+msgstr ""
+
+#: inc/settings.php:31
+msgid "Corner style"
+msgstr ""
+
+#: inc/settings.php:35
+msgid "Sharp"
+msgstr ""
+
+#: inc/settings.php:36
+msgid "Soft (default)"
+msgstr ""
+
+#: inc/settings.php:37
+msgid "Rounded"
+msgstr ""
+
+#: inc/settings.php:39
+msgid "Corner radius of cards, images, fields and buttons."
+msgstr ""
+
+#: inc/settings.php:42
+msgid "Button shape"
+msgstr ""
+
+#: inc/settings.php:46
+msgid "Match corner style"
+msgstr ""
+
+#: inc/settings.php:47 inc/settings.php:152
+msgid "Square"
+msgstr ""
+
+#: inc/settings.php:52
+msgid "Layout width"
+msgstr ""
+
+#: inc/settings.php:56
+msgid "Use the Site Editor setting"
+msgstr ""
+
+#: inc/settings.php:57
+msgid "Narrow (1140px)"
+msgstr ""
+
+#: inc/settings.php:58
+msgid "Standard (1320px)"
+msgstr ""
+
+#: inc/settings.php:59
+msgid "Wide (1480px)"
+msgstr ""
+
+#: inc/settings.php:60
+msgid "Extra wide (1680px)"
+msgstr ""
+
+#: inc/settings.php:62
+msgid "Maximum width of wide sections such as product grids and the header."
+msgstr ""
+
+#: inc/settings.php:65
+msgid "Hover animations"
+msgstr ""
+
+#: inc/settings.php:68
+msgid "Lift cards and zoom images on hover"
+msgstr ""
+
+#: inc/settings.php:73
+msgid "Header"
+msgstr ""
+
+#: inc/settings.php:74
+msgid "Change the header layout itself in Appearance > Editor > Patterns > Header."
+msgstr ""
+
+#: inc/settings.php:77
+msgid "Sticky header"
+msgstr ""
+
+#: inc/settings.php:80
+msgid "Keep the header visible while scrolling"
+msgstr ""
+
+#: inc/settings.php:83
+msgid "Header shadow"
+msgstr ""
+
+#: inc/settings.php:86
+msgid "Add a soft shadow once the page scrolls"
+msgstr ""
+
+#: inc/settings.php:89
+msgid "Top bar"
+msgstr ""
+
+#: inc/settings.php:92
+msgid "Show the top bar above the header"
+msgstr ""
+
+#: inc/settings.php:95
+msgid "Live search"
+msgstr ""
+
+#: inc/settings.php:98
+msgid "Show suggestions in a dropdown while typing"
+msgstr ""
+
+#: inc/settings.php:101
+msgid "Live search results"
+msgstr ""
+
+#: inc/settings.php:114
+msgid "Product cards in the shop, categories, search results and product sections."
+msgstr ""
+
+#: inc/settings.php:117
+msgid "Product card style"
+msgstr ""
+
+#: inc/settings.php:121
+msgid "Clean (default)"
+msgstr ""
+
+#: inc/settings.php:122
+msgid "Bordered"
+msgstr ""
+
+#: inc/settings.php:123
+msgid "Boxed"
+msgstr ""
+
+#: inc/settings.php:127
+msgid "Product image shape"
+msgstr ""
+
+#: inc/settings.php:131
+msgid "Square (1:1)"
+msgstr ""
+
+#: inc/settings.php:132
+msgid "Portrait (4:5)"
+msgstr ""
+
+#: inc/settings.php:133
+msgid "Tall (3:4)"
+msgstr ""
+
+#: inc/settings.php:134
+msgid "Landscape (4:3)"
+msgstr ""
+
+#: inc/settings.php:138
+msgid "Add to cart button"
+msgstr ""
+
+#: inc/settings.php:142
+msgid "Always visible"
+msgstr ""
+
+#: inc/settings.php:143
+msgid "Show on hover (desktop)"
+msgstr ""
+
+#: inc/settings.php:147
+msgid "Sale badge"
+msgstr ""
+
+#: inc/settings.php:158
+msgid "Product page"
+msgstr ""
+
+#: inc/settings.php:161
+msgid "Sticky product details"
+msgstr ""
+
+#: inc/settings.php:164
+msgid "Keep title, price and add to cart in view while scrolling the gallery"
+msgstr ""
+
+#: inc/settings.php:167
+msgid "Delivery and returns list"
+msgstr ""
+
+#: inc/settings.php:170
+msgid "Show the free delivery, returns and secure checkout list under the add to cart button"
+msgstr ""
+
+#: inc/settings.php:175
+msgid "My Account"
+msgstr ""
+
+#: inc/settings.php:178
+msgid "Profile card"
+msgstr ""
+
+#: inc/settings.php:181
+msgid "Show the customer name and email above the account menu"
+msgstr ""
+
+#: inc/settings.php:184
+msgid "Dashboard tiles"
+msgstr ""
+
+#: inc/settings.php:187
+msgid "Show quick links to orders, addresses and account details on the dashboard"
+msgstr ""
+
+#: inc/settings.php:256
+msgid "Settings were reset to their defaults."
+msgstr ""
+
+#: inc/settings.php:387 inc/settings.php:388 inc/settings.php:430
+msgid "Cartiva Settings"
+msgstr ""
+
+#: inc/settings.php:423
+msgid "Colors & fonts"
+msgstr ""
+
+#: inc/settings.php:424
+msgid "Header & footer designs"
+msgstr ""
+
+#: inc/settings.php:425
+msgid "Templates"
+msgstr ""
+
+#: inc/settings.php:426
+msgid "Pages"
+msgstr ""
+
+#: inc/settings.php:431
+msgid "Layout and behavior options for your store. Everything visual that can be edited block by block lives in the Site Editor:"
+msgstr ""
+
+#: inc/settings.php:444
+msgid "Save settings"
+msgstr ""
+
+#: inc/settings.php:445
+msgid "Reset to defaults"
+msgstr ""
+
+#: inc/woocommerce.php:108
 msgid "Track, return or buy again"
 msgstr ""
 
-#: inc/woocommerce.php:103
+#: inc/woocommerce.php:109
 msgid "Your digital products"
 msgstr ""
 
-#: inc/woocommerce.php:104
+#: inc/woocommerce.php:110
 msgid "Billing and shipping"
 msgstr ""
 
-#: inc/woocommerce.php:105
+#: inc/woocommerce.php:111
 msgid "Saved cards and wallets"
 msgstr ""
 
-#: inc/woocommerce.php:106
+#: inc/woocommerce.php:112
 msgid "Name, email and password"
 msgstr ""
 
 #. translators: %s: number of orders.
-#: inc/woocommerce.php:131
+#: inc/woocommerce.php:137
 msgid "Continue shopping"
 msgstr ""
 
-#: inc/woocommerce.php:132
+#: inc/woocommerce.php:138
 msgid "See what is new in store"
 msgstr ""
 

@@ -185,6 +185,7 @@ function cartiva_is_woocommerce_active() {
 
 require_once CARTIVA_DIR . '/inc/pattern-helpers.php';
 require_once CARTIVA_DIR . '/inc/header.php';
+require_once CARTIVA_DIR . '/inc/settings.php';
 
 if ( cartiva_is_woocommerce_active() ) {
 	require_once CARTIVA_DIR . '/inc/woocommerce.php';
@@ -199,7 +200,7 @@ if ( cartiva_is_woocommerce_active() ) {
  * add_filter( 'cartiva_live_search', '__return_false' );
  */
 function cartiva_enqueue_live_search() {
-	if ( ! apply_filters( 'cartiva_live_search', true ) ) {
+	if ( ! apply_filters( 'cartiva_live_search', (bool) cartiva_get_setting( 'live_search' ) ) ) {
 		return;
 	}
 
@@ -221,7 +222,7 @@ function cartiva_enqueue_live_search() {
 		'productsUrl' => esc_url_raw( rest_url( 'wc/store/v1/products' ) ),
 		'searchUrl'   => esc_url_raw( rest_url( 'wp/v2/search' ) ),
 		'minChars'    => 2,
-		'limit'       => 6,
+		'limit'       => absint( cartiva_get_setting( 'search_limit' ) ),
 		'selector'    => '.cartiva-header form.wp-block-search',
 		'i18n'        => array(
 			'results'    => __( 'Search results', 'cartiva' ),

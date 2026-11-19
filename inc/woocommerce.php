@@ -73,6 +73,9 @@ function cartiva_wc_account_initials( $user ) {
  * Profile card above the account navigation.
  */
 function cartiva_wc_account_profile() {
+	if ( ! cartiva_get_setting( 'account_profile' ) ) {
+		return;
+	}
 	$user = wp_get_current_user();
 	if ( ! $user->exists() ) {
 		return;
@@ -95,6 +98,9 @@ add_action( 'woocommerce_before_account_navigation', 'cartiva_wc_account_profile
  * Quick-link tiles on the account dashboard (links to existing account sections).
  */
 function cartiva_wc_account_dashboard_tiles() {
+	if ( ! cartiva_get_setting( 'account_tiles' ) ) {
+		return;
+	}
 	$items = wc_get_account_menu_items();
 	unset( $items['dashboard'], $items['customer-logout'] );
 

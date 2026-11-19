@@ -6,7 +6,7 @@
 	gap: .35rem;
 }
 .wp-block-woocommerce-product-collection .wc-block-components-product-image img {
-	aspect-ratio: 1 / 1;
+	aspect-ratio: var(--cartiva-card-ratio, 1 / 1);
 	object-fit: cover;
 	transition: transform .45s ease;
 }
@@ -46,6 +46,7 @@
 
 /* Card add-to-cart button */
 .wp-block-woocommerce-product-collection .wc-block-components-product-button .wp-block-button__link {
+	box-sizing: border-box;
 	width: 100%;
 	padding: .7em 1em;
 	border-radius: var(--wp--custom--radius--sm);
@@ -84,3 +85,40 @@
 	font-size: var(--wp--preset--font-size--small);
 }
 .wp-block-woocommerce-product-results-count p { margin: 0; }
+
+/* ---------- Cartiva Settings: card styles (Appearance > Cartiva Settings) ---------- */
+.cartiva-cards-bordered .wp-block-woocommerce-product-collection .wc-block-product {
+	padding: .75rem;
+	border: 1px solid var(--wp--preset--color--border);
+	border-radius: var(--wp--custom--radius--md);
+	background: var(--wp--preset--color--base);
+	transition: border-color .2s ease, box-shadow .2s ease;
+}
+.cartiva-cards-bordered .wp-block-woocommerce-product-collection .wc-block-product:hover {
+	border-color: transparent;
+	box-shadow: var(--wp--preset--shadow--soft);
+}
+.cartiva-cards-boxed .wp-block-woocommerce-product-collection .wc-block-product {
+	padding: .75rem .75rem 1rem;
+	border-radius: var(--wp--custom--radius--lg);
+	background: var(--wp--preset--color--surface);
+}
+.cartiva-cards-boxed .wp-block-woocommerce-product-collection .wc-block-components-product-image {
+	background: var(--wp--preset--color--base);
+}
+.cartiva-cards-boxed .wp-block-woocommerce-product-collection .wc-block-components-product-button .wp-block-button__link {
+	background: var(--wp--preset--color--base);
+}
+@media (hover: hover) {
+	.cartiva-cards-hover-button .wp-block-woocommerce-product-collection .wc-block-components-product-button {
+		opacity: 0;
+		transform: translateY(6px);
+		transition: opacity .2s ease, transform .2s ease;
+	}
+	.cartiva-cards-hover-button .wp-block-woocommerce-product-collection .wc-block-product:is(:hover, :focus-within) .wc-block-components-product-button {
+		opacity: 1;
+		transform: none;
+	}
+}
+.cartiva-sale-badge-square .wc-block-components-product-sale-badge { border-radius: var(--wp--custom--radius--sm) !important; }
+.cartiva-no-hover-motion .wp-block-woocommerce-product-collection .wc-block-product:hover .wc-block-components-product-image img { transform: none; }

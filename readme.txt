@@ -24,6 +24,7 @@ Cartiva is a free, lightweight and modern WooCommerce block theme built entirely
 * A modern My Account area: dashboard tiles, icon navigation, order and address cards.
 * Ready-made pages: Contact, About, FAQ, Shipping & returns, Help center, Terms and Track order.
 * Four header designs, three footer designs and section color styles you can switch in the Site Editor.
+* Cartiva Settings (Appearance > Cartiva Settings): corner style, button shape, layout width, sticky header, top bar, live search, product card style, image shape, sale badge and more, alongside the Site Editor's colors and fonts.
 * Live search in the header: product suggestions with image and price appear after two characters, with full keyboard support.
 * Works without WooCommerce as a clean blog/business theme.
 
@@ -48,9 +49,13 @@ No. Under the WordPress.org theme guidelines those are plugin features, so Carti
 
 Go to Appearance > Editor > Templates > Product Catalog and replace the template with the "Shop with filter sidebar" pattern.
 
+= Where are the theme settings? =
+
+Go to Appearance > Cartiva Settings for layout and behavior options: corner style, button shape, layout width, hover animations, sticky header, header shadow, top bar, live search, product card style, product image shape, add to cart button visibility, sale badge, sticky product details, the delivery and returns list, and the My Account profile card and tiles. Colors, fonts and spacing are edited in Appearance > Editor > Styles. All settings are saved in a single option, cartiva_settings, and can be reset with one click.
+
 = How does the header live search work? =
 
-After two characters, the header Search block shows matching products (image, name and price) from WooCommerce, or matching posts and pages when WooCommerce is not active. Use the arrow keys and Enter to choose a result, or press Enter to see all results. It is a small deferred script that only reads public data. To turn it off, add `add_filter( 'cartiva_live_search', '__return_false' );` to a child theme.
+After two characters, the header Search block shows matching products (image, name and price) from WooCommerce, or matching posts and pages when WooCommerce is not active. Use the arrow keys and Enter to choose a result, or press Enter to see all results. It is a small deferred script that only reads public data. Turn it off in Appearance > Cartiva Settings.
 
 = How do I customize the header and footer? =
 

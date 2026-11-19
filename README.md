@@ -40,7 +40,7 @@ Cartiva is developed by **[godevs](https://godevs.net/)** and is being prepared 
 | 🔎 **Shop with filters** | Optional shop layout with a sticky sidebar: categories, price, availability and rating filters. |
 | 🧾 **Distraction-free checkout** | Checkout uses a minimal header and footer to reduce drop-off. |
 | 📄 **Ready-made pages** | Contact, About, FAQ, Shipping & returns, Help center, Terms and Track order, picked from the new-page pattern chooser. Header and footer links find them automatically. |
-| 🎛️ **Customizable** | Four header designs, three footers, section styles (Dark, Soft, Brand, Sale), color and font variations — all in the Site Editor. |
+| 🎛️ **Customizable** | **Appearance → Cartiva Settings** for corners, buttons, layout width, header behavior, product cards, product page and My Account options; plus four header designs, three footers, section styles and color/font variations in the Site Editor. |
 | 👤 **Modern My Account** | Profile card, icon navigation, dashboard tiles, coloured order statuses, address cards; tables become cards on mobile. |
 | 🧩 **Block styles** | Card, Sticky, Pill button, Image zoom and FAQ accordion. |
 | 🌍 **Translation ready** | Every string is translatable and ships with `languages/cartiva.pot`; RTL compatible. |
@@ -102,6 +102,26 @@ Then activate **Cartiva** under **Appearance → Themes**.
 
 > Product patterns require WooCommerce and appear only when it is active.
 
+### Cartiva Settings
+
+**Appearance → Cartiva Settings** holds the options the Site Editor doesn't cover. Everything is stored in one option (`cartiva_settings`) through the Settings API, and output as CSS variables and body classes, so there's no extra JavaScript.
+
+| Section | Options |
+|---|---|
+| Design | Corner style (sharp / soft / rounded), button shape, layout width, hover animations |
+| Header | Sticky header, scroll shadow, top bar, live search, number of live search results |
+| Shop | Product card style (clean / bordered / boxed), image shape (1:1, 4:5, 3:4, 4:3), add-to-cart on hover, sale badge shape |
+| Product page | Sticky product details, delivery & returns list |
+| My Account | Profile card, dashboard tiles |
+
+Developers can override any value with the `cartiva_setting` filter:
+
+```php
+add_filter( 'cartiva_setting', function ( $value, $key ) {
+	return 'corners' === $key ? 'rounded' : $value;
+}, 10, 2 );
+```
+
 ### Customizing the header and footer
 
 Go to **Appearance → Editor → Patterns → Header**, open the header and choose **Replace** to switch between *Default*, *Centered logo*, *With category bar* and *No top bar*. Footers work the same way (*Default*, *With newsletter*, *Simple*). Select any Group, Columns or Cover block and pick a section style (*Dark*, *Soft*, *Brand*, *Sale*) in the Styles panel.
@@ -135,6 +155,7 @@ cartiva/
 ├── functions.php          Theme setup, block styles, pattern categories
 ├── inc/
 │   ├── header.php           Header layouts used by the header patterns
+│   ├── settings.php         Appearance → Cartiva Settings (Settings API)
 │   ├── pattern-helpers.php  Shared product-section renderer
 │   └── woocommerce.php      WooCommerce integration (loaded only if active)
 ├── templates/             Block templates (.html)
@@ -177,7 +198,8 @@ wp i18n make-pot . languages/cartiva.pot --domain=cartiva
 | Filter | Default | Description |
 |---|---|---|
 | `cartiva_disable_classic_wc_styles` | `true` | Removes WooCommerce's legacy layout stylesheets on My Account. Return `false` to keep them. |
-| `cartiva_live_search` | `true` | Header live search. Return `false` to disable it. |
+| `cartiva_live_search` | setting | Header live search. Return `false` to disable it. |
+| `cartiva_setting` | saved value | Filter any Cartiva Settings value (`$value, $key`). |
 
 ## Roadmap
 
