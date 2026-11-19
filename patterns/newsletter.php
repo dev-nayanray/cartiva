@@ -1,10 +1,11 @@
 <?php
 /**
- * Title: Newsletter call to action
+ * Title: Newsletter: centered
  * Slug: cartiva/newsletter
- * Categories: cartiva-sections, call-to-action
+ * Categories: cartiva-newsletter, call-to-action
  * Keywords: newsletter, subscribe, email
  * Viewport width: 1400
+ * Description: Newsletter sign-up section. Replace the button with the form block from your newsletter or form plugin.
  *
  * @package Cartiva
  * @since 1.0.0
@@ -17,7 +18,7 @@
 	<h2 class="wp-block-heading has-text-align-center"><?php esc_html_e( 'Get 10% off your first order', 'cartiva' ); ?></h2>
 	<!-- /wp:heading -->
 	<!-- wp:paragraph {"align":"center","textColor":"muted"} -->
-	<p class="has-text-align-center has-muted-color has-text-color"><?php esc_html_e( 'Join our newsletter for early access to drops, restocks and members-only deals. Add your favourite newsletter form block here.', 'cartiva' ); ?></p>
+	<p class="has-text-align-center has-muted-color has-text-color"><?php esc_html_e( 'Join our newsletter for early access to new drops, restocks and members-only deals.', 'cartiva' ); ?></p>
 	<!-- /wp:paragraph -->
 	<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
 	<div class="wp-block-buttons">

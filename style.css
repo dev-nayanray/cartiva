@@ -398,6 +398,44 @@ header.wp-block-template-part:has(.cartiva-topbar) {
 	.cartiva-header-nav-row > .alignwide { justify-content: flex-start !important; padding-block: .15rem; }
 }
 
+/* Header variation: large search bar */
+.cartiva-header__row--search > .cartiva-header__searchbar { flex: 1 1 auto; max-width: 42rem; }
+.cartiva-header__searchbar .wp-block-search__inside-wrapper {
+	padding: .2rem .2rem .2rem 1rem;
+	border: 1px solid var(--wp--preset--color--border);
+	border-radius: 999px;
+	background: var(--wp--preset--color--surface);
+}
+.cartiva-header__searchbar .wp-block-search__inside-wrapper:focus-within {
+	border-color: var(--wp--preset--color--primary);
+	background: var(--wp--preset--color--base);
+	box-shadow: 0 0 0 3px color-mix(in srgb, var(--wp--preset--color--primary) 18%, transparent);
+}
+.cartiva-header .cartiva-header__searchbar .wp-block-search__input {
+	width: 100% !important;
+	padding: 0;
+	border: 0;
+	background: transparent;
+	box-shadow: none;
+}
+.cartiva-header .cartiva-header__searchbar .wp-block-search__button {
+	background: var(--wp--preset--color--contrast);
+	color: var(--wp--preset--color--base);
+}
+.cartiva-header .cartiva-header__searchbar .wp-block-search__button:hover { background: var(--wp--preset--color--primary); color: var(--wp--preset--color--base); }
+.cartiva-header__searchbar .cartiva-live-search { left: 0; right: 0; width: auto; }
+.cartiva-header-nav-row--left > .alignwide { padding-block: .3rem; }
+@media (max-width: 781px) {
+	.cartiva-header__row--search { flex-wrap: wrap !important; }
+	.cartiva-header__row--search > .cartiva-header__searchbar { order: 3; flex-basis: 100%; max-width: none; }
+}
+
+/* Header variation: menu left, logo center */
+.cartiva-header__row--split > .cartiva-header__nav,
+.cartiva-header__row--split > .cartiva-header__actions { flex: 1 1 0; }
+.cartiva-header__row--split > .cartiva-header__brand { flex: 0 0 auto; justify-content: center; }
+.cartiva-header__row--split > .cartiva-header__actions { justify-content: flex-end; }
+
 /* Header variation: category bar */
 .cartiva-category-bar__nav {
 	overflow-x: auto;
@@ -465,6 +503,13 @@ header.wp-block-template-part:has(.cartiva-topbar) {
 	font-weight: 700;
 	letter-spacing: .02em;
 }
+
+/* Footer variation: dark */
+.cartiva-footer--dark :is(.has-muted-color, .wp-block-navigation-item__content) { color: rgba(255, 255, 255, .72) !important; }
+.cartiva-footer--dark .wp-block-navigation-item__content:hover { color: #fff !important; }
+.cartiva-footer--dark .wp-block-separator { border-color: rgba(255, 255, 255, .16); background-color: rgba(255, 255, 255, .16); color: rgba(255, 255, 255, .16); }
+.cartiva-footer--dark .wp-block-social-links .wp-social-link { background: rgba(255, 255, 255, .08); }
+.cartiva-footer--dark .cartiva-payments span { border-color: rgba(255, 255, 255, .2); background: transparent; color: #fff; }
 
 @media (max-width: 781px) {
 	.cartiva-footer .wp-block-columns { flex-wrap: wrap !important; row-gap: var(--wp--preset--spacing--50); }
@@ -739,3 +784,140 @@ body.cartiva-hide-topbar header.wp-block-template-part:has(.cartiva-topbar) { to
 .cartiva-hide-product-trust .cartiva-trust-list { display: none; }
 .cartiva-no-hover-motion :is(.is-style-cartiva-card, .cartiva-icon-card, .cartiva-account-tile a):hover { transform: none; }
 .cartiva-no-hover-motion :is(.is-style-cartiva-zoom, .wp-block-post-template li):hover img { transform: none; }
+
+/* Cover blocks in patterns: text lines up with the wide content edge */
+.wp-block-cover.cartiva-cover-wide .wp-block-cover__inner-container {
+	width: 100%;
+	max-width: var(--wp--style--global--wide-size);
+	margin-inline: auto;
+	padding-inline: var(--wp--preset--spacing--30);
+	box-sizing: border-box;
+}
+.wp-block-cover.cartiva-cover-wide .wp-block-cover__inner-container > * { margin-block: 0; }
+
+/* Products: banner with grid – the nested section sits flush in its column */
+.cartiva-products-banner .wp-block-column > .wp-block-group.alignfull { padding: 0 !important; margin: 0 !important; }
+.cartiva-products-banner .wp-block-cover { height: 100%; }
+
+/* ==========================================================================
+   Category patterns
+   ========================================================================== */
+.cartiva-category-circles .wp-block-image { margin: 0; width: 100%; }
+.cartiva-category-circles .wp-block-image img { width: 100%; transition: transform .3s ease, box-shadow .3s ease; }
+.cartiva-category-circles .wp-block-image a:hover img { transform: translateY(-3px); box-shadow: var(--wp--preset--shadow--soft); }
+.cartiva-category-circles p { margin: 0; }
+.cartiva-category-circles a { text-decoration: none; }
+@media (max-width: 781px) {
+	.cartiva-category-circles {
+		grid-template-columns: none !important;
+		grid-auto-flow: column;
+		grid-auto-columns: 6.5rem;
+		overflow-x: auto;
+		scroll-snap-type: x proximity;
+		scrollbar-width: none;
+	}
+	.cartiva-category-circles > * { scroll-snap-align: start; }
+}
+.cartiva-category-card { overflow: hidden; }
+.cartiva-category-card .wp-block-cover__image-background { transition: transform .6s ease; }
+.cartiva-category-card:hover .wp-block-cover__image-background { transform: scale(1.05); }
+.cartiva-category-card .wp-block-cover__background {
+	background: linear-gradient(to top, rgba(17, 17, 17, .65), rgba(17, 17, 17, 0) 60%) !important;
+	opacity: 1 !important;
+}
+.cartiva-category-card a { color: inherit; text-decoration: none; }
+.cartiva-category-card a::after { content: ""; position: absolute; inset: 0; z-index: 1; }
+.cartiva-category-card h3, .cartiva-category-card p { margin: 0; }
+.cartiva-category-mosaic { grid-auto-rows: 250px; }
+.cartiva-category-mosaic > .wp-block-cover { min-height: 0 !important; height: 100%; }
+.cartiva-category-mosaic > .cartiva-mosaic-large { grid-column: span 2; grid-row: span 2; }
+@media (max-width: 781px) {
+	.cartiva-category-mosaic { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; grid-auto-rows: 180px; }
+	.cartiva-category-mosaic > .cartiva-mosaic-large { grid-row: span 1; }
+}
+.cartiva-no-hover-motion .cartiva-category-card:hover .wp-block-cover__image-background { transform: none; }
+
+/* Categories: automatic (WooCommerce Product Categories block) */
+.cartiva-category-auto .wc-block-product-categories-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 11rem), 1fr));
+	gap: 1.25rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.cartiva-category-auto .wc-block-product-categories-list-item { margin: 0; }
+.cartiva-category-auto .wc-block-product-categories-list-item > a {
+	display: flex;
+	flex-direction: column;
+	gap: .6rem;
+	color: var(--wp--preset--color--contrast);
+	font-weight: 600;
+	text-decoration: none;
+}
+.cartiva-category-auto .wc-block-product-categories-list-item__image {
+	display: block;
+	overflow: hidden;
+	aspect-ratio: 1;
+	border-radius: var(--wp--custom--radius--md);
+	background: var(--wp--preset--color--surface);
+}
+.cartiva-category-auto .wc-block-product-categories-list-item__image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform .4s ease;
+}
+.cartiva-category-auto .wc-block-product-categories-list-item > a:hover img { transform: scale(1.05); }
+.cartiva-category-auto .wc-block-product-categories-list-item-count {
+	color: var(--wp--preset--color--muted);
+	font-size: var(--wp--preset--font-size--x-small);
+	font-weight: 500;
+}
+
+/* ==========================================================================
+   Blog patterns
+   ========================================================================== */
+.cartiva-blog-featured .wp-block-post-featured-image,
+.cartiva-blog-list .wp-block-post-featured-image,
+.cartiva-blog-side .wp-block-post-featured-image { overflow: hidden; margin: 0; }
+.cartiva-blog-side .wp-block-post-featured-image { flex: none; border-radius: var(--wp--custom--radius--sm); }
+.cartiva-blog-side .wp-block-post-title,
+.cartiva-blog-list .wp-block-post-title { margin: 0; }
+.cartiva-blog-side li { padding-bottom: var(--wp--preset--spacing--30); border-bottom: 1px solid var(--wp--preset--color--border); }
+.cartiva-blog-side li:last-child { border-bottom: 0; }
+.cartiva-blog-list__item .wp-block-post-featured-image { flex: 0 0 42%; }
+.cartiva-blog-list__item .wp-block-post-excerpt__excerpt { margin: 0; }
+@media (max-width: 600px) {
+	.cartiva-blog-list__item { flex-wrap: wrap !important; }
+	.cartiva-blog-list__item .wp-block-post-featured-image { flex-basis: 100%; }
+}
+.cartiva-blog-minimal .wp-block-post-template { border-top: 1px solid var(--wp--preset--color--border); }
+.cartiva-blog-minimal .wp-block-post-template > li { margin: 0; border-bottom: 1px solid var(--wp--preset--color--border); }
+.cartiva-blog-minimal__row { padding-block: var(--wp--preset--spacing--40); }
+.cartiva-blog-minimal__date { flex: 0 0 9rem; }
+.cartiva-blog-minimal__title { flex: 1 1 18rem; margin: 0; }
+.cartiva-blog-minimal__title a { text-decoration: none; }
+.cartiva-blog-minimal__title a:hover { color: var(--wp--preset--color--primary); }
+.cartiva-blog-minimal__row .wp-block-post-title a::after { content: " →"; opacity: 0; transition: opacity .2s ease; }
+.cartiva-blog-minimal__row:hover .wp-block-post-title a::after { opacity: 1; }
+
+/* ==========================================================================
+   Newsletter patterns
+   ========================================================================== */
+.cartiva-newsletter-split {
+	overflow: hidden;
+	border-radius: var(--wp--custom--radius--lg);
+	background: var(--wp--preset--color--surface);
+}
+.cartiva-newsletter-split .wp-block-image { margin: 0; height: 100%; }
+.cartiva-newsletter-split .wp-block-image img { border-radius: 0; height: 100%; }
+.cartiva-newsletter-split > .wp-block-column:first-child { align-self: stretch; }
+.cartiva-newsletter-split > .wp-block-column > * { margin-block: 0; }
+.cartiva-newsletter-card > * { margin-block: 0; }
+.cartiva-newsletter-inline h3, .cartiva-newsletter-inline p { margin: 0; }
+
+
+/* Hero: image mosaic – first image spans the full row even without grid child settings */
+.cartiva-mosaic > :first-child { grid-column: 1 / -1; }
+.cartiva-mosaic .wp-block-image { margin: 0; }

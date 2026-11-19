@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: New arrivals product grid
+ * Title: Products: new arrivals
  * Slug: cartiva/new-arrivals
- * Categories: cartiva-shop
+ * Categories: cartiva-products
  * Keywords: products, grid, new, woocommerce
  * Viewport width: 1400
  *

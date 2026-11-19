@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Hero – Shop banner
+ * Title: Hero: split with image
  * Slug: cartiva/hero
- * Categories: cartiva-shop, banner
+ * Categories: cartiva-hero, banner
  * Keywords: hero, banner, shop, cover
  * Viewport width: 1400
  *

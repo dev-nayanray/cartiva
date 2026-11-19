@@ -21,7 +21,7 @@
 			<h2 class="wp-block-heading has-base-color has-text-color has-x-large-font-size"><?php esc_html_e( 'Join the list, get 10% off', 'cartiva' ); ?></h2>
 			<!-- /wp:heading -->
 			<!-- wp:paragraph {"style":{"color":{"text":"#ffffffb3"}}} -->
-			<p class="has-text-color" style="color:#ffffffb3"><?php esc_html_e( 'New drops, restocks and members-only deals. Add your newsletter form block here.', 'cartiva' ); ?></p>
+			<p class="has-text-color" style="color:#ffffffb3"><?php esc_html_e( 'New drops, restocks and members-only deals, straight to your inbox.', 'cartiva' ); ?></p>
 			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->

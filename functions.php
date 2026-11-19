@@ -143,6 +143,22 @@ add_action( 'init', 'cartiva_register_block_styles' );
  * Register pattern categories.
  */
 function cartiva_register_pattern_categories() {
+	$cartiva_categories = array(
+		'cartiva-hero'       => array( __( 'Cartiva: Hero', 'cartiva' ), __( 'Hero banners and the hero slider.', 'cartiva' ) ),
+		'cartiva-products'   => array( __( 'Cartiva: Products', 'cartiva' ), __( 'Product grids and carousels.', 'cartiva' ) ),
+		'cartiva-categories' => array( __( 'Cartiva: Categories', 'cartiva' ), __( 'Ways to show your shop categories.', 'cartiva' ) ),
+		'cartiva-blog'       => array( __( 'Cartiva: Blog', 'cartiva' ), __( 'Blog and journal sections.', 'cartiva' ) ),
+		'cartiva-newsletter' => array( __( 'Cartiva: Newsletter', 'cartiva' ), __( 'Newsletter and sign-up sections.', 'cartiva' ) ),
+	);
+	foreach ( $cartiva_categories as $cartiva_slug => $cartiva_category ) {
+		register_block_pattern_category(
+			$cartiva_slug,
+			array(
+				'label'       => $cartiva_category[0],
+				'description' => $cartiva_category[1],
+			)
+		);
+	}
 	register_block_pattern_category(
 		'cartiva-shop',
 		array(
@@ -245,3 +261,56 @@ function cartiva_enqueue_live_search() {
 	);
 }
 add_action( 'wp_enqueue_scripts', 'cartiva_enqueue_live_search' );
+
+/**
+ * Load the slider script only on pages that render a slider or product carousel.
+ *
+ * Block templates are rendered before the page head is printed, so enqueueing
+ * here still prints the script in the footer.
+ *
+ * @param string $content Block HTML.
+ * @param array  $block   Parsed block.
+ * @return string
+ */
+function cartiva_maybe_enqueue_slider( $content, $block ) {
+	$class = isset( $block['attrs']['className'] ) ? $block['attrs']['className'] : '';
+	if ( false === strpos( $class, 'cartiva-slider' ) && false === strpos( $class, 'cartiva-product-carousel' ) ) {
+		return $content;
+	}
+	if ( ! wp_script_is( 'cartiva-slider', 'enqueued' ) ) {
+		wp_enqueue_style( 'cartiva-slider', CARTIVA_URI . '/assets/css/slider.css', array(), CARTIVA_VERSION );
+		wp_enqueue_script(
+			'cartiva-slider',
+			CARTIVA_URI . '/assets/js/slider.js',
+			array(),
+			CARTIVA_VERSION,
+			array(
+				'in_footer' => true,
+				'strategy'  => 'defer',
+			)
+		);
+		wp_add_inline_script(
+			'cartiva-slider',
+			'window.cartivaSlider = ' . wp_json_encode(
+				array(
+					'i18n' => array(
+						'carousel' => __( 'carousel', 'cartiva' ),
+						'slide'    => __( 'slide', 'cartiva' ),
+						/* translators: 1: Slide number, 2: Number of slides. */
+						'ofLabel'  => __( '%1$s of %2$s', 'cartiva' ),
+						'previous' => __( 'Previous', 'cartiva' ),
+						'next'     => __( 'Next', 'cartiva' ),
+						/* translators: %s: Slide number. */
+						'goTo'     => __( 'Go to slide %s', 'cartiva' ),
+						'featured' => __( 'Featured', 'cartiva' ),
+						'products' => __( 'Products', 'cartiva' ),
+					),
+				)
+			) . ';',
+			'before'
+		);
+	}
+	return $content;
+}
+add_filter( 'render_block_core/group', 'cartiva_maybe_enqueue_slider', 10, 2 );
+add_filter( 'render_block_woocommerce/product-collection', 'cartiva_maybe_enqueue_slider', 10, 2 );

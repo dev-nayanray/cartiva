@@ -17,7 +17,7 @@ Cartiva is a free, lightweight and modern WooCommerce block theme built entirely
 * Fast by default: a native system font stack, with optional bundled DM Sans and Lora fonts that load only when selected.
 * Per-block CSS: styles load only on pages where the block is used.
 * WooCommerce ready: shop, product, category, tag and product search templates built with WooCommerce blocks, plus a header with mini-cart and account icon.
-* Homepage patterns: hero, trust badges, category grid, new arrivals, best sellers, on sale, featured products, split promo, brands, FAQ, promo banner and newsletter.
+* 40+ patterns, organised in the pattern library: 6 headers, 5 footers, 6 hero sections (including a swipeable hero slider with arrows, dots and autoplay), 7 product sections (including a product carousel), 5 category layouts, 5 blog sections and 5 newsletter sections, plus page layouts and starter homepages.
 * Style variations: Default, Midnight (dark), Sand and Fresh, plus three typography presets.
 * Starter homepages: Fashion, Electronics, Grocery and Furniture.
 * Shop layout with a filter sidebar and a distraction-free checkout.
@@ -52,6 +52,10 @@ Go to Appearance > Editor > Templates > Product Catalog and replace the template
 = Where are the theme settings? =
 
 Go to Appearance > Cartiva Settings for layout and behavior options: corner style, button shape, layout width, hover animations, sticky header, header shadow, top bar, live search, product card style, product image shape, add to cart button visibility, sale badge, sticky product details, the delivery and returns list, and the My Account profile card and tiles. Colors, fonts and spacing are edited in Appearance > Editor > Styles. All settings are saved in a single option, cartiva_settings, and can be reset with one click.
+
+= How do I edit the hero slider? =
+
+Insert "Hero: slider" from Patterns > Cartiva: Hero. In the editor the slides are shown one under another so they are easy to edit; each slide is a Cover block, so you can change its image, text and buttons, duplicate it to add a slide, or delete it. On the site the slides become a swipeable slider with arrows, dots and autoplay. Autoplay pauses on hover and focus and is turned off for visitors who prefer reduced motion. Add the class "is-autoplay-off" to the slider group to disable autoplay.
 
 = How does the header live search work? =
 

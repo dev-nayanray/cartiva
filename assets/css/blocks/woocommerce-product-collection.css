@@ -122,3 +122,34 @@
 }
 .cartiva-sale-badge-square .wc-block-components-product-sale-badge { border-radius: var(--wp--custom--radius--sm) !important; }
 .cartiva-no-hover-motion .wp-block-woocommerce-product-collection .wc-block-product:hover .wc-block-components-product-image img { transform: none; }
+
+/* ---------- Product carousel (class "cartiva-product-carousel") ---------- */
+.cartiva-product-carousel .wc-block-product-template {
+	display: grid !important;
+	grid-auto-flow: column;
+	grid-auto-columns: calc((100% - 3 * 1.25rem) / 4);
+	grid-template-columns: none !important;
+	gap: 1.25rem !important;
+	overflow-x: auto;
+	overscroll-behavior-x: contain;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	scrollbar-width: none;
+	padding-bottom: .25rem;
+}
+.cartiva-product-carousel .wc-block-product-template::-webkit-scrollbar { display: none; }
+.cartiva-product-carousel .wc-block-product-template > * {
+	width: auto !important;
+	margin: 0 !important;
+	scroll-snap-align: start;
+}
+@media (max-width: 1080px) {
+	.cartiva-product-carousel .wc-block-product-template { grid-auto-columns: calc((100% - 2 * 1.25rem) / 3); }
+}
+@media (max-width: 781px) {
+	.cartiva-product-carousel .wc-block-product-template { grid-auto-columns: 70%; }
+}
+.cartiva-product-carousel > .cartiva-carousel__controls {
+	justify-content: flex-end;
+	margin-top: 1rem;
+}

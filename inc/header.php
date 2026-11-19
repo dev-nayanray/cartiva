@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @param array $args {
  *     @type bool   $topbar Show the top bar.
- *     @type string $layout default | centered | categories.
+ *     @type string $layout default | centered | categories | search | split.
  * }
  */
 function cartiva_header( $args = array() ) {
@@ -89,6 +89,78 @@ function cartiva_header( $args = array() ) {
 	<!-- wp:group {"align":"wide","layout":{"type":"flex","justifyContent":"center"}} -->
 	<div class="wp-block-group alignwide">
 		<!-- wp:navigation {"className":"cartiva-header__nav","overlayBackgroundColor":"base","overlayTextColor":"contrast","icon":"menu","layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"blockGap":"var:preset|spacing|40"}}} /-->
+
+	</div>
+	<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+		<?php
+	elseif ( 'search' === $args['layout'] ) :
+		?>
+<!-- wp:group {"align":"full","className":"cartiva-header","style":{"border":{"bottom":{"color":"var:preset|color|border","width":"1px","style":"solid"}}},"backgroundColor":"base","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull cartiva-header has-base-background-color has-background" style="border-bottom-color:var(--wp--preset--color--border);border-bottom-style:solid;border-bottom-width:1px">
+	<!-- wp:group {"align":"wide","className":"cartiva-header__row cartiva-header__row--search","style":{"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"},"blockGap":"var:preset|spacing|40"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
+	<div class="wp-block-group alignwide cartiva-header__row cartiva-header__row--search" style="padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)">
+
+		<!-- wp:group {"className":"cartiva-header__brand","style":{"spacing":{"blockGap":"0.6rem"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+		<div class="wp-block-group cartiva-header__brand">
+			<!-- wp:site-logo {"width":36,"shouldSyncIcon":true} /-->
+			<!-- wp:site-title {"level":0} /-->
+		</div>
+		<!-- /wp:group -->
+
+			<!-- wp:search {"label":"<?php echo esc_attr_x( 'Search', 'search label', 'cartiva' ); ?>","showLabel":false,"placeholder":"<?php echo esc_attr_x( 'Search for products, brands and more…', 'search placeholder', 'cartiva' ); ?>","buttonText":"<?php echo esc_attr_x( 'Search', 'search button', 'cartiva' ); ?>","buttonPosition":"button-inside","buttonUseIcon":true,"className":"cartiva-header__search cartiva-header__searchbar"<?php echo cartiva_is_woocommerce_active() ? ',"query":{"post_type":"product"}' : ''; ?>} /-->
+
+		<!-- wp:group {"className":"cartiva-header__actions","style":{"spacing":{"blockGap":"0.35rem"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+		<div class="wp-block-group cartiva-header__actions">
+			<?php if ( cartiva_is_woocommerce_active() ) : ?>
+			<!-- wp:woocommerce/customer-account {"displayStyle":"icon_only","iconStyle":"line","iconClass":"wc-block-customer-account__account-icon","className":"cartiva-header__account"} /-->
+			<!-- wp:woocommerce/mini-cart {"className":"cartiva-header__cart"} /-->
+			<?php endif; ?>
+		</div>
+		<!-- /wp:group -->
+
+	</div>
+	<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","className":"cartiva-header-nav-row cartiva-header-nav-row--left","style":{"border":{"bottom":{"color":"var:preset|color|border","width":"1px","style":"solid"}}},"backgroundColor":"base","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull cartiva-header-nav-row cartiva-header-nav-row--left has-base-background-color has-background" style="border-bottom-color:var(--wp--preset--color--border);border-bottom-style:solid;border-bottom-width:1px">
+	<!-- wp:group {"align":"wide","layout":{"type":"flex","justifyContent":"left"}} -->
+	<div class="wp-block-group alignwide">
+		<!-- wp:navigation {"className":"cartiva-header__nav","overlayBackgroundColor":"base","overlayTextColor":"contrast","icon":"menu","layout":{"type":"flex","justifyContent":"left"},"style":{"spacing":{"blockGap":"var:preset|spacing|40"}}} /-->
+
+	</div>
+	<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+		<?php
+	elseif ( 'split' === $args['layout'] ) :
+		?>
+<!-- wp:group {"align":"full","className":"cartiva-header","style":{"border":{"bottom":{"color":"var:preset|color|border","width":"1px","style":"solid"}}},"backgroundColor":"base","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull cartiva-header has-base-background-color has-background" style="border-bottom-color:var(--wp--preset--color--border);border-bottom-style:solid;border-bottom-width:1px">
+	<!-- wp:group {"align":"wide","className":"cartiva-header__row cartiva-header__row--split","style":{"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"},"blockGap":"var:preset|spacing|40"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
+	<div class="wp-block-group alignwide cartiva-header__row cartiva-header__row--split" style="padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)">
+
+		<!-- wp:navigation {"className":"cartiva-header__nav","overlayBackgroundColor":"base","overlayTextColor":"contrast","icon":"menu","layout":{"type":"flex","justifyContent":"left"},"style":{"spacing":{"blockGap":"var:preset|spacing|40"}}} /-->
+
+		<!-- wp:group {"className":"cartiva-header__brand","style":{"spacing":{"blockGap":"0.6rem"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+		<div class="wp-block-group cartiva-header__brand">
+			<!-- wp:site-logo {"width":36,"shouldSyncIcon":true} /-->
+			<!-- wp:site-title {"level":0} /-->
+		</div>
+		<!-- /wp:group -->
+
+		<!-- wp:group {"className":"cartiva-header__actions","style":{"spacing":{"blockGap":"0.35rem"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+		<div class="wp-block-group cartiva-header__actions">
+			<!-- wp:search {"label":"<?php echo esc_attr_x( 'Search', 'search label', 'cartiva' ); ?>","showLabel":false,"placeholder":"<?php echo esc_attr_x( 'Search products…', 'search placeholder', 'cartiva' ); ?>","buttonText":"<?php echo esc_attr_x( 'Search', 'search button', 'cartiva' ); ?>","buttonPosition":"button-only","buttonUseIcon":true,"isSearchFieldHidden":true,"className":"cartiva-header__search"<?php echo cartiva_is_woocommerce_active() ? ',"query":{"post_type":"product"}' : ''; ?>} /-->
+			<?php if ( cartiva_is_woocommerce_active() ) : ?>
+			<!-- wp:woocommerce/customer-account {"displayStyle":"icon_only","iconStyle":"line","iconClass":"wc-block-customer-account__account-icon","className":"cartiva-header__account"} /-->
+			<!-- wp:woocommerce/mini-cart {"className":"cartiva-header__cart"} /-->
+			<?php endif; ?>
+		</div>
+		<!-- /wp:group -->
 
 	</div>
 	<!-- /wp:group -->

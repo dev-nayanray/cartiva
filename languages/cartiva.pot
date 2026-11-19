@@ -9,6 +9,22 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Domain: cartiva\n"
 
+#: patterns/newsletter-dark.php:18
+msgid "Newsletter"
+msgstr ""
+
+#: patterns/newsletter-dark.php:21
+msgid "Good things, delivered weekly"
+msgstr ""
+
+#: patterns/newsletter-dark.php:24
+msgid "New products, restocks and members-only deals. No spam, ever."
+msgstr ""
+
+#: patterns/newsletter-dark.php:29 patterns/footer-newsletter.php:31 patterns/newsletter.php:26 patterns/newsletter-split.php:50
+msgid "Subscribe"
+msgstr ""
+
 #: patterns/starter-furniture.php:16
 msgid "The living room edit"
 msgstr ""
@@ -29,7 +45,7 @@ msgstr ""
 msgid "Wooden sofa on a warm background"
 msgstr ""
 
-#: patterns/starter-furniture.php:27 patterns/starter-fashion.php:27 patterns/starter-electronics.php:27 patterns/category-grid.php:25 patterns/starter-grocery.php:27
+#: patterns/starter-furniture.php:27 patterns/starter-fashion.php:27 patterns/category-auto.php:21 patterns/category-circles.php:25 patterns/starter-electronics.php:27 patterns/category-grid.php:25 patterns/starter-grocery.php:27
 msgid "Shop by category"
 msgstr ""
 
@@ -49,12 +65,98 @@ msgstr ""
 msgid "Decor"
 msgstr ""
 
-#: patterns/starter-furniture.php:39 patterns/footer.php:41 patterns/new-arrivals.php:20
+#: patterns/starter-furniture.php:39 patterns/hero-centered.php:18 patterns/footer-dark.php:41 patterns/footer.php:41 patterns/new-arrivals.php:20
 msgid "New arrivals"
 msgstr ""
 
 #: patterns/starter-furniture.php:50
 msgid "Designer picks"
+msgstr ""
+
+#: patterns/hero-centered.php:18
+msgid "Welcome to the store"
+msgstr ""
+
+#: patterns/hero-centered.php:18
+msgid "Find something you will love."
+msgstr ""
+
+#: patterns/hero-centered.php:18
+msgid "Thoughtfully designed products for every day, delivered fast with free returns."
+msgstr ""
+
+#: patterns/hero-centered.php:18 patterns/starter-grocery.php:19
+msgid "Start shopping"
+msgstr ""
+
+#: patterns/footer-dark.php:22 patterns/footer.php:22
+msgid "Thoughtfully made products, delivered fast. Built with Cartiva — a free, lightweight block theme for WooCommerce."
+msgstr ""
+
+#: patterns/footer-dark.php:38 patterns/footer-centered.php:27 patterns/footer.php:38 patterns/footer-simple.php:20 inc/settings.php:113
+msgid "Shop"
+msgstr ""
+
+#: patterns/footer-dark.php:42 patterns/footer.php:42 patterns/best-sellers.php:19
+msgid "Best sellers"
+msgstr ""
+
+#: patterns/footer-dark.php:43 patterns/footer.php:43 inc/header.php:212
+msgid "Sale"
+msgstr ""
+
+#: patterns/footer-dark.php:51 patterns/footer.php:51 patterns/page-faq.php:16
+msgid "Help"
+msgstr ""
+
+#: patterns/footer-dark.php:54 patterns/footer-centered.php:30 patterns/footer.php:54 patterns/footer-simple.php:21
+msgid "Shipping"
+msgstr ""
+
+#: patterns/footer-dark.php:55 patterns/page-terms.php:48 patterns/footer.php:55 patterns/footer-simple.php:22
+msgid "Returns"
+msgstr ""
+
+#: patterns/footer-dark.php:56 patterns/page-terms.php:54 patterns/footer-centered.php:31 patterns/footer.php:56 patterns/page-contact.php:18 patterns/footer-simple.php:23
+msgid "Contact"
+msgstr ""
+
+#: patterns/footer-dark.php:57 patterns/footer.php:57 inc/header.php:44
+msgid "Track order"
+msgstr ""
+
+#: patterns/footer-dark.php:58 patterns/footer-centered.php:29 patterns/footer.php:58 patterns/page-help-center.php:29 functions.php:129
+msgid "FAQ"
+msgstr ""
+
+#: patterns/footer-dark.php:66 patterns/footer.php:66
+msgid "Company"
+msgstr ""
+
+#: patterns/footer-dark.php:69 patterns/footer-centered.php:28 patterns/footer.php:69
+msgid "About"
+msgstr ""
+
+#: patterns/footer-dark.php:70 patterns/template-home.php:15 patterns/footer.php:70
+msgid "Blog"
+msgstr ""
+
+#: patterns/footer-dark.php:71 patterns/footer.php:71
+msgid "Privacy"
+msgstr ""
+
+#. translators: 1: Current year, 2: Site name.
+#: patterns/footer-dark.php:89 patterns/footer.php:89 patterns/footer-simple.php:30
+msgid "© %1$s %2$s. All rights reserved."
+msgstr ""
+
+#. translators: %s: WordPress link.
+#: patterns/footer-dark.php:104 patterns/footer.php:104
+msgid "Designed with %s"
+msgstr ""
+
+#: patterns/footer-dark.php:105 patterns/footer-centered.php:52 patterns/footer.php:105
+msgid "https://wordpress.org"
 msgstr ""
 
 #: patterns/page-about.php:18
@@ -141,7 +243,7 @@ msgstr ""
 msgid "Browse the full collection, with free shipping on orders over $50."
 msgstr ""
 
-#: patterns/page-about.php:95 patterns/hero.php:33 inc/pattern-helpers.php:146
+#: patterns/page-about.php:95 patterns/hero.php:33 inc/pattern-helpers.php:150 inc/pattern-helpers.php:494
 msgid "Shop now"
 msgstr ""
 
@@ -202,16 +304,8 @@ msgstr ""
 msgid "Delivery times are estimates. Risk passes to you once the order has been delivered to the address you provided."
 msgstr ""
 
-#: patterns/page-terms.php:48 patterns/footer.php:55 patterns/footer-simple.php:22
-msgid "Returns"
-msgstr ""
-
 #: patterns/page-terms.php:51
 msgid "You can return unused items within 30 days of delivery. See our Shipping & returns page for details."
-msgstr ""
-
-#: patterns/page-terms.php:54 patterns/footer.php:56 patterns/page-contact.php:18 patterns/footer-simple.php:23
-msgid "Contact"
 msgstr ""
 
 #: patterns/page-terms.php:57
@@ -230,7 +324,7 @@ msgstr ""
 msgid "Effortless pieces in natural fabrics, designed to mix, match and last for seasons."
 msgstr ""
 
-#: patterns/starter-fashion.php:19
+#: patterns/starter-fashion.php:19 patterns/products-banner.php:39 patterns/hero-slider.php:22 patterns/hero-mosaic.php:22
 msgid "Shop the collection"
 msgstr ""
 
@@ -238,11 +332,11 @@ msgstr ""
 msgid "Dress on a pink background"
 msgstr ""
 
-#: patterns/starter-fashion.php:29 inc/header.php:135
+#: patterns/starter-fashion.php:29 patterns/category-cards.php:14 inc/header.php:207
 msgid "Women"
 msgstr ""
 
-#: patterns/starter-fashion.php:30 inc/header.php:136
+#: patterns/starter-fashion.php:30 patterns/category-cards.php:15 inc/header.php:208
 msgid "Men"
 msgstr ""
 
@@ -250,11 +344,11 @@ msgstr ""
 msgid "Shoes"
 msgstr ""
 
-#: patterns/starter-fashion.php:32 patterns/starter-electronics.php:32 patterns/category-grid.php:15
+#: patterns/starter-fashion.php:32 patterns/category-circles.php:19 patterns/starter-electronics.php:32 patterns/category-grid.php:15 patterns/category-mosaic.php:18
 msgid "Accessories"
 msgstr ""
 
-#: patterns/starter-fashion.php:39 inc/header.php:134
+#: patterns/starter-fashion.php:39 inc/header.php:206
 msgid "New in"
 msgstr ""
 
@@ -306,8 +400,17 @@ msgstr ""
 msgid "Encrypted payments · 30-day returns · Real human support"
 msgstr ""
 
-#: patterns/template-home.php:15 patterns/footer.php:70
-msgid "Blog"
+#: patterns/product-carousel.php:19
+msgid "Trending now"
+msgstr ""
+
+#: patterns/footer-centered.php:22
+msgid "Thoughtfully made products, delivered fast."
+msgstr ""
+
+#. translators: 1: Current year, 2: Site name, 3: WordPress link.
+#: patterns/footer-centered.php:49
+msgid "© %1$s %2$s. Designed with %3$s"
 msgstr ""
 
 #: patterns/hidden-product-trust.php:15
@@ -332,6 +435,14 @@ msgstr ""
 
 #: patterns/hidden-product-trust.php:21
 msgid "encrypted payments"
+msgstr ""
+
+#: patterns/blog-minimal.php:20
+msgid "Notes from the team"
+msgstr ""
+
+#: patterns/blog-minimal.php:23 patterns/blog-list.php:23 patterns/blog-featured.php:23 patterns/blog-latest.php:23
+msgid "All articles →"
 msgstr ""
 
 #: patterns/lookbook.php:14
@@ -422,6 +533,26 @@ msgstr ""
 msgid "No products were found matching your selection."
 msgstr ""
 
+#: patterns/hero-sale.php:22
+msgid "-50%"
+msgstr ""
+
+#: patterns/hero-sale.php:29
+msgid "Season sale · This week only"
+msgstr ""
+
+#: patterns/hero-sale.php:32
+msgid "Up to half off hundreds of favorites."
+msgstr ""
+
+#: patterns/hero-sale.php:35
+msgid "Free shipping on every sale order. While stocks last."
+msgstr ""
+
+#: patterns/hero-sale.php:40 patterns/promo-banner.php:31
+msgid "Shop the sale"
+msgstr ""
+
 #: patterns/hidden-404.php:19
 msgid "This page wandered off"
 msgstr ""
@@ -430,7 +561,7 @@ msgstr ""
 msgid "The page you are looking for does not exist or has moved. Search the store or head back to somewhere familiar."
 msgstr ""
 
-#: patterns/hidden-404.php:24 patterns/template-search.php:15 patterns/hidden-no-results.php:15 inc/header.php:62 inc/header.php:116
+#: patterns/hidden-404.php:24 patterns/template-search.php:15 patterns/hidden-no-results.php:15 inc/header.php:62 inc/header.php:112 inc/header.php:157 inc/header.php:188
 msgctxt "search label"
 msgid "Search"
 msgstr ""
@@ -440,7 +571,7 @@ msgctxt "search placeholder"
 msgid "What are you looking for?"
 msgstr ""
 
-#: patterns/hidden-404.php:24 patterns/template-search.php:15 patterns/hidden-no-results.php:15 inc/header.php:62 inc/header.php:116
+#: patterns/hidden-404.php:24 patterns/template-search.php:15 patterns/hidden-no-results.php:15 inc/header.php:62 inc/header.php:112 inc/header.php:157 inc/header.php:188
 msgctxt "search button"
 msgid "Search"
 msgstr ""
@@ -577,62 +708,48 @@ msgstr ""
 msgid "Track your order"
 msgstr ""
 
-#: patterns/footer.php:22
-msgid "Thoughtfully made products, delivered fast. Built with Cartiva — a free, lightweight block theme for WooCommerce."
+#: patterns/hero-cover.php:14
+msgid "Limited edition"
 msgstr ""
 
-#: patterns/footer.php:38 patterns/footer-simple.php:20 inc/settings.php:113
-msgid "Shop"
+#: patterns/hero-cover.php:14
+msgid "Designed to stand out."
 msgstr ""
 
-#: patterns/footer.php:42 patterns/best-sellers.php:19
-msgid "Best sellers"
+#: patterns/hero-cover.php:14
+msgid "A small-batch collection made with the best materials we could find."
 msgstr ""
 
-#: patterns/footer.php:43 inc/header.php:140
-msgid "Sale"
+#: patterns/hero-cover.php:14
+msgid "Shop the drop"
 msgstr ""
 
-#: patterns/footer.php:51 patterns/page-faq.php:16
-msgid "Help"
+#: patterns/hero-cover.php:14
+msgid "Learn more"
 msgstr ""
 
-#: patterns/footer.php:54 patterns/footer-simple.php:21
-msgid "Shipping"
+#: patterns/category-auto.php:24
+msgid "Updates automatically with your product categories and their images."
 msgstr ""
 
-#: patterns/footer.php:57 inc/header.php:44
-msgid "Track order"
+#: patterns/category-circles.php:14 patterns/category-cards.php:16 patterns/category-mosaic.php:15
+msgid "Home"
 msgstr ""
 
-#: patterns/footer.php:58 patterns/page-help-center.php:29 functions.php:129
-msgid "FAQ"
+#: patterns/category-circles.php:15
+msgid "Fashion"
 msgstr ""
 
-#: patterns/footer.php:66
-msgid "Company"
+#: patterns/category-circles.php:16 patterns/category-mosaic.php:16 inc/header.php:210
+msgid "Tech"
 msgstr ""
 
-#: patterns/footer.php:69
-msgid "About"
+#: patterns/category-circles.php:17 patterns/category-grid.php:17 patterns/category-mosaic.php:17
+msgid "Wellness"
 msgstr ""
 
-#: patterns/footer.php:71
-msgid "Privacy"
-msgstr ""
-
-#. translators: 1: Current year, 2: Site name.
-#: patterns/footer.php:89 patterns/footer-simple.php:30
-msgid "© %1$s %2$s. All rights reserved."
-msgstr ""
-
-#. translators: %s: WordPress link.
-#: patterns/footer.php:104
-msgid "Designed with %s"
-msgstr ""
-
-#: patterns/footer.php:105
-msgid "https://wordpress.org"
+#: patterns/category-circles.php:18
+msgid "Grocery"
 msgstr ""
 
 #: patterns/starter-electronics.php:16
@@ -675,7 +792,7 @@ msgstr ""
 msgid "Flash sale"
 msgstr ""
 
-#: patterns/starter-electronics.php:61
+#: patterns/starter-electronics.php:61 patterns/top-rated.php:19
 msgid "Top rated"
 msgstr ""
 
@@ -684,11 +801,7 @@ msgid "Join the list, get 10% off"
 msgstr ""
 
 #: patterns/footer-newsletter.php:24
-msgid "New drops, restocks and members-only deals. Add your newsletter form block here."
-msgstr ""
-
-#: patterns/footer-newsletter.php:31 patterns/newsletter.php:25
-msgid "Subscribe"
+msgid "New drops, restocks and members-only deals, straight to your inbox."
 msgstr ""
 
 #: patterns/page-contact.php:18
@@ -847,7 +960,7 @@ msgstr ""
 msgid "On sale now"
 msgstr ""
 
-#: patterns/category-grid.php:14 inc/header.php:137
+#: patterns/category-grid.php:14 inc/header.php:209
 msgid "Home & Living"
 msgstr ""
 
@@ -855,12 +968,20 @@ msgstr ""
 msgid "Tech & Gadgets"
 msgstr ""
 
-#: patterns/category-grid.php:17
-msgid "Wellness"
+#: patterns/category-grid.php:28 inc/pattern-helpers.php:109
+msgid "View all"
 msgstr ""
 
-#: patterns/category-grid.php:28 inc/pattern-helpers.php:105
-msgid "View all"
+#: patterns/products-banner.php:31
+msgid "Collection"
+msgstr ""
+
+#: patterns/products-banner.php:34
+msgid "Bold basics for every day"
+msgstr ""
+
+#: patterns/products-banner.php:55
+msgid "Featured in this collection"
 msgstr ""
 
 #: patterns/checkout-header.php:28
@@ -879,12 +1000,12 @@ msgstr ""
 msgid "You may also like"
 msgstr ""
 
-#: patterns/newsletter.php:17
+#: patterns/newsletter.php:18 patterns/newsletter-inline.php:22
 msgid "Get 10% off your first order"
 msgstr ""
 
-#: patterns/newsletter.php:20
-msgid "Join our newsletter for early access to drops, restocks and members-only deals. Add your favourite newsletter form block here."
+#: patterns/newsletter.php:21
+msgid "Join our newsletter for early access to new drops, restocks and members-only deals."
 msgstr ""
 
 #: patterns/page-help-center.php:18 inc/header.php:44
@@ -987,10 +1108,6 @@ msgstr ""
 msgid "Seasonal produce, pantry staples and local favourites, picked fresh and brought to your door."
 msgstr ""
 
-#: patterns/starter-grocery.php:19
-msgid "Start shopping"
-msgstr ""
-
 #: patterns/starter-grocery.php:21
 msgid "Fresh fruit on a green background"
 msgstr ""
@@ -1019,6 +1136,10 @@ msgstr ""
 msgid "Customer favourites"
 msgstr ""
 
+#: patterns/blog-list.php:20
+msgid "Latest articles"
+msgstr ""
+
 #: patterns/featured-products.php:19
 msgid "Featured picks"
 msgstr ""
@@ -1031,8 +1152,8 @@ msgstr ""
 msgid "Our biggest seasonal sale. Limited stock — while it lasts."
 msgstr ""
 
-#: patterns/promo-banner.php:31
-msgid "Shop the sale"
+#: patterns/blog-featured.php:20
+msgid "Stories & guides"
 msgstr ""
 
 #: patterns/page-track-order.php:18
@@ -1067,24 +1188,128 @@ msgstr ""
 msgid "Go to my account"
 msgstr ""
 
-#: patterns/hero.php:22
-msgid "New season collection"
+#: patterns/hero-slider.php:19 patterns/category-mosaic.php:14
+msgid "New season"
 msgstr ""
 
-#: patterns/hero.php:25
+#: patterns/hero-slider.php:19 patterns/hero.php:25
 msgid "Everyday essentials, made to last."
+msgstr ""
+
+#: patterns/hero-slider.php:19
+msgid "Quality products at honest prices, with free returns on every order."
+msgstr ""
+
+#: patterns/hero-slider.php:19
+msgid "Shop new in"
+msgstr ""
+
+#: patterns/hero-slider.php:19 patterns/hero.php:36
+msgid "Browse categories"
+msgstr ""
+
+#: patterns/hero-slider.php:22
+msgid "The edit"
+msgstr ""
+
+#: patterns/hero-slider.php:22
+msgid "Soft layers for slow weekends."
+msgstr ""
+
+#: patterns/hero-slider.php:22
+msgid "Natural fabrics and relaxed shapes in warm, easy colors."
+msgstr ""
+
+#: patterns/hero-slider.php:25
+msgid "Home & living"
+msgstr ""
+
+#: patterns/hero-slider.php:25
+msgid "Made for the way you live."
+msgstr ""
+
+#: patterns/hero-slider.php:25
+msgid "Solid wood furniture and handmade decor, delivered free."
+msgstr ""
+
+#: patterns/hero-slider.php:25
+msgid "Explore home"
+msgstr ""
+
+#: patterns/hero-slider.php:25
+msgid "See the lookbook"
+msgstr ""
+
+#: patterns/blog-latest.php:20
+msgid "From the journal"
+msgstr ""
+
+#: patterns/hero.php:22
+msgid "New season collection"
 msgstr ""
 
 #: patterns/hero.php:28
 msgid "Discover quality products at honest prices. Fast delivery, secure checkout and free returns on every order."
 msgstr ""
 
-#: patterns/hero.php:36
-msgid "Browse categories"
-msgstr ""
-
 #: patterns/hero.php:45
 msgid "Product arrangement on a soft background"
+msgstr ""
+
+#: patterns/category-cards.php:14
+msgid "Effortless everyday pieces"
+msgstr ""
+
+#: patterns/category-cards.php:15
+msgid "Bold basics and layers"
+msgstr ""
+
+#: patterns/category-cards.php:16
+msgid "Furniture and decor"
+msgstr ""
+
+#: patterns/category-cards.php:22
+msgid "Shop the collections"
+msgstr ""
+
+#: patterns/newsletter-inline.php:25
+msgid "Plus early access to sales. Unsubscribe any time."
+msgstr ""
+
+#: patterns/newsletter-inline.php:32
+msgid "Sign me up"
+msgstr ""
+
+#: patterns/newsletter-split.php:29
+msgid "Be the first to know"
+msgstr ""
+
+#: patterns/newsletter-split.php:32
+msgid "Sign up for new arrivals, exclusive offers and styling tips from our team."
+msgstr ""
+
+#: patterns/newsletter-split.php:37 patterns/newsletter-card.php:28
+msgid "10% off your first order"
+msgstr ""
+
+#: patterns/newsletter-split.php:40 patterns/newsletter-card.php:31
+msgid "Early access to new drops and sales"
+msgstr ""
+
+#: patterns/newsletter-split.php:43 patterns/newsletter-card.php:34
+msgid "One email a week, unsubscribe any time"
+msgstr ""
+
+#: patterns/hero-mosaic.php:22
+msgid "Spring collection"
+msgstr ""
+
+#: patterns/hero-mosaic.php:22
+msgid "Fresh looks for brighter days."
+msgstr ""
+
+#: patterns/hero-mosaic.php:22
+msgid "Light layers, bold colors and the essentials you will reach for all season."
 msgstr ""
 
 #: patterns/template-my-account.php:20
@@ -1179,8 +1404,24 @@ msgstr ""
 msgid "Our team replies within one business day."
 msgstr ""
 
+#: patterns/newsletter-card.php:20
+msgid "Join the club"
+msgstr ""
+
+#: patterns/newsletter-card.php:23
+msgid "Members get more from every visit. Joining takes ten seconds and costs nothing."
+msgstr ""
+
+#: patterns/newsletter-card.php:41
+msgid "Become a member"
+msgstr ""
+
 #: patterns/hidden-no-results.php:13
 msgid "Sorry, nothing matched your search. Please try again with different keywords."
+msgstr ""
+
+#: patterns/category-mosaic.php:24
+msgid "Explore the store"
 msgstr ""
 
 #: functions.php:108
@@ -1199,67 +1440,141 @@ msgstr ""
 msgid "Zoom on hover"
 msgstr ""
 
+#: functions.php:147
+msgid "Cartiva: Hero"
+msgstr ""
+
+#: functions.php:147
+msgid "Hero banners and the hero slider."
+msgstr ""
+
+#: functions.php:148
+msgid "Cartiva: Products"
+msgstr ""
+
+#: functions.php:148
+msgid "Product grids and carousels."
+msgstr ""
+
 #: functions.php:149
-msgid "Cartiva: Shop"
+msgid "Cartiva: Categories"
+msgstr ""
+
+#: functions.php:149
+msgid "Ways to show your shop categories."
 msgstr ""
 
 #: functions.php:150
+msgid "Cartiva: Blog"
+msgstr ""
+
+#: functions.php:150
+msgid "Blog and journal sections."
+msgstr ""
+
+#: functions.php:151
+msgid "Cartiva: Newsletter"
+msgstr ""
+
+#: functions.php:151
+msgid "Newsletter and sign-up sections."
+msgstr ""
+
+#: functions.php:165
+msgid "Cartiva: Shop"
+msgstr ""
+
+#: functions.php:166
 msgid "Store sections such as product grids, categories and promos."
 msgstr ""
 
-#: functions.php:156
+#: functions.php:172
 msgid "Cartiva: Starter homepages"
 msgstr ""
 
-#: functions.php:157
+#: functions.php:173
 msgid "Complete homepages for different kinds of stores."
 msgstr ""
 
-#: functions.php:163
+#: functions.php:179
 msgid "Cartiva: Pages"
 msgstr ""
 
-#: functions.php:164
+#: functions.php:180
 msgid "Complete page layouts: Contact, About, FAQ, Shipping & returns, Help center, Terms, Track order."
 msgstr ""
 
-#: functions.php:170
+#: functions.php:186
 msgid "Cartiva: Sections"
 msgstr ""
 
-#: functions.php:171
+#: functions.php:187
 msgid "General page sections."
 msgstr ""
 
-#: functions.php:228
+#: functions.php:244
 msgid "Search results"
 msgstr ""
 
-#: functions.php:229
+#: functions.php:245
 msgid "Searching…"
 msgstr ""
 
 #. translators: %s: Search query.
-#: functions.php:231
+#: functions.php:247
 msgid "No results for “%s”"
 msgstr ""
 
 #. translators: %s: Search query.
-#: functions.php:233
+#: functions.php:249
 msgid "See all results for “%s”"
 msgstr ""
 
-#: functions.php:234
+#: functions.php:250
 msgid "1 result found"
 msgstr ""
 
 #. translators: %d: Number of results.
-#: functions.php:236
+#: functions.php:252
 msgid "%d results found"
 msgstr ""
 
-#: functions.php:237
+#: functions.php:253
 msgid "Out of stock"
+msgstr ""
+
+#: functions.php:296
+msgid "carousel"
+msgstr ""
+
+#: functions.php:297
+msgid "slide"
+msgstr ""
+
+#. translators: 1: Slide number, 2: Number of slides.
+#: functions.php:299
+msgid "%1$s of %2$s"
+msgstr ""
+
+#: functions.php:300
+msgid "Previous"
+msgstr ""
+
+#: functions.php:301
+msgid "Next"
+msgstr ""
+
+#. translators: %s: Slide number.
+#: functions.php:303
+msgid "Go to slide %s"
+msgstr ""
+
+#: functions.php:304
+msgid "Featured"
+msgstr ""
+
+#: functions.php:305
+msgid "Products"
 msgstr ""
 
 #: inc/settings.php:27
@@ -1551,16 +1866,17 @@ msgstr ""
 msgid "Free shipping on orders over $50 · 30-day easy returns"
 msgstr ""
 
-#: inc/header.php:62 inc/header.php:116
+#: inc/header.php:62 inc/header.php:157 inc/header.php:188
 msgctxt "search placeholder"
 msgid "Search products…"
 msgstr ""
 
-#: inc/header.php:138
-msgid "Tech"
+#: inc/header.php:112
+msgctxt "search placeholder"
+msgid "Search for products, brands and more…"
 msgstr ""
 
-#: inc/header.php:139
+#: inc/header.php:211
 msgid "Beauty"
 msgstr ""
 

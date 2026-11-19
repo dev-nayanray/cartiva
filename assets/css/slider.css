@@ -1,0 +1,125 @@
+/**
+ * Cartiva – hero slider and product carousel controls.
+ * Loaded only with assets/js/slider.js, on pages that contain a slider or carousel.
+ * In the editor this file is not loaded, so slides stay stacked for easy editing.
+ */
+/* ==========================================================================
+   Hero slider (Group block with class "cartiva-slider") – assets/js/slider.js
+   On the site: a swipeable, scroll-snapping row of slides.
+   In the editor: slides stay stacked so each one is easy to edit.
+   ========================================================================== */
+.cartiva-slider {
+	display: flex !important;
+	flex-wrap: nowrap !important;
+	gap: 0 !important;
+	overflow-x: auto;
+	overscroll-behavior-x: contain;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	scrollbar-width: none;
+}
+.cartiva-slider::-webkit-scrollbar { display: none; }
+.cartiva-slider > * {
+	flex: 0 0 100%;
+	width: 100%;
+	max-width: none !important;
+	margin: 0 !important;
+	scroll-snap-align: start;
+	scroll-snap-stop: always;
+}
+.editor-styles-wrapper .cartiva-slider > * + * { margin-top: 1rem; }
+.cartiva-slider-wrap {
+	position: relative;
+	margin-block: 0;
+}
+
+
+/* Shared carousel controls (slider + product carousel) */
+.cartiva-carousel__controls {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: .75rem;
+	pointer-events: none;
+}
+.cartiva-carousel__controls > * { pointer-events: auto; }
+.cartiva-carousel__arrow {
+	display: grid;
+	place-items: center;
+	width: 2.75rem;
+	height: 2.75rem;
+	padding: 0;
+	border: 1px solid var(--wp--preset--color--border);
+	border-radius: 999px;
+	background: var(--wp--preset--color--base);
+	color: var(--wp--preset--color--contrast);
+	box-shadow: var(--wp--preset--shadow--soft);
+	cursor: pointer;
+	transition: background-color .15s ease, color .15s ease, opacity .15s ease;
+}
+.cartiva-carousel__arrow:hover:not(:disabled) {
+	background: var(--wp--preset--color--contrast);
+	color: var(--wp--preset--color--base);
+}
+.cartiva-carousel__arrow:disabled { opacity: .35; cursor: default; }
+.cartiva-carousel__arrow:focus-visible,
+.cartiva-carousel__dot:focus-visible { outline: 2px solid var(--wp--preset--color--primary); outline-offset: 2px; }
+.cartiva-carousel__dots { display: flex; gap: .5rem; }
+.cartiva-carousel__dot {
+	width: .6rem;
+	height: .6rem;
+	padding: 0;
+	border: 0;
+	border-radius: 999px;
+	background: color-mix(in srgb, var(--wp--preset--color--contrast) 25%, transparent);
+	cursor: pointer;
+	transition: width .25s ease, background-color .25s ease;
+}
+.cartiva-carousel__dot.is-active {
+	width: 1.75rem;
+	background: var(--wp--preset--color--contrast);
+}
+.is-cartiva-carousel-static .cartiva-carousel__controls { display: none; }
+
+/* Slider controls float over the slides */
+.cartiva-slider-wrap > .cartiva-carousel__controls {
+	position: absolute;
+	inset: auto 0 clamp(1rem, 3vw, 2rem) 0;
+	z-index: 3;
+}
+.cartiva-slider-wrap > .cartiva-carousel__controls .cartiva-carousel__dots {
+	padding: .55rem .8rem;
+	border-radius: 999px;
+	background: color-mix(in srgb, var(--wp--preset--color--base) 80%, transparent);
+	backdrop-filter: blur(6px);
+}
+@media (min-width: 782px) {
+	.cartiva-slider-wrap > .cartiva-carousel__controls {
+		justify-content: flex-end;
+		padding-inline: max(var(--wp--preset--spacing--40), calc((100% - var(--wp--style--global--wide-size)) / 2));
+	}
+}
+
+/* Slide text entrance (only on the active slide, respects reduced motion) */
+@media (prefers-reduced-motion: no-preference) {
+	.cartiva-slider .wp-block-cover__inner-container > * {
+		animation: cartiva-slide-in .7s cubic-bezier(.2, .7, .2, 1) both;
+	}
+	.cartiva-slider .wp-block-cover__inner-container > :nth-child(2) { animation-delay: .08s; }
+	.cartiva-slider .wp-block-cover__inner-container > :nth-child(3) { animation-delay: .16s; }
+	.cartiva-slider .wp-block-cover__inner-container > :nth-child(4) { animation-delay: .24s; }
+	@keyframes cartiva-slide-in {
+		from { opacity: 0; transform: translateY(14px); }
+		to { opacity: 1; transform: none; }
+	}
+}
+
+
+/* Slider: keep slide text readable on small screens */
+@media (max-width: 781px) {
+	.cartiva-slide.is-light .wp-block-cover__background {
+		background: linear-gradient(90deg, rgba(255, 255, 255, .94) 0%, rgba(255, 255, 255, .86) 65%, rgba(255, 255, 255, .7) 100%) !important;
+		opacity: 1 !important;
+	}
+	.cartiva-slide .wp-block-cover__image-background { object-position: 85% center; }
+}

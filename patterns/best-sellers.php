@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Best sellers product grid
+ * Title: Products: best sellers
  * Slug: cartiva/best-sellers
- * Categories: cartiva-shop
+ * Categories: cartiva-products
  * Keywords: best sellers, popular, products, woocommerce
  * Viewport width: 1400
  *

@@ -92,59 +92,30 @@ Then activate **Cartiva** under **Appearance → Themes**.
 
 ## Block patterns
 
-**Cartiva: Starter homepages:** Fashion · Electronics · Grocery · Furniture
+All patterns are in **Appearance → Editor → Patterns** (or the block inserter), grouped by category.
 
-**Cartiva: Shop:** Hero banner · Trust badges · Category grid · New arrivals · Best sellers · On sale · Featured products · Split promo · Promo banner · Brand strip · Lookbook · Shop with filter sidebar · Full shop homepage
+| Category | Patterns |
+|---|---|
+| **Header** (6) | Default · Centered logo · With category bar · No top bar · Large search bar · Menu left, logo center |
+| **Footer** (5) | Default · Dark · Centered · With newsletter · Simple |
+| **Cartiva: Hero** (6) | **Slider** · Full-screen image · Split with image · Centered with image row · Image mosaic · Big sale |
+| **Cartiva: Products** (7) | New arrivals · Best sellers · On sale · Featured · Top rated · **Carousel** · Banner with grid |
+| **Cartiva: Categories** (5) | Image grid · Circles · Image cards · Mosaic · Your store categories (automatic) |
+| **Cartiva: Blog** (5) | Latest posts cards · Featured post with list · List with thumbnails · Minimal list · Archive grid |
+| **Cartiva: Newsletter** (5) | Centered · Split with image · Dark band · Card with perks · Inline bar |
+| **Cartiva: Pages** | Contact · About · FAQ · Shipping & returns · Help center · Terms · Track order |
+| **Cartiva: Starter homepages** | Fashion · Electronics · Grocery · Furniture |
+| **Cartiva: Shop / Sections** | Trust badges · Split promo · Promo banner · Brands · Lookbook · FAQ · Shop with filter sidebar |
 
-**Cartiva: Pages:** Contact · About · FAQ · Shipping & returns · Help center · Terms & conditions · Track order
+### Hero slider & product carousel
 
-**Cartiva: Sections:** FAQ accordion · Newsletter call to action · Posts grid
+`assets/js/slider.js` (vanilla, deferred) loads **only** on pages that contain a slider or product carousel. Without JavaScript both remain swipeable, scroll-snapping rows.
+
+- Slider: a Group block with the class `cartiva-slider`; every child block (a Cover) is a slide. Arrows, dots, keyboard arrows, autoplay every 6 s that pauses on hover, focus, hidden tabs and for `prefers-reduced-motion`. Add `is-autoplay-off` to disable autoplay, or `data-interval` (ms) via a child theme.
+- Product carousel: a Product Collection block with the class `cartiva-product-carousel` — 4 / 3 / 1.4 products per view, arrows, no autoplay.
+- In the editor, slides stay stacked for easy editing.
 
 > Product patterns require WooCommerce and appear only when it is active.
-
-### Cartiva Settings
-
-**Appearance → Cartiva Settings** holds the options the Site Editor doesn't cover. Everything is stored in one option (`cartiva_settings`) through the Settings API, and output as CSS variables and body classes, so there's no extra JavaScript.
-
-| Section | Options |
-|---|---|
-| Design | Corner style (sharp / soft / rounded), button shape, layout width, hover animations |
-| Header | Sticky header, scroll shadow, top bar, live search, number of live search results |
-| Shop | Product card style (clean / bordered / boxed), image shape (1:1, 4:5, 3:4, 4:3), add-to-cart on hover, sale badge shape |
-| Product page | Sticky product details, delivery & returns list |
-| My Account | Profile card, dashboard tiles |
-
-Developers can override any value with the `cartiva_setting` filter:
-
-```php
-add_filter( 'cartiva_setting', function ( $value, $key ) {
-	return 'corners' === $key ? 'rounded' : $value;
-}, 10, 2 );
-```
-
-### Customizing the header and footer
-
-Go to **Appearance → Editor → Patterns → Header**, open the header and choose **Replace** to switch between *Default*, *Centered logo*, *With category bar* and *No top bar*. Footers work the same way (*Default*, *With newsletter*, *Simple*). Select any Group, Columns or Cover block and pick a section style (*Dark*, *Soft*, *Brand*, *Sale*) in the Styles panel.
-
-### Store pages
-
-Go to **Pages → Add New** and pick a layout from **Cartiva: Pages**. Use these slugs so the matching template and the header/footer links apply automatically:
-
-| Page | Slug |
-|---|---|
-| Contact | `contact` |
-| About | `about` |
-| FAQ | `faq` |
-| Shipping & returns | `shipping-returns` |
-| Help center | `help-center` |
-| Terms & conditions | `terms` |
-| Track order | `track-order` |
-
-Contact forms are plugin territory under the WordPress.org guidelines; add any form plugin's block to the Contact page.
-
-### Switching the shop to the sidebar layout
-
-Go to **Appearance → Editor → Templates → Product Catalog**, open the template options and choose **Shop with filter sidebar** (or insert it from the pattern library).
 
 ## Project structure
 
@@ -163,6 +134,7 @@ cartiva/
 ├── patterns/              Translatable PHP block patterns
 ├── styles/                Color variations, typography presets, section styles
 ├── assets/
+│   ├── js/                  live-search.js, slider.js (both deferred, loaded only when used)
 │   ├── css/blocks/          Per-block CSS, loaded on demand
 │   ├── css/woocommerce-account.css  My Account styles (account page only)
 │   ├── fonts/               DM Sans and Lora (SIL OFL)

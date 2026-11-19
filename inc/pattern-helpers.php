@@ -38,6 +38,7 @@ function cartiva_product_section( $args ) {
 			'on_sale'    => false,
 			'featured'   => false,
 			'background' => '',
+			'class'      => '',
 		)
 	);
 
@@ -73,6 +74,9 @@ function cartiva_product_section( $args ) {
 		'hideControls'  => array( 'inherit' ),
 		'align'         => 'wide',
 	);
+	if ( $args['class'] ) {
+		$collection_attrs['className'] = $args['class'];
+	}
 
 	$group_attrs = array(
 		'align'  => 'full',
@@ -108,7 +112,7 @@ function cartiva_product_section( $args ) {
 	<!-- /wp:group -->
 
 	<!-- wp:woocommerce/product-collection <?php echo wp_json_encode( $collection_attrs, JSON_UNESCAPED_SLASHES ); ?> -->
-	<div class="wp-block-woocommerce-product-collection alignwide">
+	<div class="wp-block-woocommerce-product-collection alignwide<?php echo $args['class'] ? ' ' . esc_attr( $args['class'] ) : ''; ?>">
 		<!-- wp:woocommerce/product-template -->
 			<!-- wp:woocommerce/product-image {"showSaleBadge":true,"saleBadgeAlign":"left","imageSizing":"thumbnail","isDescendentOfQueryLoop":true} /-->
 			<!-- wp:post-title {"level":3,"isLink":true,"fontSize":"small","__woocommerceNamespace":"woocommerce/product-collection/product-title"} /-->
@@ -363,5 +367,175 @@ function cartiva_faq_group( $heading, $items ) {
 			<?php endforeach; ?>
 		</div>
 		<!-- /wp:group -->
+	<?php
+}
+
+/**
+ * Open a Cover block with a theme image.
+ *
+ * @param array $args {
+ *     @type string $image    File in assets/images.
+ *     @type int    $height   Minimum height value.
+ *     @type string $unit     px or vh.
+ *     @type int    $dim      Overlay opacity 0-100.
+ *     @type string $overlay  Overlay color slug ('' for none).
+ *     @type bool   $dark     Whether text sits on a dark image.
+ *     @type string $position Content position, e.g. 'center left'.
+ *     @type string $class    Extra class names.
+ *     @type string $radius   Border radius, e.g. '20px'.
+ *     @type string $align    '', 'wide' or 'full'.
+ * }
+ */
+function cartiva_cover_open( $args ) {
+	$args = wp_parse_args(
+		$args,
+		array(
+			'image'    => 'slide-1.webp',
+			'height'   => 600,
+			'unit'     => 'px',
+			'dim'      => 0,
+			'overlay'  => '',
+			'dark'     => false,
+			'position' => 'center left',
+			'class'    => '',
+			'radius'   => '',
+			'align'    => '',
+		)
+	);
+	$url   = get_template_directory_uri() . '/assets/images/' . $args['image'];
+	$dim   = max( 0, min( 100, (int) round( $args['dim'] / 10 ) * 10 ) );
+	$attrs = array(
+		'url'                => $url,
+		'dimRatio'           => $dim,
+		'isUserOverlayColor' => true,
+		'minHeight'          => (int) $args['height'],
+		'contentPosition'    => $args['position'],
+		'layout'             => array( 'type' => 'default' ),
+	);
+	// Text lines up with the site's wide content edge instead of a narrow centered column.
+	$args['class'] = trim( 'cartiva-cover-wide ' . $args['class'] );
+	if ( 'vh' === $args['unit'] ) {
+		$attrs['minHeightUnit'] = 'vh';
+	}
+	if ( $args['overlay'] ) {
+		$attrs['overlayColor'] = $args['overlay'];
+	}
+	if ( ! $args['dark'] ) {
+		$attrs['isDark'] = false;
+	}
+	if ( $args['align'] ) {
+		$attrs['align'] = $args['align'];
+	}
+	if ( $args['class'] ) {
+		$attrs['className'] = $args['class'];
+	}
+	if ( $args['radius'] ) {
+		$attrs['style'] = array( 'border' => array( 'radius' => $args['radius'] ) );
+	}
+
+	$classes = array( 'wp-block-cover' );
+	if ( $args['align'] ) {
+		$classes[] = 'align' . $args['align'];
+	}
+	if ( ! $args['dark'] ) {
+		$classes[] = 'is-light';
+	}
+	if ( 'center center' !== $args['position'] ) {
+		$classes[] = 'has-custom-content-position';
+		$classes[] = 'is-position-' . str_replace( ' ', '-', $args['position'] );
+	}
+	if ( $args['class'] ) {
+		$classes[] = $args['class'];
+	}
+
+	$style = ( $args['radius'] ? 'border-radius:' . $args['radius'] . ';' : '' ) . 'min-height:' . (int) $args['height'] . $args['unit'];
+
+	$bg = array( 'wp-block-cover__background' );
+	if ( $args['overlay'] ) {
+		$bg[] = 'has-' . $args['overlay'] . '-background-color';
+	}
+	$bg[] = 'has-background-dim-' . $dim;
+	$bg[] = 'has-background-dim';
+
+	echo '<!-- wp:cover ' . wp_json_encode( $attrs, JSON_UNESCAPED_SLASHES ) . " -->\n";
+	echo '<div class="' . esc_attr( implode( ' ', $classes ) ) . '" style="' . esc_attr( $style ) . '"><span aria-hidden="true" class="' . esc_attr( implode( ' ', $bg ) ) . '"></span><img class="wp-block-cover__image-background" alt="" src="' . esc_url( $url ) . '" data-object-fit="cover"/><div class="wp-block-cover__inner-container">' . "\n";
+}
+
+/**
+ * Close a Cover block opened with cartiva_cover_open().
+ */
+function cartiva_cover_close() {
+	echo "</div></div>\n<!-- /wp:cover -->\n";
+}
+
+/**
+ * Output a slide/hero text stack: eyebrow, heading, text and buttons.
+ *
+ * @param array $args {
+ *     @type string $eyebrow   Small label.
+ *     @type string $heading   Heading text.
+ *     @type string $text      Supporting text.
+ *     @type string $primary   Primary button label.
+ *     @type string $secondary Secondary button label ('' for none).
+ *     @type string $url       Button URL.
+ *     @type int    $level     Heading level.
+ *     @type bool   $light     White text (for dark images).
+ *     @type string $size      Heading font size slug.
+ *     @type string $align     Text alignment: '' or 'center'.
+ * }
+ */
+function cartiva_hero_text( $args ) {
+	$args  = wp_parse_args(
+		$args,
+		array(
+			'eyebrow'   => '',
+			'heading'   => '',
+			'text'      => '',
+			'primary'   => __( 'Shop now', 'cartiva' ),
+			'secondary' => '',
+			'url'       => function_exists( 'wc_get_page_permalink' ) ? wc_get_page_permalink( 'shop' ) : home_url( '/' ),
+			'level'     => 2,
+			'light'     => false,
+			'size'      => 'huge',
+			'align'     => '',
+		)
+	);
+	$color = $args['light'] ? 'base' : 'contrast';
+	$muted = $args['light'] ? '' : 'muted';
+	$ta    = 'center' === $args['align'] ? ',"align":"center"' : '';
+	$tac   = 'center' === $args['align'] ? ' has-text-align-center' : '';
+	$hta   = 'center' === $args['align'] ? ',"textAlign":"center"' : '';
+	$jc    = 'center' === $args['align'] ? ',"layout":{"type":"flex","justifyContent":"center"}' : '';
+	$tag   = 'h' . (int) $args['level'];
+	?>
+	<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"constrained","contentSize":"620px","justifyContent":"<?php echo 'center' === $args['align'] ? 'center' : 'left'; ?>"}} -->
+	<div class="wp-block-group">
+		<?php if ( $args['eyebrow'] ) : ?>
+		<!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.12em","fontWeight":"700"}},"textColor":"<?php echo $args['light'] ? 'base' : 'primary'; ?>","fontSize":"x-small"<?php echo $ta; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static JSON. ?>} -->
+		<p class="has-<?php echo $args['light'] ? 'base' : 'primary'; ?>-color has-text-color has-x-small-font-size<?php echo esc_attr( $tac ); ?>" style="font-weight:700;letter-spacing:0.12em;text-transform:uppercase"><?php echo esc_html( $args['eyebrow'] ); ?></p>
+		<!-- /wp:paragraph -->
+		<?php endif; ?>
+		<!-- wp:heading {"level":<?php echo (int) $args['level']; ?>,"textColor":"<?php echo esc_attr( $color ); ?>","fontSize":"<?php echo esc_attr( $args['size'] ); ?>"<?php echo $hta; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static JSON. ?>} -->
+		<<?php echo esc_attr( $tag ); ?> class="wp-block-heading<?php echo esc_attr( $tac ); ?> has-<?php echo esc_attr( $color ); ?>-color has-text-color has-<?php echo esc_attr( $args['size'] ); ?>-font-size"><?php echo esc_html( $args['heading'] ); ?></<?php echo esc_attr( $tag ); ?>>
+		<!-- /wp:heading -->
+		<?php if ( $args['text'] ) : ?>
+		<!-- wp:paragraph {<?php echo $muted ? '"textColor":"muted",' : '"textColor":"base",'; ?>"fontSize":"large"<?php echo $ta; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static JSON. ?>} -->
+		<p class="<?php echo esc_attr( trim( $tac ) ); ?> has-<?php echo $muted ? 'muted' : 'base'; ?>-color has-text-color has-large-font-size"><?php echo esc_html( $args['text'] ); ?></p>
+		<!-- /wp:paragraph -->
+		<?php endif; ?>
+		<!-- wp:buttons {"style":{"spacing":{"margin":{"top":"var:preset|spacing|30"}}}<?php echo $jc; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static JSON. ?>} -->
+		<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--30)">
+			<!-- wp:button {"className":"is-style-cartiva-pill"<?php echo $args['light'] ? ',"backgroundColor":"base","textColor":"contrast"' : ''; ?>} -->
+			<div class="wp-block-button is-style-cartiva-pill"><a class="wp-block-button__link<?php echo $args['light'] ? ' has-contrast-color has-base-background-color has-text-color has-background' : ''; ?> wp-element-button" href="<?php echo esc_url( $args['url'] ); ?>"><?php echo esc_html( $args['primary'] ); ?></a></div>
+			<!-- /wp:button -->
+			<?php if ( $args['secondary'] ) : ?>
+			<!-- wp:button {"className":"is-style-outline"<?php echo $args['light'] ? ',"textColor":"base"' : ''; ?>} -->
+			<div class="wp-block-button is-style-outline"><a class="wp-block-button__link<?php echo $args['light'] ? ' has-base-color has-text-color' : ''; ?> wp-element-button" href="<?php echo esc_url( $args['url'] ); ?>"><?php echo esc_html( $args['secondary'] ); ?></a></div>
+			<!-- /wp:button -->
+			<?php endif; ?>
+		</div>
+		<!-- /wp:buttons -->
+	</div>
+	<!-- /wp:group -->
 	<?php
 }

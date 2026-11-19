@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Posts grid
+ * Title: Blog: archive grid
  * Slug: cartiva/posts-grid
- * Categories: cartiva-sections, query
+ * Categories: cartiva-blog, query
  * Keywords: blog, posts, grid, query
  * Block Types: core/query
  *

@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Featured products grid
+ * Title: Products: featured
  * Slug: cartiva/featured-products
- * Categories: cartiva-shop
+ * Categories: cartiva-products
  * Keywords: featured, products, woocommerce
  * Viewport width: 1400
  *

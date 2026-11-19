@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: On sale product grid
+ * Title: Products: on sale
  * Slug: cartiva/on-sale
- * Categories: cartiva-shop
+ * Categories: cartiva-products
  * Keywords: sale, discount, products, woocommerce
  * Viewport width: 1400
  *

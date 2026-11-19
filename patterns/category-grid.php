@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Category grid
+ * Title: Categories: image grid
  * Slug: cartiva/category-grid
- * Categories: cartiva-shop
+ * Categories: cartiva-categories
  * Keywords: categories, grid, shop
  * Viewport width: 1400
  *
