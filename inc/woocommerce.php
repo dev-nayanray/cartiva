@@ -105,11 +105,12 @@ function cartiva_wc_account_dashboard_tiles() {
 	unset( $items['dashboard'], $items['customer-logout'] );
 
 	$meta = array(
-		'orders'          => __( 'Track, return or buy again', 'cartiva' ),
-		'downloads'       => __( 'Your digital products', 'cartiva' ),
-		'edit-address'    => __( 'Billing and shipping', 'cartiva' ),
-		'payment-methods' => __( 'Saved cards and wallets', 'cartiva' ),
-		'edit-account'    => __( 'Name, email and password', 'cartiva' ),
+		'orders'              => __( 'Track, return or buy again', 'cartiva' ),
+		'cartiva-track-order' => __( 'Check where your parcel is', 'cartiva' ),
+		'downloads'           => __( 'Your digital products', 'cartiva' ),
+		'edit-address'        => __( 'Billing and shipping', 'cartiva' ),
+		'payment-methods'     => __( 'Saved cards and wallets', 'cartiva' ),
+		'edit-account'        => __( 'Name, email and password', 'cartiva' ),
 	);
 
 	$user_id = get_current_user_id();
@@ -164,14 +165,95 @@ function cartiva_wc_track_order_styles() {
 add_action( 'wp_enqueue_scripts', 'cartiva_wc_track_order_styles', 20 );
 
 /**
+ * The store's published "Track order" page, if it has one.
+ *
+ * Looks for the slugs track-order, order-tracking and track-your-order
+ * (filterable with cartiva_track_order_page_slugs).
+ *
+ * @return WP_Post|null
+ */
+function cartiva_wc_track_order_page() {
+	static $found = false;
+	if ( false !== $found ) {
+		return $found;
+	}
+	$found = null;
+	$slugs = (array) apply_filters( 'cartiva_track_order_page_slugs', array( 'track-order', 'order-tracking', 'track-your-order' ) );
+	foreach ( $slugs as $slug ) {
+		$page = get_page_by_path( sanitize_title( $slug ) );
+		if ( $page instanceof WP_Post && 'publish' === $page->post_status ) {
+			$found = $page;
+			break;
+		}
+	}
+	return $found;
+}
+
+/**
  * URL of the "Track order" page if the store has one, otherwise My Account.
  *
  * @return string
  */
 function cartiva_wc_track_order_url() {
-	$page = get_page_by_path( 'track-order' );
-	if ( $page instanceof WP_Post && 'publish' === $page->post_status ) {
+	$page = cartiva_wc_track_order_page();
+	if ( $page ) {
 		return get_permalink( $page );
 	}
 	return wc_get_page_permalink( 'myaccount' );
 }
+
+/**
+ * Add "Track order" to the My Account menu, right after Orders.
+ *
+ * This is a plain link to the Track order page (or to the Orders list when
+ * the store has no such page); no new account endpoint is registered.
+ *
+ * @param array $items Menu items.
+ * @return array
+ */
+function cartiva_wc_account_menu_track_order( $items ) {
+	if ( ! cartiva_get_setting( 'account_track_link' ) || isset( $items['cartiva-track-order'] ) ) {
+		return $items;
+	}
+	$label = __( 'Track order', 'cartiva' );
+	$new   = array();
+	$added = false;
+	foreach ( $items as $key => $item ) {
+		$new[ $key ] = $item;
+		if ( 'orders' === $key ) {
+			$new['cartiva-track-order'] = $label;
+			$added                      = true;
+		}
+	}
+	if ( ! $added ) {
+		$logout = isset( $new['customer-logout'] ) ? $new['customer-logout'] : null;
+		unset( $new['customer-logout'] );
+		$new['cartiva-track-order'] = $label;
+		if ( null !== $logout ) {
+			$new['customer-logout'] = $logout;
+		}
+	}
+	return $new;
+}
+add_filter( 'woocommerce_account_menu_items', 'cartiva_wc_account_menu_track_order', 20 );
+
+/**
+ * Point the "Track order" menu item to the right place.
+ *
+ * @param string $url      Endpoint URL.
+ * @param string $endpoint Endpoint key.
+ * @return string
+ */
+function cartiva_wc_track_order_endpoint_url( $url, $endpoint ) {
+	if ( 'cartiva-track-order' !== $endpoint ) {
+		return $url;
+	}
+	if ( cartiva_wc_track_order_page() ) {
+		return cartiva_wc_track_order_url();
+	}
+	remove_filter( 'woocommerce_get_endpoint_url', 'cartiva_wc_track_order_endpoint_url', 10 );
+	$orders = wc_get_account_endpoint_url( 'orders' );
+	add_filter( 'woocommerce_get_endpoint_url', 'cartiva_wc_track_order_endpoint_url', 10, 2 );
+	return $orders;
+}
+add_filter( 'woocommerce_get_endpoint_url', 'cartiva_wc_track_order_endpoint_url', 10, 2 );

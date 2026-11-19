@@ -51,7 +51,7 @@ Go to Appearance > Editor > Templates > Product Catalog and replace the template
 
 = Where are the theme settings? =
 
-Go to Appearance > Cartiva Settings for layout and behavior options: corner style, button shape, layout width, hover animations, sticky header, header shadow, top bar, live search, product card style, product image shape, add to cart button visibility, sale badge, sticky product details, the delivery and returns list, and the My Account profile card and tiles. Colors, fonts and spacing are edited in Appearance > Editor > Styles. All settings are saved in a single option, cartiva_settings, and can be reset with one click.
+Go to Appearance > Cartiva Settings for layout and behavior options: corner style, button shape, layout width, hover animations, sticky header, header shadow, top bar, live search, product card style, product image shape, add to cart button visibility, sale badge, sticky product details, the delivery and returns list, and the My Account profile card and tiles, and the "Track order" link in the account menu. Colors, fonts and spacing are edited in Appearance > Editor > Styles. All settings are saved in a single option, cartiva_settings, and can be reset with one click.
 
 = How do I edit the hero slider? =
 

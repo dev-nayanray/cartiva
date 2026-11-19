@@ -186,6 +186,12 @@ function cartiva_settings_schema() {
 					'default' => true,
 					'text'    => __( 'Show quick links to orders, addresses and account details on the dashboard', 'cartiva' ),
 				),
+				'account_track_link' => array(
+					'label'   => __( 'Track order link', 'cartiva' ),
+					'type'    => 'checkbox',
+					'default' => true,
+					'text'    => __( 'Add "Track order" to the account menu (links to your Track order page, or to Orders if there is none)', 'cartiva' ),
+				),
 			),
 		),
 	);
@@ -223,6 +229,7 @@ function cartiva_settings_defaults() {
 			'trust_list'      => true,
 			'account_profile' => true,
 			'account_tiles'   => true,
+			'account_track_link' => true,
 		);
 	}
 	return $defaults;

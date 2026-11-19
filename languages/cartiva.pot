@@ -121,7 +121,7 @@ msgstr ""
 msgid "Contact"
 msgstr ""
 
-#: patterns/footer-dark.php:57 patterns/footer.php:57 inc/header.php:44
+#: patterns/footer-dark.php:57 patterns/footer.php:57 inc/woocommerce.php:218 inc/header.php:44
 msgid "Track order"
 msgstr ""
 
@@ -2273,39 +2273,47 @@ msgstr ""
 msgid "Show quick links to orders, addresses and account details on the dashboard"
 msgstr ""
 
-#: inc/settings.php:256
+#: inc/settings.php:190
+msgid "Track order link"
+msgstr ""
+
+#: inc/settings.php:193
+msgid "Add \"Track order\" to the account menu (links to your Track order page, or to Orders if there is none)"
+msgstr ""
+
+#: inc/settings.php:263
 msgid "Settings were reset to their defaults."
 msgstr ""
 
-#: inc/settings.php:387 inc/settings.php:388 inc/settings.php:430
+#: inc/settings.php:394 inc/settings.php:395 inc/settings.php:437
 msgid "Cartiva Settings"
 msgstr ""
 
-#: inc/settings.php:423
+#: inc/settings.php:430
 msgid "Colors & fonts"
 msgstr ""
 
-#: inc/settings.php:424
+#: inc/settings.php:431
 msgid "Header & footer designs"
 msgstr ""
 
-#: inc/settings.php:425
+#: inc/settings.php:432
 msgid "Templates"
 msgstr ""
 
-#: inc/settings.php:426
+#: inc/settings.php:433
 msgid "Pages"
 msgstr ""
 
-#: inc/settings.php:431
+#: inc/settings.php:438
 msgid "Layout and behavior options for your store. Everything visual that can be edited block by block lives in the Site Editor:"
 msgstr ""
 
-#: inc/settings.php:444
+#: inc/settings.php:451
 msgid "Save settings"
 msgstr ""
 
-#: inc/settings.php:445
+#: inc/settings.php:452
 msgid "Reset to defaults"
 msgstr ""
 
@@ -2314,27 +2322,31 @@ msgid "Track, return or buy again"
 msgstr ""
 
 #: inc/woocommerce.php:109
-msgid "Your digital products"
+msgid "Check where your parcel is"
 msgstr ""
 
 #: inc/woocommerce.php:110
-msgid "Billing and shipping"
+msgid "Your digital products"
 msgstr ""
 
 #: inc/woocommerce.php:111
-msgid "Saved cards and wallets"
+msgid "Billing and shipping"
 msgstr ""
 
 #: inc/woocommerce.php:112
+msgid "Saved cards and wallets"
+msgstr ""
+
+#: inc/woocommerce.php:113
 msgid "Name, email and password"
 msgstr ""
 
 #. translators: %s: number of orders.
-#: inc/woocommerce.php:137
+#: inc/woocommerce.php:138
 msgid "Continue shopping"
 msgstr ""
 
-#: inc/woocommerce.php:138
+#: inc/woocommerce.php:139
 msgid "See what is new in store"
 msgstr ""
 
