@@ -153,3 +153,37 @@
 	justify-content: flex-end;
 	margin-top: 1rem;
 }
+
+/* Compact product lists (Products: three lists) */
+.cartiva-list-heading {
+	margin-bottom: var(--wp--preset--spacing--30);
+	padding-bottom: .75rem;
+	border-bottom: 2px solid var(--wp--preset--color--contrast);
+}
+.cartiva-product-list .wc-block-product-template {
+	display: grid !important;
+	grid-template-columns: 1fr !important;
+	gap: 1rem !important;
+}
+.cartiva-product-list .wc-block-product { margin: 0; text-align: left; }
+.cartiva-mini-product { align-items: center; }
+.cartiva-mini-product .wc-block-components-product-image {
+	flex: 0 0 84px;
+	width: 84px !important;
+	margin: 0 !important;
+	border-radius: var(--wp--custom--radius--sm, 10px);
+	overflow: hidden;
+}
+.cartiva-mini-product .wc-block-components-product-image img { aspect-ratio: 1; object-fit: cover; }
+.cartiva-mini-product .wp-block-post-title,
+.cartiva-mini-product .wc-block-components-product-price,
+.cartiva-mini-product .wc-block-components-product-rating { margin: 0 !important; text-align: left; }
+.cartiva-mini-product .wc-block-components-product-rating__container { justify-content: flex-start; }
+
+/* Large two-column cards (Products: large cards) */
+.cartiva-products-large .wc-block-product > .wp-block-group { align-items: flex-start; }
+.cartiva-products-large .wc-block-product .wp-block-post-excerpt { margin-top: 0; }
+.cartiva-products-large .wc-block-components-product-image img { aspect-ratio: 4 / 3; object-fit: cover; }
+.cartiva-products-large .wc-block-product,
+.cartiva-products-large .wc-block-product .wp-block-post-title { text-align: left; }
+.cartiva-products-large .wc-block-components-product-button { align-items: flex-start; }

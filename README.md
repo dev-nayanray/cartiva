@@ -98,11 +98,13 @@ All patterns are in **Appearance → Editor → Patterns** (or the block inserte
 |---|---|
 | **Header** (6) | Default · Centered logo · With category bar · No top bar · Large search bar · Menu left, logo center |
 | **Footer** (5) | Default · Dark · Centered · With newsletter · Simple |
-| **Cartiva: Hero** (6) | **Slider** · Full-screen image · Split with image · Centered with image row · Image mosaic · Big sale |
-| **Cartiva: Products** (7) | New arrivals · Best sellers · On sale · Featured · Top rated · **Carousel** · Banner with grid |
-| **Cartiva: Categories** (5) | Image grid · Circles · Image cards · Mosaic · Your store categories (automatic) |
-| **Cartiva: Blog** (5) | Latest posts cards · Featured post with list · List with thumbnails · Minimal list · Archive grid |
+| **Cartiva: Hero** (10) | **Slider** · **Boxed slider** · Full-screen image · Split with image · Centered with image row · Image mosaic · Big sale · Two banners · Product spotlight · Minimal type |
+| **Cartiva: Products** (10) | New arrivals · Best sellers · On sale · Featured · Top rated · **Carousel** · Banner with grid · Three lists · Deal of the week · Large cards |
+| **Cartiva: Categories** (8) | Image grid · Circles · Image cards · Mosaic · Your store categories (automatic) · List with image · Pills · **Carousel** |
+| **Cartiva: Blog** (8) | Latest posts cards · Featured post with list · List with thumbnails · Minimal list · Archive grid · **Post carousel** · Image overlay cards · Magazine grid |
 | **Cartiva: Newsletter** (5) | Centered · Split with image · Dark band · Card with perks · Inline bar |
+| **Cartiva: About** (6) | Our story · Numbers band · Values · Meet the team · Timeline · Mission statement |
+| **Cartiva: Contact** (5) | Contact cards · Details with image · Store locations · Support band · Questions and contact |
 | **Cartiva: Pages** | Contact · About · FAQ · Shipping & returns · Help center · Terms · Track order |
 | **Cartiva: Starter homepages** | Fashion · Electronics · Grocery · Furniture |
 | **Cartiva: Shop / Sections** | Trust badges · Split promo · Promo banner · Brands · Lookbook · FAQ · Shop with filter sidebar |
@@ -116,6 +118,8 @@ All patterns are in **Appearance → Editor → Patterns** (or the block inserte
 - In the editor, slides stay stacked for easy editing.
 
 > Product patterns require WooCommerce and appear only when it is active.
+>
+> Any Group of cards or Query Loop becomes a swipeable carousel when you add the class `cartiva-card-carousel` (plus `is-cols-3` or `is-cols-5` to change the cards per view).
 
 ## Project structure
 

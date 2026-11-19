@@ -45,7 +45,7 @@ msgstr ""
 msgid "Wooden sofa on a warm background"
 msgstr ""
 
-#: patterns/starter-furniture.php:27 patterns/starter-fashion.php:27 patterns/category-auto.php:21 patterns/category-circles.php:25 patterns/starter-electronics.php:27 patterns/category-grid.php:25 patterns/starter-grocery.php:27
+#: patterns/starter-furniture.php:27 patterns/starter-fashion.php:27 patterns/category-auto.php:21 patterns/category-circles.php:25 patterns/starter-electronics.php:27 patterns/category-grid.php:25 patterns/starter-grocery.php:27 patterns/category-carousel.php:28
 msgid "Shop by category"
 msgstr ""
 
@@ -65,7 +65,7 @@ msgstr ""
 msgid "Decor"
 msgstr ""
 
-#: patterns/starter-furniture.php:39 patterns/hero-centered.php:18 patterns/footer-dark.php:41 patterns/footer.php:41 patterns/new-arrivals.php:20
+#: patterns/starter-furniture.php:39 patterns/hero-centered.php:18 patterns/footer-dark.php:41 patterns/products-lists.php:25 patterns/footer.php:41 patterns/new-arrivals.php:20
 msgid "New arrivals"
 msgstr ""
 
@@ -97,15 +97,15 @@ msgstr ""
 msgid "Shop"
 msgstr ""
 
-#: patterns/footer-dark.php:42 patterns/footer.php:42 patterns/best-sellers.php:19
+#: patterns/footer-dark.php:42 patterns/products-lists.php:50 patterns/footer.php:42 patterns/best-sellers.php:19
 msgid "Best sellers"
 msgstr ""
 
-#: patterns/footer-dark.php:43 patterns/footer.php:43 inc/header.php:212
+#: patterns/footer-dark.php:43 patterns/category-pills.php:27 patterns/footer.php:43 patterns/hero-minimal.php:14 inc/header.php:212
 msgid "Sale"
 msgstr ""
 
-#: patterns/footer-dark.php:51 patterns/footer.php:51 patterns/page-faq.php:16
+#: patterns/footer-dark.php:51 patterns/footer.php:51 patterns/contact-faq.php:27 patterns/page-faq.php:16
 msgid "Help"
 msgstr ""
 
@@ -117,7 +117,7 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: patterns/footer-dark.php:56 patterns/page-terms.php:54 patterns/footer-centered.php:31 patterns/footer.php:56 patterns/page-contact.php:18 patterns/footer-simple.php:23
+#: patterns/footer-dark.php:56 patterns/page-terms.php:54 patterns/footer-centered.php:31 patterns/footer.php:56 patterns/page-contact.php:18 patterns/footer-simple.php:23 patterns/contact-cards.php:17
 msgid "Contact"
 msgstr ""
 
@@ -163,15 +163,15 @@ msgstr ""
 msgid "Founded"
 msgstr ""
 
-#: patterns/page-about.php:19
+#: patterns/page-about.php:19 patterns/about-stats.php:15
 msgid "Happy customers"
 msgstr ""
 
-#: patterns/page-about.php:20
+#: patterns/page-about.php:20 patterns/about-stats.php:16
 msgid "Products designed in-house"
 msgstr ""
 
-#: patterns/page-about.php:21
+#: patterns/page-about.php:21 patterns/about-stats.php:17
 msgid "Average review score"
 msgstr ""
 
@@ -191,7 +191,7 @@ msgstr ""
 msgid "Our studio"
 msgstr ""
 
-#: patterns/page-about.php:40
+#: patterns/page-about.php:40 patterns/about-story.php:28
 msgid "Our story"
 msgstr ""
 
@@ -207,19 +207,19 @@ msgstr ""
 msgid "Thank you for being part of the story."
 msgstr ""
 
-#: patterns/page-about.php:81
+#: patterns/page-about.php:81 patterns/about-values.php:20
 msgid "What we stand for"
 msgstr ""
 
-#: patterns/page-about.php:86
+#: patterns/page-about.php:86 patterns/about-values.php:25
 msgid "Quality first"
 msgstr ""
 
-#: patterns/page-about.php:86
+#: patterns/page-about.php:86 patterns/about-values.php:25
 msgid "Durable materials and careful finishing, tested by our team before anything goes on sale."
 msgstr ""
 
-#: patterns/page-about.php:87
+#: patterns/page-about.php:87 patterns/about-values.php:26
 msgid "Kinder to the planet"
 msgstr ""
 
@@ -227,7 +227,7 @@ msgstr ""
 msgid "Recycled packaging, carbon-neutral delivery and products designed to be repaired, not replaced."
 msgstr ""
 
-#: patterns/page-about.php:88
+#: patterns/page-about.php:88 patterns/about-values.php:27
 msgid "People who care"
 msgstr ""
 
@@ -243,8 +243,60 @@ msgstr ""
 msgid "Browse the full collection, with free shipping on orders over $50."
 msgstr ""
 
-#: patterns/page-about.php:95 patterns/hero.php:33 inc/pattern-helpers.php:150 inc/pattern-helpers.php:494
+#: patterns/page-about.php:95 patterns/hero-spotlight.php:52 patterns/hero.php:33 inc/pattern-helpers.php:150 inc/pattern-helpers.php:494
 msgid "Shop now"
+msgstr ""
+
+#: patterns/category-pills.php:15 patterns/starter-fashion.php:39 patterns/hero-minimal.php:14 inc/header.php:206
+msgid "New in"
+msgstr ""
+
+#: patterns/category-pills.php:16 patterns/category-list.php:15
+msgid "Clothing"
+msgstr ""
+
+#: patterns/category-pills.php:17 patterns/starter-fashion.php:31 patterns/category-list.php:16
+msgid "Shoes"
+msgstr ""
+
+#: patterns/category-pills.php:18
+msgid "Bags"
+msgstr ""
+
+#: patterns/category-pills.php:19
+msgid "Jewelry"
+msgstr ""
+
+#: patterns/category-pills.php:20 patterns/hero-banners.php:31 patterns/hero-slider-boxed.php:24 patterns/category-circles.php:14 patterns/hero-minimal.php:14 patterns/category-carousel.php:16 patterns/category-cards.php:16 patterns/category-mosaic.php:15
+msgid "Home"
+msgstr ""
+
+#: patterns/category-pills.php:21
+msgid "Kitchen"
+msgstr ""
+
+#: patterns/category-pills.php:22 patterns/category-list.php:19 inc/header.php:211
+msgid "Beauty"
+msgstr ""
+
+#: patterns/category-pills.php:23 patterns/category-circles.php:16 patterns/category-carousel.php:18 patterns/category-mosaic.php:16 inc/header.php:210
+msgid "Tech"
+msgstr ""
+
+#: patterns/category-pills.php:24
+msgid "Outdoor"
+msgstr ""
+
+#: patterns/category-pills.php:25
+msgid "Kids"
+msgstr ""
+
+#: patterns/category-pills.php:26 patterns/category-list.php:20
+msgid "Gifts"
+msgstr ""
+
+#: patterns/category-pills.php:33
+msgid "Popular right now"
 msgstr ""
 
 #: patterns/brands.php:18
@@ -324,7 +376,7 @@ msgstr ""
 msgid "Effortless pieces in natural fabrics, designed to mix, match and last for seasons."
 msgstr ""
 
-#: patterns/starter-fashion.php:19 patterns/products-banner.php:39 patterns/hero-slider.php:22 patterns/hero-mosaic.php:22
+#: patterns/starter-fashion.php:19 patterns/products-banner.php:39 patterns/hero-minimal.php:30 patterns/hero-slider.php:22 patterns/hero-mosaic.php:22
 msgid "Shop the collection"
 msgstr ""
 
@@ -332,24 +384,16 @@ msgstr ""
 msgid "Dress on a pink background"
 msgstr ""
 
-#: patterns/starter-fashion.php:29 patterns/category-cards.php:14 inc/header.php:207
+#: patterns/starter-fashion.php:29 patterns/hero-banners.php:22 patterns/hero-minimal.php:14 patterns/category-cards.php:14 inc/header.php:207
 msgid "Women"
 msgstr ""
 
-#: patterns/starter-fashion.php:30 patterns/category-cards.php:15 inc/header.php:208
+#: patterns/starter-fashion.php:30 patterns/hero-minimal.php:14 patterns/category-cards.php:15 inc/header.php:208
 msgid "Men"
 msgstr ""
 
-#: patterns/starter-fashion.php:31
-msgid "Shoes"
-msgstr ""
-
-#: patterns/starter-fashion.php:32 patterns/category-circles.php:19 patterns/starter-electronics.php:32 patterns/category-grid.php:15 patterns/category-mosaic.php:18
+#: patterns/starter-fashion.php:32 patterns/category-circles.php:19 patterns/starter-electronics.php:32 patterns/category-grid.php:15 patterns/category-carousel.php:21 patterns/category-mosaic.php:18
 msgid "Accessories"
-msgstr ""
-
-#: patterns/starter-fashion.php:39 inc/header.php:206
-msgid "New in"
 msgstr ""
 
 #: patterns/starter-fashion.php:50
@@ -384,7 +428,7 @@ msgstr ""
 msgid "We accept all major cards and popular digital wallets. Every payment is processed over an encrypted connection."
 msgstr ""
 
-#: patterns/faq.php:17
+#: patterns/faq.php:17 patterns/contact-faq.php:17
 msgid "Do you ship internationally?"
 msgstr ""
 
@@ -400,8 +444,48 @@ msgstr ""
 msgid "Encrypted payments · 30-day returns · Real human support"
 msgstr ""
 
+#: patterns/blog-carousel.php:21 patterns/blog-latest.php:20
+msgid "From the journal"
+msgstr ""
+
+#: patterns/blog-carousel.php:24 patterns/blog-minimal.php:23 patterns/blog-overlay.php:23 patterns/blog-magazine.php:23 patterns/blog-list.php:23 patterns/blog-featured.php:23 patterns/blog-latest.php:23
+msgid "All articles →"
+msgstr ""
+
+#: patterns/blog-carousel.php:38
+msgid "No posts yet."
+msgstr ""
+
+#: patterns/hero-banners.php:22
+msgid "Light layers for warm days"
+msgstr ""
+
+#: patterns/hero-banners.php:22
+msgid "Shop women"
+msgstr ""
+
+#: patterns/hero-banners.php:31
+msgid "Pieces made to stay"
+msgstr ""
+
+#: patterns/hero-banners.php:31 patterns/split-promo.php:14
+msgid "Shop home"
+msgstr ""
+
 #: patterns/product-carousel.php:19
 msgid "Trending now"
+msgstr ""
+
+#: patterns/about-values.php:17
+msgid "Our values"
+msgstr ""
+
+#: patterns/about-values.php:26
+msgid "Recycled packaging, carbon-neutral delivery and products designed to be repaired."
+msgstr ""
+
+#: patterns/about-values.php:27
+msgid "A real support team that knows every product and is happy to help."
 msgstr ""
 
 #: patterns/footer-centered.php:22
@@ -411,6 +495,42 @@ msgstr ""
 #. translators: 1: Current year, 2: Site name, 3: WordPress link.
 #: patterns/footer-centered.php:49
 msgid "© %1$s %2$s. Designed with %3$s"
+msgstr ""
+
+#: patterns/category-list.php:15 patterns/category-carousel.php:17
+msgid "128 products"
+msgstr ""
+
+#: patterns/category-list.php:16 patterns/category-carousel.php:18
+msgid "64 products"
+msgstr ""
+
+#: patterns/category-list.php:17
+msgid "Bags & accessories"
+msgstr ""
+
+#: patterns/category-list.php:17 patterns/category-carousel.php:21
+msgid "92 products"
+msgstr ""
+
+#: patterns/category-list.php:18 patterns/hero-slider.php:25
+msgid "Home & living"
+msgstr ""
+
+#: patterns/category-list.php:18 patterns/category-carousel.php:16
+msgid "150 products"
+msgstr ""
+
+#: patterns/category-list.php:19 patterns/category-carousel.php:19
+msgid "47 products"
+msgstr ""
+
+#: patterns/category-list.php:20
+msgid "36 products"
+msgstr ""
+
+#: patterns/category-list.php:37
+msgid "Find what you need"
 msgstr ""
 
 #: patterns/hidden-product-trust.php:15
@@ -439,10 +559,6 @@ msgstr ""
 
 #: patterns/blog-minimal.php:20
 msgid "Notes from the team"
-msgstr ""
-
-#: patterns/blog-minimal.php:23 patterns/blog-list.php:23 patterns/blog-featured.php:23 patterns/blog-latest.php:23
-msgid "All articles →"
 msgstr ""
 
 #: patterns/lookbook.php:14
@@ -509,6 +625,46 @@ msgstr ""
 msgid "Friendly humans, 7 days a week."
 msgstr ""
 
+#: patterns/about-timeline.php:14
+msgid "The first workshop"
+msgstr ""
+
+#: patterns/about-timeline.php:14
+msgid "We opened a tiny studio and sold our first ten products to friends."
+msgstr ""
+
+#: patterns/about-timeline.php:15
+msgid "Going online"
+msgstr ""
+
+#: patterns/about-timeline.php:15
+msgid "Our online store launched and orders started arriving from all over the country."
+msgstr ""
+
+#: patterns/about-timeline.php:16
+msgid "A growing team"
+msgstr ""
+
+#: patterns/about-timeline.php:16
+msgid "We moved into a bigger studio and welcomed designers, makers and support staff."
+msgstr ""
+
+#: patterns/about-timeline.php:17
+msgid "Today"
+msgstr ""
+
+#: patterns/about-timeline.php:17
+msgid "More than 120 products, 50,000 happy customers and the same simple idea."
+msgstr ""
+
+#: patterns/about-timeline.php:23
+msgid "Our journey"
+msgstr ""
+
+#: patterns/about-timeline.php:26
+msgid "How we got here"
+msgstr ""
+
 #: patterns/template-shop-sidebar.php:30 patterns/template-shop-sidebar.php:33
 msgid "Active filters"
 msgstr ""
@@ -533,6 +689,54 @@ msgstr ""
 msgid "No products were found matching your selection."
 msgstr ""
 
+#: patterns/hero-slider-boxed.php:21
+msgid "Just landed"
+msgstr ""
+
+#: patterns/hero-slider-boxed.php:21
+msgid "The new season edit is here."
+msgstr ""
+
+#: patterns/hero-slider-boxed.php:21
+msgid "Fresh colors, easy shapes and fabrics that feel good all day."
+msgstr ""
+
+#: patterns/hero-slider-boxed.php:21 patterns/hero-slider.php:19
+msgid "Shop new in"
+msgstr ""
+
+#: patterns/hero-slider-boxed.php:24
+msgid "Make every room feel calm."
+msgstr ""
+
+#: patterns/hero-slider-boxed.php:24
+msgid "Solid wood, soft linen and handmade ceramics."
+msgstr ""
+
+#: patterns/hero-slider-boxed.php:24 patterns/hero-slider.php:25
+msgid "Explore home"
+msgstr ""
+
+#: patterns/hero-slider-boxed.php:27
+msgid "Members"
+msgstr ""
+
+#: patterns/hero-slider-boxed.php:27
+msgid "Free delivery on every order."
+msgstr ""
+
+#: patterns/hero-slider-boxed.php:27
+msgid "Create an account and save on shipping, every time."
+msgstr ""
+
+#: patterns/hero-slider-boxed.php:27
+msgid "Join now"
+msgstr ""
+
+#: patterns/products-lists.php:75
+msgid "On sale"
+msgstr ""
+
 #: patterns/hero-sale.php:22
 msgid "-50%"
 msgstr ""
@@ -551,6 +755,10 @@ msgstr ""
 
 #: patterns/hero-sale.php:40 patterns/promo-banner.php:31
 msgid "Shop the sale"
+msgstr ""
+
+#: patterns/blog-overlay.php:20
+msgid "Read & get inspired"
 msgstr ""
 
 #: patterns/hidden-404.php:19
@@ -708,6 +916,10 @@ msgstr ""
 msgid "Track your order"
 msgstr ""
 
+#: patterns/blog-magazine.php:20
+msgid "The magazine"
+msgstr ""
+
 #: patterns/hero-cover.php:14
 msgid "Limited edition"
 msgstr ""
@@ -732,23 +944,15 @@ msgstr ""
 msgid "Updates automatically with your product categories and their images."
 msgstr ""
 
-#: patterns/category-circles.php:14 patterns/category-cards.php:16 patterns/category-mosaic.php:15
-msgid "Home"
-msgstr ""
-
-#: patterns/category-circles.php:15
+#: patterns/category-circles.php:15 patterns/category-carousel.php:17
 msgid "Fashion"
 msgstr ""
 
-#: patterns/category-circles.php:16 patterns/category-mosaic.php:16 inc/header.php:210
-msgid "Tech"
-msgstr ""
-
-#: patterns/category-circles.php:17 patterns/category-grid.php:17 patterns/category-mosaic.php:17
+#: patterns/category-circles.php:17 patterns/category-grid.php:17 patterns/category-carousel.php:19 patterns/category-mosaic.php:17
 msgid "Wellness"
 msgstr ""
 
-#: patterns/category-circles.php:18
+#: patterns/category-circles.php:18 patterns/category-carousel.php:20
 msgid "Grocery"
 msgstr ""
 
@@ -756,7 +960,7 @@ msgstr ""
 msgid "Just launched"
 msgstr ""
 
-#: patterns/starter-electronics.php:17
+#: patterns/starter-electronics.php:17 patterns/hero-spotlight.php:30
 msgid "Tech that keeps up with you."
 msgstr ""
 
@@ -812,31 +1016,31 @@ msgstr ""
 msgid "Questions about an order, a product or a partnership? Our team answers every message within one business day."
 msgstr ""
 
-#: patterns/page-contact.php:25
+#: patterns/page-contact.php:25 patterns/contact-cards.php:25
 msgid "Email us"
 msgstr ""
 
-#: patterns/page-contact.php:25
+#: patterns/page-contact.php:25 patterns/contact-cards.php:25 patterns/contact-split.php:14
 msgid "hello@example.com"
 msgstr ""
 
-#: patterns/page-contact.php:25
+#: patterns/page-contact.php:25 patterns/contact-cards.php:25
 msgid "Send an email →"
 msgstr ""
 
-#: patterns/page-contact.php:26
+#: patterns/page-contact.php:26 patterns/contact-support.php:37 patterns/contact-cards.php:26
 msgid "Call us"
 msgstr ""
 
-#: patterns/page-contact.php:26
+#: patterns/page-contact.php:26 patterns/contact-cards.php:26
 msgid "+1 (555) 010-2030 · Mon–Fri, 9am–6pm"
 msgstr ""
 
-#: patterns/page-contact.php:26
+#: patterns/page-contact.php:26 patterns/contact-cards.php:26
 msgid "Call now →"
 msgstr ""
 
-#: patterns/page-contact.php:27
+#: patterns/page-contact.php:27 patterns/contact-cards.php:27
 msgid "Visit the studio"
 msgstr ""
 
@@ -844,15 +1048,15 @@ msgstr ""
 msgid "12 Market Street, Springfield · Sat 10am–4pm"
 msgstr ""
 
-#: patterns/page-contact.php:28
+#: patterns/page-contact.php:28 patterns/contact-cards.php:28
 msgid "Order help"
 msgstr ""
 
-#: patterns/page-contact.php:28
+#: patterns/page-contact.php:28 patterns/contact-cards.php:28
 msgid "Track an order, start a return or change an address."
 msgstr ""
 
-#: patterns/page-contact.php:28
+#: patterns/page-contact.php:28 patterns/contact-cards.php:28
 msgid "Track your order →"
 msgstr ""
 
@@ -912,7 +1116,7 @@ msgstr ""
 msgid "Quick answers"
 msgstr ""
 
-#: patterns/page-contact.php:91 patterns/page-faq.php:32
+#: patterns/page-contact.php:91 patterns/contact-faq.php:14 patterns/page-faq.php:32
 msgid "How long does delivery take?"
 msgstr ""
 
@@ -920,7 +1124,7 @@ msgstr ""
 msgid "Most orders arrive in 3–5 business days."
 msgstr ""
 
-#: patterns/page-contact.php:98
+#: patterns/page-contact.php:98 patterns/contact-faq.php:15
 msgid "Can I change my order?"
 msgstr ""
 
@@ -938,10 +1142,6 @@ msgstr ""
 
 #: patterns/split-promo.php:14
 msgid "Warm textures for cosy spaces."
-msgstr ""
-
-#: patterns/split-promo.php:14
-msgid "Shop home"
 msgstr ""
 
 #: patterns/split-promo.php:15
@@ -968,7 +1168,7 @@ msgstr ""
 msgid "Tech & Gadgets"
 msgstr ""
 
-#: patterns/category-grid.php:28 inc/pattern-helpers.php:109
+#: patterns/category-grid.php:28 patterns/products-large.php:27 inc/pattern-helpers.php:109
 msgid "View all"
 msgstr ""
 
@@ -990,6 +1190,38 @@ msgstr ""
 
 #: patterns/checkout-header.php:31
 msgid "← Back to cart"
+msgstr ""
+
+#: patterns/contact-faq.php:14
+msgid "Most orders arrive within 3–5 business days."
+msgstr ""
+
+#: patterns/contact-faq.php:15
+msgid "Yes, until it ships. Contact us with your order number as soon as possible."
+msgstr ""
+
+#: patterns/contact-faq.php:16
+msgid "How do returns work?"
+msgstr ""
+
+#: patterns/contact-faq.php:16
+msgid "Return unused items within 30 days for a full refund."
+msgstr ""
+
+#: patterns/contact-faq.php:17
+msgid "Yes, to most countries. Costs and times are shown at checkout."
+msgstr ""
+
+#: patterns/contact-faq.php:30
+msgid "Questions? Start here."
+msgstr ""
+
+#: patterns/contact-faq.php:33
+msgid "Quick answers to the questions we hear most. Still stuck? Our team is one message away."
+msgstr ""
+
+#: patterns/contact-faq.php:38 patterns/page-help-center.php:30 patterns/page-help-center.php:37 patterns/page-faq.php:55 inc/header.php:38
+msgid "Contact us"
 msgstr ""
 
 #: patterns/template-single-product.php:38
@@ -1076,10 +1308,6 @@ msgstr ""
 msgid "Read the FAQ →"
 msgstr ""
 
-#: patterns/page-help-center.php:30 patterns/page-help-center.php:37 patterns/page-faq.php:55 inc/header.php:38
-msgid "Contact us"
-msgstr ""
-
 #: patterns/page-help-center.php:30
 msgid "Email, phone and opening hours."
 msgstr ""
@@ -1094,6 +1322,74 @@ msgstr ""
 
 #: patterns/page-help-center.php:37
 msgid "Send us a message and we will get back to you within one business day."
+msgstr ""
+
+#: patterns/contact-locations.php:14
+msgid "Springfield"
+msgstr ""
+
+#: patterns/contact-locations.php:14
+msgid "12 Market Street"
+msgstr ""
+
+#: patterns/contact-locations.php:14
+msgid "Mon–Sat 10:00–18:00"
+msgstr ""
+
+#: patterns/contact-locations.php:15
+msgid "Riverside"
+msgstr ""
+
+#: patterns/contact-locations.php:15
+msgid "48 Harbor Road"
+msgstr ""
+
+#: patterns/contact-locations.php:15
+msgid "Mon–Sat 10:00–19:00"
+msgstr ""
+
+#: patterns/contact-locations.php:16
+msgid "Hillcrest"
+msgstr ""
+
+#: patterns/contact-locations.php:16
+msgid "7 Garden Lane"
+msgstr ""
+
+#: patterns/contact-locations.php:16
+msgid "Tue–Sun 11:00–17:00"
+msgstr ""
+
+#: patterns/contact-locations.php:22
+msgid "Locations"
+msgstr ""
+
+#: patterns/contact-locations.php:25
+msgid "Visit our stores"
+msgstr ""
+
+#: patterns/hero-spotlight.php:15
+msgid "All-day battery life"
+msgstr ""
+
+#: patterns/hero-spotlight.php:16
+msgid "Fast wireless charging"
+msgstr ""
+
+#: patterns/hero-spotlight.php:17
+msgid "Free 2-year warranty"
+msgstr ""
+
+#: patterns/hero-spotlight.php:27
+msgid "New launch"
+msgstr ""
+
+#: patterns/hero-spotlight.php:33
+msgid "Our thinnest, lightest devices yet, built for work, play and everything in between."
+msgstr ""
+
+#: patterns/hero-spotlight.php:47
+msgid "$499"
 msgstr ""
 
 #: patterns/starter-grocery.php:16
@@ -1136,11 +1432,27 @@ msgstr ""
 msgid "Customer favourites"
 msgstr ""
 
+#: patterns/hero-minimal.php:19
+msgid "Spring / Summer"
+msgstr ""
+
+#: patterns/hero-minimal.php:22
+msgid "Less, but better."
+msgstr ""
+
+#: patterns/hero-minimal.php:25
+msgid "A small collection of things we love, made well and priced fairly."
+msgstr ""
+
+#: patterns/about-stats.php:14
+msgid "Founded in a small studio"
+msgstr ""
+
 #: patterns/blog-list.php:20
 msgid "Latest articles"
 msgstr ""
 
-#: patterns/featured-products.php:19
+#: patterns/featured-products.php:19 patterns/products-large.php:24
 msgid "Featured picks"
 msgstr ""
 
@@ -1154,6 +1466,22 @@ msgstr ""
 
 #: patterns/blog-featured.php:20
 msgid "Stories & guides"
+msgstr ""
+
+#: patterns/contact-support.php:21
+msgid "Support"
+msgstr ""
+
+#: patterns/contact-support.php:24
+msgid "Need a hand? We are here."
+msgstr ""
+
+#: patterns/contact-support.php:27
+msgid "Real people, quick answers: we reply within one business day."
+msgstr ""
+
+#: patterns/contact-support.php:34
+msgid "Email support"
 msgstr ""
 
 #: patterns/page-track-order.php:18
@@ -1200,10 +1528,6 @@ msgstr ""
 msgid "Quality products at honest prices, with free returns on every order."
 msgstr ""
 
-#: patterns/hero-slider.php:19
-msgid "Shop new in"
-msgstr ""
-
 #: patterns/hero-slider.php:19 patterns/hero.php:36
 msgid "Browse categories"
 msgstr ""
@@ -1221,10 +1545,6 @@ msgid "Natural fabrics and relaxed shapes in warm, easy colors."
 msgstr ""
 
 #: patterns/hero-slider.php:25
-msgid "Home & living"
-msgstr ""
-
-#: patterns/hero-slider.php:25
 msgid "Made for the way you live."
 msgstr ""
 
@@ -1233,15 +1553,7 @@ msgid "Solid wood furniture and handmade decor, delivered free."
 msgstr ""
 
 #: patterns/hero-slider.php:25
-msgid "Explore home"
-msgstr ""
-
-#: patterns/hero-slider.php:25
 msgid "See the lookbook"
-msgstr ""
-
-#: patterns/blog-latest.php:20
-msgid "From the journal"
 msgstr ""
 
 #: patterns/hero.php:22
@@ -1254,6 +1566,18 @@ msgstr ""
 
 #: patterns/hero.php:45
 msgid "Product arrangement on a soft background"
+msgstr ""
+
+#: patterns/category-carousel.php:20
+msgid "210 products"
+msgstr ""
+
+#: patterns/category-carousel.php:22
+msgid "Furniture"
+msgstr ""
+
+#: patterns/category-carousel.php:22
+msgid "58 products"
 msgstr ""
 
 #: patterns/category-cards.php:14
@@ -1272,12 +1596,60 @@ msgstr ""
 msgid "Shop the collections"
 msgstr ""
 
+#: patterns/about-team.php:15 patterns/about-story.php:40
+msgid "Alex Morgan"
+msgstr ""
+
+#: patterns/about-team.php:15
+msgid "Founder & CEO"
+msgstr ""
+
+#: patterns/about-team.php:16
+msgid "Jamie Rivera"
+msgstr ""
+
+#: patterns/about-team.php:16
+msgid "Head of Design"
+msgstr ""
+
+#: patterns/about-team.php:17
+msgid "Sam Kim"
+msgstr ""
+
+#: patterns/about-team.php:17
+msgid "Operations"
+msgstr ""
+
+#: patterns/about-team.php:18
+msgid "Taylor Patel"
+msgstr ""
+
+#: patterns/about-team.php:18
+msgid "Customer Care"
+msgstr ""
+
+#: patterns/about-team.php:24
+msgid "The people"
+msgstr ""
+
+#: patterns/about-team.php:27
+msgid "Meet the team"
+msgstr ""
+
 #: patterns/newsletter-inline.php:25
 msgid "Plus early access to sales. Unsubscribe any time."
 msgstr ""
 
 #: patterns/newsletter-inline.php:32
 msgid "Sign me up"
+msgstr ""
+
+#: patterns/contact-cards.php:20
+msgid "Get in touch"
+msgstr ""
+
+#: patterns/contact-cards.php:27 patterns/contact-split.php:16
+msgid "12 Market Street, Springfield"
 msgstr ""
 
 #: patterns/newsletter-split.php:29
@@ -1312,8 +1684,60 @@ msgstr ""
 msgid "Light layers, bold colors and the essentials you will reach for all season."
 msgstr ""
 
+#: patterns/product-deal.php:26
+msgid "Deal of the week"
+msgstr ""
+
+#: patterns/product-deal.php:29
+msgid "Up to 40% off our favorites"
+msgstr ""
+
+#: patterns/product-deal.php:32
+msgid "Hand-picked by our team and only at this price while stock lasts. New deals every Monday."
+msgstr ""
+
+#: patterns/product-deal.php:37
+msgid "See all deals"
+msgstr ""
+
 #: patterns/template-my-account.php:20
 msgid "Manage your orders, addresses and account details in one place."
+msgstr ""
+
+#: patterns/contact-split.php:14
+msgid "Email"
+msgstr ""
+
+#: patterns/contact-split.php:15
+msgid "Phone"
+msgstr ""
+
+#: patterns/contact-split.php:15
+msgid "+1 (555) 010-2030"
+msgstr ""
+
+#: patterns/contact-split.php:16
+msgid "Address"
+msgstr ""
+
+#: patterns/contact-split.php:17
+msgid "Hours"
+msgstr ""
+
+#: patterns/contact-split.php:17
+msgid "Mon–Fri 9:00–18:00 · Sat 10:00–16:00"
+msgstr ""
+
+#: patterns/contact-split.php:27
+msgid "Visit or write"
+msgstr ""
+
+#: patterns/contact-split.php:30
+msgid "Come say hello"
+msgstr ""
+
+#: patterns/contact-split.php:33
+msgid "Questions about an order, a product or a partnership? We answer every message within one business day."
 msgstr ""
 
 #: patterns/page-faq.php:16
@@ -1424,6 +1848,42 @@ msgstr ""
 msgid "Explore the store"
 msgstr ""
 
+#: patterns/about-mission.php:17
+msgid "Our mission"
+msgstr ""
+
+#: patterns/about-mission.php:20
+msgid "To make well-made, honest products easy to find, fair to buy and good to live with."
+msgstr ""
+
+#: patterns/about-mission.php:25
+msgid "Designed to last"
+msgstr ""
+
+#: patterns/about-mission.php:28
+msgid "Fairly priced"
+msgstr ""
+
+#: patterns/about-mission.php:31
+msgid "Responsibly made"
+msgstr ""
+
+#: patterns/about-story.php:31
+msgid "It started with one good idea."
+msgstr ""
+
+#: patterns/about-story.php:34
+msgid "We wanted everyday things that look beautiful, work well and last for years. We could not find them, so we started making them."
+msgstr ""
+
+#: patterns/about-story.php:37
+msgid "Today we are a small team of designers and makers working with trusted workshops. Every product is tested by us before it is sold to you, and we stand behind it long after."
+msgstr ""
+
+#: patterns/about-story.php:40
+msgid "Founder"
+msgstr ""
+
 #: functions.php:108
 msgid "Card"
 msgstr ""
@@ -1480,101 +1940,121 @@ msgstr ""
 msgid "Newsletter and sign-up sections."
 msgstr ""
 
-#: functions.php:165
+#: functions.php:152
+msgid "Cartiva: About"
+msgstr ""
+
+#: functions.php:152
+msgid "Brand story, numbers, values, team and timeline sections."
+msgstr ""
+
+#: functions.php:153
+msgid "Cartiva: Contact"
+msgstr ""
+
+#: functions.php:153
+msgid "Contact details, locations, hours and support sections."
+msgstr ""
+
+#: functions.php:167
 msgid "Cartiva: Shop"
 msgstr ""
 
-#: functions.php:166
+#: functions.php:168
 msgid "Store sections such as product grids, categories and promos."
 msgstr ""
 
-#: functions.php:172
+#: functions.php:174
 msgid "Cartiva: Starter homepages"
 msgstr ""
 
-#: functions.php:173
+#: functions.php:175
 msgid "Complete homepages for different kinds of stores."
 msgstr ""
 
-#: functions.php:179
+#: functions.php:181
 msgid "Cartiva: Pages"
 msgstr ""
 
-#: functions.php:180
+#: functions.php:182
 msgid "Complete page layouts: Contact, About, FAQ, Shipping & returns, Help center, Terms, Track order."
 msgstr ""
 
-#: functions.php:186
+#: functions.php:188
 msgid "Cartiva: Sections"
 msgstr ""
 
-#: functions.php:187
+#: functions.php:189
 msgid "General page sections."
 msgstr ""
 
-#: functions.php:244
+#: functions.php:246
 msgid "Search results"
 msgstr ""
 
-#: functions.php:245
+#: functions.php:247
 msgid "Searching…"
 msgstr ""
 
 #. translators: %s: Search query.
-#: functions.php:247
+#: functions.php:249
 msgid "No results for “%s”"
 msgstr ""
 
 #. translators: %s: Search query.
-#: functions.php:249
+#: functions.php:251
 msgid "See all results for “%s”"
 msgstr ""
 
-#: functions.php:250
+#: functions.php:252
 msgid "1 result found"
 msgstr ""
 
 #. translators: %d: Number of results.
-#: functions.php:252
+#: functions.php:254
 msgid "%d results found"
 msgstr ""
 
-#: functions.php:253
+#: functions.php:255
 msgid "Out of stock"
 msgstr ""
 
-#: functions.php:296
+#: functions.php:299
 msgid "carousel"
 msgstr ""
 
-#: functions.php:297
+#: functions.php:300
 msgid "slide"
 msgstr ""
 
 #. translators: 1: Slide number, 2: Number of slides.
-#: functions.php:299
+#: functions.php:302
 msgid "%1$s of %2$s"
 msgstr ""
 
-#: functions.php:300
+#: functions.php:303
 msgid "Previous"
 msgstr ""
 
-#: functions.php:301
+#: functions.php:304
 msgid "Next"
 msgstr ""
 
 #. translators: %s: Slide number.
-#: functions.php:303
+#: functions.php:306
 msgid "Go to slide %s"
 msgstr ""
 
-#: functions.php:304
+#: functions.php:307
 msgid "Featured"
 msgstr ""
 
-#: functions.php:305
+#: functions.php:308
 msgid "Products"
+msgstr ""
+
+#: functions.php:309
+msgid "Items"
 msgstr ""
 
 #: inc/settings.php:27
@@ -1874,9 +2354,5 @@ msgstr ""
 #: inc/header.php:112
 msgctxt "search placeholder"
 msgid "Search for products, brands and more…"
-msgstr ""
-
-#: inc/header.php:211
-msgid "Beauty"
 msgstr ""
 

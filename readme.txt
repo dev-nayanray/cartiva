@@ -17,7 +17,7 @@ Cartiva is a free, lightweight and modern WooCommerce block theme built entirely
 * Fast by default: a native system font stack, with optional bundled DM Sans and Lora fonts that load only when selected.
 * Per-block CSS: styles load only on pages where the block is used.
 * WooCommerce ready: shop, product, category, tag and product search templates built with WooCommerce blocks, plus a header with mini-cart and account icon.
-* 40+ patterns, organised in the pattern library: 6 headers, 5 footers, 6 hero sections (including a swipeable hero slider with arrows, dots and autoplay), 7 product sections (including a product carousel), 5 category layouts, 5 blog sections and 5 newsletter sections, plus page layouts and starter homepages.
+* 80+ patterns, organised in the pattern library: 6 headers, 5 footers, 10 hero sections (including full-width and boxed sliders with arrows, dots and autoplay), 10 product sections (including a product carousel and a deal of the week), 8 category layouts (including a category carousel), 8 blog sections (including a post carousel), 5 newsletter sections, 6 about sections and 5 contact sections, plus page layouts and starter homepages.
 * Style variations: Default, Midnight (dark), Sand and Fresh, plus three typography presets.
 * Starter homepages: Fashion, Electronics, Grocery and Furniture.
 * Shop layout with a filter sidebar and a distraction-free checkout.
@@ -56,6 +56,10 @@ Go to Appearance > Cartiva Settings for layout and behavior options: corner styl
 = How do I edit the hero slider? =
 
 Insert "Hero: slider" from Patterns > Cartiva: Hero. In the editor the slides are shown one under another so they are easy to edit; each slide is a Cover block, so you can change its image, text and buttons, duplicate it to add a slide, or delete it. On the site the slides become a swipeable slider with arrows, dots and autoplay. Autoplay pauses on hover and focus and is turned off for visitors who prefer reduced motion. Add the class "is-autoplay-off" to the slider group to disable autoplay.
+
+= How do I make a carousel? =
+
+The "Categories: carousel" and "Blog: post carousel" patterns become swipeable rows with arrows on the site. To turn any Group of cards or any Query Loop into a carousel, add the class "cartiva-card-carousel" under Advanced > Additional CSS class(es). Add "is-cols-3" or "is-cols-5" to change how many cards are visible.
 
 = How does the header live search work? =
 

@@ -226,6 +226,31 @@
 			} );
 		} );
 
+		// Card carousels: a Group whose children are cards, or a Query Loop.
+		document.querySelectorAll( '.cartiva-card-carousel' ).forEach( function ( el ) {
+			if ( el.classList.contains( 'is-cartiva-carousel-ready' ) ) {
+				return;
+			}
+			var loop = el.querySelector( '.wp-block-post-template' );
+			var root = el;
+			var track = loop || el;
+			if ( ! loop ) {
+				root = document.createElement( 'div' );
+				root.className = 'cartiva-card-carousel-wrap' + ( el.classList.contains( 'alignwide' ) ? ' alignwide' : '' );
+				el.parentNode.insertBefore( root, el );
+				root.appendChild( el );
+				el.classList.add( 'is-cartiva-carousel-ready' );
+			}
+			track.classList.add( 'cartiva-card-carousel__track' );
+			// eslint-disable-next-line no-new
+			new Carousel( root, track, {
+				dots: false,
+				loop: false,
+				autoplay: false,
+				label: i18n.items || 'Items',
+			} );
+		} );
+
 		document.querySelectorAll( '.cartiva-product-carousel' ).forEach( function ( el ) {
 			var track = el.querySelector( '.wc-block-product-template, .wp-block-woocommerce-product-template, ul' );
 			if ( ! track || el.classList.contains( 'is-cartiva-carousel-ready' ) ) {

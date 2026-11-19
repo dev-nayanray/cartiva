@@ -149,6 +149,8 @@ function cartiva_register_pattern_categories() {
 		'cartiva-categories' => array( __( 'Cartiva: Categories', 'cartiva' ), __( 'Ways to show your shop categories.', 'cartiva' ) ),
 		'cartiva-blog'       => array( __( 'Cartiva: Blog', 'cartiva' ), __( 'Blog and journal sections.', 'cartiva' ) ),
 		'cartiva-newsletter' => array( __( 'Cartiva: Newsletter', 'cartiva' ), __( 'Newsletter and sign-up sections.', 'cartiva' ) ),
+		'cartiva-about'      => array( __( 'Cartiva: About', 'cartiva' ), __( 'Brand story, numbers, values, team and timeline sections.', 'cartiva' ) ),
+		'cartiva-contact'    => array( __( 'Cartiva: Contact', 'cartiva' ), __( 'Contact details, locations, hours and support sections.', 'cartiva' ) ),
 	);
 	foreach ( $cartiva_categories as $cartiva_slug => $cartiva_category ) {
 		register_block_pattern_category(
@@ -274,7 +276,7 @@ add_action( 'wp_enqueue_scripts', 'cartiva_enqueue_live_search' );
  */
 function cartiva_maybe_enqueue_slider( $content, $block ) {
 	$class = isset( $block['attrs']['className'] ) ? $block['attrs']['className'] : '';
-	if ( false === strpos( $class, 'cartiva-slider' ) && false === strpos( $class, 'cartiva-product-carousel' ) ) {
+	if ( false === strpos( $class, 'cartiva-slider' ) && false === strpos( $class, 'cartiva-product-carousel' ) && false === strpos( $class, 'cartiva-card-carousel' ) ) {
 		return $content;
 	}
 	if ( ! wp_script_is( 'cartiva-slider', 'enqueued' ) ) {
@@ -304,6 +306,7 @@ function cartiva_maybe_enqueue_slider( $content, $block ) {
 						'goTo'     => __( 'Go to slide %s', 'cartiva' ),
 						'featured' => __( 'Featured', 'cartiva' ),
 						'products' => __( 'Products', 'cartiva' ),
+						'items'    => __( 'Items', 'cartiva' ),
 					),
 				)
 			) . ';',
@@ -314,3 +317,4 @@ function cartiva_maybe_enqueue_slider( $content, $block ) {
 }
 add_filter( 'render_block_core/group', 'cartiva_maybe_enqueue_slider', 10, 2 );
 add_filter( 'render_block_woocommerce/product-collection', 'cartiva_maybe_enqueue_slider', 10, 2 );
+add_filter( 'render_block_core/query', 'cartiva_maybe_enqueue_slider', 10, 2 );
