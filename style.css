@@ -7,7 +7,7 @@ Description: Cartiva is a lightweight, modern and fast WooCommerce block theme b
 Requires at least: 6.9
 Tested up to: 7.1
 Requires PHP: 7.4
-Version: 1.4.0
+Version: 1.5.0
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: cartiva
@@ -76,3 +76,303 @@ Tags: e-commerce, full-site-editing, block-patterns, block-styles, wide-blocks, 
 		animation-duration: .01ms !important;
 	}
 }
+
+/* ==========================================================================
+   Header & top bar
+   ========================================================================== */
+:root {
+	--cartiva-topbar-height: 40px;
+}
+
+/* The template part wrapper is the element that can stick (its parent is the page).
+   With a top bar present, it sticks at minus the bar height so only the main row stays. */
+header.wp-block-template-part:has(.cartiva-header) {
+	position: sticky;
+	top: var(--wp-admin--admin-bar--height, 0px);
+	z-index: 100;
+}
+header.wp-block-template-part:has(.cartiva-topbar) {
+	top: calc(var(--wp-admin--admin-bar--height, 0px) - var(--cartiva-topbar-height));
+}
+@media (max-width: 600px) {
+	/* The admin bar is not fixed on small screens. */
+	.admin-bar header.wp-block-template-part:has(.cartiva-header) { top: 0; }
+	.admin-bar header.wp-block-template-part:has(.cartiva-topbar) { top: calc(-1 * var(--cartiva-topbar-height)); }
+}
+
+/* Soft shadow once the page scrolls (CSS scroll-driven animation, progressive enhancement). */
+@supports (animation-timeline: scroll()) {
+	.cartiva-header {
+		animation: cartiva-header-raise linear both;
+		animation-timeline: scroll(root);
+		animation-range: 0 140px;
+	}
+	@keyframes cartiva-header-raise {
+		to {
+			box-shadow: 0 6px 24px rgba(17, 17, 17, .07);
+			border-bottom-color: transparent;
+		}
+	}
+}
+
+/* Top bar */
+.cartiva-topbar__inner {
+	min-height: var(--cartiva-topbar-height);
+	align-items: center;
+}
+.cartiva-topbar p {
+	margin: 0;
+	line-height: 1.3;
+}
+.cartiva-topbar__aside {
+	flex: 1 1 0;
+	opacity: .78;
+}
+.cartiva-topbar__message {
+	flex: 2 1 auto;
+	text-align: center;
+	letter-spacing: .01em;
+}
+.cartiva-topbar__links {
+	display: flex;
+	justify-content: flex-end;
+	gap: 1.25rem;
+}
+.cartiva-topbar a {
+	text-decoration: none;
+	text-underline-offset: .2em;
+}
+.cartiva-topbar a:hover { text-decoration: underline; }
+@media (max-width: 781px) {
+	.cartiva-topbar__aside { display: none; }
+	.cartiva-topbar__message { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+}
+
+/* Main row */
+.cartiva-header__row { min-height: 4.25rem; }
+.cartiva-header__brand { flex: 0 0 auto; }
+.cartiva-header__brand .wp-block-site-title a:hover { color: var(--wp--preset--color--primary); }
+.cartiva-header__actions { flex: 0 0 auto; }
+
+/* Navigation: animated underline */
+.cartiva-header__nav .wp-block-navigation__container > .wp-block-navigation-item > .wp-block-navigation-item__content {
+	position: relative;
+	padding-block: .4rem;
+}
+.cartiva-header__nav .wp-block-navigation__container > .wp-block-navigation-item > .wp-block-navigation-item__content::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 2px;
+	border-radius: 2px;
+	background: currentColor;
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform .25s ease;
+}
+.cartiva-header__nav .wp-block-navigation__container > .wp-block-navigation-item > .wp-block-navigation-item__content:is(:hover, :focus-visible, [aria-current="page"])::after {
+	transform: scaleX(1);
+}
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item__content::after { content: none; }
+
+/* Icon buttons: search, account, cart, menu */
+.cartiva-header :is(.wp-block-search__button, .wc-block-customer-account a, .wc-block-mini-cart__button) {
+	display: inline-grid;
+}
+/* Menu button: keep core's show/hide logic, only restyle it. */
+.cartiva-header :is(.wp-block-search__button, .wc-block-customer-account a, .wc-block-mini-cart__button, .wp-block-navigation__responsive-container-open) {
+	place-items: center;
+	min-width: 2.5rem;
+	height: 2.5rem;
+	margin: 0;
+	padding: 0 .45rem;
+	border: 0;
+	border-radius: 999px;
+	background: transparent;
+	color: var(--wp--preset--color--contrast);
+	box-shadow: none;
+	transition: background-color .15s ease;
+}
+.cartiva-header :is(.wp-block-search__button, .wc-block-customer-account a, .wc-block-mini-cart__button, .wp-block-navigation__responsive-container-open):hover {
+	background: var(--wp--preset--color--surface);
+	color: var(--wp--preset--color--contrast);
+}
+.cartiva-header :is(.wp-block-search__button, .wc-block-customer-account a, .wp-block-navigation__responsive-container-open) svg {
+	width: 24px;
+	height: 24px;
+	fill: currentColor;
+}
+.cartiva-header .wc-block-mini-cart__icon { width: 24px; height: 24px; }
+.cartiva-header .wc-block-customer-account__account-icon { width: 24px; height: 24px; }
+
+/* Expanding search field */
+.cartiva-header .wp-block-search__inside-wrapper {
+	border: 0;
+	padding: 0;
+	gap: .25rem;
+}
+.cartiva-header .wp-block-search__input {
+	height: 2.5rem;
+	padding: 0 1rem;
+	border: 1px solid var(--wp--preset--color--border);
+	border-radius: 999px;
+	background: var(--wp--preset--color--surface);
+	font-size: var(--wp--preset--font-size--small);
+}
+.cartiva-header .wp-block-search__input:focus {
+	outline: none;
+	border-color: var(--wp--preset--color--primary);
+	background: var(--wp--preset--color--base);
+}
+.cartiva-header .wp-block-search:not(.wp-block-search__searchfield-hidden) .wp-block-search__input { width: min(16rem, 42vw); }
+
+/* Mobile: menu button on the left, logo, then icons */
+@media (max-width: 599px) {
+	.cartiva-header__row { gap: .25rem !important; }
+	.cartiva-header__nav { order: -1; flex: 0 0 auto; }
+	.cartiva-header__brand { flex: 1 1 auto; min-width: 0; }
+	.cartiva-header__brand .wp-block-site-title { font-size: var(--wp--preset--font-size--medium); }
+	.cartiva-header__actions { gap: 0 !important; }
+	.cartiva-header .wp-block-search:not(.wp-block-search__searchfield-hidden) {
+		position: absolute;
+		left: var(--wp--preset--spacing--40);
+		right: var(--wp--preset--spacing--40);
+		z-index: 5;
+		background: var(--wp--preset--color--base);
+	}
+	.cartiva-header .wp-block-search:not(.wp-block-search__searchfield-hidden) .wp-block-search__input { width: 100%; }
+}
+
+/* Mobile overlay menu */
+.wp-block-navigation__responsive-container.is-menu-open {
+	padding: var(--wp--preset--spacing--50) var(--wp--preset--spacing--40);
+}
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content {
+	gap: 0;
+}
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__container {
+	width: 100%;
+	gap: 0 !important;
+}
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item {
+	width: 100%;
+	border-bottom: 1px solid var(--wp--preset--color--border);
+}
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item__content {
+	display: block;
+	width: 100%;
+	padding: .9rem 0 !important;
+	font-size: var(--wp--preset--font-size--large);
+	font-weight: 600;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+.cartiva-footer .wp-block-navigation-item__content:hover { color: var(--wp--preset--color--primary); }
+.cartiva-footer .wp-block-social-links .wp-social-link {
+	padding: .45rem;
+	border-radius: 999px;
+	background: var(--wp--preset--color--base);
+	transition: transform .15s ease;
+}
+.cartiva-footer .wp-block-social-links .wp-social-link:hover { transform: translateY(-2px); }
+.cartiva-payments {
+	display: flex;
+	flex-wrap: wrap;
+	gap: .4rem;
+}
+.cartiva-payments span {
+	display: inline-flex;
+	align-items: center;
+	height: 1.6rem;
+	padding: 0 .6rem;
+	border: 1px solid var(--wp--preset--color--border);
+	border-radius: 6px;
+	background: var(--wp--preset--color--base);
+	color: var(--wp--preset--color--contrast);
+	font-size: .72rem;
+	font-weight: 700;
+	letter-spacing: .02em;
+}
+
+@media (max-width: 781px) {
+	.cartiva-footer .wp-block-columns { flex-wrap: wrap !important; row-gap: var(--wp--preset--spacing--50); }
+	.cartiva-footer .wp-block-columns > .wp-block-column:not(:first-child) {
+		flex-basis: calc(33.333% - 1rem) !important;
+		flex-grow: 1;
+		min-width: 6rem;
+	}
+}
+
+/* ==========================================================================
+   Blog cards, pagination, 404
+   ========================================================================== */
+.wp-block-post-template .wp-block-post-featured-image {
+	overflow: hidden;
+}
+.wp-block-post-template .wp-block-post-featured-image img {
+	transition: transform .5s ease;
+}
+.wp-block-post-template li:hover .wp-block-post-featured-image img { transform: scale(1.04); }
+.wp-block-post-template .wp-block-post-title a:hover { color: var(--wp--preset--color--primary); }
+.cartiva-post-cats a {
+	display: inline-block;
+	padding: .2rem .65rem;
+	border-radius: 999px;
+	background: var(--wp--preset--color--surface);
+	color: var(--wp--preset--color--contrast);
+	font-weight: 600;
+	text-decoration: none;
+}
+.cartiva-post-cats a:hover { background: var(--wp--preset--color--contrast); color: var(--wp--preset--color--base); }
+.cartiva-post-cats .wp-block-post-terms__separator { display: none; }
+.cartiva-post-cats { display: flex; flex-wrap: wrap; gap: .35rem; }
+
+.wp-block-query-pagination { gap: .4rem; margin-top: var(--wp--preset--spacing--50); }
+.wp-block-query-pagination-numbers { display: flex; gap: .4rem; }
+.wp-block-query-pagination :is(.page-numbers, .wp-block-query-pagination-previous, .wp-block-query-pagination-next) {
+	display: inline-grid;
+	place-items: center;
+	min-width: 2.5rem;
+	height: 2.5rem;
+	padding: 0 .75rem;
+	border: 1px solid var(--wp--preset--color--border);
+	border-radius: var(--wp--custom--radius--sm);
+	color: var(--wp--preset--color--contrast);
+	font-size: var(--wp--preset--font-size--small);
+	font-weight: 600;
+	text-decoration: none;
+	transition: background-color .15s ease, border-color .15s ease;
+}
+.wp-block-query-pagination a:is(.page-numbers, .wp-block-query-pagination-previous, .wp-block-query-pagination-next):hover {
+	border-color: var(--wp--preset--color--contrast);
+}
+.wp-block-query-pagination .page-numbers.current {
+	border-color: var(--wp--preset--color--contrast);
+	background: var(--wp--preset--color--contrast);
+	color: var(--wp--preset--color--base);
+}
+.wp-block-query-pagination .page-numbers.dots { border-color: transparent; }
+
+.cartiva-404-code {
+	background: linear-gradient(135deg, var(--wp--preset--color--primary), var(--wp--preset--color--accent));
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent !important;
+	line-height: 1 !important;
+}
+.cartiva-404 .wp-block-search__inside-wrapper {
+	padding: .3rem;
+	border: 1px solid var(--wp--preset--color--border);
+	border-radius: 999px;
+	background: var(--wp--preset--color--base);
+}
+.cartiva-404 .wp-block-search__input {
+	border: 0;
+	padding: 0 1rem;
+	background: transparent;
+}
+.cartiva-404 .wp-block-search__button { border-radius: 999px; margin: 0; }

@@ -2,7 +2,7 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Cartiva 1.4.0\n"
+"Project-Id-Version: Cartiva 1.5.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/cartiva\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -105,7 +105,7 @@ msgstr ""
 msgid "Most loved"
 msgstr ""
 
-#: patterns/template-single.php:24 patterns/template-single-product.php:38
+#: patterns/template-single.php:24 patterns/template-single-product.php:39
 msgid "Tags: "
 msgstr ""
 
@@ -151,6 +151,30 @@ msgstr ""
 
 #: patterns/template-home.php:15 patterns/footer.php:69
 msgid "Blog"
+msgstr ""
+
+#: patterns/hidden-product-trust.php:15
+msgid "Free delivery"
+msgstr ""
+
+#: patterns/hidden-product-trust.php:15
+msgid "on orders over $50"
+msgstr ""
+
+#: patterns/hidden-product-trust.php:18
+msgid "30-day returns"
+msgstr ""
+
+#: patterns/hidden-product-trust.php:18
+msgid "no questions asked"
+msgstr ""
+
+#: patterns/hidden-product-trust.php:21 patterns/trust-badges.php:16
+msgid "Secure checkout"
+msgstr ""
+
+#: patterns/hidden-product-trust.php:21
+msgid "encrypted payments"
 msgstr ""
 
 #: patterns/lookbook.php:14
@@ -206,10 +230,6 @@ msgid "30 days, no questions asked."
 msgstr ""
 
 #: patterns/trust-badges.php:16
-msgid "Secure checkout"
-msgstr ""
-
-#: patterns/trust-badges.php:16
 msgid "Encrypted payments, always."
 msgstr ""
 
@@ -245,27 +265,35 @@ msgstr ""
 msgid "No products were found matching your selection."
 msgstr ""
 
-#: patterns/hidden-404.php:15
-msgid "Page not found"
+#: patterns/hidden-404.php:19
+msgid "This page wandered off"
 msgstr ""
 
-#: patterns/hidden-404.php:18
-msgid "The page you are looking for does not exist or has moved. Try a search instead."
+#: patterns/hidden-404.php:22
+msgid "The page you are looking for does not exist or has moved. Search the store or head back to somewhere familiar."
 msgstr ""
 
-#: patterns/hidden-404.php:20 patterns/template-search.php:15 patterns/hidden-no-results.php:15 patterns/header.php:41
+#: patterns/hidden-404.php:24 patterns/template-search.php:15 patterns/hidden-no-results.php:15 patterns/header.php:49
 msgctxt "search label"
 msgid "Search"
 msgstr ""
 
-#: patterns/hidden-404.php:20
+#: patterns/hidden-404.php:24
 msgctxt "search placeholder"
-msgid "Search…"
+msgid "What are you looking for?"
 msgstr ""
 
-#: patterns/hidden-404.php:20 patterns/template-search.php:15 patterns/hidden-no-results.php:15 patterns/header.php:41
+#: patterns/hidden-404.php:24 patterns/template-search.php:15 patterns/hidden-no-results.php:15 patterns/header.php:49
 msgctxt "search button"
 msgid "Search"
+msgstr ""
+
+#: patterns/hidden-404.php:28
+msgid "Back to home"
+msgstr ""
+
+#: patterns/hidden-404.php:32
+msgid "Browse the shop"
 msgstr ""
 
 #: patterns/footer.php:23
@@ -312,17 +340,18 @@ msgstr ""
 msgid "Privacy"
 msgstr ""
 
-#. translators: %s: WordPress link.
+#. translators: 1: Current year, 2: Site name.
 #: patterns/footer.php:88
+msgid "© %1$s %2$s. All rights reserved."
+msgstr ""
+
+#. translators: %s: WordPress link.
+#: patterns/footer.php:103
 msgid "Designed with %s"
 msgstr ""
 
-#: patterns/footer.php:89
+#: patterns/footer.php:104
 msgid "https://wordpress.org"
-msgstr ""
-
-#: patterns/footer.php:95
-msgid "Visa · Mastercard · PayPal · Apple Pay"
 msgstr ""
 
 #: patterns/starter-electronics.php:16
@@ -417,11 +446,11 @@ msgstr ""
 msgid "← Back to cart"
 msgstr ""
 
-#: patterns/template-single-product.php:37
+#: patterns/template-single-product.php:38
 msgid "Category: "
 msgstr ""
 
-#: patterns/template-single-product.php:55
+#: patterns/template-single-product.php:56
 msgid "You may also like"
 msgstr ""
 
@@ -530,55 +559,71 @@ msgid "Sorry, nothing matched your search. Please try again with different keywo
 msgstr ""
 
 #: patterns/header.php:20
+msgid "Need help?"
+msgstr ""
+
+#: patterns/header.php:20
+msgid "Contact us"
+msgstr ""
+
+#: patterns/header.php:23
 msgid "Free shipping on orders over $50 · 30-day easy returns"
 msgstr ""
 
-#: patterns/header.php:41
+#: patterns/header.php:26
+msgid "Track order"
+msgstr ""
+
+#: patterns/header.php:26
+msgid "Help center"
+msgstr ""
+
+#: patterns/header.php:49
 msgctxt "search placeholder"
 msgid "Search products…"
 msgstr ""
 
-#: functions.php:95
+#: functions.php:100
 msgid "Card"
 msgstr ""
 
-#: functions.php:102
+#: functions.php:107
 msgid "Sticky"
 msgstr ""
 
-#: functions.php:109
+#: functions.php:114
 msgid "Pill"
 msgstr ""
 
-#: functions.php:116
+#: functions.php:121
 msgid "FAQ"
 msgstr ""
 
-#: functions.php:123
+#: functions.php:128
 msgid "Zoom on hover"
 msgstr ""
 
-#: functions.php:136
+#: functions.php:141
 msgid "Cartiva: Shop"
 msgstr ""
 
-#: functions.php:137
+#: functions.php:142
 msgid "Store sections such as product grids, categories and promos."
 msgstr ""
 
-#: functions.php:143
+#: functions.php:148
 msgid "Cartiva: Starter homepages"
 msgstr ""
 
-#: functions.php:144
+#: functions.php:149
 msgid "Complete homepages for different kinds of stores."
 msgstr ""
 
-#: functions.php:150
+#: functions.php:155
 msgid "Cartiva: Sections"
 msgstr ""
 
-#: functions.php:151
+#: functions.php:156
 msgid "General page sections."
 msgstr ""
 

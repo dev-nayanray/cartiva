@@ -10,7 +10,7 @@ Built 100% for the Site Editor (Full Site Editing): no page builder, no jQuery, 
 [![WooCommerce](https://img.shields.io/badge/WooCommerce-ready-7f54b3?logo=woocommerce&logoColor=white)](https://woocommerce.com/)
 [![PHP](https://img.shields.io/badge/PHP-7.4%2B-777bb4?logo=php&logoColor=white)](https://www.php.net/)
 [![License: GPL v2+](https://img.shields.io/badge/License-GPLv2%2B-blue.svg)](https://www.gnu.org/licenses/gpl-2.0.html)
-[![Version](https://img.shields.io/badge/version-1.4.0-111111)](readme.txt)
+[![Version](https://img.shields.io/badge/version-1.5.0-111111)](readme.txt)
 
 [Features](#features) · [Installation](#installation) · [Patterns](#block-patterns) · [Development](#development) · [Roadmap](#roadmap)
 
@@ -33,7 +33,7 @@ Cartiva is developed by **[godevs](https://godevs.net/)** and is being prepared 
 | ⚡ **Performance first** | Zero theme JavaScript, system fonts by default (bundled DM Sans and Lora load only when chosen) and per-block CSS loaded only where a block is used. |
 | 🧱 **True block theme** | Templates, template parts and patterns, all designed in `theme.json`. No custom options panel. |
 | 🛒 **WooCommerce ready** | Shop, product category, product tag, product search and single product templates built with WooCommerce blocks. |
-| 🧭 **Store header** | Announcement bar, logo, navigation, product search, account icon and mini-cart. |
+| 🧭 **Store header** | Three-part top bar, sticky header with scroll shadow, animated menu underline, icon buttons for search, account and mini-cart; mobile-first layout. |
 | 🎨 **Style variations** | Default, Midnight (dark), Sand and Fresh, plus typography presets: System, DM Sans, Lora & DM Sans. |
 | 🏪 **Starter homepages** | Fashion, Electronics, Grocery and Furniture homepages, inserted with one click. |
 | 🔎 **Shop with filters** | Optional shop layout with a sticky sidebar: categories, price, availability and rating filters. |
@@ -159,7 +159,8 @@ wp i18n make-pot . languages/cartiva.pot --domain=cartiva
 - [x] **v1.3:** Starter homepages (Fashion, Electronics, Grocery, Furniture) and locally bundled OFL fonts
 - [x] **v1.3.1:** WordPress.org theme review compliance pass
 - [x] **v1.4.0:** My Account redesign, add-to-cart form styling
-- [ ] **v1.5:** WordPress.org submission, live demo site, documentation on godevs.net
+- [x] **v1.5.0:** Header, top bar, footer, shop, product, cart/checkout, blog and 404 refresh
+- [ ] **v1.6:** WordPress.org submission, live demo site, documentation on godevs.net
 
 ## WordPress.org guidelines
 

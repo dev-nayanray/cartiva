@@ -16,19 +16,20 @@
 
 	<!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|60"}}}} -->
 	<div class="wp-block-columns alignwide">
-		<!-- wp:column {"width":"55%"} -->
-		<div class="wp-block-column" style="flex-basis:55%">
+		<!-- wp:column {"width":"55%","className":"cartiva-product-media"} -->
+		<div class="wp-block-column cartiva-product-media" style="flex-basis:55%">
 			<!-- wp:woocommerce/product-image-gallery /-->
 		</div>
 		<!-- /wp:column -->
 
-		<!-- wp:column {"width":"45%","style":{"spacing":{"blockGap":"var:preset|spacing|30"}}} -->
-		<div class="wp-block-column" style="flex-basis:45%">
+		<!-- wp:column {"width":"45%","className":"cartiva-product-summary","style":{"spacing":{"blockGap":"var:preset|spacing|30"}}} -->
+		<div class="wp-block-column cartiva-product-summary" style="flex-basis:45%">
 			<!-- wp:post-title {"level":1,"fontSize":"x-large","__woocommerceNamespace":"woocommerce/product-query/product-title"} /-->
 			<!-- wp:woocommerce/product-rating {"isDescendentOfSingleProductTemplate":true} /-->
 			<!-- wp:woocommerce/product-price {"isDescendentOfSingleProductTemplate":true,"fontSize":"large"} /-->
 			<!-- wp:post-excerpt {"excerptLength":100,"textColor":"muted","__woocommerceNamespace":"woocommerce/product-query/product-summary"} /-->
 			<!-- wp:woocommerce/add-to-cart-form /-->
+			<!-- wp:pattern {"slug":"cartiva/hidden-product-trust"} /-->
 			<!-- wp:woocommerce/product-meta -->
 			<div class="wp-block-woocommerce-product-meta">
 				<!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"},"fontSize":"x-small","textColor":"muted"} -->

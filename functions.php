@@ -61,6 +61,11 @@ function cartiva_enqueue_block_styles() {
 		'woocommerce/product-collection',
 		'woocommerce/mini-cart',
 		'woocommerce/add-to-cart-form',
+		'woocommerce/product-image-gallery',
+		'woocommerce/product-details',
+		'woocommerce/catalog-sorting',
+		'woocommerce/cart',
+		'woocommerce/checkout',
 	);
 
 	foreach ( $blocks as $block ) {

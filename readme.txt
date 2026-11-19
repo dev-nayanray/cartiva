@@ -3,7 +3,7 @@ Contributors: godevs
 Requires at least: 6.9
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 1.4.0
+Stable tag: 1.5.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -50,6 +50,18 @@ Go to Appearance > Editor > Templates > Product Catalog and replace the template
 Go to Appearance > Editor > Templates > Front Page and edit the blocks, or insert patterns from the "Cartiva: Shop" category.
 
 == Changelog ==
+
+= 1.5.0 =
+* Fixed: the sticky header now actually sticks. The top bar scrolls away and the main header row stays pinned, with a soft shadow once the page scrolls (in browsers that support scroll-driven animations).
+* New three-part top bar: help link, promo message and quick links (side links hide on mobile).
+* Header: animated underline on menu links, round icon buttons for search, account and cart, an expanding search field, and on mobile the menu button sits left of the logo.
+* Cleaner mobile menu overlay with large, divided links.
+* Footer: copyright line with the current year and site name, payment method badges, hover effects; link columns sit side by side on mobile.
+* Shop: card add-to-cart buttons, sale badge, rating stars, results count and a pill-shaped sorting dropdown; numbered pagination.
+* Single product: sticky summary column, rounded gallery with thumbnail grid, delivery/returns/secure-checkout list under the add-to-cart button, and redesigned tabs, attributes and reviews.
+* Cart and checkout: totals in a card, rounded fields and larger buttons.
+* Blog: category pills and image hover on post cards.
+* New 404 page with a large gradient 404, search, buttons to home and shop, and best sellers.
 
 = 1.4.0 =
 * Redesigned the WooCommerce My Account page: two-column layout with a profile card, icon navigation, dashboard quick-link tiles, card-style login and register forms, restyled orders table with order-status colours, address cards, modern form fields and notices.

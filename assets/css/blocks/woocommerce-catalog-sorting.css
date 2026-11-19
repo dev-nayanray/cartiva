@@ -1,0 +1,26 @@
+/**
+ * Shop toolbar: sorting dropdown.
+ */
+.wc-block-catalog-sorting .woocommerce-ordering,
+.wp-block-woocommerce-catalog-sorting .woocommerce-ordering {
+	margin: 0;
+}
+.wp-block-woocommerce-catalog-sorting select.orderby {
+	min-height: 2.6rem;
+	padding: .5rem 2.4rem .5rem 1rem;
+	border: 1px solid var(--wp--preset--color--border);
+	border-radius: 999px;
+	background: var(--wp--preset--color--base) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%235f6368' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") right .85rem center / .95rem no-repeat;
+	color: var(--wp--preset--color--contrast);
+	font: inherit;
+	font-size: var(--wp--preset--font-size--small);
+	font-weight: 500;
+	appearance: none;
+	cursor: pointer;
+}
+.wp-block-woocommerce-catalog-sorting select.orderby:hover { border-color: var(--wp--preset--color--contrast); }
+.wp-block-woocommerce-catalog-sorting select.orderby:focus {
+	outline: none;
+	border-color: var(--wp--preset--color--primary);
+	box-shadow: 0 0 0 3px color-mix(in srgb, var(--wp--preset--color--primary) 20%, transparent);
+}

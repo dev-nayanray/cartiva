@@ -11,8 +11,8 @@
  */
 
 ?>
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|40"},"margin":{"top":"0"}}},"backgroundColor":"surface","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull has-surface-background-color has-background" style="margin-top:0;padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--40)">
+<!-- wp:group {"align":"full","className":"cartiva-footer","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|40"},"margin":{"top":"0"}}},"backgroundColor":"surface","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull cartiva-footer has-surface-background-color has-background" style="margin-top:0;padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--40)">
 
 	<!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|50"}}}} -->
 	<div class="wp-block-columns alignwide">
@@ -78,8 +78,23 @@
 	<hr class="wp-block-separator alignwide has-alpha-channel-opacity is-style-wide"/>
 	<!-- /wp:separator -->
 
-	<!-- wp:group {"align":"wide","layout":{"type":"flex","justifyContent":"space-between","flexWrap":"wrap"}} -->
+	<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","justifyContent":"space-between","flexWrap":"wrap","verticalAlignment":"center"}} -->
 	<div class="wp-block-group alignwide">
+		<!-- wp:paragraph {"textColor":"muted","fontSize":"x-small"} -->
+		<p class="has-muted-color has-text-color has-x-small-font-size">
+		<?php
+		printf(
+			/* translators: 1: Current year, 2: Site name. */
+			esc_html__( '© %1$s %2$s. All rights reserved.', 'cartiva' ),
+			esc_html( wp_date( 'Y' ) ),
+			esc_html( get_bloginfo( 'name' ) )
+		);
+		?>
+		</p>
+		<!-- /wp:paragraph -->
+		<!-- wp:paragraph {"className":"cartiva-payments","fontSize":"x-small"} -->
+		<p class="cartiva-payments has-x-small-font-size"><span>VISA</span><span>Mastercard</span><span>PayPal</span><span>Apple Pay</span><span>G Pay</span></p>
+		<!-- /wp:paragraph -->
 		<!-- wp:paragraph {"textColor":"muted","fontSize":"x-small"} -->
 		<p class="has-muted-color has-text-color has-x-small-font-size">
 		<?php
@@ -90,9 +105,6 @@
 		);
 		?>
 		</p>
-		<!-- /wp:paragraph -->
-		<!-- wp:paragraph {"textColor":"muted","fontSize":"x-small"} -->
-		<p class="has-muted-color has-text-color has-x-small-font-size"><?php esc_html_e( 'Visa · Mastercard · PayPal · Apple Pay', 'cartiva' ); ?></p>
 		<!-- /wp:paragraph -->
 	</div>
 	<!-- /wp:group -->
