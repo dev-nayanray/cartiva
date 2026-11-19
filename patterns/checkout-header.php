@@ -22,8 +22,8 @@ $cartiva_cart_url = function_exists( 'wc_get_cart_url' ) ? wc_get_cart_url() : h
 			<!-- wp:site-title {"level":0} /-->
 		</div>
 		<!-- /wp:group -->
-		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"flex","flexWrap":"nowrap"},"fontSize":"small"} -->
-		<div class="wp-block-group has-small-font-size">
+		<!-- wp:group {"className":"cartiva-checkout-header__meta","style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"flex","flexWrap":"nowrap"},"fontSize":"small"} -->
+		<div class="wp-block-group cartiva-checkout-header__meta has-small-font-size">
 			<!-- wp:paragraph {"textColor":"success","style":{"typography":{"fontWeight":"600"}}} -->
 			<p class="has-success-color has-text-color" style="font-weight:600"><?php esc_html_e( '🔒 Secure checkout', 'cartiva' ); ?></p>
 			<!-- /wp:paragraph -->

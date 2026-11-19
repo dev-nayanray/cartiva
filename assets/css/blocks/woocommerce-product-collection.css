@@ -187,3 +187,6 @@
 .cartiva-products-large .wc-block-product,
 .cartiva-products-large .wc-block-product .wp-block-post-title { text-align: left; }
 .cartiva-products-large .wc-block-components-product-button { align-items: flex-start; }
+@media (max-width: 600px) {
+	.cartiva-products-large .wc-block-product-template { grid-template-columns: 1fr !important; }
+}

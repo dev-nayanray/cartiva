@@ -30,7 +30,7 @@ $cartiva_categories = array(
 	</div>
 	<!-- /wp:group -->
 
-	<!-- wp:group {"align":"wide","layout":{"type":"grid","columnCount":4,"minimumColumnWidth":"12rem"}} -->
+	<!-- wp:group {"align":"wide","layout":{"type":"grid","columnCount":4,"minimumColumnWidth":"9rem"}} -->
 	<div class="wp-block-group alignwide">
 		<?php foreach ( $cartiva_categories as $cartiva_cat ) : ?>
 		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical"}} -->

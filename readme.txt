@@ -13,7 +13,7 @@ A lightweight, modern and fast WooCommerce block theme for the Site Editor.
 
 Cartiva is a free, lightweight and modern WooCommerce block theme built entirely for the WordPress Site Editor (Full Site Editing).
 
-* 100% blocks: no page builder, no jQuery, no theme options panel.
+* 100% blocks: no page builder and no jQuery. A small settings page (Appearance > Cartiva Settings) adds layout and behavior options alongside the Site Editor.
 * Fast by default: a native system font stack, with optional bundled DM Sans and Lora fonts that load only when selected.
 * Per-block CSS: styles load only on pages where the block is used.
 * WooCommerce ready: shop, product, category, tag and product search templates built with WooCommerce blocks, plus a header with mini-cart and account icon.

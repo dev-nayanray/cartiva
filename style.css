@@ -11,7 +11,7 @@ Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: cartiva
-Tags: e-commerce, full-site-editing, block-patterns, block-styles, wide-blocks, one-column, two-columns, custom-colors, custom-logo, custom-menu, editor-style, featured-images, style-variations, translation-ready, rtl-language-support, threaded-comments, left-sidebar
+Tags: e-commerce, full-site-editing, block-patterns, block-styles, wide-blocks, one-column, two-columns, custom-colors, custom-logo, custom-menu, editor-style, featured-images, style-variations, translation-ready, threaded-comments, left-sidebar
 */
 
 /*
@@ -377,7 +377,7 @@ header.wp-block-template-part:has(.cartiva-topbar) {
 	.cartiva-header__brand { flex: 1 1 auto; min-width: 0; }
 	.cartiva-header__brand .wp-block-site-title { font-size: var(--wp--preset--font-size--medium); }
 	.cartiva-header__actions { gap: 0 !important; }
-	.cartiva-header .wp-block-search:not(.wp-block-search__searchfield-hidden) {
+	.cartiva-header .wp-block-search:not(.wp-block-search__searchfield-hidden):not(.cartiva-header__searchbar) {
 		position: absolute;
 		left: var(--wp--preset--spacing--40);
 		right: var(--wp--preset--spacing--40);
@@ -811,7 +811,7 @@ body.cartiva-hide-topbar header.wp-block-template-part:has(.cartiva-topbar) { to
 	.cartiva-category-circles {
 		grid-template-columns: none !important;
 		grid-auto-flow: column;
-		grid-auto-columns: 6.5rem;
+		grid-auto-columns: 5.75rem;
 		overflow-x: auto;
 		scroll-snap-type: x proximity;
 		scrollbar-width: none;
@@ -1145,7 +1145,9 @@ body.cartiva-hide-topbar header.wp-block-template-part:has(.cartiva-topbar) { to
 .cartiva-post-overlay .wp-block-cover__background { background: linear-gradient(to top, rgb(0 0 0 / .85), rgb(0 0 0 / .1) 65%) !important; opacity: 1 !important; }
 .cartiva-post-overlay .wp-block-cover__inner-container > * { margin-block: 0 .35rem; }
 .cartiva-post-overlay a { color: var(--wp--preset--color--base); text-decoration: none; }
-.cartiva-post-overlay .cartiva-post-cats a { color: var(--wp--preset--color--base); }
+.cartiva-post-overlay .cartiva-post-cats a { background: rgb(255 255 255 / .2); color: var(--wp--preset--color--base); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
+.cartiva-post-overlay .cartiva-post-cats a:hover { background: var(--wp--preset--color--base); color: var(--wp--preset--color--contrast); }
+.cartiva-post-overlay .wp-block-post-date { opacity: .85; }
 .cartiva-post-overlay .wp-block-cover__image-background { transition: transform .6s ease; }
 .cartiva-post-overlay:hover .wp-block-cover__image-background { transform: scale(1.05); }
 
@@ -1157,5 +1159,21 @@ body.cartiva-hide-topbar header.wp-block-template-part:has(.cartiva-topbar) { to
 	.cartiva-blog-magazine .wp-block-post-template { grid-template-columns: 1fr 1fr !important; }
 	.cartiva-blog-magazine .wp-block-post-template > li:first-child { grid-row: auto; }
 }
+@media (max-width: 600px) {
+	.cartiva-blog-magazine .wp-block-post-template { grid-template-columns: 1fr !important; }
+	.cartiva-blog-magazine .wp-block-post-template > li:first-child { grid-column: auto; }
+}
 
 .cartiva-card-carousel .wp-block-post-template > li > * { margin-block: 0 .4rem; }
+
+/* Checkout header: keep the meta links on one line on phones */
+.cartiva-checkout-header__meta p { white-space: nowrap; margin: 0; }
+@media (max-width: 599px) {
+	.cartiva-checkout-header__meta { gap: .75rem !important; font-size: var(--wp--preset--font-size--x-small) !important; }
+}
+
+@media (max-width: 600px) {
+	.cartiva-category-mosaic .wp-block-cover__inner-container { padding: .75rem !important; }
+	.cartiva-category-mosaic .wp-block-cover:not(.cartiva-mosaic-large) p { font-size: var(--wp--preset--font-size--small) !important; }
+	.wp-block-columns:has(.cartiva-category-list) .wp-block-image img { aspect-ratio: 16 / 9 !important; }
+}

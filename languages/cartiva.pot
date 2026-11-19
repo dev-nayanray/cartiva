@@ -65,7 +65,7 @@ msgstr ""
 msgid "Decor"
 msgstr ""
 
-#: patterns/starter-furniture.php:39 patterns/hero-centered.php:18 patterns/footer-dark.php:41 patterns/products-lists.php:25 patterns/footer.php:41 patterns/new-arrivals.php:20
+#: patterns/starter-furniture.php:39 patterns/hero-centered.php:18 patterns/footer-dark.php:41 patterns/products-lists.php:25 patterns/footer.php:41 patterns/new-arrivals.php:23
 msgid "New arrivals"
 msgstr ""
 
@@ -1168,7 +1168,7 @@ msgstr ""
 msgid "Tech & Gadgets"
 msgstr ""
 
-#: patterns/category-grid.php:28 patterns/products-large.php:27 inc/pattern-helpers.php:109
+#: patterns/category-grid.php:28 patterns/new-arrivals.php:26 patterns/products-large.php:27 inc/pattern-helpers.php:109
 msgid "View all"
 msgstr ""
 
@@ -1988,72 +1988,72 @@ msgstr ""
 msgid "General page sections."
 msgstr ""
 
-#: functions.php:246
+#: functions.php:264
 msgid "Search results"
 msgstr ""
 
-#: functions.php:247
+#: functions.php:265
 msgid "Searching…"
 msgstr ""
 
 #. translators: %s: Search query.
-#: functions.php:249
+#: functions.php:267
 msgid "No results for “%s”"
 msgstr ""
 
 #. translators: %s: Search query.
-#: functions.php:251
+#: functions.php:269
 msgid "See all results for “%s”"
 msgstr ""
 
-#: functions.php:252
+#: functions.php:270
 msgid "1 result found"
 msgstr ""
 
 #. translators: %d: Number of results.
-#: functions.php:254
+#: functions.php:272
 msgid "%d results found"
 msgstr ""
 
-#: functions.php:255
+#: functions.php:273
 msgid "Out of stock"
 msgstr ""
 
-#: functions.php:299
+#: functions.php:317
 msgid "carousel"
 msgstr ""
 
-#: functions.php:300
+#: functions.php:318
 msgid "slide"
 msgstr ""
 
 #. translators: 1: Slide number, 2: Number of slides.
-#: functions.php:302
+#: functions.php:320
 msgid "%1$s of %2$s"
 msgstr ""
 
-#: functions.php:303
+#: functions.php:321
 msgid "Previous"
 msgstr ""
 
-#: functions.php:304
+#: functions.php:322
 msgid "Next"
 msgstr ""
 
 #. translators: %s: Slide number.
-#: functions.php:306
+#: functions.php:324
 msgid "Go to slide %s"
 msgstr ""
 
-#: functions.php:307
+#: functions.php:325
 msgid "Featured"
 msgstr ""
 
-#: functions.php:308
+#: functions.php:326
 msgid "Products"
 msgstr ""
 
-#: functions.php:309
+#: functions.php:327
 msgid "Items"
 msgstr ""
 

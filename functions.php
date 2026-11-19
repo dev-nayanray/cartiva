@@ -210,6 +210,24 @@ if ( cartiva_is_woocommerce_active() ) {
 }
 
 /**
+ * Hide store-only patterns when WooCommerce is not active, so the inserter
+ * never shows empty previews.
+ */
+function cartiva_unregister_store_patterns() {
+	if ( cartiva_is_woocommerce_active() || ! class_exists( 'WP_Block_Patterns_Registry' ) ) {
+		return;
+	}
+	$slugs    = array( 'best-sellers', 'featured-products', 'category-auto', 'new-arrivals', 'on-sale', 'product-deal', 'product-carousel', 'products-banner', 'products-large', 'products-lists', 'top-rated', 'template-shop-sidebar', 'starter-electronics', 'starter-fashion', 'starter-furniture', 'starter-grocery' );
+	$registry = WP_Block_Patterns_Registry::get_instance();
+	foreach ( $slugs as $slug ) {
+		if ( $registry->is_registered( 'cartiva/' . $slug ) ) {
+			unregister_block_pattern( 'cartiva/' . $slug );
+		}
+	}
+}
+add_action( 'init', 'cartiva_unregister_store_patterns', 20 );
+
+/**
  * Live search for the header Search block.
  *
  * A small, deferred script that shows results in a dropdown after two

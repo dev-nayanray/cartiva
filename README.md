@@ -31,7 +31,7 @@ Cartiva is developed by **[godevs](https://godevs.net/)** and is being prepared 
 | | |
 |---|---|
 | ⚡ **Performance first** | Zero theme JavaScript, system fonts by default (bundled DM Sans and Lora load only when chosen) and per-block CSS loaded only where a block is used. |
-| 🧱 **True block theme** | Templates, template parts and patterns, all designed in `theme.json`. No custom options panel. |
+| 🧱 **True block theme** | Templates, template parts and patterns, all designed in `theme.json`. A small, optional settings page adds layout and behavior options. |
 | 🛒 **WooCommerce ready** | Shop, product category, product tag, product search and single product templates built with WooCommerce blocks. |
 | 🧭 **Store header** | Three-part top bar, sticky header with scroll shadow, animated menu underline, icon buttons for search, account and mini-cart; mobile-first layout. |
 | 🔍 **Live search** | Product suggestions with image and price after 2 characters, keyboard navigation and screen-reader announcements. Uses the WooCommerce Store API, no extra server code. |
@@ -43,7 +43,7 @@ Cartiva is developed by **[godevs](https://godevs.net/)** and is being prepared 
 | 🎛️ **Customizable** | **Appearance → Cartiva Settings** for corners, buttons, layout width, header behavior, product cards, product page and My Account options; plus four header designs, three footers, section styles and color/font variations in the Site Editor. |
 | 👤 **Modern My Account** | Profile card, icon navigation, dashboard tiles, coloured order statuses, address cards; tables become cards on mobile. |
 | 🧩 **Block styles** | Card, Sticky, Pill button, Image zoom and FAQ accordion. |
-| 🌍 **Translation ready** | Every string is translatable and ships with `languages/cartiva.pot`; RTL compatible. |
+| 🌍 **Translation ready** | Every string is translatable and ships with `languages/cartiva.pot`. |
 | 🔌 **Works without WooCommerce** | Store sections only load when WooCommerce is active, so it also works as a clean blog or business theme. |
 
 ## Requirements

@@ -525,11 +525,11 @@ function cartiva_hero_text( $args ) {
 		<?php endif; ?>
 		<!-- wp:buttons {"style":{"spacing":{"margin":{"top":"var:preset|spacing|30"}}}<?php echo $jc; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static JSON. ?>} -->
 		<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--30)">
-			<!-- wp:button {"className":"is-style-cartiva-pill"<?php echo $args['light'] ? ',"backgroundColor":"base","textColor":"contrast"' : ''; ?>} -->
+			<!-- wp:button {"className":"is-style-cartiva-pill"<?php echo $args['light'] ? ',"backgroundColor":"base","textColor":"contrast"' : ''; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static JSON. ?>} -->
 			<div class="wp-block-button is-style-cartiva-pill"><a class="wp-block-button__link<?php echo $args['light'] ? ' has-contrast-color has-base-background-color has-text-color has-background' : ''; ?> wp-element-button" href="<?php echo esc_url( $args['url'] ); ?>"><?php echo esc_html( $args['primary'] ); ?></a></div>
 			<!-- /wp:button -->
 			<?php if ( $args['secondary'] ) : ?>
-			<!-- wp:button {"className":"is-style-outline"<?php echo $args['light'] ? ',"textColor":"base"' : ''; ?>} -->
+			<!-- wp:button {"className":"is-style-outline"<?php echo $args['light'] ? ',"textColor":"base"' : ''; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static JSON. ?>} -->
 			<div class="wp-block-button is-style-outline"><a class="wp-block-button__link<?php echo $args['light'] ? ' has-base-color has-text-color' : ''; ?> wp-element-button" href="<?php echo esc_url( $args['url'] ); ?>"><?php echo esc_html( $args['secondary'] ); ?></a></div>
 			<!-- /wp:button -->
 			<?php endif; ?>
