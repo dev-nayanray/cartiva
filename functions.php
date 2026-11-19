@@ -189,3 +189,58 @@ require_once CARTIVA_DIR . '/inc/header.php';
 if ( cartiva_is_woocommerce_active() ) {
 	require_once CARTIVA_DIR . '/inc/woocommerce.php';
 }
+
+/**
+ * Live search for the header Search block.
+ *
+ * A small, deferred script that shows results in a dropdown after two
+ * characters. It reads the WooCommerce Store API (or the core REST API when
+ * WooCommerce is not active) and adds no server-side code. Disable it with:
+ * add_filter( 'cartiva_live_search', '__return_false' );
+ */
+function cartiva_enqueue_live_search() {
+	if ( ! apply_filters( 'cartiva_live_search', true ) ) {
+		return;
+	}
+
+	$has_products = cartiva_is_woocommerce_active();
+
+	wp_enqueue_script(
+		'cartiva-live-search',
+		CARTIVA_URI . '/assets/js/live-search.js',
+		array(),
+		CARTIVA_VERSION,
+		array(
+			'in_footer' => true,
+			'strategy'  => 'defer',
+		)
+	);
+
+	$config = array(
+		'products'    => $has_products,
+		'productsUrl' => esc_url_raw( rest_url( 'wc/store/v1/products' ) ),
+		'searchUrl'   => esc_url_raw( rest_url( 'wp/v2/search' ) ),
+		'minChars'    => 2,
+		'limit'       => 6,
+		'selector'    => '.cartiva-header form.wp-block-search',
+		'i18n'        => array(
+			'results'    => __( 'Search results', 'cartiva' ),
+			'searching'  => __( 'Searching…', 'cartiva' ),
+			/* translators: %s: Search query. */
+			'noResults'  => __( 'No results for “%s”', 'cartiva' ),
+			/* translators: %s: Search query. */
+			'viewAll'    => __( 'See all results for “%s”', 'cartiva' ),
+			'oneResult'  => __( '1 result found', 'cartiva' ),
+			/* translators: %d: Number of results. */
+			'results_n'  => __( '%d results found', 'cartiva' ),
+			'outOfStock' => __( 'Out of stock', 'cartiva' ),
+		),
+	);
+
+	wp_add_inline_script(
+		'cartiva-live-search',
+		'window.cartivaLiveSearch = ' . wp_json_encode( $config ) . ';',
+		'before'
+	);
+}
+add_action( 'wp_enqueue_scripts', 'cartiva_enqueue_live_search' );

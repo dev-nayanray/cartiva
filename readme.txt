@@ -24,6 +24,7 @@ Cartiva is a free, lightweight and modern WooCommerce block theme built entirely
 * A modern My Account area: dashboard tiles, icon navigation, order and address cards.
 * Ready-made pages: Contact, About, FAQ, Shipping & returns, Help center, Terms and Track order.
 * Four header designs, three footer designs and section color styles you can switch in the Site Editor.
+* Live search in the header: product suggestions with image and price appear after two characters, with full keyboard support.
 * Works without WooCommerce as a clean blog/business theme.
 
 == Installation ==
@@ -46,6 +47,10 @@ No. Under the WordPress.org theme guidelines those are plugin features, so Carti
 = How do I use the shop layout with filters? =
 
 Go to Appearance > Editor > Templates > Product Catalog and replace the template with the "Shop with filter sidebar" pattern.
+
+= How does the header live search work? =
+
+After two characters, the header Search block shows matching products (image, name and price) from WooCommerce, or matching posts and pages when WooCommerce is not active. Use the arrow keys and Enter to choose a result, or press Enter to see all results. It is a small deferred script that only reads public data. To turn it off, add `add_filter( 'cartiva_live_search', '__return_false' );` to a child theme.
 
 = How do I customize the header and footer? =
 

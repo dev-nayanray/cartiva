@@ -34,6 +34,7 @@ Cartiva is developed by **[godevs](https://godevs.net/)** and is being prepared 
 | 🧱 **True block theme** | Templates, template parts and patterns, all designed in `theme.json`. No custom options panel. |
 | 🛒 **WooCommerce ready** | Shop, product category, product tag, product search and single product templates built with WooCommerce blocks. |
 | 🧭 **Store header** | Three-part top bar, sticky header with scroll shadow, animated menu underline, icon buttons for search, account and mini-cart; mobile-first layout. |
+| 🔍 **Live search** | Product suggestions with image and price after 2 characters, keyboard navigation and screen-reader announcements. Uses the WooCommerce Store API, no extra server code. |
 | 🎨 **Style variations** | Default, Midnight (dark), Sand and Fresh, plus typography presets: System, DM Sans, Lora & DM Sans. |
 | 🏪 **Starter homepages** | Fashion, Electronics, Grocery and Furniture homepages, inserted with one click. |
 | 🔎 **Shop with filters** | Optional shop layout with a sticky sidebar: categories, price, availability and rating filters. |
@@ -175,7 +176,8 @@ wp i18n make-pot . languages/cartiva.pot --domain=cartiva
 
 | Filter | Default | Description |
 |---|---|---|
-| `cartiva_disable_classic_wc_styles` | `true` | Removes WooCommerce's legacy layout stylesheets. Return `false` to keep them. |
+| `cartiva_disable_classic_wc_styles` | `true` | Removes WooCommerce's legacy layout stylesheets on My Account. Return `false` to keep them. |
+| `cartiva_live_search` | `true` | Header live search. Return `false` to disable it. |
 
 ## Roadmap
 

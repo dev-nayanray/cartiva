@@ -1231,6 +1231,37 @@ msgstr ""
 msgid "General page sections."
 msgstr ""
 
+#: functions.php:227
+msgid "Search results"
+msgstr ""
+
+#: functions.php:228
+msgid "Searching…"
+msgstr ""
+
+#. translators: %s: Search query.
+#: functions.php:230
+msgid "No results for “%s”"
+msgstr ""
+
+#. translators: %s: Search query.
+#: functions.php:232
+msgid "See all results for “%s”"
+msgstr ""
+
+#: functions.php:233
+msgid "1 result found"
+msgstr ""
+
+#. translators: %d: Number of results.
+#: functions.php:235
+msgid "%d results found"
+msgstr ""
+
+#: functions.php:236
+msgid "Out of stock"
+msgstr ""
+
 #: inc/woocommerce.php:102
 msgid "Track, return or buy again"
 msgstr ""
