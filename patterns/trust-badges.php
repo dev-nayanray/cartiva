@@ -24,9 +24,9 @@ $cartiva_badges = array(
 		<?php foreach ( $cartiva_badges as $cartiva_badge ) : ?>
 		<!-- wp:group {"className":"cartiva-badge cartiva-badge--<?php echo esc_attr( $cartiva_badge[0] ); ?>","style":{"spacing":{"blockGap":"0.15rem"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 		<div class="wp-block-group cartiva-badge cartiva-badge--<?php echo esc_attr( $cartiva_badge[0] ); ?>">
-			<!-- wp:heading {"level":3,"fontSize":"small"} -->
-			<h3 class="wp-block-heading has-small-font-size"><?php echo esc_html( $cartiva_badge[1] ); ?></h3>
-			<!-- /wp:heading -->
+			<!-- wp:paragraph {"style":{"typography":{"fontWeight":"700"}},"fontSize":"small"} -->
+			<p class="has-small-font-size" style="font-weight:700"><?php echo esc_html( $cartiva_badge[1] ); ?></p>
+			<!-- /wp:paragraph -->
 			<!-- wp:paragraph {"textColor":"muted","fontSize":"x-small"} -->
 			<p class="has-muted-color has-text-color has-x-small-font-size"><?php echo esc_html( $cartiva_badge[2] ); ?></p>
 			<!-- /wp:paragraph -->

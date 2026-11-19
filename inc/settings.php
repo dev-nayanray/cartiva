@@ -109,6 +109,24 @@ function cartiva_settings_schema() {
 				),
 			),
 		),
+		'site'    => array(
+			'title'  => __( 'Site extras', 'cartiva' ),
+			'intro'  => __( 'Small visitor features that work on every page.', 'cartiva' ),
+			'fields' => array(
+				'back_to_top' => array(
+					'label'   => __( 'Back to top button', 'cartiva' ),
+					'type'    => 'checkbox',
+					'default' => true,
+					'text'    => __( 'Show a button to scroll back to the top on long pages', 'cartiva' ),
+				),
+				'dark_toggle' => array(
+					'label'   => __( 'Dark mode switch', 'cartiva' ),
+					'type'    => 'checkbox',
+					'default' => false,
+					'text'    => __( 'Let visitors switch the site to dark colors from the header (their choice is remembered in their browser)', 'cartiva' ),
+				),
+			),
+		),
 		'shop'    => array(
 			'title'  => __( 'Shop', 'cartiva' ),
 			'intro'  => __( 'Product cards in the shop, categories, search results and product sections.', 'cartiva' ),
@@ -201,7 +219,7 @@ function cartiva_settings_schema() {
 		),
 		'extras' => array(
 			'title'  => __( 'Store extras', 'cartiva' ),
-			'intro'  => __( 'Conversion and mobile features. They only add small, deferred code to the pages that use them.', 'cartiva' ),
+			'intro'  => __( 'Conversion and mobile features for your store. They only add small, deferred code to the pages that use them.', 'cartiva' ),
 			'fields' => array(
 				'sticky_cart' => array(
 					'label'   => __( 'Sticky add to cart bar', 'cartiva' ),
@@ -238,18 +256,6 @@ function cartiva_settings_schema() {
 					'type'    => 'checkbox',
 					'default' => true,
 					'text'    => __( 'Show Shop, Search, Wishlist, Account and Cart shortcuts at the bottom of the screen on phones', 'cartiva' ),
-				),
-				'back_to_top' => array(
-					'label'   => __( 'Back to top button', 'cartiva' ),
-					'type'    => 'checkbox',
-					'default' => true,
-					'text'    => __( 'Show a button to scroll back to the top on long pages', 'cartiva' ),
-				),
-				'dark_toggle' => array(
-					'label'   => __( 'Dark mode switch', 'cartiva' ),
-					'type'    => 'checkbox',
-					'default' => false,
-					'text'    => __( 'Let visitors switch the site to dark colors from the header (their choice is remembered in their browser)', 'cartiva' ),
 				),
 			),
 		),
@@ -303,7 +309,7 @@ function cartiva_settings_schema() {
 	);
 
 	if ( ! cartiva_is_woocommerce_active() ) {
-		unset( $schema['shop'], $schema['product'], $schema['account'] );
+		unset( $schema['shop'], $schema['product'], $schema['extras'], $schema['wishlist'], $schema['account'] );
 	}
 
 	return $schema;
@@ -426,7 +432,7 @@ function cartiva_register_settings() {
 			'cartiva-settings',
 			array(
 				'intro'          => isset( $section['intro'] ) ? $section['intro'] : '',
-				'before_section' => '<div class="cartiva-settings-card">',
+				'before_section' => '<div class="cartiva-settings-card" id="cartiva-section-' . esc_attr( $section_id ) . '">',
 				'after_section'  => '</div>',
 			)
 		);
@@ -537,7 +543,72 @@ function cartiva_settings_page_styles() {
 		. '.cartiva-settings-page .cartiva-settings-card h2{margin:16px 0 4px}'
 		. '.cartiva-settings-page .cartiva-settings-actions{display:flex;gap:8px;align-items:center}'
 		. '.cartiva-settings-page .cartiva-settings-actions .submit{margin:0;padding:0}'
+		. '.cartiva-settings-page .cartiva-settings-nav{position:sticky;top:32px;z-index:5;display:flex;flex-wrap:wrap;gap:4px 14px;max-width:880px;margin:16px 0 0;padding:10px 20px;background:#f6f7f7;border:1px solid #c3c4c7}'
+		. '.cartiva-settings-page .cartiva-settings-nav a{text-decoration:none;font-weight:600}'
+		. '.cartiva-settings-page .cartiva-settings-card{scroll-margin-top:90px}'
+		. '.cartiva-settings-page .cartiva-start ol{margin:8px 0 12px 18px}'
+		. '.cartiva-settings-page .cartiva-start li{margin:6px 0}'
+		. '.cartiva-settings-page .cartiva-start .is-done{color:#008a20}'
+		. '.cartiva-settings-page .cartiva-start .is-done::before{content:"\\2713  ";font-weight:700}'
 	);
+}
+
+/**
+ * "Getting started" checklist at the top of the settings page.
+ * It only reads the site's state; nothing is created automatically.
+ */
+function cartiva_render_getting_started() {
+	$has_wc   = class_exists( 'WooCommerce' );
+	$has_list = function_exists( 'cartiva_wishlist_provider' ) && '' !== cartiva_wishlist_provider();
+	$has_page = function ( $slugs ) {
+		foreach ( (array) $slugs as $slug ) {
+			$page = get_page_by_path( $slug );
+			if ( $page instanceof WP_Post && 'publish' === $page->post_status ) {
+				return true;
+			}
+		}
+		return false;
+	};
+	$steps = array(
+		array(
+			'done' => $has_wc,
+			/* translators: %s: link to install plugins. */
+			'text' => sprintf( __( 'Install and activate WooCommerce (%s).', 'cartiva' ), '<a href="' . esc_url( admin_url( 'plugin-install.php?s=woocommerce&tab=search&type=term' ) ) . '">' . esc_html__( 'find it here', 'cartiva' ) . '</a>' ),
+		),
+		array(
+			'done' => (bool) get_theme_mod( 'custom_logo' ) || has_site_icon(),
+			/* translators: %s: link to the Site Editor. */
+			'text' => sprintf( __( 'Add your logo and pick a header and footer design in the %s.', 'cartiva' ), '<a href="' . esc_url( admin_url( 'site-editor.php?p=%2Fpattern' ) ) . '">' . esc_html__( 'Site Editor', 'cartiva' ) . '</a>' ),
+		),
+		array(
+			'done' => $has_page( array( 'track-order', 'order-tracking', 'track-your-order' ) ),
+			'text' => __( 'Create a page called "Track order" (slug track-order). Cartiva gives it the tracking form design automatically.', 'cartiva' ),
+		),
+		array(
+			'done' => $has_page( 'contact' ) && $has_page( 'faq' ),
+			'text' => __( 'Create Contact, About, FAQ and Help center pages (slugs contact, about, faq, help-center) and insert the matching "Cartiva: Pages" pattern.', 'cartiva' ),
+		),
+		array(
+			'done' => $has_list,
+			'text' => __( 'Optional: install a free wishlist plugin (YITH WooCommerce Wishlist, TI WooCommerce Wishlist or WPC Smart Wishlist). Cartiva adds the hearts and styling.', 'cartiva' ),
+		),
+	);
+	$done = count( array_filter( wp_list_pluck( $steps, 'done' ) ) );
+	?>
+	<div class="cartiva-settings-card cartiva-start">
+		<h2>
+			<?php
+			/* translators: 1: completed steps, 2: total steps. */
+			echo esc_html( sprintf( __( 'Getting started (%1$s of %2$s done)', 'cartiva' ), number_format_i18n( $done ), number_format_i18n( count( $steps ) ) ) );
+			?>
+		</h2>
+		<ol>
+			<?php foreach ( $steps as $step ) : ?>
+				<li class="<?php echo esc_attr( $step['done'] ? 'is-done' : '' ); ?>"><?php echo wp_kses( $step['text'], array( 'a' => array( 'href' => array() ) ) ); ?></li>
+			<?php endforeach; ?>
+		</ol>
+	</div>
+	<?php
 }
 
 /**
@@ -563,6 +634,15 @@ function cartiva_render_settings_page() {
 			<?php endforeach; ?>
 		</p>
 		<?php settings_errors( 'cartiva_settings' ); ?>
+		<?php cartiva_render_getting_started(); ?>
+		<nav class="cartiva-settings-nav" aria-label="<?php esc_attr_e( 'Settings sections', 'cartiva' ); ?>">
+			<?php foreach ( cartiva_settings_schema() as $section_id => $section ) : ?>
+				<a href="#cartiva-section-<?php echo esc_attr( $section_id ); ?>"><?php echo esc_html( $section['title'] ); ?></a>
+			<?php endforeach; ?>
+		</nav>
+		<?php if ( ! class_exists( 'WooCommerce' ) ) : ?>
+			<p class="description"><?php esc_html_e( 'Shop, product page, store extras, wishlist and account options appear here once WooCommerce is active.', 'cartiva' ); ?></p>
+		<?php endif; ?>
 		<form method="post" action="options.php">
 			<?php
 			settings_fields( 'cartiva_settings_group' );

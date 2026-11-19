@@ -22,10 +22,10 @@ cartiva_page_hero( __( 'Contact', 'cartiva' ), __( 'We would love to hear from y
 	<!-- wp:group {"align":"wide","layout":{"type":"grid","columnCount":4,"minimumColumnWidth":"13rem"}} -->
 	<div class="wp-block-group alignwide">
 <?php
-cartiva_icon_card( 'mail', __( 'Email us', 'cartiva' ), __( 'hello@example.com', 'cartiva' ), __( 'Send an email →', 'cartiva' ), 'mailto:hello@example.com' );
-cartiva_icon_card( 'phone', __( 'Call us', 'cartiva' ), __( '+1 (555) 010-2030 · Mon–Fri, 9am–6pm', 'cartiva' ), __( 'Call now →', 'cartiva' ), 'tel:+15550102030' );
-cartiva_icon_card( 'pin', __( 'Visit the studio', 'cartiva' ), __( '12 Market Street, Springfield · Sat 10am–4pm', 'cartiva' ) );
-cartiva_icon_card( 'chat', __( 'Order help', 'cartiva' ), __( 'Track an order, start a return or change an address.', 'cartiva' ), __( 'Track your order →', 'cartiva' ), cartiva_page_url( 'track-order' ) );
+cartiva_icon_card( 'mail', __( 'Email us', 'cartiva' ), __( 'hello@example.com', 'cartiva' ), __( 'Send an email →', 'cartiva' ), 'mailto:hello@example.com', 2 );
+cartiva_icon_card( 'phone', __( 'Call us', 'cartiva' ), __( '+1 (555) 010-2030 · Mon–Fri, 9am–6pm', 'cartiva' ), __( 'Call now →', 'cartiva' ), 'tel:+15550102030', 2 );
+cartiva_icon_card( 'pin', __( 'Visit the studio', 'cartiva' ), __( '12 Market Street, Springfield · Sat 10am–4pm', 'cartiva' ), '', '', 2 );
+cartiva_icon_card( 'chat', __( 'Order help', 'cartiva' ), __( 'Track an order, start a return or change an address.', 'cartiva' ), __( 'Track your order →', 'cartiva' ), cartiva_page_url( 'track-order' ), 2 );
 ?>
 	</div>
 	<!-- /wp:group -->
@@ -74,8 +74,8 @@ cartiva_icon_card( 'chat', __( 'Order help', 'cartiva' ), __( 'Track an order, s
 		<div class="wp-block-column" style="flex-basis:42%">
 			<!-- wp:group {"className":"cartiva-hours","style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained"}} -->
 			<div class="wp-block-group cartiva-hours">
-				<!-- wp:heading {"level":3,"fontSize":"medium"} -->
-				<h3 class="wp-block-heading has-medium-font-size"><?php esc_html_e( 'Opening hours', 'cartiva' ); ?></h3>
+				<!-- wp:heading {"fontSize":"medium"} -->
+				<h2 class="wp-block-heading has-medium-font-size"><?php esc_html_e( 'Opening hours', 'cartiva' ); ?></h2>
 				<!-- /wp:heading -->
 				<!-- wp:table {"className":"cartiva-hours__table","fontSize":"small"} -->
 				<figure class="wp-block-table cartiva-hours__table has-small-font-size"><table><tbody><tr><td><?php esc_html_e( 'Monday – Friday', 'cartiva' ); ?></td><td><?php esc_html_e( '9:00 – 18:00', 'cartiva' ); ?></td></tr><tr><td><?php esc_html_e( 'Saturday', 'cartiva' ); ?></td><td><?php esc_html_e( '10:00 – 16:00', 'cartiva' ); ?></td></tr><tr><td><?php esc_html_e( 'Sunday', 'cartiva' ); ?></td><td><?php esc_html_e( 'Closed', 'cartiva' ); ?></td></tr></tbody></table></figure>
@@ -84,8 +84,8 @@ cartiva_icon_card( 'chat', __( 'Order help', 'cartiva' ), __( 'Track an order, s
 			<!-- /wp:group -->
 			<!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|40"},"blockGap":"0"}},"layout":{"type":"constrained"}} -->
 			<div class="wp-block-group" style="margin-top:var(--wp--preset--spacing--40)">
-				<!-- wp:heading {"level":3,"fontSize":"medium","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|20"}}}} -->
-				<h3 class="wp-block-heading has-medium-font-size" style="margin-bottom:var(--wp--preset--spacing--20)"><?php esc_html_e( 'Quick answers', 'cartiva' ); ?></h3>
+				<!-- wp:heading {"fontSize":"medium","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|20"}}}} -->
+				<h2 class="wp-block-heading has-medium-font-size" style="margin-bottom:var(--wp--preset--spacing--20)"><?php esc_html_e( 'Quick answers', 'cartiva' ); ?></h2>
 				<!-- /wp:heading -->
 				<!-- wp:details {"className":"is-style-cartiva-faq"} -->
 				<details class="wp-block-details is-style-cartiva-faq"><summary><?php esc_html_e( 'How long does delivery take?', 'cartiva' ); ?></summary>

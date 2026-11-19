@@ -26,7 +26,7 @@ if ( ! function_exists( 'cartiva_setup' ) ) :
 
 		add_theme_support( 'wp-block-styles' );
 		add_theme_support( 'editor-styles' );
-		add_editor_style( 'style.css' );
+		add_editor_style( array( 'style.css', 'assets/css/sections.css' ) );
 
 		// WooCommerce: declare support so WooCommerce uses the block templates.
 		// Default image sizes only: store owners can still change them in their WooCommerce settings.
@@ -63,6 +63,96 @@ function cartiva_enqueue_styles() {
 	);
 }
 add_action( 'wp_enqueue_scripts', 'cartiva_enqueue_styles' );
+
+/**
+ * Classes that need the pattern section styles (assets/css/sections.css).
+ *
+ * Keep in sync with the root classes used in sections.css.
+ *
+ * @return string[]
+ */
+function cartiva_section_style_classes() {
+	$classes = array(
+		'cartiva-badge',
+		'cartiva-banner-cover',
+		'cartiva-blog-featured',
+		'cartiva-blog-list',
+		'cartiva-blog-magazine',
+		'cartiva-blog-minimal',
+		'cartiva-blog-side',
+		'cartiva-card-carousel',
+		'cartiva-category-auto',
+		'cartiva-category-card',
+		'cartiva-category-circles',
+		'cartiva-category-list',
+		'cartiva-category-mosaic',
+		'cartiva-category-tile',
+		'cartiva-check-list',
+		'cartiva-chip',
+		'cartiva-chips',
+		'cartiva-contact-card',
+		'cartiva-contact-list',
+		'cartiva-cover-wide',
+		'cartiva-cta-band',
+		'cartiva-faq-group',
+		'cartiva-faq-page',
+		'cartiva-hero-banners',
+		'cartiva-hours',
+		'cartiva-icon-card',
+		'cartiva-label',
+		'cartiva-legal',
+		'cartiva-location',
+		'cartiva-mission',
+		'cartiva-mosaic',
+		'cartiva-mosaic-large',
+		'cartiva-newsletter-card',
+		'cartiva-newsletter-inline',
+		'cartiva-newsletter-split',
+		'cartiva-page-hero',
+		'cartiva-post-cats',
+		'cartiva-post-overlay',
+		'cartiva-products-banner',
+		'cartiva-signature',
+		'cartiva-slider',
+		'cartiva-spotlight-image',
+		'cartiva-stats',
+		'cartiva-step',
+		'cartiva-table',
+		'cartiva-team-card',
+		'cartiva-timeline',
+	);
+	/**
+	 * Filters the block classes that load the section styles.
+	 *
+	 * @param string[] $classes Class names.
+	 */
+	return (array) apply_filters( 'cartiva_section_style_classes', $classes );
+}
+
+/**
+ * Load the section styles only when a block on the page uses one of them.
+ *
+ * Block templates are rendered before the page head is printed, so the
+ * stylesheet still lands in the head.
+ *
+ * @param string $content Block HTML.
+ * @param array  $block   Parsed block.
+ * @return string
+ */
+function cartiva_maybe_enqueue_section_styles( $content, $block ) {
+	static $pattern = null;
+	if ( empty( $block['attrs']['className'] ) || wp_style_is( 'cartiva-sections', 'enqueued' ) ) {
+		return $content;
+	}
+	if ( null === $pattern ) {
+		$pattern = '/(^|\s)(' . implode( '|', array_map( 'preg_quote', cartiva_section_style_classes() ) ) . ')(\s|$|--|__)/';
+	}
+	if ( preg_match( $pattern, (string) $block['attrs']['className'] ) ) {
+		wp_enqueue_style( 'cartiva-sections', CARTIVA_URI . '/assets/css/sections.css', array( 'cartiva-style' ), CARTIVA_VERSION );
+	}
+	return $content;
+}
+add_filter( 'render_block', 'cartiva_maybe_enqueue_section_styles', 10, 2 );
 
 /**
  * Per-block styles: each file loads only on pages where that block is rendered.

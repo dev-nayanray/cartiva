@@ -1,0 +1,575 @@
+/**
+ * Cartiva: styles for the pattern sections (pages, about, contact, hero, category,
+ * blog, newsletter). Loaded only on pages that use one of these sections, and
+ * always in the editor. See cartiva_section_style_classes() in functions.php.
+ */
+
+/* ==========================================================================
+   Page patterns: Contact, About, FAQ, Shipping & returns, Help center, Terms
+   ========================================================================== */
+.cartiva-page-hero h1 { margin-block: .25rem; }
+.cartiva-page-hero p { margin: 0; }
+
+/* Icon cards */
+.cartiva-icon-card {
+	position: relative;
+	height: 100%;
+	padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+	padding-top: 4.25rem;
+	border: 1px solid var(--wp--preset--color--border);
+	border-radius: var(--wp--custom--radius--md);
+	background: var(--wp--preset--color--base);
+	transition: box-shadow .2s ease, transform .2s ease, border-color .2s ease;
+	box-sizing: border-box;
+}
+.cartiva-icon-card:hover {
+	transform: translateY(-2px);
+	border-color: transparent;
+	box-shadow: var(--wp--preset--shadow--soft);
+}
+.cartiva-icon-card > * { margin: 0; }
+.cartiva-icon-card::before {
+	content: "";
+	position: absolute;
+	top: 1.5rem;
+	left: 1.5rem;
+	width: 2.25rem;
+	height: 2.25rem;
+	border-radius: 10px;
+	background: color-mix(in srgb, var(--wp--preset--color--primary) 12%, var(--wp--preset--color--base)) var(--cartiva-card-icon) center / 1.15rem no-repeat;
+}
+.cartiva-icon-card__link { margin-top: auto !important; font-weight: 600; }
+.cartiva-icon-card__link a { color: var(--wp--preset--color--primary); text-decoration: none; }
+.cartiva-icon-card__link a:hover { text-decoration: underline; }
+.cartiva-icon-card--mail { --cartiva-card-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231f4fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='5' width='18' height='14' rx='2'/%3E%3Cpath d='m3 7 9 6 9-6'/%3E%3C/svg%3E"); }
+.cartiva-icon-card--phone { --cartiva-card-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231f4fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z'/%3E%3C/svg%3E"); }
+.cartiva-icon-card--pin { --cartiva-card-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231f4fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z'/%3E%3Ccircle cx='12' cy='9' r='2.5'/%3E%3C/svg%3E"); }
+.cartiva-icon-card--chat { --cartiva-card-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231f4fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z'/%3E%3C/svg%3E"); }
+.cartiva-icon-card--star { --cartiva-card-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231f4fff' stroke-width='2' stroke-linejoin='round'%3E%3Cpath d='m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z'/%3E%3C/svg%3E"); }
+.cartiva-icon-card--leaf { --cartiva-card-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231f4fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 19c0-8 5-14 15-14 0 10-6 15-14 15'/%3E%3Cpath d='M5 19 13 11'/%3E%3C/svg%3E"); }
+.cartiva-icon-card--truck { --cartiva-card-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231f4fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 6h11v10H3zM14 9h4l3 3v4h-7'/%3E%3Ccircle cx='7' cy='17.5' r='1.8'/%3E%3Ccircle cx='17' cy='17.5' r='1.8'/%3E%3C/svg%3E"); }
+.cartiva-icon-card--box { --cartiva-card-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231f4fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 8 12 3 3 8v8l9 5 9-5zM3 8l9 5 9-5M12 13v8'/%3E%3C/svg%3E"); }
+.cartiva-icon-card--return { --cartiva-card-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231f4fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 12a8 8 0 1 0 2.3-5.6M4 4v4h4'/%3E%3C/svg%3E"); }
+.cartiva-icon-card--user { --cartiva-card-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231f4fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='8' r='4'/%3E%3Cpath d='M4 21a8 8 0 0 1 16 0'/%3E%3C/svg%3E"); }
+.cartiva-icon-card--question { --cartiva-card-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231f4fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpath d='M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.6V14M12 17.5h.01'/%3E%3C/svg%3E"); }
+
+/* Contact */
+.cartiva-contact-card {
+	padding: clamp(1.5rem, 4vw, 2.5rem);
+	border-radius: var(--wp--custom--radius--lg);
+	background: var(--wp--preset--color--surface);
+}
+.cartiva-contact-card > * { margin-block: 0; }
+.cartiva-hours {
+	padding: 1.5rem;
+	border: 1px solid var(--wp--preset--color--border);
+	border-radius: var(--wp--custom--radius--md);
+}
+.cartiva-hours > * { margin-block: 0; }
+.cartiva-hours__table table { width: 100%; border-collapse: collapse; }
+.cartiva-hours__table td {
+	padding: .6rem 0;
+	border: 0;
+	border-bottom: 1px solid var(--wp--preset--color--border);
+}
+.cartiva-hours__table tr:last-child td { border-bottom: 0; }
+.cartiva-hours__table td:last-child { text-align: right; font-weight: 600; }
+
+/* Check list */
+.cartiva-check-list {
+	list-style: none;
+	padding: 0;
+	display: grid;
+	gap: .5rem;
+}
+.cartiva-check-list li {
+	position: relative;
+	padding-left: 1.75rem;
+}
+.cartiva-check-list li::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: .2em;
+	width: 1.15rem;
+	height: 1.15rem;
+	border-radius: 50%;
+	background: var(--wp--preset--color--success) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 12 4 4 8-8'/%3E%3C/svg%3E") center / .7rem no-repeat;
+}
+
+/* About: stats */
+.cartiva-stats p { margin: 0; }
+.cartiva-stats__number { line-height: 1.1; }
+
+/* Shipping: steps + table */
+.cartiva-step {
+	height: 100%;
+	padding: 1.5rem;
+	border-radius: var(--wp--custom--radius--md);
+	background: var(--wp--preset--color--surface);
+	box-sizing: border-box;
+}
+.cartiva-step > * { margin: 0; }
+.cartiva-step__number {
+	display: grid;
+	place-items: center;
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 50%;
+	background: var(--wp--preset--color--contrast);
+	color: var(--wp--preset--color--base);
+	font-weight: 800;
+}
+.cartiva-table table {
+	width: 100%;
+	border: 1px solid var(--wp--preset--color--border);
+	border-radius: var(--wp--custom--radius--md);
+	border-collapse: separate;
+	border-spacing: 0;
+	overflow: hidden;
+}
+.cartiva-table :is(th, td) {
+	padding: .9rem 1rem;
+	border: 0;
+	border-top: 1px solid var(--wp--preset--color--border);
+	text-align: left;
+}
+.cartiva-table thead th {
+	border-top: 0;
+	background: var(--wp--preset--color--surface);
+	color: var(--wp--preset--color--muted);
+	font-size: var(--wp--preset--font-size--x-small);
+	letter-spacing: .04em;
+	text-transform: uppercase;
+}
+.cartiva-table thead { border: 0; }
+.cartiva-table td:first-child { font-weight: 600; }
+
+/* FAQ page */
+.cartiva-faq-page .cartiva-faq-group + .cartiva-faq-group { margin-top: var(--wp--preset--spacing--60); }
+
+/* Legal */
+.cartiva-legal__note {
+	padding: .9rem 1.1rem;
+	border-left: 3px solid var(--wp--preset--color--primary);
+	border-radius: 0 var(--wp--custom--radius--sm) var(--wp--custom--radius--sm) 0;
+	background: var(--wp--preset--color--surface);
+}
+.cartiva-legal h2 { margin-top: var(--wp--preset--spacing--50); }
+
+/* CTA band */
+.cartiva-cta-band > * > * { margin: 0; }
+
+/* Trust badges (homepage) */
+.cartiva-badge {
+	position: relative;
+	padding-left: 3.5rem;
+	min-height: 2.75rem;
+	justify-content: center;
+}
+.cartiva-badge > * { margin: 0; }
+.cartiva-badge::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 2.6rem;
+	height: 2.6rem;
+	margin-top: -1.3rem;
+	border-radius: 50%;
+	background: var(--wp--preset--color--surface) var(--cartiva-badge-icon) center / 1.25rem no-repeat;
+}
+.cartiva-badge--truck { --cartiva-badge-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23111' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 6h11v10H3zM14 9h4l3 3v4h-7'/%3E%3Ccircle cx='7' cy='17.5' r='1.8'/%3E%3Ccircle cx='17' cy='17.5' r='1.8'/%3E%3C/svg%3E"); }
+.cartiva-badge--return { --cartiva-badge-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23111' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 12a8 8 0 1 0 2.3-5.6M4 4v4h4'/%3E%3C/svg%3E"); }
+.cartiva-badge--lock { --cartiva-badge-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23111' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='5' y='11' width='14' height='10' rx='2'/%3E%3Cpath d='M8 11V7a4 4 0 0 1 8 0v4'/%3E%3C/svg%3E"); }
+.cartiva-badge--chat { --cartiva-badge-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23111' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z'/%3E%3C/svg%3E"); }
+
+
+/* Cover blocks in patterns: text lines up with the wide content edge */
+.wp-block-cover.cartiva-cover-wide .wp-block-cover__inner-container {
+	width: 100%;
+	max-width: var(--wp--style--global--wide-size);
+	margin-inline: auto;
+	padding-inline: var(--wp--preset--spacing--30);
+	box-sizing: border-box;
+}
+.wp-block-cover.cartiva-cover-wide .wp-block-cover__inner-container > * { margin-block: 0; }
+
+/* Products: banner with grid – the nested section sits flush in its column */
+.cartiva-products-banner .wp-block-column > .wp-block-group.alignfull { padding: 0 !important; margin: 0 !important; }
+.cartiva-products-banner .wp-block-cover { height: 100%; }
+
+/* ==========================================================================
+   Category patterns
+   ========================================================================== */
+.cartiva-category-circles .wp-block-image { margin: 0; width: 100%; }
+.cartiva-category-circles .wp-block-image img { width: 100%; transition: transform .3s ease, box-shadow .3s ease; }
+.cartiva-category-circles .wp-block-image a:hover img { transform: translateY(-3px); box-shadow: var(--wp--preset--shadow--soft); }
+.cartiva-category-circles p { margin: 0; }
+.cartiva-category-circles a { text-decoration: none; }
+@media (max-width: 781px) {
+	.cartiva-category-circles {
+		grid-template-columns: none !important;
+		grid-auto-flow: column;
+		grid-auto-columns: 5.75rem;
+		overflow-x: auto;
+		scroll-snap-type: x proximity;
+		scrollbar-width: none;
+	}
+	.cartiva-category-circles > * { scroll-snap-align: start; }
+}
+.cartiva-category-card { overflow: hidden; }
+.cartiva-category-card .wp-block-cover__image-background { transition: transform .6s ease; }
+.cartiva-category-card:hover .wp-block-cover__image-background { transform: scale(1.05); }
+.cartiva-category-card .wp-block-cover__background {
+	background: linear-gradient(to top, rgba(17, 17, 17, .65), rgba(17, 17, 17, 0) 60%) !important;
+	opacity: 1 !important;
+}
+.cartiva-category-card a { color: inherit; text-decoration: none; }
+.cartiva-category-card a::after { content: ""; position: absolute; inset: 0; z-index: 1; }
+.cartiva-category-card h3, .cartiva-category-card p { margin: 0; }
+.cartiva-category-mosaic { grid-auto-rows: 250px; }
+.cartiva-category-mosaic > .wp-block-cover { min-height: 0 !important; height: 100%; }
+.cartiva-category-mosaic > .cartiva-mosaic-large { grid-column: span 2; grid-row: span 2; }
+@media (max-width: 781px) {
+	.cartiva-category-mosaic { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; grid-auto-rows: 180px; }
+	.cartiva-category-mosaic > .cartiva-mosaic-large { grid-row: span 1; }
+}
+.cartiva-no-hover-motion .cartiva-category-card:hover .wp-block-cover__image-background { transform: none; }
+
+/* Categories: automatic (WooCommerce Product Categories block) */
+.cartiva-category-auto .wc-block-product-categories-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 11rem), 1fr));
+	gap: 1.25rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.cartiva-category-auto .wc-block-product-categories-list-item { margin: 0; }
+.cartiva-category-auto .wc-block-product-categories-list-item > a {
+	display: flex;
+	flex-direction: column;
+	gap: .6rem;
+	color: var(--wp--preset--color--contrast);
+	font-weight: 600;
+	text-decoration: none;
+}
+.cartiva-category-auto .wc-block-product-categories-list-item__image {
+	display: block;
+	overflow: hidden;
+	aspect-ratio: 1;
+	border-radius: var(--wp--custom--radius--md);
+	background: var(--wp--preset--color--surface);
+}
+.cartiva-category-auto .wc-block-product-categories-list-item__image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform .4s ease;
+}
+.cartiva-category-auto .wc-block-product-categories-list-item > a:hover img { transform: scale(1.05); }
+.cartiva-category-auto .wc-block-product-categories-list-item-count {
+	color: var(--wp--preset--color--muted);
+	font-size: var(--wp--preset--font-size--x-small);
+	font-weight: 500;
+}
+
+/* ==========================================================================
+   Blog patterns
+   ========================================================================== */
+.cartiva-blog-featured .wp-block-post-featured-image,
+.cartiva-blog-list .wp-block-post-featured-image,
+.cartiva-blog-side .wp-block-post-featured-image { overflow: hidden; margin: 0; }
+.cartiva-blog-side .wp-block-post-featured-image { flex: none; border-radius: var(--wp--custom--radius--sm); }
+.cartiva-blog-side .wp-block-post-title,
+.cartiva-blog-list .wp-block-post-title { margin: 0; }
+.cartiva-blog-side li { padding-bottom: var(--wp--preset--spacing--30); border-bottom: 1px solid var(--wp--preset--color--border); }
+.cartiva-blog-side li:last-child { border-bottom: 0; }
+.cartiva-blog-list__item .wp-block-post-featured-image { flex: 0 0 42%; }
+.cartiva-blog-list__item .wp-block-post-excerpt__excerpt { margin: 0; }
+@media (max-width: 600px) {
+	.cartiva-blog-list__item { flex-wrap: wrap !important; }
+	.cartiva-blog-list__item .wp-block-post-featured-image { flex-basis: 100%; }
+}
+.cartiva-blog-minimal .wp-block-post-template { border-top: 1px solid var(--wp--preset--color--border); }
+.cartiva-blog-minimal .wp-block-post-template > li { margin: 0; border-bottom: 1px solid var(--wp--preset--color--border); }
+.cartiva-blog-minimal__row { padding-block: var(--wp--preset--spacing--40); }
+.cartiva-blog-minimal__date { flex: 0 0 9rem; }
+.cartiva-blog-minimal__title { flex: 1 1 18rem; margin: 0; }
+.cartiva-blog-minimal__title a { text-decoration: none; }
+.cartiva-blog-minimal__title a:hover { color: var(--wp--preset--color--primary); }
+.cartiva-blog-minimal__row .wp-block-post-title a::after { content: " →"; opacity: 0; transition: opacity .2s ease; }
+.cartiva-blog-minimal__row:hover .wp-block-post-title a::after { opacity: 1; }
+
+/* ==========================================================================
+   Newsletter patterns
+   ========================================================================== */
+.cartiva-newsletter-split {
+	overflow: hidden;
+	border-radius: var(--wp--custom--radius--lg);
+	background: var(--wp--preset--color--surface);
+}
+.cartiva-newsletter-split .wp-block-image { margin: 0; height: 100%; }
+.cartiva-newsletter-split .wp-block-image img { border-radius: 0; height: 100%; }
+.cartiva-newsletter-split > .wp-block-column:first-child { align-self: stretch; }
+.cartiva-newsletter-split > .wp-block-column > * { margin-block: 0; }
+.cartiva-newsletter-card > * { margin-block: 0; }
+.cartiva-newsletter-inline h3, .cartiva-newsletter-inline p { margin: 0; }
+
+
+/* Hero: image mosaic – first image spans the full row even without grid child settings */
+.cartiva-mosaic > :first-child { grid-column: 1 / -1; }
+.cartiva-mosaic .wp-block-image { margin: 0; }
+
+
+/* ==========================================================================
+   About sections
+   ========================================================================== */
+.cartiva-signature { margin-top: var(--wp--preset--spacing--20); padding-top: var(--wp--preset--spacing--20); border-top: 1px solid var(--wp--preset--color--border); }
+.cartiva-stats--light .cartiva-stats__number { color: var(--wp--preset--color--base); }
+.cartiva-stats--light > * { padding-left: 1.25rem; border-left: 2px solid rgb(255 255 255 / .18); }
+
+.cartiva-team-card {
+	padding: 1.75rem 1.25rem;
+	border: 1px solid var(--wp--preset--color--border);
+	border-radius: var(--wp--custom--radius--md);
+	text-align: center;
+	transition: transform .2s ease, box-shadow .2s ease;
+}
+.cartiva-team-card:hover { transform: translateY(-2px); box-shadow: var(--wp--preset--shadow--md, 0 10px 30px rgb(0 0 0 / .08)); }
+.cartiva-team-card.wp-block-group { align-items: center; text-align: center; }
+.cartiva-team-card > * { margin: 0; }
+.cartiva-team-card__avatar {
+	display: grid;
+	place-items: center;
+	width: 5.5rem;
+	height: 5.5rem;
+	margin-bottom: .5rem !important;
+	border-radius: 50%;
+	background: linear-gradient(135deg, var(--wp--preset--color--primary), var(--wp--preset--color--accent));
+	color: #fff;
+	font-size: 1.6rem;
+	font-weight: 800;
+	letter-spacing: -.02em;
+}
+
+.cartiva-timeline { position: relative; margin-top: var(--wp--preset--spacing--40); }
+.cartiva-timeline::before {
+	content: "";
+	position: absolute;
+	left: .45rem;
+	top: .5rem;
+	bottom: .5rem;
+	width: 2px;
+	background: var(--wp--preset--color--border);
+}
+.cartiva-timeline__item { position: relative; padding: 0 0 var(--wp--preset--spacing--40) 2.5rem; }
+.cartiva-timeline__item:last-child { padding-bottom: 0; }
+.cartiva-timeline__item > * { margin: 0; }
+.cartiva-timeline__item::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: .2rem;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+	background: var(--wp--preset--color--base);
+	border: 3px solid var(--wp--preset--color--primary);
+	box-sizing: border-box;
+}
+
+.cartiva-mission__point {
+	display: inline-flex;
+	align-items: center;
+	gap: .5rem;
+	margin: 0;
+	font-weight: 600;
+}
+.cartiva-mission__point::before {
+	content: "";
+	width: .5rem;
+	height: .5rem;
+	border-radius: 50%;
+	background: var(--wp--preset--color--primary);
+}
+
+/* ==========================================================================
+   Contact sections
+   ========================================================================== */
+.cartiva-contact-list { border-top: 1px solid var(--wp--preset--color--border); }
+.cartiva-contact-list .cartiva-contact-list__row { padding-block: .9rem; border-bottom: 1px solid var(--wp--preset--color--border); }
+.cartiva-contact-list__row {
+	position: relative;
+	margin: 0;
+	padding-left: 2rem;
+}
+.cartiva-contact-list__row strong { display: inline-block; min-width: 5.5rem; }
+.cartiva-contact-list__row::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 1.15rem;
+	height: 1.15rem;
+	transform: translateY(-50%);
+	background: var(--wp--preset--color--primary);
+	-webkit-mask: var(--cartiva-row-icon) center / contain no-repeat;
+	mask: var(--cartiva-row-icon) center / contain no-repeat;
+}
+.cartiva-contact-list__row--mail { --cartiva-row-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='5' width='18' height='14' rx='2'/%3E%3Cpath d='m3 7 9 6 9-6'/%3E%3C/svg%3E"); }
+.cartiva-contact-list__row--phone { --cartiva-row-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z'/%3E%3C/svg%3E"); }
+.cartiva-contact-list__row--pin { --cartiva-row-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z'/%3E%3Ccircle cx='12' cy='9' r='2.5'/%3E%3C/svg%3E"); }
+.cartiva-contact-list__row--clock { --cartiva-row-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpath d='M12 7v5l3 2'/%3E%3C/svg%3E"); }
+.cartiva-icon-card--clock { --cartiva-card-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231f4fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpath d='M12 7v5l3 2'/%3E%3C/svg%3E"); }
+
+.cartiva-location {
+	height: 100%;
+	padding: 1.75rem;
+	border-radius: var(--wp--custom--radius--md);
+	background: var(--wp--preset--color--surface);
+	box-sizing: border-box;
+}
+.cartiva-location > * { margin: 0; }
+
+/* ==========================================================================
+   Hero additions
+   ========================================================================== */
+.cartiva-slider--boxed,
+.cartiva-slider--boxed > .wp-block-cover { border-radius: 24px; }
+.cartiva-slider--boxed { overflow: hidden; }
+.cartiva-slider-wrap.alignwide .cartiva-slider--boxed { overflow-x: auto; }
+
+.cartiva-hero-banners .wp-block-column { min-width: 0; }
+.cartiva-banner-cover { height: 100%; overflow: hidden; }
+.cartiva-banner-cover > .wp-block-cover__image-background { transition: transform .6s ease; }
+.cartiva-banner-cover:hover > .wp-block-cover__image-background { transform: scale(1.04); }
+.cartiva-banner-cover.cartiva-cover-wide .wp-block-cover__inner-container {
+	width: auto;
+	max-width: min(100% - 2rem, 26rem);
+	margin: 1rem;
+	padding: clamp(1.25rem, 2.5vw, 2rem);
+	border-radius: 16px;
+	background: rgb(255 255 255 / .88);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+	box-sizing: border-box;
+}
+.cartiva-banner-cover .wp-block-heading { font-size: var(--wp--preset--font-size--x-large) !important; }
+@media (prefers-reduced-motion: reduce) {
+	.cartiva-banner-cover:hover > .wp-block-cover__image-background { transform: none; }
+}
+
+.cartiva-label {
+	display: inline-block;
+	width: fit-content;
+	margin: 0;
+	padding: .35rem .8rem;
+	border-radius: 999px;
+	background: var(--wp--preset--color--contrast);
+	color: var(--wp--preset--color--base);
+	font-weight: 700;
+	letter-spacing: .06em;
+	text-transform: uppercase;
+}
+.cartiva-label--accent { background: var(--wp--preset--color--accent); }
+.cartiva-spotlight-image img { box-shadow: 0 30px 60px -30px rgb(0 0 0 / .35); }
+
+.cartiva-chips { margin-block-end: 0; }
+.cartiva-chip { margin: 0; }
+.cartiva-chip a {
+	display: inline-block;
+	padding: .45rem 1rem;
+	border: 1px solid var(--wp--preset--color--border);
+	border-radius: 999px;
+	background: var(--wp--preset--color--base);
+	color: inherit;
+	font-weight: 600;
+	text-decoration: none;
+	transition: background-color .15s ease, color .15s ease, border-color .15s ease;
+}
+.cartiva-chips--large .cartiva-chip a { padding: .7rem 1.35rem; }
+.cartiva-chip a:hover,
+.cartiva-chip a:focus-visible {
+	border-color: var(--wp--preset--color--contrast);
+	background: var(--wp--preset--color--contrast);
+	color: var(--wp--preset--color--base);
+}
+
+/* ==========================================================================
+   Category additions
+   ========================================================================== */
+.cartiva-category-list { border-top: 1px solid var(--wp--preset--color--border); }
+.cartiva-category-list__item { margin: 0; border-bottom: 1px solid var(--wp--preset--color--border); }
+.cartiva-category-list__item a {
+	position: relative;
+	display: flex;
+	align-items: baseline;
+	gap: .75rem;
+	padding: 1.1rem 2.5rem 1.1rem 0;
+	color: inherit;
+	font-weight: 700;
+	letter-spacing: -.01em;
+	text-decoration: none;
+	transition: padding-left .2s ease, color .2s ease;
+}
+.cartiva-category-list__item a::after {
+	content: "";
+	position: absolute;
+	right: .25rem;
+	top: 50%;
+	width: 1.25rem;
+	height: 1.25rem;
+	transform: translateY(-50%);
+	background: currentColor;
+	-webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14M13 6l6 6-6 6'/%3E%3C/svg%3E") center / contain no-repeat;
+	mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14M13 6l6 6-6 6'/%3E%3C/svg%3E") center / contain no-repeat;
+	transition: transform .2s ease;
+}
+.cartiva-category-list__item a:hover { padding-left: .5rem; color: var(--wp--preset--color--primary); }
+.cartiva-category-list__item a:hover::after { transform: translate(.25rem, -50%); }
+.cartiva-category-list__count {
+	color: var(--wp--preset--color--muted);
+	font-size: var(--wp--preset--font-size--x-small);
+	font-weight: 500;
+}
+.cartiva-category-tile > * { margin: 0; }
+.cartiva-category-tile .wp-block-image { width: 100%; }
+.cartiva-category-tile a { text-decoration: none; }
+
+/* ==========================================================================
+   Blog additions
+   ========================================================================== */
+.cartiva-post-overlay { height: 100%; overflow: hidden; }
+.cartiva-post-overlay .wp-block-cover__background { background: linear-gradient(to top, rgb(0 0 0 / .85), rgb(0 0 0 / .1) 65%) !important; opacity: 1 !important; }
+.cartiva-post-overlay .wp-block-cover__inner-container > * { margin-block: 0 .35rem; }
+.cartiva-post-overlay a { color: var(--wp--preset--color--base); text-decoration: none; }
+.cartiva-post-overlay .cartiva-post-cats a { background: rgb(255 255 255 / .2); color: var(--wp--preset--color--base); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
+.cartiva-post-overlay .cartiva-post-cats a:hover { background: var(--wp--preset--color--base); color: var(--wp--preset--color--contrast); }
+.cartiva-post-overlay .wp-block-post-date { opacity: .85; }
+.cartiva-post-overlay .wp-block-cover__image-background { transition: transform .6s ease; }
+.cartiva-post-overlay:hover .wp-block-cover__image-background { transform: scale(1.05); }
+
+.cartiva-blog-magazine .wp-block-post-template > li:first-child { grid-column: span 2; grid-row: span 2; }
+.cartiva-blog-magazine .wp-block-post-template > li:first-child .wp-block-post-title { font-size: var(--wp--preset--font-size--x-large); }
+.cartiva-blog-magazine .wp-block-post-template > li:not(:first-child) .cartiva-blog-magazine__excerpt { display: none; }
+.cartiva-blog-magazine .wp-block-post-template > li > * { margin-block: 0 .4rem; }
+@media (max-width: 781px) {
+	.cartiva-blog-magazine .wp-block-post-template { grid-template-columns: 1fr 1fr !important; }
+	.cartiva-blog-magazine .wp-block-post-template > li:first-child { grid-row: auto; }
+}
+@media (max-width: 600px) {
+	.cartiva-blog-magazine .wp-block-post-template { grid-template-columns: 1fr !important; }
+	.cartiva-blog-magazine .wp-block-post-template > li:first-child { grid-column: auto; }
+}
+
+.cartiva-card-carousel .wp-block-post-template > li > * { margin-block: 0 .4rem; }
+
+
+
+@media (max-width: 600px) {
+	.cartiva-category-mosaic .wp-block-cover__inner-container { padding: .75rem !important; }
+	.cartiva-category-mosaic .wp-block-cover:not(.cartiva-mosaic-large) p { font-size: var(--wp--preset--font-size--small) !important; }
+	.wp-block-columns:has(.cartiva-category-list) .wp-block-image img { aspect-ratio: 16 / 9 !important; }
+}

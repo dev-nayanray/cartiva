@@ -347,3 +347,27 @@ html.cartiva-dark {
 html.cartiva-dark img { filter: brightness(.94); }
 html.cartiva-dark .cartiva-hover-image { filter: brightness(.94); }
 .cartiva-has-hover-image .wc-block-components-product-sale-badge { z-index: 2; }
+
+/* Dark mode: sections that are already dark stay dark, with light text */
+html.cartiva-dark .has-contrast-background-color {
+	--wp--preset--color--contrast: #0b0b0d;
+	--wp--preset--color--base: #f4f4f2;
+	--wp--preset--color--surface: #1c1d21;
+	--wp--preset--color--muted: #a5a8ad;
+	--wp--preset--color--border: #2d2f34;
+	color: var(--wp--preset--color--base);
+}
+/* Text and white buttons placed on photos keep their light look */
+html.cartiva-dark .wp-block-cover .has-base-color { color: #fff !important; }
+html.cartiva-dark .wp-block-cover .has-base-background-color { background-color: #fff !important; }
+html.cartiva-dark .wp-block-cover .has-base-background-color.has-contrast-color,
+html.cartiva-dark .wp-block-cover .has-base-background-color .has-contrast-color { color: #111 !important; }
+/* Icons drawn as dark images */
+html.cartiva-dark .cartiva-badge::before { background-color: #e9e9e6; }
+html.cartiva-dark .cartiva-banner-cover.cartiva-cover-wide .wp-block-cover__inner-container { background: rgb(18 19 21 / .86); color: #f4f4f2; }
+
+/* Phones: the bottom bar already has Account and Wishlist, keep the header light */
+@media (max-width: 781px) {
+	.cartiva-has-mobile-bar .cartiva-header .wp-block-woocommerce-customer-account,
+	.cartiva-has-mobile-bar .cartiva-wishlist-header { display: none !important; }
+}

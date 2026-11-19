@@ -18,8 +18,8 @@
 	<div class="wp-block-group alignwide cartiva-newsletter-inline">
 		<!-- wp:group {"style":{"spacing":{"blockGap":"0.15rem"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 		<div class="wp-block-group">
-			<!-- wp:heading {"level":3,"fontSize":"large"} -->
-			<h3 class="wp-block-heading has-large-font-size"><?php esc_html_e( 'Get 10% off your first order', 'cartiva' ); ?></h3>
+			<!-- wp:heading {"fontSize":"large"} -->
+			<h2 class="wp-block-heading has-large-font-size"><?php esc_html_e( 'Get 10% off your first order', 'cartiva' ); ?></h2>
 			<!-- /wp:heading -->
 			<!-- wp:paragraph {"textColor":"muted","fontSize":"small"} -->
 			<p class="has-muted-color has-text-color has-small-font-size"><?php esc_html_e( 'Plus early access to sales. Unsubscribe any time.', 'cartiva' ); ?></p>

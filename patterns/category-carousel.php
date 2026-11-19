@@ -33,7 +33,7 @@ $cartiva_cats = array(
 		<!-- wp:group {"className":"cartiva-category-tile","style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 		<div class="wp-block-group cartiva-category-tile">
 			<!-- wp:image {"aspectRatio":"3/4","scale":"cover","sizeSlug":"full","linkDestination":"custom","className":"is-style-cartiva-zoom","style":{"border":{"radius":"16px"}}} -->
-			<figure class="wp-block-image size-full has-custom-border is-style-cartiva-zoom"><a href="<?php echo esc_url( $cartiva_shop_url ); ?>"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/' . $cartiva_cat[0] ); ?>" alt="" style="border-radius:16px;aspect-ratio:3/4;object-fit:cover"/></a></figure>
+			<figure class="wp-block-image size-full has-custom-border is-style-cartiva-zoom"><a href="<?php echo esc_url( $cartiva_shop_url ); ?>"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/' . $cartiva_cat[0] ); ?>" alt="<?php echo esc_attr( $cartiva_cat[1] ); ?>" style="border-radius:16px;aspect-ratio:3/4;object-fit:cover"/></a></figure>
 			<!-- /wp:image -->
 			<!-- wp:paragraph {"style":{"typography":{"fontWeight":"700"}}} -->
 			<p style="font-weight:700"><a href="<?php echo esc_url( $cartiva_shop_url ); ?>"><?php echo esc_html( $cartiva_cat[1] ); ?></a></p>

@@ -10,6 +10,7 @@
  * @since 1.0.0
  */
 
+$cartiva_shop_url = function_exists( 'wc_get_page_permalink' ) ? wc_get_page_permalink( 'shop' ) : home_url( '/' );
 $cartiva_categories = array(
 	array( 'cat-1.webp', __( 'Home & Living', 'cartiva' ) ),
 	array( 'cat-2.webp', __( 'Accessories', 'cartiva' ) ),
@@ -25,7 +26,7 @@ $cartiva_categories = array(
 		<h2 class="wp-block-heading"><?php esc_html_e( 'Shop by category', 'cartiva' ); ?></h2>
 		<!-- /wp:heading -->
 		<!-- wp:paragraph {"fontSize":"small"} -->
-		<p class="has-small-font-size"><a href="#"><?php esc_html_e( 'View all', 'cartiva' ); ?></a></p>
+		<p class="has-small-font-size"><a href="<?php echo esc_url( $cartiva_shop_url ); ?>"><?php esc_html_e( 'View all', 'cartiva' ); ?></a></p>
 		<!-- /wp:paragraph -->
 	</div>
 	<!-- /wp:group -->
@@ -36,10 +37,10 @@ $cartiva_categories = array(
 		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 		<div class="wp-block-group">
 			<!-- wp:image {"aspectRatio":"4/5","scale":"cover","sizeSlug":"full","linkDestination":"custom","className":"is-style-cartiva-zoom"} -->
-			<figure class="wp-block-image size-full is-style-cartiva-zoom"><a href="#"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/' . $cartiva_cat[0] ); ?>" alt="" style="aspect-ratio:4/5;object-fit:cover"/></a></figure>
+			<figure class="wp-block-image size-full is-style-cartiva-zoom"><a href="<?php echo esc_url( $cartiva_shop_url ); ?>"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/' . $cartiva_cat[0] ); ?>" alt="<?php echo esc_attr( $cartiva_cat[1] ); ?>" style="aspect-ratio:4/5;object-fit:cover"/></a></figure>
 			<!-- /wp:image -->
 			<!-- wp:heading {"level":3,"fontSize":"medium"} -->
-			<h3 class="wp-block-heading has-medium-font-size"><a href="#"><?php echo esc_html( $cartiva_cat[1] ); ?></a></h3>
+			<h3 class="wp-block-heading has-medium-font-size"><a href="<?php echo esc_url( $cartiva_shop_url ); ?>"><?php echo esc_html( $cartiva_cat[1] ); ?></a></h3>
 			<!-- /wp:heading -->
 		</div>
 		<!-- /wp:group -->

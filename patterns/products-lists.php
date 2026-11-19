@@ -21,8 +21,8 @@ if ( ! cartiva_is_woocommerce_active() ) {
 	<div class="wp-block-columns alignwide">
 		<!-- wp:column -->
 		<div class="wp-block-column">
-			<!-- wp:heading {"level":3,"className":"cartiva-list-heading","fontSize":"large"} -->
-			<h3 class="wp-block-heading cartiva-list-heading has-large-font-size"><?php esc_html_e( 'New arrivals', 'cartiva' ); ?></h3>
+			<!-- wp:heading {"className":"cartiva-list-heading","fontSize":"large"} -->
+			<h2 class="wp-block-heading cartiva-list-heading has-large-font-size"><?php esc_html_e( 'New arrivals', 'cartiva' ); ?></h2>
 			<!-- /wp:heading -->
 			<!-- wp:woocommerce/product-collection {"queryId":18,"query":{"perPage":3,"pages":1,"offset":0,"postType":"product","order":"desc","orderBy":"date","search":"","exclude":[],"inherit":false,"taxQuery":{},"isProductCollectionBlock":true,"featured":false,"woocommerceOnSale":false,"woocommerceStockStatus":["instock","outofstock","onbackorder"],"woocommerceAttributes":[],"woocommerceHandPickedProducts":[]},"tagName":"div","displayLayout":{"type":"list","columns":1,"shrinkColumns":true},"collection":"woocommerce/product-collection/new-arrivals","hideControls":["inherit"],"className":"cartiva-product-list"} -->
 			<div class="wp-block-woocommerce-product-collection cartiva-product-list">
@@ -46,8 +46,8 @@ if ( ! cartiva_is_woocommerce_active() ) {
 		<!-- /wp:column -->
 		<!-- wp:column -->
 		<div class="wp-block-column">
-			<!-- wp:heading {"level":3,"className":"cartiva-list-heading","fontSize":"large"} -->
-			<h3 class="wp-block-heading cartiva-list-heading has-large-font-size"><?php esc_html_e( 'Best sellers', 'cartiva' ); ?></h3>
+			<!-- wp:heading {"className":"cartiva-list-heading","fontSize":"large"} -->
+			<h2 class="wp-block-heading cartiva-list-heading has-large-font-size"><?php esc_html_e( 'Best sellers', 'cartiva' ); ?></h2>
 			<!-- /wp:heading -->
 			<!-- wp:woocommerce/product-collection {"queryId":19,"query":{"perPage":3,"pages":1,"offset":0,"postType":"product","order":"desc","orderBy":"popularity","search":"","exclude":[],"inherit":false,"taxQuery":{},"isProductCollectionBlock":true,"featured":false,"woocommerceOnSale":false,"woocommerceStockStatus":["instock","outofstock","onbackorder"],"woocommerceAttributes":[],"woocommerceHandPickedProducts":[]},"tagName":"div","displayLayout":{"type":"list","columns":1,"shrinkColumns":true},"collection":"woocommerce/product-collection/best-sellers","hideControls":["inherit"],"className":"cartiva-product-list"} -->
 			<div class="wp-block-woocommerce-product-collection cartiva-product-list">
@@ -71,8 +71,8 @@ if ( ! cartiva_is_woocommerce_active() ) {
 		<!-- /wp:column -->
 		<!-- wp:column -->
 		<div class="wp-block-column">
-			<!-- wp:heading {"level":3,"className":"cartiva-list-heading","fontSize":"large"} -->
-			<h3 class="wp-block-heading cartiva-list-heading has-large-font-size"><?php esc_html_e( 'On sale', 'cartiva' ); ?></h3>
+			<!-- wp:heading {"className":"cartiva-list-heading","fontSize":"large"} -->
+			<h2 class="wp-block-heading cartiva-list-heading has-large-font-size"><?php esc_html_e( 'On sale', 'cartiva' ); ?></h2>
 			<!-- /wp:heading -->
 			<!-- wp:woocommerce/product-collection {"queryId":20,"query":{"perPage":3,"pages":1,"offset":0,"postType":"product","order":"desc","orderBy":"date","search":"","exclude":[],"inherit":false,"taxQuery":{},"isProductCollectionBlock":true,"featured":false,"woocommerceOnSale":true,"woocommerceStockStatus":["instock","outofstock","onbackorder"],"woocommerceAttributes":[],"woocommerceHandPickedProducts":[]},"tagName":"div","displayLayout":{"type":"list","columns":1,"shrinkColumns":true},"collection":"woocommerce/product-collection/on-sale","hideControls":["inherit"],"className":"cartiva-product-list"} -->
 			<div class="wp-block-woocommerce-product-collection cartiva-product-list">

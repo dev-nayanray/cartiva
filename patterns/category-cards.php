@@ -10,6 +10,7 @@
  * @since 1.0.0
  */
 
+$cartiva_shop_url = function_exists( 'wc_get_page_permalink' ) ? wc_get_page_permalink( 'shop' ) : home_url( '/' );
 $cartiva_cards = array(
 	array( 'look-1.webp', __( 'Women', 'cartiva' ), __( 'Effortless everyday pieces', 'cartiva' ) ),
 	array( 'look-2.webp', __( 'Men', 'cartiva' ), __( 'Bold basics and layers', 'cartiva' ) ),
@@ -30,7 +31,7 @@ foreach ( $cartiva_cards as $cartiva_card ) :
 		<!-- wp:group {"style":{"spacing":{"blockGap":"0.25rem","padding":{"left":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","orientation":"vertical"}} -->
 		<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)">
 			<!-- wp:heading {"level":3,"textColor":"base","fontSize":"x-large"} -->
-			<h3 class="wp-block-heading has-base-color has-text-color has-x-large-font-size"><a href="#"><?php echo esc_html( $cartiva_card[1] ); ?></a></h3>
+			<h3 class="wp-block-heading has-base-color has-text-color has-x-large-font-size"><a href="<?php echo esc_url( $cartiva_shop_url ); ?>"><?php echo esc_html( $cartiva_card[1] ); ?></a></h3>
 			<!-- /wp:heading -->
 			<!-- wp:paragraph {"textColor":"base","fontSize":"small"} -->
 			<p class="has-base-color has-text-color has-small-font-size"><?php echo esc_html( $cartiva_card[2] ); ?></p>

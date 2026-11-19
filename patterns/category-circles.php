@@ -10,6 +10,7 @@
  * @since 1.0.0
  */
 
+$cartiva_shop_url = function_exists( 'wc_get_page_permalink' ) ? wc_get_page_permalink( 'shop' ) : home_url( '/' );
 $cartiva_cats = array(
 	array( 'cat-1.webp', __( 'Home', 'cartiva' ) ),
 	array( 'hero-fashion.webp', __( 'Fashion', 'cartiva' ) ),
@@ -30,10 +31,10 @@ $cartiva_cats = array(
 		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
 		<div class="wp-block-group">
 			<!-- wp:image {"aspectRatio":"1","scale":"cover","sizeSlug":"full","linkDestination":"custom","className":"is-style-rounded"} -->
-			<figure class="wp-block-image size-full is-style-rounded"><a href="#"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/' . $cartiva_cat[0] ); ?>" alt="" style="aspect-ratio:1;object-fit:cover"/></a></figure>
+			<figure class="wp-block-image size-full is-style-rounded"><a href="<?php echo esc_url( $cartiva_shop_url ); ?>"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/' . $cartiva_cat[0] ); ?>" alt="<?php echo esc_attr( $cartiva_cat[1] ); ?>" style="aspect-ratio:1;object-fit:cover"/></a></figure>
 			<!-- /wp:image -->
 			<!-- wp:paragraph {"align":"center","style":{"typography":{"fontWeight":"600"}},"fontSize":"small"} -->
-			<p class="has-text-align-center has-small-font-size" style="font-weight:600"><a href="#"><?php echo esc_html( $cartiva_cat[1] ); ?></a></p>
+			<p class="has-text-align-center has-small-font-size" style="font-weight:600"><a href="<?php echo esc_url( $cartiva_shop_url ); ?>"><?php echo esc_html( $cartiva_cat[1] ); ?></a></p>
 			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->

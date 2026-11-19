@@ -45,7 +45,7 @@ msgstr ""
 msgid "Wooden sofa on a warm background"
 msgstr ""
 
-#: patterns/starter-furniture.php:27 patterns/starter-fashion.php:27 patterns/category-auto.php:21 patterns/category-circles.php:25 patterns/starter-electronics.php:27 patterns/category-grid.php:25 patterns/starter-grocery.php:27 patterns/category-carousel.php:28
+#: patterns/starter-furniture.php:27 patterns/starter-fashion.php:27 patterns/category-auto.php:21 patterns/category-circles.php:26 patterns/starter-electronics.php:27 patterns/category-grid.php:26 patterns/starter-grocery.php:27 patterns/category-carousel.php:28
 msgid "Shop by category"
 msgstr ""
 
@@ -93,7 +93,7 @@ msgstr ""
 msgid "Thoughtfully made products, delivered fast. Built with Cartiva — a free, lightweight block theme for WooCommerce."
 msgstr ""
 
-#: patterns/footer-dark.php:38 patterns/footer-centered.php:27 patterns/footer.php:38 patterns/footer-simple.php:20 inc/settings.php:113 inc/store-features.php:223
+#: patterns/footer-dark.php:38 patterns/footer-centered.php:27 patterns/footer.php:38 patterns/footer-simple.php:20 inc/settings.php:131 inc/store-features.php:223
 msgid "Shop"
 msgstr ""
 
@@ -125,7 +125,7 @@ msgstr ""
 msgid "Track order"
 msgstr ""
 
-#: patterns/footer-dark.php:58 patterns/footer-centered.php:29 patterns/footer.php:58 patterns/page-help-center.php:29 functions.php:136
+#: patterns/footer-dark.php:58 patterns/footer-centered.php:29 patterns/footer.php:58 patterns/page-help-center.php:29 functions.php:226
 msgid "FAQ"
 msgstr ""
 
@@ -243,7 +243,7 @@ msgstr ""
 msgid "Browse the full collection, with free shipping on orders over $50."
 msgstr ""
 
-#: patterns/page-about.php:95 patterns/hero-spotlight.php:52 patterns/hero.php:33 inc/pattern-helpers.php:150 inc/pattern-helpers.php:494
+#: patterns/page-about.php:95 patterns/hero-spotlight.php:52 patterns/hero.php:33 inc/pattern-helpers.php:150 inc/pattern-helpers.php:499
 msgid "Shop now"
 msgstr ""
 
@@ -267,7 +267,7 @@ msgstr ""
 msgid "Jewelry"
 msgstr ""
 
-#: patterns/category-pills.php:20 patterns/hero-banners.php:31 patterns/hero-slider-boxed.php:24 patterns/category-circles.php:14 patterns/hero-minimal.php:14 patterns/category-carousel.php:16 patterns/category-cards.php:16 patterns/category-mosaic.php:15
+#: patterns/category-pills.php:20 patterns/hero-banners.php:31 patterns/hero-slider-boxed.php:24 patterns/category-circles.php:15 patterns/hero-minimal.php:14 patterns/category-carousel.php:16 patterns/category-cards.php:17 patterns/category-mosaic.php:16
 msgid "Home"
 msgstr ""
 
@@ -279,7 +279,7 @@ msgstr ""
 msgid "Beauty"
 msgstr ""
 
-#: patterns/category-pills.php:23 patterns/category-circles.php:16 patterns/category-carousel.php:18 patterns/category-mosaic.php:16 inc/header.php:210
+#: patterns/category-pills.php:23 patterns/category-circles.php:17 patterns/category-carousel.php:18 patterns/category-mosaic.php:17 inc/header.php:210
 msgid "Tech"
 msgstr ""
 
@@ -384,15 +384,15 @@ msgstr ""
 msgid "Dress on a pink background"
 msgstr ""
 
-#: patterns/starter-fashion.php:29 patterns/hero-banners.php:22 patterns/hero-minimal.php:14 patterns/category-cards.php:14 inc/header.php:207
+#: patterns/starter-fashion.php:29 patterns/hero-banners.php:22 patterns/hero-minimal.php:14 patterns/category-cards.php:15 inc/header.php:207
 msgid "Women"
 msgstr ""
 
-#: patterns/starter-fashion.php:30 patterns/hero-minimal.php:14 patterns/category-cards.php:15 inc/header.php:208
+#: patterns/starter-fashion.php:30 patterns/hero-minimal.php:14 patterns/category-cards.php:16 inc/header.php:208
 msgid "Men"
 msgstr ""
 
-#: patterns/starter-fashion.php:32 patterns/category-circles.php:19 patterns/starter-electronics.php:32 patterns/category-grid.php:15 patterns/category-carousel.php:21 patterns/category-mosaic.php:18
+#: patterns/starter-fashion.php:32 patterns/category-circles.php:20 patterns/starter-electronics.php:32 patterns/category-grid.php:16 patterns/category-carousel.php:21 patterns/category-mosaic.php:19
 msgid "Accessories"
 msgstr ""
 
@@ -468,7 +468,7 @@ msgstr ""
 msgid "Pieces made to stay"
 msgstr ""
 
-#: patterns/hero-banners.php:31 patterns/split-promo.php:14
+#: patterns/hero-banners.php:31 patterns/split-promo.php:15
 msgid "Shop home"
 msgstr ""
 
@@ -753,7 +753,7 @@ msgstr ""
 msgid "Free shipping on every sale order. While stocks last."
 msgstr ""
 
-#: patterns/hero-sale.php:40 patterns/promo-banner.php:31
+#: patterns/hero-sale.php:40 patterns/promo-banner.php:32
 msgid "Shop the sale"
 msgstr ""
 
@@ -944,15 +944,15 @@ msgstr ""
 msgid "Updates automatically with your product categories and their images."
 msgstr ""
 
-#: patterns/category-circles.php:15 patterns/category-carousel.php:17
+#: patterns/category-circles.php:16 patterns/category-carousel.php:17
 msgid "Fashion"
 msgstr ""
 
-#: patterns/category-circles.php:17 patterns/category-grid.php:17 patterns/category-carousel.php:19 patterns/category-mosaic.php:17
+#: patterns/category-circles.php:18 patterns/category-grid.php:18 patterns/category-carousel.php:19 patterns/category-mosaic.php:18
 msgid "Wellness"
 msgstr ""
 
-#: patterns/category-circles.php:18 patterns/category-carousel.php:20
+#: patterns/category-circles.php:19 patterns/category-carousel.php:20
 msgid "Grocery"
 msgstr ""
 
@@ -968,7 +968,7 @@ msgstr ""
 msgid "Laptops, tablets, audio and smart home gear with fast shipping and a two-year warranty."
 msgstr ""
 
-#: patterns/starter-electronics.php:19 patterns/split-promo.php:15
+#: patterns/starter-electronics.php:19 patterns/split-promo.php:16
 msgid "Shop tech"
 msgstr ""
 
@@ -1136,19 +1136,19 @@ msgstr ""
 msgid "See all FAQs →"
 msgstr ""
 
-#: patterns/split-promo.php:14
+#: patterns/split-promo.php:15
 msgid "The home edit"
 msgstr ""
 
-#: patterns/split-promo.php:14
+#: patterns/split-promo.php:15
 msgid "Warm textures for cosy spaces."
 msgstr ""
 
-#: patterns/split-promo.php:15
+#: patterns/split-promo.php:16
 msgid "Tech that fits"
 msgstr ""
 
-#: patterns/split-promo.php:15
+#: patterns/split-promo.php:16
 msgid "Smart gear for every day."
 msgstr ""
 
@@ -1160,15 +1160,15 @@ msgstr ""
 msgid "On sale now"
 msgstr ""
 
-#: patterns/category-grid.php:14 inc/header.php:209
+#: patterns/category-grid.php:15 inc/header.php:209
 msgid "Home & Living"
 msgstr ""
 
-#: patterns/category-grid.php:16
+#: patterns/category-grid.php:17
 msgid "Tech & Gadgets"
 msgstr ""
 
-#: patterns/category-grid.php:28 patterns/new-arrivals.php:26 patterns/products-large.php:27 inc/pattern-helpers.php:109
+#: patterns/category-grid.php:29 patterns/new-arrivals.php:26 patterns/products-large.php:27 inc/pattern-helpers.php:109
 msgid "View all"
 msgstr ""
 
@@ -1456,11 +1456,11 @@ msgstr ""
 msgid "Featured picks"
 msgstr ""
 
-#: patterns/promo-banner.php:21
+#: patterns/promo-banner.php:22
 msgid "Up to 40% off"
 msgstr ""
 
-#: patterns/promo-banner.php:24
+#: patterns/promo-banner.php:25
 msgid "Our biggest seasonal sale. Limited stock — while it lasts."
 msgstr ""
 
@@ -1516,7 +1516,7 @@ msgstr ""
 msgid "Go to my account"
 msgstr ""
 
-#: patterns/hero-slider.php:19 patterns/category-mosaic.php:14
+#: patterns/hero-slider.php:19 patterns/category-mosaic.php:15
 msgid "New season"
 msgstr ""
 
@@ -1580,19 +1580,19 @@ msgstr ""
 msgid "58 products"
 msgstr ""
 
-#: patterns/category-cards.php:14
+#: patterns/category-cards.php:15
 msgid "Effortless everyday pieces"
 msgstr ""
 
-#: patterns/category-cards.php:15
+#: patterns/category-cards.php:16
 msgid "Bold basics and layers"
 msgstr ""
 
-#: patterns/category-cards.php:16
+#: patterns/category-cards.php:17
 msgid "Furniture and decor"
 msgstr ""
 
-#: patterns/category-cards.php:22
+#: patterns/category-cards.php:23
 msgid "Shop the collections"
 msgstr ""
 
@@ -1844,7 +1844,7 @@ msgstr ""
 msgid "Sorry, nothing matched your search. Please try again with different keywords."
 msgstr ""
 
-#: patterns/category-mosaic.php:24
+#: patterns/category-mosaic.php:25
 msgid "Explore the store"
 msgstr ""
 
@@ -1884,176 +1884,176 @@ msgstr ""
 msgid "Founder"
 msgstr ""
 
-#: functions.php:115
+#: functions.php:205
 msgid "Card"
 msgstr ""
 
-#: functions.php:122
+#: functions.php:212
 msgid "Sticky"
 msgstr ""
 
-#: functions.php:129 inc/settings.php:48 inc/settings.php:151
+#: functions.php:219 inc/settings.php:48 inc/settings.php:169
 msgid "Pill"
 msgstr ""
 
-#: functions.php:143
+#: functions.php:233
 msgid "Zoom on hover"
 msgstr ""
 
-#: functions.php:154
+#: functions.php:244
 msgid "Cartiva: Hero"
 msgstr ""
 
-#: functions.php:154
+#: functions.php:244
 msgid "Hero banners and the hero slider."
 msgstr ""
 
-#: functions.php:155
+#: functions.php:245
 msgid "Cartiva: Products"
 msgstr ""
 
-#: functions.php:155
+#: functions.php:245
 msgid "Product grids and carousels."
 msgstr ""
 
-#: functions.php:156
+#: functions.php:246
 msgid "Cartiva: Categories"
 msgstr ""
 
-#: functions.php:156
+#: functions.php:246
 msgid "Ways to show your shop categories."
 msgstr ""
 
-#: functions.php:157
+#: functions.php:247
 msgid "Cartiva: Blog"
 msgstr ""
 
-#: functions.php:157
+#: functions.php:247
 msgid "Blog and journal sections."
 msgstr ""
 
-#: functions.php:158
+#: functions.php:248
 msgid "Cartiva: Newsletter"
 msgstr ""
 
-#: functions.php:158
+#: functions.php:248
 msgid "Newsletter and sign-up sections."
 msgstr ""
 
-#: functions.php:159
+#: functions.php:249
 msgid "Cartiva: About"
 msgstr ""
 
-#: functions.php:159
+#: functions.php:249
 msgid "Brand story, numbers, values, team and timeline sections."
 msgstr ""
 
-#: functions.php:160
+#: functions.php:250
 msgid "Cartiva: Contact"
 msgstr ""
 
-#: functions.php:160
+#: functions.php:250
 msgid "Contact details, locations, hours and support sections."
 msgstr ""
 
-#: functions.php:174
+#: functions.php:264
 msgid "Cartiva: Shop"
 msgstr ""
 
-#: functions.php:175
+#: functions.php:265
 msgid "Store sections such as product grids, categories and promos."
 msgstr ""
 
-#: functions.php:181
+#: functions.php:271
 msgid "Cartiva: Starter homepages"
 msgstr ""
 
-#: functions.php:182
+#: functions.php:272
 msgid "Complete homepages for different kinds of stores."
 msgstr ""
 
-#: functions.php:188
+#: functions.php:278
 msgid "Cartiva: Pages"
 msgstr ""
 
-#: functions.php:189
+#: functions.php:279
 msgid "Complete page layouts: Contact, About, FAQ, Shipping & returns, Help center, Terms, Track order."
 msgstr ""
 
-#: functions.php:195
+#: functions.php:285
 msgid "Cartiva: Sections"
 msgstr ""
 
-#: functions.php:196
+#: functions.php:286
 msgid "General page sections."
 msgstr ""
 
-#: functions.php:274
+#: functions.php:364
 msgid "Search results"
 msgstr ""
 
-#: functions.php:275
+#: functions.php:365
 msgid "Searching…"
 msgstr ""
 
 #. translators: %s: Search query.
-#: functions.php:277
+#: functions.php:367
 msgid "No results for “%s”"
 msgstr ""
 
 #. translators: %s: Search query.
-#: functions.php:279
+#: functions.php:369
 msgid "See all results for “%s”"
 msgstr ""
 
-#: functions.php:280
+#: functions.php:370
 msgid "1 result found"
 msgstr ""
 
 #. translators: %d: Number of results.
-#: functions.php:282
+#: functions.php:372
 msgid "%d results found"
 msgstr ""
 
-#: functions.php:283
+#: functions.php:373
 msgid "Out of stock"
 msgstr ""
 
-#: functions.php:327
+#: functions.php:417
 msgid "carousel"
 msgstr ""
 
-#: functions.php:328
+#: functions.php:418
 msgid "slide"
 msgstr ""
 
 #. translators: 1: Slide number, 2: Number of slides.
-#: functions.php:330
+#: functions.php:420
 msgid "%1$s of %2$s"
 msgstr ""
 
-#: functions.php:331
+#: functions.php:421
 msgid "Previous"
 msgstr ""
 
-#: functions.php:332
+#: functions.php:422
 msgid "Next"
 msgstr ""
 
 #. translators: %s: Slide number.
-#: functions.php:334
+#: functions.php:424
 msgid "Go to slide %s"
 msgstr ""
 
-#: functions.php:335
+#: functions.php:425
 msgid "Featured"
 msgstr ""
 
-#: functions.php:336
+#: functions.php:426
 msgid "Products"
 msgstr ""
 
-#: functions.php:337
+#: functions.php:427
 msgid "Items"
 msgstr ""
 
@@ -2093,7 +2093,7 @@ msgstr ""
 msgid "Match corner style"
 msgstr ""
 
-#: inc/settings.php:47 inc/settings.php:152
+#: inc/settings.php:47 inc/settings.php:170
 msgid "Square"
 msgstr ""
 
@@ -2177,288 +2177,339 @@ msgstr ""
 msgid "Live search results"
 msgstr ""
 
+#: inc/settings.php:113
+msgid "Site extras"
+msgstr ""
+
 #: inc/settings.php:114
-msgid "Product cards in the shop, categories, search results and product sections."
+msgid "Small visitor features that work on every page."
 msgstr ""
 
 #: inc/settings.php:117
-msgid "Product card style"
-msgstr ""
-
-#: inc/settings.php:121
-msgid "Clean (default)"
-msgstr ""
-
-#: inc/settings.php:122
-msgid "Bordered"
-msgstr ""
-
-#: inc/settings.php:123
-msgid "Boxed"
-msgstr ""
-
-#: inc/settings.php:127
-msgid "Product image shape"
-msgstr ""
-
-#: inc/settings.php:131
-msgid "Square (1:1)"
-msgstr ""
-
-#: inc/settings.php:132
-msgid "Portrait (4:5)"
-msgstr ""
-
-#: inc/settings.php:133
-msgid "Tall (3:4)"
-msgstr ""
-
-#: inc/settings.php:134
-msgid "Landscape (4:3)"
-msgstr ""
-
-#: inc/settings.php:138
-msgid "Add to cart button"
-msgstr ""
-
-#: inc/settings.php:142
-msgid "Always visible"
-msgstr ""
-
-#: inc/settings.php:143
-msgid "Show on hover (desktop)"
-msgstr ""
-
-#: inc/settings.php:147
-msgid "Sale badge"
-msgstr ""
-
-#: inc/settings.php:158
-msgid "Product page"
-msgstr ""
-
-#: inc/settings.php:161
-msgid "Image gallery"
-msgstr ""
-
-#: inc/settings.php:165
-msgid "Slider with thumbnails below"
-msgstr ""
-
-#: inc/settings.php:166
-msgid "Slider with thumbnails on the left"
-msgstr ""
-
-#: inc/settings.php:167
-msgid "All images in a grid"
-msgstr ""
-
-#: inc/settings.php:171
-msgid "Image zoom"
-msgstr ""
-
-#: inc/settings.php:174
-msgid "Zoom into the product image on hover"
-msgstr ""
-
-#: inc/settings.php:177
-msgid "Full-screen gallery"
-msgstr ""
-
-#: inc/settings.php:180
-msgid "Open images full screen when they are clicked"
-msgstr ""
-
-#: inc/settings.php:183
-msgid "Buy now button"
-msgstr ""
-
-#: inc/settings.php:186
-msgid "Show a \"Buy now\" button next to add to cart that goes straight to checkout"
-msgstr ""
-
-#: inc/settings.php:189
-msgid "Sticky product details"
-msgstr ""
-
-#: inc/settings.php:192
-msgid "Keep title, price and add to cart in view while scrolling the gallery"
-msgstr ""
-
-#: inc/settings.php:195
-msgid "Delivery and returns list"
-msgstr ""
-
-#: inc/settings.php:198
-msgid "Show the free delivery, returns and secure checkout list under the add to cart button"
-msgstr ""
-
-#: inc/settings.php:203
-msgid "Store extras"
-msgstr ""
-
-#: inc/settings.php:204
-msgid "Conversion and mobile features. They only add small, deferred code to the pages that use them."
-msgstr ""
-
-#: inc/settings.php:207
-msgid "Sticky add to cart bar"
-msgstr ""
-
-#: inc/settings.php:210
-msgid "Show a bar with the product and an add to cart button when shoppers scroll past the button"
-msgstr ""
-
-#: inc/settings.php:213
-msgid "Second image on hover"
-msgstr ""
-
-#: inc/settings.php:216
-msgid "Show the first gallery image when hovering a product card"
-msgstr ""
-
-#: inc/settings.php:219
-msgid "Discount on sale badges"
-msgstr ""
-
-#: inc/settings.php:222
-msgid "Show the discount, for example -25%, instead of \"Sale\""
-msgstr ""
-
-#: inc/settings.php:225
-msgid "Sale countdown and low stock"
-msgstr ""
-
-#: inc/settings.php:228
-msgid "Show a countdown for scheduled sales and \"Only 3 left\" when stock is low"
-msgstr ""
-
-#: inc/settings.php:231
-msgid "Filters drawer on phones"
-msgstr ""
-
-#: inc/settings.php:234
-msgid "Open the shop sidebar filters in a slide-out panel on small screens"
-msgstr ""
-
-#: inc/settings.php:237
-msgid "Mobile bottom bar"
-msgstr ""
-
-#: inc/settings.php:240
-msgid "Show Shop, Search, Wishlist, Account and Cart shortcuts at the bottom of the screen on phones"
-msgstr ""
-
-#: inc/settings.php:243
 msgid "Back to top button"
 msgstr ""
 
-#: inc/settings.php:246
+#: inc/settings.php:120
 msgid "Show a button to scroll back to the top on long pages"
 msgstr ""
 
-#: inc/settings.php:249
+#: inc/settings.php:123
 msgid "Dark mode switch"
 msgstr ""
 
-#: inc/settings.php:252
+#: inc/settings.php:126
 msgid "Let visitors switch the site to dark colors from the header (their choice is remembered in their browser)"
 msgstr ""
 
-#. translators: %s: number of items in the wishlist.
-#: inc/settings.php:257 inc/store-features.php:231 inc/wishlist.php:114 inc/wishlist.php:207 inc/wishlist.php:212
-msgid "Wishlist"
+#: inc/settings.php:132
+msgid "Product cards in the shop, categories, search results and product sections."
+msgstr ""
+
+#: inc/settings.php:135
+msgid "Product card style"
+msgstr ""
+
+#: inc/settings.php:139
+msgid "Clean (default)"
+msgstr ""
+
+#: inc/settings.php:140
+msgid "Bordered"
+msgstr ""
+
+#: inc/settings.php:141
+msgid "Boxed"
+msgstr ""
+
+#: inc/settings.php:145
+msgid "Product image shape"
+msgstr ""
+
+#: inc/settings.php:149
+msgid "Square (1:1)"
+msgstr ""
+
+#: inc/settings.php:150
+msgid "Portrait (4:5)"
+msgstr ""
+
+#: inc/settings.php:151
+msgid "Tall (3:4)"
+msgstr ""
+
+#: inc/settings.php:152
+msgid "Landscape (4:3)"
+msgstr ""
+
+#: inc/settings.php:156
+msgid "Add to cart button"
+msgstr ""
+
+#: inc/settings.php:160
+msgid "Always visible"
+msgstr ""
+
+#: inc/settings.php:161
+msgid "Show on hover (desktop)"
+msgstr ""
+
+#: inc/settings.php:165
+msgid "Sale badge"
+msgstr ""
+
+#: inc/settings.php:176
+msgid "Product page"
+msgstr ""
+
+#: inc/settings.php:179
+msgid "Image gallery"
+msgstr ""
+
+#: inc/settings.php:183
+msgid "Slider with thumbnails below"
+msgstr ""
+
+#: inc/settings.php:184
+msgid "Slider with thumbnails on the left"
+msgstr ""
+
+#: inc/settings.php:185
+msgid "All images in a grid"
+msgstr ""
+
+#: inc/settings.php:189
+msgid "Image zoom"
+msgstr ""
+
+#: inc/settings.php:192
+msgid "Zoom into the product image on hover"
+msgstr ""
+
+#: inc/settings.php:195
+msgid "Full-screen gallery"
+msgstr ""
+
+#: inc/settings.php:198
+msgid "Open images full screen when they are clicked"
+msgstr ""
+
+#: inc/settings.php:201
+msgid "Buy now button"
+msgstr ""
+
+#: inc/settings.php:204
+msgid "Show a \"Buy now\" button next to add to cart that goes straight to checkout"
+msgstr ""
+
+#: inc/settings.php:207
+msgid "Sticky product details"
+msgstr ""
+
+#: inc/settings.php:210
+msgid "Keep title, price and add to cart in view while scrolling the gallery"
+msgstr ""
+
+#: inc/settings.php:213
+msgid "Delivery and returns list"
+msgstr ""
+
+#: inc/settings.php:216
+msgid "Show the free delivery, returns and secure checkout list under the add to cart button"
+msgstr ""
+
+#: inc/settings.php:221
+msgid "Store extras"
+msgstr ""
+
+#: inc/settings.php:222
+msgid "Conversion and mobile features for your store. They only add small, deferred code to the pages that use them."
+msgstr ""
+
+#: inc/settings.php:225
+msgid "Sticky add to cart bar"
+msgstr ""
+
+#: inc/settings.php:228
+msgid "Show a bar with the product and an add to cart button when shoppers scroll past the button"
+msgstr ""
+
+#: inc/settings.php:231
+msgid "Second image on hover"
+msgstr ""
+
+#: inc/settings.php:234
+msgid "Show the first gallery image when hovering a product card"
+msgstr ""
+
+#: inc/settings.php:237
+msgid "Discount on sale badges"
+msgstr ""
+
+#: inc/settings.php:240
+msgid "Show the discount, for example -25%, instead of \"Sale\""
+msgstr ""
+
+#: inc/settings.php:243
+msgid "Sale countdown and low stock"
+msgstr ""
+
+#: inc/settings.php:246
+msgid "Show a countdown for scheduled sales and \"Only 3 left\" when stock is low"
+msgstr ""
+
+#: inc/settings.php:249
+msgid "Filters drawer on phones"
+msgstr ""
+
+#: inc/settings.php:252
+msgid "Open the shop sidebar filters in a slide-out panel on small screens"
+msgstr ""
+
+#: inc/settings.php:255
+msgid "Mobile bottom bar"
 msgstr ""
 
 #: inc/settings.php:258
-msgid "Used when a wishlist plugin is active: YITH WooCommerce Wishlist, TI WooCommerce Wishlist or WPC Smart Wishlist. Cartiva adds the heart icons and styling; the plugin saves the lists."
+msgid "Show Shop, Search, Wishlist, Account and Cart shortcuts at the bottom of the screen on phones"
 msgstr ""
 
-#: inc/settings.php:261
-msgid "Header wishlist icon"
+#. translators: %s: number of items in the wishlist.
+#: inc/settings.php:263 inc/store-features.php:231 inc/wishlist.php:114 inc/wishlist.php:207 inc/wishlist.php:212
+msgid "Wishlist"
 msgstr ""
 
 #: inc/settings.php:264
-msgid "Show a heart icon with the item count next to the cart"
+msgid "Used when a wishlist plugin is active: YITH WooCommerce Wishlist, TI WooCommerce Wishlist or WPC Smart Wishlist. Cartiva adds the heart icons and styling; the plugin saves the lists."
 msgstr ""
 
 #: inc/settings.php:267
-msgid "Heart buttons"
+msgid "Header wishlist icon"
 msgstr ""
 
 #: inc/settings.php:270
-msgid "Show a heart button on product cards and next to add to cart on product pages"
+msgid "Show a heart icon with the item count next to the cart"
 msgstr ""
 
 #: inc/settings.php:273
-msgid "Account menu"
+msgid "Heart buttons"
 msgstr ""
 
 #: inc/settings.php:276
+msgid "Show a heart button on product cards and next to add to cart on product pages"
+msgstr ""
+
+#: inc/settings.php:279
+msgid "Account menu"
+msgstr ""
+
+#: inc/settings.php:282
 msgid "Add \"Wishlist\" to the My Account menu when the plugin does not add it itself"
 msgstr ""
 
-#: inc/settings.php:281
+#: inc/settings.php:287
 msgid "My Account"
 msgstr ""
 
-#: inc/settings.php:284
+#: inc/settings.php:290
 msgid "Profile card"
 msgstr ""
 
-#: inc/settings.php:287
+#: inc/settings.php:293
 msgid "Show the customer name and email above the account menu"
 msgstr ""
 
-#: inc/settings.php:290
+#: inc/settings.php:296
 msgid "Dashboard tiles"
 msgstr ""
 
-#: inc/settings.php:293
+#: inc/settings.php:299
 msgid "Show quick links to orders, addresses and account details on the dashboard"
 msgstr ""
 
-#: inc/settings.php:296
+#: inc/settings.php:302
 msgid "Track order link"
 msgstr ""
 
-#: inc/settings.php:299
+#: inc/settings.php:305
 msgid "Add \"Track order\" to the account menu (links to your Track order page, or to Orders if there is none)"
 msgstr ""
 
-#: inc/settings.php:384
+#: inc/settings.php:390
 msgid "Settings were reset to their defaults."
 msgstr ""
 
-#: inc/settings.php:515 inc/settings.php:516 inc/settings.php:558
+#: inc/settings.php:521 inc/settings.php:522 inc/settings.php:629
 msgid "Cartiva Settings"
 msgstr ""
 
-#: inc/settings.php:551
+#. translators: %s: link to install plugins.
+#: inc/settings.php:576
+msgid "Install and activate WooCommerce (%s)."
+msgstr ""
+
+#: inc/settings.php:576
+msgid "find it here"
+msgstr ""
+
+#. translators: %s: link to the Site Editor.
+#: inc/settings.php:581
+msgid "Add your logo and pick a header and footer design in the %s."
+msgstr ""
+
+#: inc/settings.php:581
+msgid "Site Editor"
+msgstr ""
+
+#: inc/settings.php:585
+msgid "Create a page called \"Track order\" (slug track-order). Cartiva gives it the tracking form design automatically."
+msgstr ""
+
+#: inc/settings.php:589
+msgid "Create Contact, About, FAQ and Help center pages (slugs contact, about, faq, help-center) and insert the matching \"Cartiva: Pages\" pattern."
+msgstr ""
+
+#: inc/settings.php:593
+msgid "Optional: install a free wishlist plugin (YITH WooCommerce Wishlist, TI WooCommerce Wishlist or WPC Smart Wishlist). Cartiva adds the hearts and styling."
+msgstr ""
+
+#. translators: 1: completed steps, 2: total steps.
+#: inc/settings.php:602
+msgid "Getting started (%1$s of %2$s done)"
+msgstr ""
+
+#: inc/settings.php:622
 msgid "Colors & fonts"
 msgstr ""
 
-#: inc/settings.php:552
+#: inc/settings.php:623
 msgid "Header & footer designs"
 msgstr ""
 
-#: inc/settings.php:553
+#: inc/settings.php:624
 msgid "Templates"
 msgstr ""
 
-#: inc/settings.php:554
+#: inc/settings.php:625
 msgid "Pages"
 msgstr ""
 
-#: inc/settings.php:559
+#: inc/settings.php:630
 msgid "Layout and behavior options for your store. Everything visual that can be edited block by block lives in the Site Editor:"
 msgstr ""
 
-#: inc/settings.php:572
+#: inc/settings.php:638
+msgid "Settings sections"
+msgstr ""
+
+#: inc/settings.php:644
+msgid "Shop, product page, store extras, wishlist and account options appear here once WooCommerce is active."
+msgstr ""
+
+#: inc/settings.php:652
 msgid "Save settings"
 msgstr ""
 
-#: inc/settings.php:573
+#: inc/settings.php:653
 msgid "Reset to defaults"
 msgstr ""
 

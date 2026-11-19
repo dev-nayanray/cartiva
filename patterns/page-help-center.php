@@ -22,12 +22,12 @@ cartiva_page_hero( __( 'Help center', 'cartiva' ), __( 'How can we help?', 'cart
 	<!-- wp:group {"align":"wide","layout":{"type":"grid","columnCount":3,"minimumColumnWidth":"16rem"}} -->
 	<div class="wp-block-group alignwide">
 <?php
-cartiva_icon_card( 'truck', __( 'Track an order', 'cartiva' ), __( 'See where your parcel is with your order ID and email.', 'cartiva' ), __( 'Track order →', 'cartiva' ), cartiva_page_url( 'track-order' ) );
-cartiva_icon_card( 'box', __( 'Shipping & delivery', 'cartiva' ), __( 'Delivery options, times and costs.', 'cartiva' ), __( 'Shipping info →', 'cartiva' ), cartiva_page_url( 'shipping-returns' ) );
-cartiva_icon_card( 'return', __( 'Returns & refunds', 'cartiva' ), __( 'Start a return and learn how refunds work.', 'cartiva' ), __( 'Returns policy →', 'cartiva' ), cartiva_page_url( 'shipping-returns' ) );
-cartiva_icon_card( 'user', __( 'My account', 'cartiva' ), __( 'Orders, addresses, password and account details.', 'cartiva' ), __( 'Go to my account →', 'cartiva' ), $cartiva_account_url );
-cartiva_icon_card( 'question', __( 'FAQ', 'cartiva' ), __( 'Quick answers to the most common questions.', 'cartiva' ), __( 'Read the FAQ →', 'cartiva' ), cartiva_page_url( 'faq' ) );
-cartiva_icon_card( 'chat', __( 'Contact us', 'cartiva' ), __( 'Email, phone and opening hours.', 'cartiva' ), __( 'Get in touch →', 'cartiva' ), cartiva_page_url( 'contact' ) );
+cartiva_icon_card( 'truck', __( 'Track an order', 'cartiva' ), __( 'See where your parcel is with your order ID and email.', 'cartiva' ), __( 'Track order →', 'cartiva' ), cartiva_page_url( 'track-order' ), 2 );
+cartiva_icon_card( 'box', __( 'Shipping & delivery', 'cartiva' ), __( 'Delivery options, times and costs.', 'cartiva' ), __( 'Shipping info →', 'cartiva' ), cartiva_page_url( 'shipping-returns' ), 2 );
+cartiva_icon_card( 'return', __( 'Returns & refunds', 'cartiva' ), __( 'Start a return and learn how refunds work.', 'cartiva' ), __( 'Returns policy →', 'cartiva' ), cartiva_page_url( 'shipping-returns' ), 2 );
+cartiva_icon_card( 'user', __( 'My account', 'cartiva' ), __( 'Orders, addresses, password and account details.', 'cartiva' ), __( 'Go to my account →', 'cartiva' ), $cartiva_account_url, 2 );
+cartiva_icon_card( 'question', __( 'FAQ', 'cartiva' ), __( 'Quick answers to the most common questions.', 'cartiva' ), __( 'Read the FAQ →', 'cartiva' ), cartiva_page_url( 'faq' ), 2 );
+cartiva_icon_card( 'chat', __( 'Contact us', 'cartiva' ), __( 'Email, phone and opening hours.', 'cartiva' ), __( 'Get in touch →', 'cartiva' ), cartiva_page_url( 'contact' ), 2 );
 ?>
 	</div>
 	<!-- /wp:group -->

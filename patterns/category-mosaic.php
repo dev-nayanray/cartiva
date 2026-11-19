@@ -10,6 +10,7 @@
  * @since 1.0.0
  */
 
+$cartiva_shop_url = function_exists( 'wc_get_page_permalink' ) ? wc_get_page_permalink( 'shop' ) : home_url( '/' );
 $cartiva_tiles = array(
 	array( 'slide-2.webp', __( 'New season', 'cartiva' ), true ),
 	array( 'cat-1.webp', __( 'Home', 'cartiva' ), false ),
@@ -30,7 +31,7 @@ foreach ( $cartiva_tiles as $cartiva_tile ) :
 	cartiva_cover_open( array( 'image' => $cartiva_tile[0], 'height' => $cartiva_tile[2] ? 520 : 250, 'dim' => 20, 'overlay' => 'contrast', 'dark' => true, 'position' => 'bottom left', 'radius' => '20px', 'class' => $cartiva_tile[2] ? 'cartiva-category-card cartiva-mosaic-large' : 'cartiva-category-card' ) );
 	?>
 		<!-- wp:paragraph {"textColor":"base","style":{"typography":{"fontWeight":"700"},"spacing":{"padding":{"left":"var:preset|spacing|20","bottom":"var:preset|spacing|10"}}},"fontSize":"<?php echo esc_attr( $cartiva_tile[2] ? 'x-large' : 'medium' ); ?>"} -->
-		<p class="has-base-color has-text-color has-<?php echo esc_attr( $cartiva_tile[2] ? 'x-large' : 'medium' ); ?>-font-size" style="padding-bottom:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--20);font-weight:700"><a href="#"><?php echo esc_html( $cartiva_tile[1] ); ?> →</a></p>
+		<p class="has-base-color has-text-color has-<?php echo esc_attr( $cartiva_tile[2] ? 'x-large' : 'medium' ); ?>-font-size" style="padding-bottom:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--20);font-weight:700"><a href="<?php echo esc_url( $cartiva_shop_url ); ?>"><?php echo esc_html( $cartiva_tile[1] ); ?> →</a></p>
 		<!-- /wp:paragraph -->
 	<?php
 	cartiva_cover_close();

@@ -209,14 +209,17 @@ function cartiva_category_section( $heading, $categories ) {
 	<!-- /wp:heading -->
 	<!-- wp:group {"align":"wide","layout":{"type":"grid","columnCount":4,"minimumColumnWidth":"12rem"}} -->
 	<div class="wp-block-group alignwide">
-		<?php foreach ( $categories as $category ) : ?>
+		<?php
+		$cartiva_shop = function_exists( 'wc_get_page_permalink' ) ? wc_get_page_permalink( 'shop' ) : home_url( '/' );
+		foreach ( $categories as $category ) :
+			?>
 		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 		<div class="wp-block-group">
 			<!-- wp:image {"aspectRatio":"4/5","scale":"cover","sizeSlug":"full","linkDestination":"custom","className":"is-style-cartiva-zoom"} -->
-			<figure class="wp-block-image size-full is-style-cartiva-zoom"><a href="#"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/' . $category[0] ); ?>" alt="" style="aspect-ratio:4/5;object-fit:cover"/></a></figure>
+			<figure class="wp-block-image size-full is-style-cartiva-zoom"><a href="<?php echo esc_url( $cartiva_shop ); ?>"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/' . $category[0] ); ?>" alt="<?php echo esc_attr( $category[1] ); ?>" style="aspect-ratio:4/5;object-fit:cover"/></a></figure>
 			<!-- /wp:image -->
 			<!-- wp:heading {"level":3,"fontSize":"medium"} -->
-			<h3 class="wp-block-heading has-medium-font-size"><a href="#"><?php echo esc_html( $category[1] ); ?></a></h3>
+			<h3 class="wp-block-heading has-medium-font-size"><a href="<?php echo esc_url( $cartiva_shop ); ?>"><?php echo esc_html( $category[1] ); ?></a></h3>
 			<!-- /wp:heading -->
 		</div>
 		<!-- /wp:group -->
@@ -321,14 +324,16 @@ function cartiva_page_cta( $title, $text, $button, $url ) {
  * @param string $text  Card text.
  * @param string $link  Optional link label.
  * @param string $url   Optional link URL.
+ * @param int    $level Heading level (2-4).
  */
-function cartiva_icon_card( $icon, $title, $text, $link = '', $url = '' ) {
-	$icon = sanitize_html_class( $icon );
+function cartiva_icon_card( $icon, $title, $text, $link = '', $url = '', $level = 3 ) {
+	$icon  = sanitize_html_class( $icon );
+	$level = in_array( (int) $level, array( 2, 3, 4 ), true ) ? (int) $level : 3;
 	?>
 		<!-- wp:group {"className":"cartiva-icon-card cartiva-icon-card--<?php echo esc_attr( $icon ); ?>","style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 		<div class="wp-block-group cartiva-icon-card cartiva-icon-card--<?php echo esc_attr( $icon ); ?>">
-			<!-- wp:heading {"level":3,"fontSize":"medium"} -->
-			<h3 class="wp-block-heading has-medium-font-size"><?php echo esc_html( $title ); ?></h3>
+			<!-- wp:heading {"level":<?php echo (int) $level; ?>,"fontSize":"medium"} -->
+			<h<?php echo (int) $level; ?> class="wp-block-heading has-medium-font-size"><?php echo esc_html( $title ); ?></h<?php echo (int) $level; ?>>
 			<!-- /wp:heading -->
 			<!-- wp:paragraph {"textColor":"muted","fontSize":"small"} -->
 			<p class="has-muted-color has-text-color has-small-font-size"><?php echo esc_html( $text ); ?></p>
