@@ -11,88 +11,119 @@ A lightweight, modern and fast WooCommerce block theme for the Site Editor.
 
 == Description ==
 
-Cartiva is a free, lightweight and modern WooCommerce block theme built entirely for the WordPress Site Editor (Full Site Editing).
+Cartiva is a free, fast and modern WooCommerce block theme. You design everything visually in the WordPress Site Editor, with no page builder and no coding. It also works without WooCommerce as a clean theme for a blog or business site.
 
-* 100% blocks: no page builder and no jQuery. A small settings page (Appearance > Cartiva Settings) adds layout and behavior options alongside the Site Editor.
-* Fast by default: a native system font stack, with optional bundled DM Sans and Lora fonts that load only when selected.
-* Per-block CSS: styles load only on pages where the block is used.
-* WooCommerce ready: shop, product, category, tag and product search templates built with WooCommerce blocks, plus a header with mini-cart and account icon.
-* 80+ patterns, organised in the pattern library: 6 headers, 5 footers, 10 hero sections (including full-width and boxed sliders with arrows, dots and autoplay), 10 product sections (including a product carousel and a deal of the week), 8 category layouts (including a category carousel), 8 blog sections (including a post carousel), 5 newsletter sections, 6 about sections and 5 contact sections, plus page layouts and starter homepages.
-* Style variations: Default, Midnight (dark), Sand and Fresh, plus three typography presets.
-* Starter homepages: Fashion, Electronics, Grocery and Furniture.
-* Shop layout with a filter sidebar and a distraction-free checkout.
-* A modern My Account area: dashboard tiles, icon navigation, order and address cards.
-* Ready-made pages: Contact, About, FAQ, Shipping & returns, Help center, Terms and Track order.
-* Four header designs, three footer designs and section color styles you can switch in the Site Editor.
-* Store extras, each with an on/off switch: sticky add to cart bar, second image on hover, discount sale badges (-25%), sale countdown and low stock note, filters drawer on phones, mobile bottom bar, back to top button and an optional dark mode switch for visitors.
-* Cartiva Settings (Appearance > Cartiva Settings): corner style, button shape, layout width, sticky header, top bar, live search, product card style, image shape, sale badge and more, alongside the Site Editor's colors and fonts.
-* Live search in the header: product suggestions with image and price appear after two characters, with full keyboard support.
-* Works without WooCommerce as a clean blog/business theme.
+= Designs =
+
+* 80+ patterns in the pattern library: 10 hero sections (including full-width and boxed sliders), 10 product sections, 8 category layouts, 8 blog sections, 5 newsletter, 6 about and 5 contact sections.
+* 6 header designs and 5 footer designs you can swap at any time.
+* 4 starter homepages: Fashion, Electronics, Grocery and Furniture.
+* 7 ready-made pages: Contact, About, FAQ, Shipping & returns, Help center, Terms and Track order.
+* 3 color styles (Fresh, Midnight, Sand), 3 font sets and 4 section styles.
+
+= Store =
+
+* Templates for shop, categories, tags, product search, product, cart, checkout and My Account, built with WooCommerce blocks.
+* Live search in the header: product suggestions with image and price after two characters, with keyboard support.
+* Product page: three gallery layouts, hover zoom, full-screen view, a Buy now button straight to checkout, sale countdown, low stock note and a sticky add to cart bar.
+* Shop: second image on hover, discount sale badges (-25%), card styles and a filter sidebar that becomes a drawer on phones.
+* A modern My Account area with a profile card, quick-link tiles, icon menu and a Track order link.
+* Mobile bottom bar with Shop, Search, Wishlist, Account and Cart.
+* Wishlist support for the free YITH, TI and WPC wishlist plugins.
+
+= Settings and speed =
+
+* Cartiva Settings (Appearance > Cartiva Settings) with a Getting started checklist and an on/off switch for every feature.
+* About 5 KB of compressed CSS on every page; other styles and scripts load only where they are used.
+* No jQuery, no page builder and no external requests. Fonts and images are bundled.
+* Optional dark mode switch for visitors and a back to top button.
+* Accessible: focus outlines, labeled icon buttons, correct heading order and reduced-motion support.
 
 == Installation ==
 
-1. In your admin panel, go to Appearance > Themes and click Add New.
-2. Search for "Cartiva", then click Install and Activate.
-3. (Optional) Install and activate WooCommerce.
-4. Go to Appearance > Editor to customise templates, patterns and styles.
+1. In your dashboard, go to Appearance > Themes > Add New Theme.
+2. Search for "Cartiva", then click Install and Activate. To use the zip file instead, choose Upload Theme.
+3. Go to Appearance > Cartiva Settings and follow the Getting started checklist.
+
+= Quick start =
+
+1. Install and activate WooCommerce. Its setup wizard creates the Shop, Cart, Checkout and My Account pages.
+2. Add products with a price, a main image and a few gallery images.
+3. Add your logo and pick a header and footer in Appearance > Editor > Patterns.
+4. Build your homepage with a starter homepage from Patterns > Cartiva: Starter homepages.
+5. Choose your colors and fonts in Appearance > Editor > Styles.
+6. Create the help pages with the slugs listed in the FAQ below.
+7. Review Appearance > Cartiva Settings, then test a purchase on your phone and computer.
 
 == Frequently Asked Questions ==
 
 = Does Cartiva require WooCommerce? =
 
-No. Store templates and patterns are used only when WooCommerce is active.
-
-= Does Cartiva include quick view, wishlist or swatches? =
-
-No. Under the WordPress.org theme guidelines those are plugin features, so Cartiva focuses on design and layout. You can add any WooCommerce plugin from WordPress.org for them.
-
-= How do I use the shop layout with filters? =
-
-Go to Appearance > Editor > Templates > Product Catalog and replace the template with the "Shop with filter sidebar" pattern.
+No. Store templates, patterns and settings appear only when WooCommerce is active. Without it, Cartiva works as a fast blog or business theme.
 
 = Where are the theme settings? =
 
-Go to Appearance > Cartiva Settings for layout and behavior options: corner style, button shape, layout width, hover animations, sticky header, header shadow, top bar, live search, product card style, product image shape, add to cart button visibility, sale badge, the product image gallery (thumbnails below, thumbnails on the left or a grid, with zoom and full-screen view), the Buy now button, sticky product details, the delivery and returns list, and the My Account profile card and tiles, and the "Track order" link in the account menu. Colors, fonts and spacing are edited in Appearance > Editor > Styles. All settings are saved in a single option, cartiva_settings, and can be reset with one click.
+Go to Appearance > Cartiva Settings. It has sections for Design, Header, Site extras, Shop, Product page, Store extras, Wishlist and My Account, with a menu at the top to jump between them. Colors, fonts and spacing are edited in Appearance > Editor > Styles. All settings are saved in one option, cartiva_settings, and can be reset with one click.
+
+= How do I change the header or footer? =
+
+Go to Appearance > Editor > Patterns > Header (or Footer), select it and choose Replace. Headers: default, centered logo, with category bar, large search bar, menu left and logo center, or no top bar. Footers: default, dark, centered, with newsletter or simple.
+
+= Which pages should I create? =
+
+Create each page with this slug, then insert the matching pattern from Patterns > Cartiva: Pages. Cartiva gives it the right layout automatically, and the header and footer links start working.
+
+* Track order: track-order
+* Contact: contact
+* About: about
+* FAQ: faq
+* Help center: help-center
+* Shipping & returns: shipping-returns
+* Terms & conditions: terms
 
 = How do I edit the hero slider? =
 
-Insert "Hero: slider" from Patterns > Cartiva: Hero. In the editor the slides are shown one under another so they are easy to edit; each slide is a Cover block, so you can change its image, text and buttons, duplicate it to add a slide, or delete it. On the site the slides become a swipeable slider with arrows, dots and autoplay. Autoplay pauses on hover and focus and is turned off for visitors who prefer reduced motion. Add the class "is-autoplay-off" to the slider group to disable autoplay.
-
-= Does Cartiva have a wishlist? =
-
-Saving wishlists is plugin territory, so Cartiva works with the free YITH WooCommerce Wishlist, TI WooCommerce Wishlist and WPC Smart Wishlist plugins. Activate one and Cartiva adds a heart icon with a count to the header, heart buttons on product cards and product pages, a Wishlist link in the account menu and matching styles. Each part can be turned off in Appearance > Cartiva Settings > Wishlist.
+Insert "Hero: slider" or "Hero: boxed slider" from Patterns > Cartiva: Hero. Each slide is a Cover block: change its image and text, duplicate it to add a slide, or delete it. On the site it becomes a slider with arrows, dots and autoplay every 6 seconds. Autoplay pauses on hover and for visitors who prefer reduced motion. Add the class "is-autoplay-off" to the slider group to turn autoplay off.
 
 = How do I make a carousel? =
 
-The "Categories: carousel" and "Blog: post carousel" patterns become swipeable rows with arrows on the site. To turn any Group of cards or any Query Loop into a carousel, add the class "cartiva-card-carousel" under Advanced > Additional CSS class(es). Add "is-cols-3" or "is-cols-5" to change how many cards are visible.
+The "Categories: carousel", "Blog: post carousel" and "Products: carousel" patterns are swipeable rows with arrows. To turn any Group of cards or Query Loop into a carousel, add the class "cartiva-card-carousel" under Advanced > Additional CSS class(es). Add "is-cols-3" or "is-cols-5" to change how many cards show.
+
+= How do I use the shop layout with filters? =
+
+Go to Appearance > Editor > Templates > Product Catalog and insert the "Shop with filter sidebar" pattern. On phones the filters open in a slide-out drawer.
+
+= Does Cartiva have a wishlist, quick view or swatches? =
+
+Saving wishlists, quick view and variation swatches are plugin features under the WordPress.org theme rules. For wishlists, install the free YITH WooCommerce Wishlist, TI WooCommerce Wishlist or WPC Smart Wishlist plugin and Cartiva adds a header heart with a count, hearts on product cards and product pages, a Wishlist account link and matching styles. For quick view or swatches, use any WooCommerce plugin from WordPress.org.
+
+= How does the Buy now button work? =
+
+It adds the product to the cart with WooCommerce's own form and goes straight to checkout. For products with options, it waits until the shopper chooses them. Turn it off in Cartiva Settings > Product page.
+
+= Why is there no sale countdown or low stock note on a product? =
+
+The countdown appears when the sale has an end date (Product data > General > Schedule) within the next 31 days. The low stock note appears when Manage stock is on and stock reaches your low stock threshold in WooCommerce > Settings > Products > Inventory.
 
 = How does the header live search work? =
 
-After two characters, the header Search block shows matching products (image, name and price) from WooCommerce, or matching posts and pages when WooCommerce is not active. Use the arrow keys and Enter to choose a result, or press Enter to see all results. It is a small deferred script that only reads public data. Turn it off in Appearance > Cartiva Settings.
+After two characters, the search shows matching products with image, name and price, or posts and pages when WooCommerce is not active. Use the arrow keys and Enter, or press Enter to see all results. Turn it off in Cartiva Settings > Header.
 
-= How do I customize the header and footer? =
+= How do I add a contact form or newsletter sign-up? =
 
-Go to Appearance > Editor > Patterns > Header (or Footer), open the template part and choose Replace to pick another design: default, centered logo, with category bar, or without top bar. Every text, link and color can then be edited in place, and colors and fonts are set under Styles.
+Forms are plugin features. Install a form plugin (for example WPForms Lite or Contact Form 7) or a newsletter plugin (for example MailPoet) and add its block to the page. Newsletter patterns include a placeholder Subscribe button to replace with that block.
 
-= How do I create the Contact, About, FAQ and other pages? =
-
-Go to Pages > Add New. In the pattern picker, open "Cartiva: Pages" and choose Contact, About, FAQ, Shipping & returns, Help center, Terms & conditions or Track order. Publish with the suggested slug (for example "contact") to get the matching full-width layout and to have the header and footer link to it automatically.
-
-= How do I add a contact form? =
-
-Contact forms are plugin features, so Cartiva does not include one. Install any form plugin from WordPress.org and add its block to your Contact page; it will pick up the theme's colors and fonts.
-
-= How do I create the Track Order page? =
-
-Go to Pages > Add New, choose the "Track order page" pattern and publish the page with the slug "track-order". It gets its own layout automatically, and the "Track order" link in the top bar points to it.
-
-= Can I use the simplified checkout header instead? =
+= Can I use the simplified checkout header? =
 
 Yes. Go to Appearance > Editor > Templates > Page: Checkout, select the header and replace it with the "Checkout header" template part.
 
-= How do I change the homepage? =
+= My changes do not show. What should I do? =
 
-Go to Appearance > Editor > Templates > Front Page and edit the blocks, or insert patterns from the "Cartiva: Shop" category.
+Clear your host cache, caching plugin and browser cache, then reload. If a pattern shows "This block contains unexpected content", click Attempt recovery, or remove the block and insert the pattern again.
+
+= Will theme updates erase my changes? =
+
+No. Changes made in the Site Editor and in Cartiva Settings are saved in your database. Use a child theme for code changes.
 
 == Changelog ==
 
