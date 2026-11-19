@@ -1,0 +1,66 @@
+/**
+ * Order confirmation ("Thank you") page.
+ * Loaded only when the Order Confirmation Summary block is rendered.
+ */
+.wp-block-woocommerce-order-confirmation-status {
+	padding: clamp(1.5rem, 4vw, 2.5rem);
+	border-radius: var(--wp--custom--radius--lg);
+	background: color-mix(in srgb, var(--wp--preset--color--success) 10%, var(--wp--preset--color--base));
+}
+.wp-block-woocommerce-order-confirmation-status h1,
+.wp-block-woocommerce-order-confirmation-status p:first-child {
+	color: var(--wp--preset--color--success);
+}
+.wc-block-order-confirmation-summary-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 160px), 1fr));
+	gap: 1rem;
+	margin: var(--wp--preset--spacing--40) 0;
+	padding: 1.25rem;
+	border: 1px solid var(--wp--preset--color--border);
+	border-radius: var(--wp--custom--radius--md);
+	list-style: none;
+}
+.wc-block-order-confirmation-summary-list-item {
+	display: flex;
+	flex-direction: column;
+	gap: .2rem;
+	margin: 0;
+	padding: 0 !important;
+	border: 0 !important;
+}
+.wc-block-order-confirmation-summary-list-item__key {
+	color: var(--wp--preset--color--muted);
+	font-size: var(--wp--preset--font-size--x-small);
+	letter-spacing: .04em;
+	text-transform: uppercase;
+}
+.wc-block-order-confirmation-summary-list-item__value { font-weight: 700; }
+.wc-block-order-confirmation-totals__table {
+	width: 100%;
+	border: 1px solid var(--wp--preset--color--border);
+	border-radius: var(--wp--custom--radius--md);
+	border-collapse: separate;
+	border-spacing: 0;
+	overflow: hidden;
+}
+.wc-block-order-confirmation-totals__table :is(th, td) {
+	padding: .85rem 1rem;
+	border: 0;
+	border-top: 1px solid var(--wp--preset--color--border);
+}
+.wc-block-order-confirmation-totals__table thead th {
+	border-top: 0;
+	background: var(--wp--preset--color--surface);
+}
+.wc-block-order-confirmation-totals__table tfoot tr:last-child :is(th, td) {
+	font-size: var(--wp--preset--font-size--large);
+	font-weight: 700;
+}
+:is(.wp-block-woocommerce-order-confirmation-billing-address, .wp-block-woocommerce-order-confirmation-shipping-address) {
+	padding: 1.25rem;
+	border: 1px solid var(--wp--preset--color--border);
+	border-radius: var(--wp--custom--radius--md);
+	background: var(--wp--preset--color--surface);
+	font-style: normal;
+}

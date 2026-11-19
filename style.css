@@ -7,7 +7,7 @@ Description: Cartiva is a lightweight, modern and fast WooCommerce block theme b
 Requires at least: 6.9
 Tested up to: 7.1
 Requires PHP: 7.4
-Version: 1.5.0
+Version: 1.6.0
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: cartiva
@@ -177,13 +177,12 @@ header.wp-block-template-part:has(.cartiva-topbar) {
 }
 .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item__content::after { content: none; }
 
-/* Icon buttons: search, account, cart, menu */
-.cartiva-header :is(.wp-block-search__button, .wc-block-customer-account a, .wc-block-mini-cart__button) {
-	display: inline-grid;
-}
-/* Menu button: keep core's show/hide logic, only restyle it. */
-.cartiva-header :is(.wp-block-search__button, .wc-block-customer-account a, .wc-block-mini-cart__button, .wp-block-navigation__responsive-container-open) {
-	place-items: center;
+/* Icon buttons: search, account, cart, menu.
+   Only the blocks' own trigger elements are restyled, and display is never
+   changed, so hidden parts of these blocks (dropdowns, drawers) stay hidden. */
+.cartiva-header :is(.wp-block-search__button, .wc-block-customer-account > a, .wc-block-mini-cart__button, .wp-block-navigation__responsive-container-open) {
+	align-items: center;
+	justify-content: center;
 	min-width: 2.5rem;
 	height: 2.5rem;
 	margin: 0;
@@ -195,17 +194,25 @@ header.wp-block-template-part:has(.cartiva-topbar) {
 	box-shadow: none;
 	transition: background-color .15s ease;
 }
-.cartiva-header :is(.wp-block-search__button, .wc-block-customer-account a, .wc-block-mini-cart__button, .wp-block-navigation__responsive-container-open):hover {
+.cartiva-header .wc-block-customer-account > a:not([hidden]) { display: inline-flex; }
+.cartiva-header :is(.wp-block-search__button, .wc-block-customer-account > a, .wc-block-mini-cart__button, .wp-block-navigation__responsive-container-open):hover {
 	background: var(--wp--preset--color--surface);
 	color: var(--wp--preset--color--contrast);
 }
-.cartiva-header :is(.wp-block-search__button, .wc-block-customer-account a, .wp-block-navigation__responsive-container-open) svg {
+.cartiva-header :is(.wp-block-search__button, .wp-block-navigation__responsive-container-open) svg,
+.cartiva-header .wc-block-customer-account > a > svg {
 	width: 24px;
 	height: 24px;
 	fill: currentColor;
 }
+.cartiva-header .wc-block-customer-account img.avatar,
+.cartiva-header .wc-block-customer-account > a > img {
+	width: 26px;
+	height: 26px;
+	border-radius: 50%;
+	object-fit: cover;
+}
 .cartiva-header .wc-block-mini-cart__icon { width: 24px; height: 24px; }
-.cartiva-header .wc-block-customer-account__account-icon { width: 24px; height: 24px; }
 
 /* Expanding search field */
 .cartiva-header .wp-block-search__inside-wrapper {
@@ -243,6 +250,31 @@ header.wp-block-template-part:has(.cartiva-topbar) {
 		background: var(--wp--preset--color--base);
 	}
 	.cartiva-header .wp-block-search:not(.wp-block-search__searchfield-hidden) .wp-block-search__input { width: 100%; }
+}
+
+/* Header variation: centered logo */
+.cartiva-header__row--centered > * { flex: 1 1 0; }
+.cartiva-header__row--centered > .cartiva-header__brand { flex: 0 0 auto; justify-content: center; }
+.cartiva-header__row--centered > .cartiva-header__actions { justify-content: flex-end; }
+.cartiva-header-nav-row > .alignwide { padding-block: .35rem; }
+@media (max-width: 599px) {
+	.cartiva-header__row--centered > .cartiva-header__side { flex: 0 0 auto; }
+	.cartiva-header-nav-row > .alignwide { justify-content: flex-start !important; padding-block: .15rem; }
+}
+
+/* Header variation: category bar */
+.cartiva-category-bar__nav {
+	overflow-x: auto;
+	scrollbar-width: none;
+	padding-block: .6rem;
+	font-weight: 600;
+}
+.cartiva-category-bar__nav::-webkit-scrollbar { display: none; }
+.cartiva-category-bar__nav .wp-block-navigation-item__content { white-space: nowrap; }
+.cartiva-category-bar__nav .wp-block-navigation-item__content:hover { color: var(--wp--preset--color--primary); }
+.cartiva-category-bar__sale .wp-block-navigation-item__content { color: var(--wp--preset--color--accent); }
+@media (max-width: 781px) {
+	.cartiva-category-bar__nav { justify-content: flex-start !important; }
 }
 
 /* Mobile overlay menu */

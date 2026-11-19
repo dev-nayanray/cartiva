@@ -1,10 +1,9 @@
 <?php
 /**
- * Title: Footer
+ * Title: Footer: default
  * Slug: cartiva/footer
  * Categories: footer
  * Block Types: core/template-part/footer
- * Inserter: no
  *
  * @package Cartiva
  * @since 1.0.0

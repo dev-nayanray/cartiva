@@ -26,17 +26,21 @@ function cartiva_wc_thumbnail_size( $size ) {
 add_filter( 'woocommerce_get_image_size_thumbnail', 'cartiva_wc_thumbnail_size' );
 
 /**
- * Remove the legacy "classic" WooCommerce stylesheets.
- * Cartiva renders the store with WooCommerce blocks, which ship their own
- * scoped CSS, so the classic sheets are dead weight on most pages.
+ * On the My Account page, Cartiva replaces WooCommerce's classic layout
+ * stylesheets with its own (assets/css/woocommerce-account.css), so they are
+ * removed there only. Everywhere else they stay, so classic shortcode pages
+ * (cart, checkout, order tracking) keep working.
  *
- * Child themes can restore them with:
+ * Child themes can keep them on the account page with:
  * add_filter( 'cartiva_disable_classic_wc_styles', '__return_false' );
  *
  * @param array $styles Registered WooCommerce styles.
  * @return array
  */
 function cartiva_wc_enqueue_styles( $styles ) {
+	if ( ! function_exists( 'is_account_page' ) || ! is_account_page() ) {
+		return $styles;
+	}
 	if ( ! apply_filters( 'cartiva_disable_classic_wc_styles', true ) ) {
 		return $styles;
 	}
@@ -147,3 +151,36 @@ function cartiva_wc_account_dashboard_tiles() {
 	<?php
 }
 add_action( 'woocommerce_account_dashboard', 'cartiva_wc_account_dashboard_tiles' );
+
+/**
+ * Load the order tracking styles on pages that contain the tracking form.
+ */
+function cartiva_wc_track_order_styles() {
+	if ( ! is_singular() ) {
+		return;
+	}
+	$post = get_post();
+	if ( ! $post || ( ! has_shortcode( $post->post_content, 'woocommerce_order_tracking' ) && 'track-order' !== $post->post_name ) ) {
+		return;
+	}
+	wp_enqueue_style(
+		'cartiva-woocommerce-track-order',
+		get_template_directory_uri() . '/assets/css/woocommerce-track-order.css',
+		array(),
+		CARTIVA_VERSION
+	);
+}
+add_action( 'wp_enqueue_scripts', 'cartiva_wc_track_order_styles', 20 );
+
+/**
+ * URL of the "Track order" page if the store has one, otherwise My Account.
+ *
+ * @return string
+ */
+function cartiva_wc_track_order_url() {
+	$page = get_page_by_path( 'track-order' );
+	if ( $page instanceof WP_Post && 'publish' === $page->post_status ) {
+		return get_permalink( $page );
+	}
+	return wc_get_page_permalink( 'myaccount' );
+}

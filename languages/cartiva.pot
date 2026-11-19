@@ -2,7 +2,7 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Cartiva 1.5.0\n"
+"Project-Id-Version: Cartiva 1.6.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/cartiva\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -49,7 +49,7 @@ msgstr ""
 msgid "Decor"
 msgstr ""
 
-#: patterns/starter-furniture.php:39 patterns/footer.php:42 patterns/new-arrivals.php:20
+#: patterns/starter-furniture.php:39 patterns/footer.php:41 patterns/new-arrivals.php:20
 msgid "New arrivals"
 msgstr ""
 
@@ -81,11 +81,11 @@ msgstr ""
 msgid "Dress on a pink background"
 msgstr ""
 
-#: patterns/starter-fashion.php:29
+#: patterns/starter-fashion.php:29 inc/header.php:135
 msgid "Women"
 msgstr ""
 
-#: patterns/starter-fashion.php:30
+#: patterns/starter-fashion.php:30 inc/header.php:136
 msgid "Men"
 msgstr ""
 
@@ -97,7 +97,7 @@ msgstr ""
 msgid "Accessories"
 msgstr ""
 
-#: patterns/starter-fashion.php:39
+#: patterns/starter-fashion.php:39 inc/header.php:134
 msgid "New in"
 msgstr ""
 
@@ -149,7 +149,7 @@ msgstr ""
 msgid "Encrypted payments · 30-day returns · Real human support"
 msgstr ""
 
-#: patterns/template-home.php:15 patterns/footer.php:69
+#: patterns/template-home.php:15 patterns/footer.php:68
 msgid "Blog"
 msgstr ""
 
@@ -273,7 +273,7 @@ msgstr ""
 msgid "The page you are looking for does not exist or has moved. Search the store or head back to somewhere familiar."
 msgstr ""
 
-#: patterns/hidden-404.php:24 patterns/template-search.php:15 patterns/hidden-no-results.php:15 patterns/header.php:49
+#: patterns/hidden-404.php:24 patterns/template-search.php:15 patterns/hidden-no-results.php:15 inc/header.php:62 inc/header.php:116
 msgctxt "search label"
 msgid "Search"
 msgstr ""
@@ -283,7 +283,7 @@ msgctxt "search placeholder"
 msgid "What are you looking for?"
 msgstr ""
 
-#: patterns/hidden-404.php:24 patterns/template-search.php:15 patterns/hidden-no-results.php:15 patterns/header.php:49
+#: patterns/hidden-404.php:24 patterns/template-search.php:15 patterns/hidden-no-results.php:15 inc/header.php:62 inc/header.php:116
 msgctxt "search button"
 msgid "Search"
 msgstr ""
@@ -296,61 +296,61 @@ msgstr ""
 msgid "Browse the shop"
 msgstr ""
 
-#: patterns/footer.php:23
+#: patterns/footer.php:22
 msgid "Thoughtfully made products, delivered fast. Built with Cartiva — a free, lightweight block theme for WooCommerce."
 msgstr ""
 
-#: patterns/footer.php:39
+#: patterns/footer.php:38 patterns/footer-simple.php:20
 msgid "Shop"
 msgstr ""
 
-#: patterns/footer.php:43 patterns/best-sellers.php:19
+#: patterns/footer.php:42 patterns/best-sellers.php:19
 msgid "Best sellers"
 msgstr ""
 
-#: patterns/footer.php:44
+#: patterns/footer.php:43 inc/header.php:140
 msgid "Sale"
 msgstr ""
 
-#: patterns/footer.php:52
+#: patterns/footer.php:51
 msgid "Help"
 msgstr ""
 
-#: patterns/footer.php:55
+#: patterns/footer.php:54 patterns/footer-simple.php:21
 msgid "Shipping"
 msgstr ""
 
-#: patterns/footer.php:56
+#: patterns/footer.php:55 patterns/footer-simple.php:22
 msgid "Returns"
 msgstr ""
 
-#: patterns/footer.php:57
+#: patterns/footer.php:56 patterns/footer-simple.php:23
 msgid "Contact"
 msgstr ""
 
-#: patterns/footer.php:65
+#: patterns/footer.php:64
 msgid "Company"
 msgstr ""
 
-#: patterns/footer.php:68
+#: patterns/footer.php:67
 msgid "About"
 msgstr ""
 
-#: patterns/footer.php:70
+#: patterns/footer.php:69
 msgid "Privacy"
 msgstr ""
 
 #. translators: 1: Current year, 2: Site name.
-#: patterns/footer.php:88
+#: patterns/footer.php:87 patterns/footer-simple.php:30
 msgid "© %1$s %2$s. All rights reserved."
 msgstr ""
 
 #. translators: %s: WordPress link.
-#: patterns/footer.php:103
+#: patterns/footer.php:102
 msgid "Designed with %s"
 msgstr ""
 
-#: patterns/footer.php:104
+#: patterns/footer.php:103
 msgid "https://wordpress.org"
 msgstr ""
 
@@ -398,6 +398,18 @@ msgstr ""
 msgid "Top rated"
 msgstr ""
 
+#: patterns/footer-newsletter.php:21
+msgid "Join the list, get 10% off"
+msgstr ""
+
+#: patterns/footer-newsletter.php:24
+msgid "New drops, restocks and members-only deals. Add your newsletter form block here."
+msgstr ""
+
+#: patterns/footer-newsletter.php:31 patterns/newsletter.php:25
+msgid "Subscribe"
+msgstr ""
+
 #: patterns/split-promo.php:14
 msgid "The home edit"
 msgstr ""
@@ -418,11 +430,15 @@ msgstr ""
 msgid "Smart gear for every day."
 msgstr ""
 
+#: patterns/template-track-order.php:20
+msgid "Check the status of your order at any time, no account needed."
+msgstr ""
+
 #: patterns/on-sale.php:19
 msgid "On sale now"
 msgstr ""
 
-#: patterns/category-grid.php:14
+#: patterns/category-grid.php:14 inc/header.php:137
 msgid "Home & Living"
 msgstr ""
 
@@ -460,10 +476,6 @@ msgstr ""
 
 #: patterns/newsletter.php:20
 msgid "Join our newsletter for early access to drops, restocks and members-only deals. Add your favourite newsletter form block here."
-msgstr ""
-
-#: patterns/newsletter.php:25
-msgid "Subscribe"
 msgstr ""
 
 #: patterns/starter-grocery.php:16
@@ -526,6 +538,38 @@ msgstr ""
 msgid "Shop the sale"
 msgstr ""
 
+#: patterns/page-track-order.php:18
+msgid "Where do I find my order ID?"
+msgstr ""
+
+#: patterns/page-track-order.php:18
+msgid "It is in your order confirmation email, next to \"Order #\"."
+msgstr ""
+
+#: patterns/page-track-order.php:19
+msgid "Have an account?"
+msgstr ""
+
+#: patterns/page-track-order.php:19
+msgid "Log in to see every order and its tracking details in one place."
+msgstr ""
+
+#: patterns/page-track-order.php:20
+msgid "Still need help?"
+msgstr ""
+
+#: patterns/page-track-order.php:20
+msgid "Our support team is happy to check on your delivery for you."
+msgstr ""
+
+#: patterns/page-track-order.php:30
+msgid "Find your order"
+msgstr ""
+
+#: patterns/page-track-order.php:58
+msgid "Go to my account"
+msgstr ""
+
 #: patterns/hero.php:22
 msgid "New season collection"
 msgstr ""
@@ -558,101 +602,109 @@ msgstr ""
 msgid "Sorry, nothing matched your search. Please try again with different keywords."
 msgstr ""
 
-#: patterns/header.php:20
-msgid "Need help?"
-msgstr ""
-
-#: patterns/header.php:20
-msgid "Contact us"
-msgstr ""
-
-#: patterns/header.php:23
-msgid "Free shipping on orders over $50 · 30-day easy returns"
-msgstr ""
-
-#: patterns/header.php:26
-msgid "Track order"
-msgstr ""
-
-#: patterns/header.php:26
-msgid "Help center"
-msgstr ""
-
-#: patterns/header.php:49
-msgctxt "search placeholder"
-msgid "Search products…"
-msgstr ""
-
-#: functions.php:100
+#: functions.php:101
 msgid "Card"
 msgstr ""
 
-#: functions.php:107
+#: functions.php:108
 msgid "Sticky"
 msgstr ""
 
-#: functions.php:114
+#: functions.php:115
 msgid "Pill"
 msgstr ""
 
-#: functions.php:121
+#: functions.php:122
 msgid "FAQ"
 msgstr ""
 
-#: functions.php:128
+#: functions.php:129
 msgid "Zoom on hover"
 msgstr ""
 
-#: functions.php:141
+#: functions.php:142
 msgid "Cartiva: Shop"
 msgstr ""
 
-#: functions.php:142
+#: functions.php:143
 msgid "Store sections such as product grids, categories and promos."
 msgstr ""
 
-#: functions.php:148
+#: functions.php:149
 msgid "Cartiva: Starter homepages"
 msgstr ""
 
-#: functions.php:149
+#: functions.php:150
 msgid "Complete homepages for different kinds of stores."
 msgstr ""
 
-#: functions.php:155
+#: functions.php:156
 msgid "Cartiva: Sections"
 msgstr ""
 
-#: functions.php:156
+#: functions.php:157
 msgid "General page sections."
 msgstr ""
 
-#: inc/woocommerce.php:113
+#: inc/woocommerce.php:117
 msgid "Track, return or buy again"
 msgstr ""
 
-#: inc/woocommerce.php:114
+#: inc/woocommerce.php:118
 msgid "Your digital products"
 msgstr ""
 
-#: inc/woocommerce.php:115
+#: inc/woocommerce.php:119
 msgid "Billing and shipping"
 msgstr ""
 
-#: inc/woocommerce.php:116
+#: inc/woocommerce.php:120
 msgid "Saved cards and wallets"
 msgstr ""
 
-#: inc/woocommerce.php:117
+#: inc/woocommerce.php:121
 msgid "Name, email and password"
 msgstr ""
 
 #. translators: %s: number of orders.
-#: inc/woocommerce.php:142
+#: inc/woocommerce.php:146
 msgid "Continue shopping"
 msgstr ""
 
-#: inc/woocommerce.php:143
+#: inc/woocommerce.php:147
 msgid "See what is new in store"
+msgstr ""
+
+#: inc/header.php:38
+msgid "Need help?"
+msgstr ""
+
+#: inc/header.php:38
+msgid "Contact us"
+msgstr ""
+
+#: inc/header.php:41
+msgid "Free shipping on orders over $50 · 30-day easy returns"
+msgstr ""
+
+#: inc/header.php:44
+msgid "Track order"
+msgstr ""
+
+#: inc/header.php:44
+msgid "Help center"
+msgstr ""
+
+#: inc/header.php:62 inc/header.php:116
+msgctxt "search placeholder"
+msgid "Search products…"
+msgstr ""
+
+#: inc/header.php:138
+msgid "Tech"
+msgstr ""
+
+#: inc/header.php:139
+msgid "Beauty"
 msgstr ""
 

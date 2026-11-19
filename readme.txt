@@ -3,7 +3,7 @@ Contributors: godevs
 Requires at least: 6.9
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 1.5.0
+Stable tag: 1.6.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -22,6 +22,8 @@ Cartiva is a free, lightweight and modern WooCommerce block theme built entirely
 * Starter homepages: Fashion, Electronics, Grocery and Furniture.
 * Shop layout with a filter sidebar and a distraction-free checkout.
 * A modern My Account area: dashboard tiles, icon navigation, order and address cards.
+* A Track Order page pattern built on WooCommerce's order tracking.
+* Four header designs, three footer designs and section color styles you can switch in the Site Editor.
 * Works without WooCommerce as a clean blog/business theme.
 
 == Installation ==
@@ -45,11 +47,33 @@ No. Under the WordPress.org theme guidelines those are plugin features, so Carti
 
 Go to Appearance > Editor > Templates > Product Catalog and replace the template with the "Shop with filter sidebar" pattern.
 
+= How do I customize the header and footer? =
+
+Go to Appearance > Editor > Patterns > Header (or Footer), open the template part and choose Replace to pick another design: default, centered logo, with category bar, or without top bar. Every text, link and color can then be edited in place, and colors and fonts are set under Styles.
+
+= How do I create the Track Order page? =
+
+Go to Pages > Add New, choose the "Track order page" pattern and publish the page with the slug "track-order". It gets its own layout automatically, and the "Track order" link in the top bar points to it.
+
+= Can I use the simplified checkout header instead? =
+
+Yes. Go to Appearance > Editor > Templates > Page: Checkout, select the header and replace it with the "Checkout header" template part.
+
 = How do I change the homepage? =
 
 Go to Appearance > Editor > Templates > Front Page and edit the blocks, or insert patterns from the "Cartiva: Shop" category.
 
 == Changelog ==
+
+= 1.6.0 =
+* Fixed: a second account avatar could appear in the header for logged-in customers. Header icon styles now only touch the blocks' own buttons.
+* Checkout now uses the full site header. Cart and Checkout templates follow WooCommerce's recommended structure (page content wrapper and store notices).
+* WooCommerce's classic layout styles are kept on every page except My Account, so classic shortcode cart, checkout and order tracking pages keep working.
+* New Track Order page: a "Track order page" pattern and a matching template for pages with the slug "track-order". The top bar "Track order" link points to it automatically.
+* New header designs: centered logo, with category bar, and without top bar (Appearance > Editor > Patterns > Header).
+* New footer designs: with newsletter, and simple.
+* New section styles for Group, Columns and Cover blocks: Dark, Soft, Brand and Sale.
+* Styled the mini-cart drawer and the order confirmation page.
 
 = 1.5.0 =
 * Fixed: the sticky header now actually sticks. The top bar scrolls away and the main header row stays pinned, with a soft shadow once the page scrolls (in browsers that support scroll-driven animations).

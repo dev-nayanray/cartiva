@@ -66,6 +66,7 @@ function cartiva_enqueue_block_styles() {
 		'woocommerce/catalog-sorting',
 		'woocommerce/cart',
 		'woocommerce/checkout',
+		'woocommerce/order-confirmation-summary',
 	);
 
 	foreach ( $blocks as $block ) {
@@ -169,6 +170,7 @@ function cartiva_is_woocommerce_active() {
 }
 
 require_once CARTIVA_DIR . '/inc/pattern-helpers.php';
+require_once CARTIVA_DIR . '/inc/header.php';
 
 if ( cartiva_is_woocommerce_active() ) {
 	require_once CARTIVA_DIR . '/inc/woocommerce.php';

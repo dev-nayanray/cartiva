@@ -10,7 +10,7 @@ Built 100% for the Site Editor (Full Site Editing): no page builder, no jQuery, 
 [![WooCommerce](https://img.shields.io/badge/WooCommerce-ready-7f54b3?logo=woocommerce&logoColor=white)](https://woocommerce.com/)
 [![PHP](https://img.shields.io/badge/PHP-7.4%2B-777bb4?logo=php&logoColor=white)](https://www.php.net/)
 [![License: GPL v2+](https://img.shields.io/badge/License-GPLv2%2B-blue.svg)](https://www.gnu.org/licenses/gpl-2.0.html)
-[![Version](https://img.shields.io/badge/version-1.5.0-111111)](readme.txt)
+[![Version](https://img.shields.io/badge/version-1.6.0-111111)](readme.txt)
 
 [Features](#features) · [Installation](#installation) · [Patterns](#block-patterns) · [Development](#development) · [Roadmap](#roadmap)
 
@@ -38,6 +38,8 @@ Cartiva is developed by **[godevs](https://godevs.net/)** and is being prepared 
 | 🏪 **Starter homepages** | Fashion, Electronics, Grocery and Furniture homepages, inserted with one click. |
 | 🔎 **Shop with filters** | Optional shop layout with a sticky sidebar: categories, price, availability and rating filters. |
 | 🧾 **Distraction-free checkout** | Checkout uses a minimal header and footer to reduce drop-off. |
+| 🚚 **Track Order page** | Page pattern and template around WooCommerce's order tracking form, with help cards. |
+| 🎛️ **Customizable** | Four header designs, three footers, section styles (Dark, Soft, Brand, Sale), color and font variations — all in the Site Editor. |
 | 👤 **Modern My Account** | Profile card, icon navigation, dashboard tiles, coloured order statuses, address cards; tables become cards on mobile. |
 | 🧩 **Block styles** | Card, Sticky, Pill button, Image zoom and FAQ accordion. |
 | 🌍 **Translation ready** | Every string is translatable and ships with `languages/cartiva.pot`; RTL compatible. |
@@ -84,7 +86,7 @@ Then activate **Cartiva** under **Appearance → Themes**.
 | `single` · `page` · `archive` | `taxonomy-product_cat` · `taxonomy-product_tag` |
 | `search` · `404` | `product-search-results` |
 | `page-no-title` · `page-wide` (custom) | `single-product` |
-| | `page-cart` · `page-checkout` (distraction-free) · `page-my-account` |
+| | `page-cart` · `page-checkout` · `page-my-account` · `page-track-order` |
 
 ## Block patterns
 
@@ -95,6 +97,14 @@ Then activate **Cartiva** under **Appearance → Themes**.
 **Cartiva: Sections:** FAQ accordion · Newsletter call to action · Posts grid
 
 > Product patterns require WooCommerce and appear only when it is active.
+
+### Customizing the header and footer
+
+Go to **Appearance → Editor → Patterns → Header**, open the header and choose **Replace** to switch between *Default*, *Centered logo*, *With category bar* and *No top bar*. Footers work the same way (*Default*, *With newsletter*, *Simple*). Select any Group, Columns or Cover block and pick a section style (*Dark*, *Soft*, *Brand*, *Sale*) in the Styles panel.
+
+### Track Order page
+
+Create a page, choose the **Track order page** pattern and publish it with the slug `track-order`.
 
 ### Switching the shop to the sidebar layout
 
@@ -108,12 +118,13 @@ cartiva/
 ├── theme.json             Design tokens, typography, spacing, block styles
 ├── functions.php          Theme setup, block styles, pattern categories
 ├── inc/
+│   ├── header.php           Header layouts used by the header patterns
 │   ├── pattern-helpers.php  Shared product-section renderer
 │   └── woocommerce.php      WooCommerce integration (loaded only if active)
 ├── templates/             Block templates (.html)
 ├── parts/                 Header and footer template parts
 ├── patterns/              Translatable PHP block patterns
-├── styles/                Color variations and typography presets
+├── styles/                Color variations, typography presets, section styles
 ├── assets/
 │   ├── css/blocks/          Per-block CSS, loaded on demand
 │   ├── css/woocommerce-account.css  My Account styles (account page only)
@@ -160,7 +171,8 @@ wp i18n make-pot . languages/cartiva.pot --domain=cartiva
 - [x] **v1.3.1:** WordPress.org theme review compliance pass
 - [x] **v1.4.0:** My Account redesign, add-to-cart form styling
 - [x] **v1.5.0:** Header, top bar, footer, shop, product, cart/checkout, blog and 404 refresh
-- [ ] **v1.6:** WordPress.org submission, live demo site, documentation on godevs.net
+- [x] **v1.6.0:** Header/footer variations, section styles, Track Order page, checkout header fix
+- [ ] **v1.7:** WordPress.org submission, live demo site, documentation on godevs.net
 
 ## WordPress.org guidelines
 
