@@ -3,7 +3,7 @@ Contributors: godevs
 Requires at least: 6.9
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 1.3.1
+Stable tag: 1.4.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -21,6 +21,7 @@ Cartiva is a free, lightweight and modern WooCommerce block theme built entirely
 * Style variations: Default, Midnight (dark), Sand and Fresh, plus three typography presets.
 * Starter homepages: Fashion, Electronics, Grocery and Furniture.
 * Shop layout with a filter sidebar and a distraction-free checkout.
+* A modern My Account area: dashboard tiles, icon navigation, order and address cards.
 * Works without WooCommerce as a clean blog/business theme.
 
 == Installation ==
@@ -49,6 +50,13 @@ Go to Appearance > Editor > Templates > Product Catalog and replace the template
 Go to Appearance > Editor > Templates > Front Page and edit the blocks, or insert patterns from the "Cartiva: Shop" category.
 
 == Changelog ==
+
+= 1.4.0 =
+* Redesigned the WooCommerce My Account page: two-column layout with a profile card, icon navigation, dashboard quick-link tiles, card-style login and register forms, restyled orders table with order-status colours, address cards, modern form fields and notices.
+* My Account tables turn into cards on mobile, and the account menu becomes a swipeable row.
+* Added a My Account page template with a page header.
+* Restyled the single product add-to-cart form: quantity field, full-width button, variation dropdowns and stock status.
+* Fixed: the My Account menu and content no longer stack unstyled after WooCommerce's layout stylesheet was removed.
 
 = 1.3.1 =
 * Updated for the WordPress.org theme review requirements.

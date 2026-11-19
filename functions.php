@@ -60,7 +60,7 @@ function cartiva_enqueue_block_styles() {
 		'core/details',
 		'woocommerce/product-collection',
 		'woocommerce/mini-cart',
-		'woocommerce/single-product',
+		'woocommerce/add-to-cart-form',
 	);
 
 	foreach ( $blocks as $block ) {

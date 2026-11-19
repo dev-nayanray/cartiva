@@ -10,7 +10,7 @@ Built 100% for the Site Editor (Full Site Editing): no page builder, no jQuery, 
 [![WooCommerce](https://img.shields.io/badge/WooCommerce-ready-7f54b3?logo=woocommerce&logoColor=white)](https://woocommerce.com/)
 [![PHP](https://img.shields.io/badge/PHP-7.4%2B-777bb4?logo=php&logoColor=white)](https://www.php.net/)
 [![License: GPL v2+](https://img.shields.io/badge/License-GPLv2%2B-blue.svg)](https://www.gnu.org/licenses/gpl-2.0.html)
-[![Version](https://img.shields.io/badge/version-1.3.1-111111)](readme.txt)
+[![Version](https://img.shields.io/badge/version-1.4.0-111111)](readme.txt)
 
 [Features](#features) · [Installation](#installation) · [Patterns](#block-patterns) · [Development](#development) · [Roadmap](#roadmap)
 
@@ -38,6 +38,7 @@ Cartiva is developed by **[godevs](https://godevs.net/)** and is being prepared 
 | 🏪 **Starter homepages** | Fashion, Electronics, Grocery and Furniture homepages, inserted with one click. |
 | 🔎 **Shop with filters** | Optional shop layout with a sticky sidebar: categories, price, availability and rating filters. |
 | 🧾 **Distraction-free checkout** | Checkout uses a minimal header and footer to reduce drop-off. |
+| 👤 **Modern My Account** | Profile card, icon navigation, dashboard tiles, coloured order statuses, address cards; tables become cards on mobile. |
 | 🧩 **Block styles** | Card, Sticky, Pill button, Image zoom and FAQ accordion. |
 | 🌍 **Translation ready** | Every string is translatable and ships with `languages/cartiva.pot`; RTL compatible. |
 | 🔌 **Works without WooCommerce** | Store sections only load when WooCommerce is active, so it also works as a clean blog or business theme. |
@@ -83,7 +84,7 @@ Then activate **Cartiva** under **Appearance → Themes**.
 | `single` · `page` · `archive` | `taxonomy-product_cat` · `taxonomy-product_tag` |
 | `search` · `404` | `product-search-results` |
 | `page-no-title` · `page-wide` (custom) | `single-product` |
-| | `page-cart` · `page-checkout` (distraction-free) |
+| | `page-cart` · `page-checkout` (distraction-free) · `page-my-account` |
 
 ## Block patterns
 
@@ -115,6 +116,7 @@ cartiva/
 ├── styles/                Color variations and typography presets
 ├── assets/
 │   ├── css/blocks/          Per-block CSS, loaded on demand
+│   ├── css/woocommerce-account.css  My Account styles (account page only)
 │   ├── fonts/               DM Sans and Lora (SIL OFL)
 │   └── images/              Pattern images (original, GPL)
 ├── languages/             Translation template (cartiva.pot)
@@ -156,7 +158,8 @@ wp i18n make-pot . languages/cartiva.pot --domain=cartiva
 - [x] **v1.2:** Shop layout with filter sidebar, distraction-free checkout, lookbook pattern
 - [x] **v1.3:** Starter homepages (Fashion, Electronics, Grocery, Furniture) and locally bundled OFL fonts
 - [x] **v1.3.1:** WordPress.org theme review compliance pass
-- [ ] **v1.4:** WordPress.org submission, live demo site, documentation on godevs.net
+- [x] **v1.4.0:** My Account redesign, add-to-cart form styling
+- [ ] **v1.5:** WordPress.org submission, live demo site, documentation on godevs.net
 
 ## WordPress.org guidelines
 

@@ -1,0 +1,751 @@
+/**
+ * Cartiva – WooCommerce My Account.
+ * Loaded only on the account page (see inc/woocommerce.php).
+ *
+ * @package Cartiva
+ */
+
+.woocommerce-account {
+	--cartiva-acc-radius: var(--wp--custom--radius--md, 12px);
+	--cartiva-acc-gap: clamp(1.25rem, 3vw, 2.5rem);
+}
+
+.woocommerce-account .woocommerce {
+	font-size: var(--wp--preset--font-size--small);
+}
+
+/* ------------------------------------------------------------------
+ * Notices
+ * ------------------------------------------------------------------ */
+.woocommerce-account :is(.woocommerce-message, .woocommerce-info, .woocommerce-error) {
+	position: relative;
+	list-style: none;
+	margin: 0 0 1.25rem;
+	padding: .9rem 1rem .9rem 2.75rem;
+	border: 1px solid var(--wp--preset--color--border);
+	border-radius: var(--wp--custom--radius--sm, 6px);
+	background: var(--wp--preset--color--surface);
+	color: var(--wp--preset--color--contrast);
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: .5rem 1rem;
+}
+.woocommerce-account :is(.woocommerce-message, .woocommerce-info, .woocommerce-error)::before {
+	content: "";
+	position: absolute;
+	left: 1rem;
+	top: 50%;
+	width: 1.1rem;
+	height: 1.1rem;
+	margin-top: -.55rem;
+	border-radius: 50%;
+	background: var(--wp--preset--color--primary);
+	-webkit-mask: var(--cartiva-ico-info) center / contain no-repeat;
+	mask: var(--cartiva-ico-info) center / contain no-repeat;
+}
+.woocommerce-account .woocommerce-message { border-color: color-mix(in srgb, var(--wp--preset--color--success) 35%, transparent); }
+.woocommerce-account .woocommerce-message::before {
+	background: var(--wp--preset--color--success);
+	-webkit-mask-image: var(--cartiva-ico-check);
+	mask-image: var(--cartiva-ico-check);
+}
+.woocommerce-account .woocommerce-error { border-color: color-mix(in srgb, var(--wp--preset--color--accent) 40%, transparent); }
+.woocommerce-account .woocommerce-error::before {
+	background: var(--wp--preset--color--accent);
+	-webkit-mask-image: var(--cartiva-ico-alert);
+	mask-image: var(--cartiva-ico-alert);
+}
+.woocommerce-account .woocommerce-error li { margin: 0; }
+.woocommerce-account :is(.woocommerce-message, .woocommerce-info) .button {
+	order: 2;
+	margin: 0;
+	padding: .45em 1em;
+}
+
+/* ------------------------------------------------------------------
+ * Buttons & form controls
+ * ------------------------------------------------------------------ */
+.woocommerce-account .woocommerce :is(.button, button[type="submit"]) {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: .4em;
+	padding: .8em 1.6em;
+	border: 0;
+	border-radius: var(--wp--custom--radius--sm, 6px);
+	background: var(--wp--preset--color--contrast);
+	color: var(--wp--preset--color--base);
+	font: inherit;
+	font-weight: 600;
+	line-height: 1.2;
+	text-decoration: none;
+	cursor: pointer;
+	transition: background-color .2s ease, transform .15s ease;
+}
+.woocommerce-account .woocommerce :is(.button, button[type="submit"]):hover {
+	background: var(--wp--preset--color--primary);
+	color: var(--wp--preset--color--base);
+}
+.woocommerce-account .woocommerce :is(.button, button[type="submit"]):active { transform: translateY(1px); }
+
+.woocommerce-account .woocommerce form .form-row {
+	display: flex;
+	flex-direction: column;
+	gap: .35rem;
+	margin: 0 0 1rem;
+	padding: 0;
+}
+.woocommerce-account .woocommerce form .form-row label {
+	font-weight: 600;
+	font-size: var(--wp--preset--font-size--x-small);
+	color: var(--wp--preset--color--contrast);
+}
+.woocommerce-account .woocommerce form .form-row .required {
+	color: var(--wp--preset--color--accent);
+	text-decoration: none;
+	border: 0;
+}
+.woocommerce-account .woocommerce :is(input.input-text, select, textarea) {
+	width: 100%;
+	min-height: 2.9rem;
+	padding: .7rem .9rem;
+	border: 1px solid var(--wp--preset--color--border);
+	border-radius: var(--wp--custom--radius--sm, 6px);
+	background: var(--wp--preset--color--base);
+	color: var(--wp--preset--color--contrast);
+	font: inherit;
+	box-sizing: border-box;
+	transition: border-color .15s ease, box-shadow .15s ease;
+}
+.woocommerce-account .woocommerce :is(input.input-text, select, textarea):hover {
+	border-color: color-mix(in srgb, var(--wp--preset--color--contrast) 35%, var(--wp--preset--color--border));
+}
+.woocommerce-account .woocommerce :is(input.input-text, select, textarea):focus {
+	outline: none;
+	border-color: var(--wp--preset--color--primary);
+	box-shadow: 0 0 0 3px color-mix(in srgb, var(--wp--preset--color--primary) 20%, transparent);
+}
+.woocommerce-account .woocommerce .password-input {
+	position: relative;
+	display: block;
+}
+.woocommerce-account .woocommerce .show-password-input {
+	position: absolute;
+	right: .5rem;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 2rem;
+	height: 2rem;
+	border: 0;
+	background: transparent;
+	cursor: pointer;
+	opacity: .6;
+}
+.woocommerce-account .woocommerce .show-password-input::after {
+	content: "";
+	display: block;
+	width: 1.15rem;
+	height: 1.15rem;
+	margin: auto;
+	background: var(--wp--preset--color--contrast);
+	-webkit-mask: var(--cartiva-ico-eye) center / contain no-repeat;
+	mask: var(--cartiva-ico-eye) center / contain no-repeat;
+}
+.woocommerce-account .woocommerce input[type="checkbox"] {
+	width: 1.05rem;
+	height: 1.05rem;
+	accent-color: var(--wp--preset--color--primary);
+	vertical-align: -.15em;
+}
+.woocommerce-account .woocommerce fieldset {
+	margin: 1.5rem 0 0;
+	padding: 1.25rem;
+	border: 1px solid var(--wp--preset--color--border);
+	border-radius: var(--cartiva-acc-radius);
+}
+.woocommerce-account .woocommerce fieldset legend {
+	padding: 0 .4rem;
+	font-weight: 700;
+}
+.woocommerce-account .woocommerce form .form-row em,
+.woocommerce-account .woocommerce .woocommerce-privacy-policy-text {
+	color: var(--wp--preset--color--muted);
+	font-size: var(--wp--preset--font-size--x-small);
+	font-style: normal;
+}
+.woocommerce-account .woocommerce :is(.woocommerce-EditAccountForm, .woocommerce-address-fields__field-wrapper, .woocommerce-form-register) {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 1rem;
+}
+.woocommerce-account .woocommerce :is(.woocommerce-EditAccountForm, .woocommerce-address-fields__field-wrapper, .woocommerce-form-register) > * {
+	flex: 1 1 100%;
+	min-width: 0;
+}
+@media (min-width: 600px) {
+	.woocommerce-account .woocommerce :is(.woocommerce-EditAccountForm, .woocommerce-address-fields__field-wrapper) > :is(.form-row-first, .form-row-last) {
+		flex: 1 1 calc(50% - .5rem);
+	}
+}
+.woocommerce-account .woocommerce form .form-row :is(.woocommerce-input-wrapper, .password-input) { width: 100%; }
+
+/* ------------------------------------------------------------------
+ * Logged out: login / register
+ * ------------------------------------------------------------------ */
+.woocommerce-account:not(.logged-in) .woocommerce {
+	max-width: 960px;
+	margin-inline: auto;
+}
+.woocommerce-account #customer_login {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
+	gap: var(--cartiva-acc-gap);
+}
+.woocommerce-account #customer_login > div,
+.woocommerce-account .woocommerce > .woocommerce-form-login,
+.woocommerce-account .woocommerce-ResetPassword {
+	float: none;
+	width: auto;
+	padding: clamp(1.5rem, 4vw, 2.5rem);
+	border: 1px solid var(--wp--preset--color--border);
+	border-radius: var(--wp--custom--radius--lg, 20px);
+	background: var(--wp--preset--color--base);
+	box-shadow: var(--wp--preset--shadow--soft);
+}
+.woocommerce-account #customer_login .u-column2 {
+	background: var(--wp--preset--color--surface);
+	box-shadow: none;
+}
+.woocommerce-account .woocommerce > .woocommerce-form-login,
+.woocommerce-account .woocommerce-ResetPassword {
+	max-width: 460px;
+	margin-inline: auto;
+}
+.woocommerce-account #customer_login h2,
+.woocommerce-account .woocommerce > h2 {
+	margin: 0 0 .35rem;
+	font-size: var(--wp--preset--font-size--x-large);
+}
+.woocommerce-account #customer_login h2 + form { margin-top: 1.25rem; }
+.woocommerce-account #customer_login form { margin: 0; padding: 0; border: 0; }
+.woocommerce-account #customer_login form > p:not(.form-row) {
+	color: var(--wp--preset--color--muted);
+	font-size: var(--wp--preset--font-size--x-small);
+}
+.woocommerce-account .woocommerce-form-login .form-row:has(.woocommerce-form-login__submit) {
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+}
+.woocommerce-account .woocommerce-form-login__submit,
+.woocommerce-account .woocommerce-form-register__submit,
+.woocommerce-account .woocommerce-ResetPassword button[type="submit"] {
+	width: 100%;
+	order: 2;
+	padding-block: 1em;
+}
+.woocommerce-account .woocommerce-form-login__rememberme {
+	display: inline-flex;
+	align-items: center;
+	gap: .5rem;
+	font-weight: 500 !important;
+}
+.woocommerce-account .woocommerce-LostPassword {
+	margin: .5rem 0 0;
+	text-align: center;
+	font-size: var(--wp--preset--font-size--x-small);
+}
+.woocommerce-account .woocommerce-LostPassword a,
+.woocommerce-account .woocommerce-MyAccount-content a:not(.button) {
+	color: var(--wp--preset--color--primary);
+	text-decoration-thickness: 1px;
+	text-underline-offset: .2em;
+}
+
+/* ------------------------------------------------------------------
+ * Logged in: layout
+ * ------------------------------------------------------------------ */
+.woocommerce-account.logged-in .woocommerce {
+	display: grid;
+	grid-template-columns: minmax(220px, 280px) minmax(0, 1fr);
+	gap: var(--cartiva-acc-gap);
+	align-items: start;
+}
+.woocommerce-account.logged-in .woocommerce > :not(.woocommerce-MyAccount-navigation):not(.cartiva-account-profile):not(.woocommerce-MyAccount-content) {
+	grid-column: 1 / -1;
+	grid-row: auto;
+}
+.woocommerce-account .woocommerce-MyAccount-navigation,
+.woocommerce-account .woocommerce-MyAccount-content {
+	float: none;
+	width: auto;
+	margin: 0;
+}
+
+/* Sidebar: profile card (inc/woocommerce.php) stacked on the navigation */
+.woocommerce-account.logged-in .woocommerce { grid-template-rows: auto 1fr; }
+.woocommerce-account .cartiva-account-profile { grid-column: 1; grid-row: 1; }
+.woocommerce-account.logged-in .woocommerce-MyAccount-navigation { grid-column: 1; grid-row: 2; }
+.woocommerce-account.logged-in .woocommerce-MyAccount-content { grid-column: 2; grid-row: 1 / span 2; }
+.woocommerce-account .woocommerce-MyAccount-navigation {
+	padding: .75rem;
+	border: 1px solid var(--wp--preset--color--border);
+	border-radius: var(--cartiva-acc-radius);
+	background: var(--wp--preset--color--base);
+	align-self: start;
+}
+.woocommerce-account .cartiva-account-profile {
+	display: flex;
+	align-items: center;
+	gap: .75rem;
+	padding: 1rem;
+	border-radius: var(--cartiva-acc-radius);
+	background: var(--wp--preset--color--contrast);
+	color: var(--wp--preset--color--base);
+}
+@media (min-width: 782px) {
+	.woocommerce-account.logged-in .woocommerce { row-gap: .75rem; }
+	.woocommerce-account .cartiva-account-profile + .woocommerce-MyAccount-navigation { margin-top: 0; }
+}
+.woocommerce-account .cartiva-account-avatar {
+	flex: none;
+	display: grid;
+	place-items: center;
+	width: 2.75rem;
+	height: 2.75rem;
+	border-radius: 50%;
+	background: var(--wp--preset--color--primary);
+	color: #fff;
+	font-weight: 700;
+	font-size: 1rem;
+	letter-spacing: .02em;
+	text-transform: uppercase;
+}
+.woocommerce-account .cartiva-account-profile__text {
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+	line-height: 1.3;
+}
+.woocommerce-account .cartiva-account-profile__name {
+	font-weight: 700;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.woocommerce-account .cartiva-account-profile__email {
+	opacity: .7;
+	font-size: var(--wp--preset--font-size--x-small);
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.woocommerce-account .woocommerce-MyAccount-navigation ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+}
+.woocommerce-account .woocommerce-MyAccount-navigation li { margin: 0; padding: 0; }
+.woocommerce-account .woocommerce-MyAccount-navigation a {
+	display: flex;
+	align-items: center;
+	gap: .7rem;
+	padding: .65rem .75rem;
+	border-radius: var(--wp--custom--radius--sm, 6px);
+	color: var(--wp--preset--color--contrast);
+	font-weight: 500;
+	text-decoration: none;
+	transition: background-color .15s ease, color .15s ease;
+}
+.woocommerce-account .woocommerce-MyAccount-navigation a::before {
+	content: "";
+	flex: none;
+	width: 1.15rem;
+	height: 1.15rem;
+	background: currentColor;
+	opacity: .7;
+	-webkit-mask: var(--cartiva-ico, var(--cartiva-ico-dot)) center / contain no-repeat;
+	mask: var(--cartiva-ico, var(--cartiva-ico-dot)) center / contain no-repeat;
+}
+.woocommerce-account .woocommerce-MyAccount-navigation a:hover {
+	background: var(--wp--preset--color--surface);
+}
+.woocommerce-account .woocommerce-MyAccount-navigation .is-active a {
+	background: var(--wp--preset--color--contrast);
+	color: var(--wp--preset--color--base);
+}
+.woocommerce-account .woocommerce-MyAccount-navigation .is-active a::before { opacity: 1; }
+.woocommerce-account .woocommerce-MyAccount-navigation-link--customer-logout {
+	margin-top: .5rem !important;
+	padding-top: .5rem !important;
+	border-top: 1px solid var(--wp--preset--color--border);
+}
+.woocommerce-account .woocommerce-MyAccount-navigation-link--customer-logout a { color: var(--wp--preset--color--muted); }
+.woocommerce-account .woocommerce-MyAccount-navigation-link--customer-logout a:hover { color: var(--wp--preset--color--accent); }
+
+.woocommerce-MyAccount-navigation-link--dashboard { --cartiva-ico: var(--cartiva-ico-home); }
+.woocommerce-MyAccount-navigation-link--orders { --cartiva-ico: var(--cartiva-ico-bag); }
+.woocommerce-MyAccount-navigation-link--downloads { --cartiva-ico: var(--cartiva-ico-download); }
+.woocommerce-MyAccount-navigation-link--edit-address { --cartiva-ico: var(--cartiva-ico-pin); }
+.woocommerce-MyAccount-navigation-link--payment-methods { --cartiva-ico: var(--cartiva-ico-card); }
+.woocommerce-MyAccount-navigation-link--edit-account { --cartiva-ico: var(--cartiva-ico-user); }
+.woocommerce-MyAccount-navigation-link--customer-logout { --cartiva-ico: var(--cartiva-ico-logout); }
+
+/* Content panel */
+.woocommerce-account .woocommerce-MyAccount-content {
+	min-width: 0;
+	padding: clamp(1.25rem, 3vw, 2.25rem);
+	border: 1px solid var(--wp--preset--color--border);
+	border-radius: var(--cartiva-acc-radius);
+	background: var(--wp--preset--color--base);
+}
+.woocommerce-account .woocommerce-notices-wrapper:empty { display: none; }
+.woocommerce-account .woocommerce-MyAccount-content > :first-child,
+.woocommerce-account .woocommerce-MyAccount-content > .woocommerce-notices-wrapper:empty + * { margin-top: 0; }
+.woocommerce-account .woocommerce-MyAccount-content > :last-child { margin-bottom: 0; }
+.woocommerce-account .woocommerce-MyAccount-content :is(h2, h3) {
+	font-size: var(--wp--preset--font-size--large);
+	margin: 1.75rem 0 .75rem;
+}
+.woocommerce-account .woocommerce-MyAccount-content > p:first-of-type:has(strong) {
+	font-size: var(--wp--preset--font-size--medium);
+	font-weight: 600;
+	margin-bottom: .25rem;
+}
+.woocommerce-account .woocommerce-MyAccount-content > p {
+	color: var(--wp--preset--color--muted);
+}
+.woocommerce-account .woocommerce-MyAccount-content > p strong { color: var(--wp--preset--color--contrast); }
+
+/* Dashboard tiles (inc/woocommerce.php) */
+.cartiva-account-tiles {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 160px), 1fr));
+	gap: 1rem;
+	margin: 1.75rem 0 0;
+	padding: 0;
+	list-style: none;
+}
+.cartiva-account-tile { display: flex; margin: 0; }
+.cartiva-account-tile a {
+	box-sizing: border-box;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: .5rem;
+	padding: 1.25rem;
+	border: 1px solid var(--wp--preset--color--border);
+	border-radius: var(--cartiva-acc-radius);
+	background: var(--wp--preset--color--surface);
+	color: var(--wp--preset--color--contrast) !important;
+	text-decoration: none !important;
+	transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.cartiva-account-tile a:hover {
+	transform: translateY(-2px);
+	border-color: transparent;
+	box-shadow: var(--wp--preset--shadow--soft);
+	background: var(--wp--preset--color--base);
+}
+.cartiva-account-tile__icon {
+	display: grid;
+	place-items: center;
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 10px;
+	background: var(--wp--preset--color--base);
+	box-shadow: inset 0 0 0 1px var(--wp--preset--color--border);
+}
+.cartiva-account-tile__icon::before {
+	content: "";
+	width: 1.2rem;
+	height: 1.2rem;
+	background: var(--wp--preset--color--primary);
+	-webkit-mask: var(--cartiva-ico) center / contain no-repeat;
+	mask: var(--cartiva-ico) center / contain no-repeat;
+}
+.cartiva-account-tile__title { font-weight: 700; font-size: var(--wp--preset--font-size--medium); }
+.cartiva-account-tile__meta { color: var(--wp--preset--color--muted); font-size: var(--wp--preset--font-size--x-small); }
+.cartiva-account-tile--orders { --cartiva-ico: var(--cartiva-ico-bag); }
+.cartiva-account-tile--edit-address { --cartiva-ico: var(--cartiva-ico-pin); }
+.cartiva-account-tile--edit-account { --cartiva-ico: var(--cartiva-ico-user); }
+.cartiva-account-tile--downloads { --cartiva-ico: var(--cartiva-ico-download); }
+.cartiva-account-tile--payment-methods { --cartiva-ico: var(--cartiva-ico-card); }
+.cartiva-account-tile--shop { --cartiva-ico: var(--cartiva-ico-store); }
+
+/* ------------------------------------------------------------------
+ * Tables: orders, downloads, payment methods, order details
+ * ------------------------------------------------------------------ */
+.woocommerce-account .woocommerce table.shop_table {
+	width: 100%;
+	margin: 0 0 1.5rem;
+	border: 1px solid var(--wp--preset--color--border);
+	border-radius: var(--cartiva-acc-radius);
+	border-collapse: separate;
+	border-spacing: 0;
+	overflow: hidden;
+}
+.woocommerce-account .woocommerce table.shop_table :is(th, td) {
+	padding: .85rem 1rem;
+	border: 0;
+	border-top: 1px solid var(--wp--preset--color--border);
+	text-align: left;
+	vertical-align: middle;
+}
+.woocommerce-account .woocommerce table.shop_table thead th {
+	border-top: 0;
+	background: var(--wp--preset--color--surface);
+	color: var(--wp--preset--color--muted);
+	font-size: var(--wp--preset--font-size--x-small);
+	font-weight: 600;
+	letter-spacing: .04em;
+	text-transform: uppercase;
+}
+.woocommerce-account .woocommerce table.shop_table tbody tr { transition: background-color .15s ease; }
+.woocommerce-account .woocommerce table.shop_table tbody tr:hover { background: color-mix(in srgb, var(--wp--preset--color--surface) 60%, transparent); }
+.woocommerce-account .woocommerce table.shop_table tfoot :is(th, td) { font-weight: 600; }
+.woocommerce-account .woocommerce-orders-table__cell-order-number a {
+	font-weight: 700;
+	text-decoration: none;
+}
+.woocommerce-account .woocommerce table.shop_table .button {
+	padding: .45em 1em;
+	margin: .15rem .25rem .15rem 0;
+	font-size: var(--wp--preset--font-size--x-small);
+	background: var(--wp--preset--color--surface);
+	color: var(--wp--preset--color--contrast);
+	box-shadow: inset 0 0 0 1px var(--wp--preset--color--border);
+}
+.woocommerce-account .woocommerce table.shop_table .button:hover {
+	background: var(--wp--preset--color--contrast);
+	color: var(--wp--preset--color--base);
+	box-shadow: none;
+}
+
+/* Status: coloured dot + text, keyed off WooCommerce's row status classes */
+.woocommerce-account .woocommerce-orders-table__cell-order-status {
+	white-space: nowrap;
+	font-weight: 600;
+}
+.woocommerce-account .woocommerce-orders-table__cell-order-status::after {
+	content: none;
+}
+.woocommerce-account .woocommerce-orders-table__row .woocommerce-orders-table__cell-order-status {
+	--cartiva-status: var(--wp--preset--color--muted);
+	color: var(--cartiva-status);
+}
+.woocommerce-account .woocommerce-orders-table__row--status-completed { --cartiva-status-c: var(--wp--preset--color--success); }
+.woocommerce-account .woocommerce-orders-table__row--status-processing { --cartiva-status-c: var(--wp--preset--color--primary); }
+.woocommerce-account .woocommerce-orders-table__row--status-on-hold,
+.woocommerce-account .woocommerce-orders-table__row--status-pending { --cartiva-status-c: #8a5a12; }
+.woocommerce-account .woocommerce-orders-table__row--status-cancelled,
+.woocommerce-account .woocommerce-orders-table__row--status-failed,
+.woocommerce-account .woocommerce-orders-table__row--status-refunded { --cartiva-status-c: var(--wp--preset--color--accent); }
+.woocommerce-account .woocommerce-orders-table__row[class*="--status-"] .woocommerce-orders-table__cell-order-status {
+	color: var(--cartiva-status-c, var(--wp--preset--color--muted));
+}
+.woocommerce-account .woocommerce-orders-table__cell-order-status::before {
+	content: "";
+	display: inline-block;
+	width: .5em;
+	height: .5em;
+	margin-right: .45em;
+	border-radius: 50%;
+	background: currentColor;
+	vertical-align: .1em;
+}
+.woocommerce-account mark.order-status {
+	padding: .15em .6em;
+	border-radius: 999px;
+	background: var(--wp--preset--color--surface);
+}
+
+/* Order details */
+.woocommerce-account .woocommerce-MyAccount-content mark {
+	background: transparent;
+	color: var(--wp--preset--color--contrast);
+	font-weight: 700;
+}
+.woocommerce-account .woocommerce-customer-details address {
+	padding: 1.25rem;
+	border: 1px solid var(--wp--preset--color--border);
+	border-radius: var(--cartiva-acc-radius);
+	font-style: normal;
+	line-height: 1.7;
+}
+
+/* Pagination */
+.woocommerce-account .woocommerce-pagination {
+	display: flex;
+	justify-content: space-between;
+	gap: 1rem;
+}
+
+/* ------------------------------------------------------------------
+ * Addresses
+ * ------------------------------------------------------------------ */
+.woocommerce-account .woocommerce-Addresses {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+	gap: 1rem;
+	margin-top: 1.25rem;
+}
+.woocommerce-account .woocommerce-Addresses::before,
+.woocommerce-account .woocommerce-Addresses::after { content: none; display: none; }
+.woocommerce-account .woocommerce-Address {
+	float: none !important;
+	width: auto !important;
+	margin: 0 !important;
+	padding: 1.25rem;
+	border: 1px solid var(--wp--preset--color--border);
+	border-radius: var(--cartiva-acc-radius);
+	background: var(--wp--preset--color--surface);
+}
+.woocommerce-account .woocommerce-Address-title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+	margin-bottom: .75rem;
+}
+.woocommerce-account .woocommerce-Address-title h2,
+.woocommerce-account .woocommerce-Address-title h3 {
+	margin: 0 !important;
+	font-size: var(--wp--preset--font-size--medium) !important;
+}
+.woocommerce-account .woocommerce-Address-title .edit {
+	padding: .3em .8em;
+	border-radius: 999px;
+	background: var(--wp--preset--color--base);
+	box-shadow: inset 0 0 0 1px var(--wp--preset--color--border);
+	color: var(--wp--preset--color--contrast) !important;
+	font-size: var(--wp--preset--font-size--x-small);
+	font-weight: 600;
+	text-decoration: none !important;
+}
+.woocommerce-account .woocommerce-Address address {
+	font-style: normal;
+	line-height: 1.7;
+	color: var(--wp--preset--color--muted);
+}
+
+/* ------------------------------------------------------------------
+ * Responsive
+ * ------------------------------------------------------------------ */
+@media (max-width: 781px) {
+	.woocommerce-account.logged-in .woocommerce {
+		grid-template-columns: minmax(0, 1fr);
+	}
+	.woocommerce-account .woocommerce-MyAccount-navigation {
+		position: static;
+		padding: .5rem;
+	}
+	.woocommerce-account .woocommerce-MyAccount-navigation ul {
+		flex-direction: row;
+		overflow-x: auto;
+		scroll-snap-type: x proximity;
+		scrollbar-width: none;
+		gap: .35rem;
+		-webkit-mask-image: linear-gradient(to right, #000 85%, transparent);
+		mask-image: linear-gradient(to right, #000 85%, transparent);
+		padding-right: 2rem;
+	}
+	.woocommerce-account .woocommerce-MyAccount-navigation ul::-webkit-scrollbar { display: none; }
+	.woocommerce-account .woocommerce-MyAccount-navigation li { flex: none; scroll-snap-align: start; }
+	.woocommerce-account .woocommerce-MyAccount-navigation a { padding: .55rem .8rem; white-space: nowrap; }
+	.woocommerce-account .woocommerce-MyAccount-navigation-link--customer-logout {
+		margin: 0 !important;
+		padding: 0 !important;
+		border: 0;
+	}
+	.cartiva-account-tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem; }
+	.cartiva-account-tile a { padding: 1rem; }
+	.cartiva-account-tile__meta { display: none; }
+	.woocommerce-account .cartiva-account-profile,
+	.woocommerce-account.logged-in .woocommerce-MyAccount-navigation,
+	.woocommerce-account.logged-in .woocommerce-MyAccount-content { grid-column: 1; grid-row: auto; }
+	.woocommerce-account.logged-in .woocommerce { grid-template-rows: none; row-gap: .75rem; }
+	.woocommerce-account .cartiva-account-profile + .woocommerce-MyAccount-navigation { margin-top: 0; }
+
+	/* Stack responsive tables into cards */
+	.woocommerce-account .woocommerce table.shop_table_responsive thead { display: none; }
+	.woocommerce-account .woocommerce table.shop_table_responsive,
+	.woocommerce-account .woocommerce table.shop_table_responsive tbody { display: block; border: 0; }
+	.woocommerce-account .woocommerce table.shop_table_responsive tr {
+		display: block;
+		margin-bottom: .75rem;
+		padding: .5rem 0;
+		border: 1px solid var(--wp--preset--color--border);
+		border-radius: var(--cartiva-acc-radius);
+	}
+	.woocommerce-account .woocommerce table.shop_table_responsive tbody :is(th, td) {
+		display: block;
+		padding: .5rem 1rem;
+		border: 0;
+		text-align: right !important;
+	}
+	.woocommerce-account .woocommerce table.shop_table_responsive tbody th {
+		text-align: left !important;
+		font-size: var(--wp--preset--font-size--medium);
+		padding-bottom: .75rem;
+		margin-bottom: .25rem;
+		border-bottom: 1px solid var(--wp--preset--color--border);
+	}
+	.woocommerce-account .woocommerce table.shop_table_responsive td::before {
+		content: attr(data-title);
+		float: left;
+		margin-right: 1rem;
+		color: var(--wp--preset--color--muted);
+		font-size: var(--wp--preset--font-size--x-small);
+		font-weight: 600;
+		line-height: 2;
+	}
+	.woocommerce-account .woocommerce table.shop_table_responsive td.woocommerce-orders-table__cell-order-status::before {
+		display: block;
+		width: auto;
+		height: auto;
+		margin: 0 1rem 0 0;
+		border-radius: 0;
+		background: none;
+		vertical-align: baseline;
+	}
+	.woocommerce-account .woocommerce table.shop_table_responsive td.woocommerce-orders-table__cell-order-actions::before,
+	.woocommerce-account .woocommerce table.shop_table_responsive td.download-file::before { content: none; }
+	.woocommerce-account .woocommerce table.shop_table_responsive td.woocommerce-orders-table__cell-order-actions {
+		text-align: left !important;
+		border-top: 1px solid var(--wp--preset--color--border);
+		margin-top: .25rem;
+		padding-top: .75rem;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.cartiva-account-tile a,
+	.woocommerce-account .woocommerce :is(.button, button[type="submit"]) { transition: none; }
+}
+
+/* ------------------------------------------------------------------
+ * Icons (inline SVG masks; bundled, no requests)
+ * ------------------------------------------------------------------ */
+.woocommerce-account {
+	--cartiva-ico-dot: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='4'/%3E%3C/svg%3E");
+	--cartiva-ico-home: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z'/%3E%3C/svg%3E");
+	--cartiva-ico-bag: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 7h14l-1 14H6z'/%3E%3Cpath d='M9 7a3 3 0 0 1 6 0'/%3E%3C/svg%3E");
+	--cartiva-ico-download: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3v12m0 0-4-4m4 4 4-4M4 17v3h16v-3'/%3E%3C/svg%3E");
+	--cartiva-ico-pin: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z'/%3E%3Ccircle cx='12' cy='9' r='2.5'/%3E%3C/svg%3E");
+	--cartiva-ico-card: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='5' width='18' height='14' rx='2'/%3E%3Cpath d='M3 10h18M7 15h3'/%3E%3C/svg%3E");
+	--cartiva-ico-user: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='8' r='4'/%3E%3Cpath d='M4 21a8 8 0 0 1 16 0'/%3E%3C/svg%3E");
+	--cartiva-ico-logout: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M15 4h4a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1h-4M10 16l4-4-4-4M14 12H3'/%3E%3C/svg%3E");
+	--cartiva-ico-store: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 9 5.5 4h13L20 9M4 9h16v11H4zM4 9a2.7 2.7 0 0 0 5.3 0 2.7 2.7 0 0 0 5.4 0A2.7 2.7 0 0 0 20 9M10 20v-5h4v5'/%3E%3C/svg%3E");
+	--cartiva-ico-info: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 15h-2v-6h2zm0-8h-2V7h2z'/%3E%3C/svg%3E");
+	--cartiva-ico-check: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm-1.2 14.2-4-4 1.4-1.4 2.6 2.6 5.6-5.6 1.4 1.4z'/%3E%3C/svg%3E");
+	--cartiva-ico-alert: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 15h-2v-2h2zm0-4h-2V7h2z'/%3E%3C/svg%3E");
+	--cartiva-ico-eye: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2'%3E%3Cpath d='M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z'/%3E%3Ccircle cx='12' cy='12' r='3'/%3E%3C/svg%3E");
+}
