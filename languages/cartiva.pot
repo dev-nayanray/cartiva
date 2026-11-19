@@ -2,7 +2,7 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Cartiva 1.6.0\n"
+"Project-Id-Version: Cartiva 1.7.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/cartiva\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -57,8 +57,165 @@ msgstr ""
 msgid "Designer picks"
 msgstr ""
 
+#: patterns/page-about.php:18
+msgid "Founded"
+msgstr ""
+
+#: patterns/page-about.php:19
+msgid "Happy customers"
+msgstr ""
+
+#: patterns/page-about.php:20
+msgid "Products designed in-house"
+msgstr ""
+
+#: patterns/page-about.php:21
+msgid "Average review score"
+msgstr ""
+
+#: patterns/page-about.php:24
+msgid "About us"
+msgstr ""
+
+#: patterns/page-about.php:24
+msgid "Good things, made to last"
+msgstr ""
+
+#: patterns/page-about.php:24
+msgid "We started with one simple idea: everyday products should be beautiful, honest and built to be used for years."
+msgstr ""
+
+#: patterns/page-about.php:33
+msgid "Our studio"
+msgstr ""
+
+#: patterns/page-about.php:40
+msgid "Our story"
+msgstr ""
+
+#: patterns/page-about.php:43
+msgid "What began as a small workshop is now a team of designers, makers and friendly support people who care about every order."
+msgstr ""
+
+#: patterns/page-about.php:46
+msgid "We work directly with a handful of trusted makers, choose durable materials and keep our prices fair by selling only online. Every product is tested by our team before it reaches you."
+msgstr ""
+
+#: patterns/page-about.php:49
+msgid "Thank you for being part of the story."
+msgstr ""
+
+#: patterns/page-about.php:81
+msgid "What we stand for"
+msgstr ""
+
+#: patterns/page-about.php:86
+msgid "Quality first"
+msgstr ""
+
+#: patterns/page-about.php:86
+msgid "Durable materials and careful finishing, tested by our team before anything goes on sale."
+msgstr ""
+
+#: patterns/page-about.php:87
+msgid "Kinder to the planet"
+msgstr ""
+
+#: patterns/page-about.php:87
+msgid "Recycled packaging, carbon-neutral delivery and products designed to be repaired, not replaced."
+msgstr ""
+
+#: patterns/page-about.php:88
+msgid "People who care"
+msgstr ""
+
+#: patterns/page-about.php:88
+msgid "A real support team that knows the products and is happy to help before and after you buy."
+msgstr ""
+
+#: patterns/page-about.php:95
+msgid "Find something you will love"
+msgstr ""
+
+#: patterns/page-about.php:95
+msgid "Browse the full collection, with free shipping on orders over $50."
+msgstr ""
+
+#: patterns/page-about.php:95 patterns/hero.php:33 inc/pattern-helpers.php:146
+msgid "Shop now"
+msgstr ""
+
 #: patterns/brands.php:18
 msgid "Brands we carry"
+msgstr ""
+
+#: patterns/page-terms.php:16
+msgid "Legal"
+msgstr ""
+
+#: patterns/page-terms.php:16
+msgid "Terms & conditions"
+msgstr ""
+
+#: patterns/page-terms.php:16
+msgid "Please read these terms carefully before placing an order."
+msgstr ""
+
+#: patterns/page-terms.php:21
+msgid "Sample text: replace these sections with your store's own terms. This template is not legal advice."
+msgstr ""
+
+#. translators: 1: Section number, 2: Section title.
+#: patterns/page-terms.php:24 patterns/page-terms.php:30 patterns/page-terms.php:36 patterns/page-terms.php:42 patterns/page-terms.php:48 patterns/page-terms.php:54
+msgid "%1$d. %2$s"
+msgstr ""
+
+#: patterns/page-terms.php:24
+msgid "Overview"
+msgstr ""
+
+#: patterns/page-terms.php:27
+msgid "These terms apply to every purchase made on this website. By placing an order you agree to them."
+msgstr ""
+
+#: patterns/page-terms.php:30
+msgid "Orders"
+msgstr ""
+
+#: patterns/page-terms.php:33
+msgid "We confirm every order by email. We may decline or cancel an order if a product is unavailable or a price was shown in error, and will refund any payment in full."
+msgstr ""
+
+#: patterns/page-terms.php:36
+msgid "Prices and payment"
+msgstr ""
+
+#: patterns/page-terms.php:39
+msgid "Prices are shown in the store currency and include applicable taxes unless stated otherwise. Payment is taken when your order is placed."
+msgstr ""
+
+#: patterns/page-terms.php:42
+msgid "Delivery"
+msgstr ""
+
+#: patterns/page-terms.php:45
+msgid "Delivery times are estimates. Risk passes to you once the order has been delivered to the address you provided."
+msgstr ""
+
+#: patterns/page-terms.php:48 patterns/footer.php:55 patterns/footer-simple.php:22
+msgid "Returns"
+msgstr ""
+
+#: patterns/page-terms.php:51
+msgid "You can return unused items within 30 days of delivery. See our Shipping & returns page for details."
+msgstr ""
+
+#: patterns/page-terms.php:54 patterns/footer.php:56 patterns/page-contact.php:18 patterns/footer-simple.php:23
+msgid "Contact"
+msgstr ""
+
+#: patterns/page-terms.php:57
+msgid "Questions about these terms? Contact us and we will be happy to help."
 msgstr ""
 
 #: patterns/starter-fashion.php:16
@@ -117,7 +274,7 @@ msgstr ""
 msgid "Most orders ship within 1–2 business days and arrive in 3–5 business days. You will receive a tracking link by email."
 msgstr ""
 
-#: patterns/faq.php:15
+#: patterns/faq.php:15 patterns/page-faq.php:40
 msgid "What is your return policy?"
 msgstr ""
 
@@ -125,7 +282,7 @@ msgstr ""
 msgid "You can return unused items within 30 days of delivery for a full refund. Start a return from your account page."
 msgstr ""
 
-#: patterns/faq.php:16
+#: patterns/faq.php:16 patterns/page-faq.php:24
 msgid "Which payment methods do you accept?"
 msgstr ""
 
@@ -141,7 +298,7 @@ msgstr ""
 msgid "Yes, we ship to most countries. Shipping costs and delivery times are shown at checkout."
 msgstr ""
 
-#: patterns/faq.php:23
+#: patterns/faq.php:23 patterns/page-faq.php:16
 msgid "Frequently asked questions"
 msgstr ""
 
@@ -149,7 +306,7 @@ msgstr ""
 msgid "Encrypted payments · 30-day returns · Real human support"
 msgstr ""
 
-#: patterns/template-home.php:15 patterns/footer.php:68
+#: patterns/template-home.php:15 patterns/footer.php:70
 msgid "Blog"
 msgstr ""
 
@@ -296,6 +453,130 @@ msgstr ""
 msgid "Browse the shop"
 msgstr ""
 
+#: patterns/page-shipping-returns.php:17
+msgid "Start your return"
+msgstr ""
+
+#: patterns/page-shipping-returns.php:17
+msgid "Log in to your account or contact us with your order number within 30 days of delivery."
+msgstr ""
+
+#: patterns/page-shipping-returns.php:18
+msgid "Pack it up"
+msgstr ""
+
+#: patterns/page-shipping-returns.php:18
+msgid "Use the original packaging if you can, and include the return slip we send you."
+msgstr ""
+
+#: patterns/page-shipping-returns.php:19
+msgid "Get your refund"
+msgstr ""
+
+#: patterns/page-shipping-returns.php:19
+msgid "Once your parcel arrives, we refund the original payment method within 5 business days."
+msgstr ""
+
+#: patterns/page-shipping-returns.php:22
+msgid "Policies"
+msgstr ""
+
+#: patterns/page-shipping-returns.php:22
+msgid "Shipping & returns"
+msgstr ""
+
+#: patterns/page-shipping-returns.php:22
+msgid "Fast, tracked delivery and easy 30-day returns on every order."
+msgstr ""
+
+#: patterns/page-shipping-returns.php:27
+msgid "Shipping options"
+msgstr ""
+
+#: patterns/page-shipping-returns.php:30
+msgid "Method"
+msgstr ""
+
+#: patterns/page-shipping-returns.php:30
+msgid "Delivery time"
+msgstr ""
+
+#: patterns/page-shipping-returns.php:30
+msgid "Cost"
+msgstr ""
+
+#: patterns/page-shipping-returns.php:30
+msgid "Standard"
+msgstr ""
+
+#: patterns/page-shipping-returns.php:30
+msgid "3–5 business days"
+msgstr ""
+
+#: patterns/page-shipping-returns.php:30
+msgid "$4.95 · free over $50"
+msgstr ""
+
+#: patterns/page-shipping-returns.php:30
+msgid "Express"
+msgstr ""
+
+#: patterns/page-shipping-returns.php:30
+msgid "1–2 business days"
+msgstr ""
+
+#: patterns/page-shipping-returns.php:30
+msgid "$12.95"
+msgstr ""
+
+#: patterns/page-shipping-returns.php:30
+msgid "International"
+msgstr ""
+
+#: patterns/page-shipping-returns.php:30
+msgid "6–12 business days"
+msgstr ""
+
+#: patterns/page-shipping-returns.php:30
+msgid "Calculated at checkout"
+msgstr ""
+
+#: patterns/page-shipping-returns.php:33
+msgid "Orders placed before 2pm on business days ship the same day. You will receive a tracking link by email as soon as your order leaves our warehouse."
+msgstr ""
+
+#: patterns/page-shipping-returns.php:41
+msgid "Returns in three steps"
+msgstr ""
+
+#: patterns/page-shipping-returns.php:68
+msgid "Good to know"
+msgstr ""
+
+#: patterns/page-shipping-returns.php:73
+msgid "Items must be unused and in their original condition."
+msgstr ""
+
+#: patterns/page-shipping-returns.php:76
+msgid "Sale items can be returned for store credit."
+msgstr ""
+
+#: patterns/page-shipping-returns.php:79
+msgid "Faulty or damaged items are always replaced free of charge."
+msgstr ""
+
+#: patterns/page-shipping-returns.php:86
+msgid "Where is my order?"
+msgstr ""
+
+#: patterns/page-shipping-returns.php:86
+msgid "Check its status with your order ID and email."
+msgstr ""
+
+#: patterns/page-shipping-returns.php:86
+msgid "Track your order"
+msgstr ""
+
 #: patterns/footer.php:22
 msgid "Thoughtfully made products, delivered fast. Built with Cartiva — a free, lightweight block theme for WooCommerce."
 msgstr ""
@@ -312,7 +593,7 @@ msgstr ""
 msgid "Sale"
 msgstr ""
 
-#: patterns/footer.php:51
+#: patterns/footer.php:51 patterns/page-faq.php:16
 msgid "Help"
 msgstr ""
 
@@ -320,37 +601,37 @@ msgstr ""
 msgid "Shipping"
 msgstr ""
 
-#: patterns/footer.php:55 patterns/footer-simple.php:22
-msgid "Returns"
+#: patterns/footer.php:57 inc/header.php:44
+msgid "Track order"
 msgstr ""
 
-#: patterns/footer.php:56 patterns/footer-simple.php:23
-msgid "Contact"
+#: patterns/footer.php:58 patterns/page-help-center.php:29 functions.php:122
+msgid "FAQ"
 msgstr ""
 
-#: patterns/footer.php:64
+#: patterns/footer.php:66
 msgid "Company"
 msgstr ""
 
-#: patterns/footer.php:67
+#: patterns/footer.php:69
 msgid "About"
 msgstr ""
 
-#: patterns/footer.php:69
+#: patterns/footer.php:71
 msgid "Privacy"
 msgstr ""
 
 #. translators: 1: Current year, 2: Site name.
-#: patterns/footer.php:87 patterns/footer-simple.php:30
+#: patterns/footer.php:89 patterns/footer-simple.php:30
 msgid "© %1$s %2$s. All rights reserved."
 msgstr ""
 
 #. translators: %s: WordPress link.
-#: patterns/footer.php:102
+#: patterns/footer.php:104
 msgid "Designed with %s"
 msgstr ""
 
-#: patterns/footer.php:103
+#: patterns/footer.php:105
 msgid "https://wordpress.org"
 msgstr ""
 
@@ -408,6 +689,134 @@ msgstr ""
 
 #: patterns/footer-newsletter.php:31 patterns/newsletter.php:25
 msgid "Subscribe"
+msgstr ""
+
+#: patterns/page-contact.php:18
+msgid "We would love to hear from you"
+msgstr ""
+
+#: patterns/page-contact.php:18
+msgid "Questions about an order, a product or a partnership? Our team answers every message within one business day."
+msgstr ""
+
+#: patterns/page-contact.php:25
+msgid "Email us"
+msgstr ""
+
+#: patterns/page-contact.php:25
+msgid "hello@example.com"
+msgstr ""
+
+#: patterns/page-contact.php:25
+msgid "Send an email →"
+msgstr ""
+
+#: patterns/page-contact.php:26
+msgid "Call us"
+msgstr ""
+
+#: patterns/page-contact.php:26
+msgid "+1 (555) 010-2030 · Mon–Fri, 9am–6pm"
+msgstr ""
+
+#: patterns/page-contact.php:26
+msgid "Call now →"
+msgstr ""
+
+#: patterns/page-contact.php:27
+msgid "Visit the studio"
+msgstr ""
+
+#: patterns/page-contact.php:27
+msgid "12 Market Street, Springfield · Sat 10am–4pm"
+msgstr ""
+
+#: patterns/page-contact.php:28
+msgid "Order help"
+msgstr ""
+
+#: patterns/page-contact.php:28
+msgid "Track an order, start a return or change an address."
+msgstr ""
+
+#: patterns/page-contact.php:28
+msgid "Track your order →"
+msgstr ""
+
+#: patterns/page-contact.php:44
+msgid "Send us a message"
+msgstr ""
+
+#: patterns/page-contact.php:47
+msgid "Tell us your order number if you have one, and we will get back to you with everything we can find."
+msgstr ""
+
+#: patterns/page-contact.php:52
+msgid "Replies within one business day"
+msgstr ""
+
+#: patterns/page-contact.php:55
+msgid "Real people, no bots"
+msgstr ""
+
+#: patterns/page-contact.php:58
+msgid "Help in English and Spanish"
+msgstr ""
+
+#: patterns/page-contact.php:65
+msgid "Write to us"
+msgstr ""
+
+#: patterns/page-contact.php:78
+msgid "Opening hours"
+msgstr ""
+
+#: patterns/page-contact.php:81
+msgid "Monday – Friday"
+msgstr ""
+
+#: patterns/page-contact.php:81
+msgid "9:00 – 18:00"
+msgstr ""
+
+#: patterns/page-contact.php:81
+msgid "Saturday"
+msgstr ""
+
+#: patterns/page-contact.php:81
+msgid "10:00 – 16:00"
+msgstr ""
+
+#: patterns/page-contact.php:81
+msgid "Sunday"
+msgstr ""
+
+#: patterns/page-contact.php:81
+msgid "Closed"
+msgstr ""
+
+#: patterns/page-contact.php:88
+msgid "Quick answers"
+msgstr ""
+
+#: patterns/page-contact.php:91 patterns/page-faq.php:32
+msgid "How long does delivery take?"
+msgstr ""
+
+#: patterns/page-contact.php:93
+msgid "Most orders arrive in 3–5 business days."
+msgstr ""
+
+#: patterns/page-contact.php:98
+msgid "Can I change my order?"
+msgstr ""
+
+#: patterns/page-contact.php:100
+msgid "Yes, until it ships. Email us with your order number as soon as possible."
+msgstr ""
+
+#: patterns/page-contact.php:105
+msgid "See all FAQs →"
 msgstr ""
 
 #: patterns/split-promo.php:14
@@ -476,6 +885,94 @@ msgstr ""
 
 #: patterns/newsletter.php:20
 msgid "Join our newsletter for early access to drops, restocks and members-only deals. Add your favourite newsletter form block here."
+msgstr ""
+
+#: patterns/page-help-center.php:18 inc/header.php:44
+msgid "Help center"
+msgstr ""
+
+#: patterns/page-help-center.php:18
+msgid "How can we help?"
+msgstr ""
+
+#: patterns/page-help-center.php:18
+msgid "Find answers, follow your order or get in touch with our team."
+msgstr ""
+
+#: patterns/page-help-center.php:25
+msgid "Track an order"
+msgstr ""
+
+#: patterns/page-help-center.php:25
+msgid "See where your parcel is with your order ID and email."
+msgstr ""
+
+#: patterns/page-help-center.php:25
+msgid "Track order →"
+msgstr ""
+
+#: patterns/page-help-center.php:26 patterns/page-faq.php:30
+msgid "Shipping & delivery"
+msgstr ""
+
+#: patterns/page-help-center.php:26
+msgid "Delivery options, times and costs."
+msgstr ""
+
+#: patterns/page-help-center.php:26
+msgid "Shipping info →"
+msgstr ""
+
+#: patterns/page-help-center.php:27 patterns/page-faq.php:38
+msgid "Returns & refunds"
+msgstr ""
+
+#: patterns/page-help-center.php:27
+msgid "Start a return and learn how refunds work."
+msgstr ""
+
+#: patterns/page-help-center.php:27
+msgid "Returns policy →"
+msgstr ""
+
+#: patterns/page-help-center.php:28
+msgid "My account"
+msgstr ""
+
+#: patterns/page-help-center.php:28
+msgid "Orders, addresses, password and account details."
+msgstr ""
+
+#: patterns/page-help-center.php:28
+msgid "Go to my account →"
+msgstr ""
+
+#: patterns/page-help-center.php:29
+msgid "Quick answers to the most common questions."
+msgstr ""
+
+#: patterns/page-help-center.php:29
+msgid "Read the FAQ →"
+msgstr ""
+
+#: patterns/page-help-center.php:30 patterns/page-help-center.php:37 patterns/page-faq.php:55 inc/header.php:38
+msgid "Contact us"
+msgstr ""
+
+#: patterns/page-help-center.php:30
+msgid "Email, phone and opening hours."
+msgstr ""
+
+#: patterns/page-help-center.php:30
+msgid "Get in touch →"
+msgstr ""
+
+#: patterns/page-help-center.php:37
+msgid "Can't find what you need?"
+msgstr ""
+
+#: patterns/page-help-center.php:37
+msgid "Send us a message and we will get back to you within one business day."
 msgstr ""
 
 #: patterns/starter-grocery.php:16
@@ -582,10 +1079,6 @@ msgstr ""
 msgid "Discover quality products at honest prices. Fast delivery, secure checkout and free returns on every order."
 msgstr ""
 
-#: patterns/hero.php:33 inc/pattern-helpers.php:146
-msgid "Shop now"
-msgstr ""
-
 #: patterns/hero.php:36
 msgid "Browse categories"
 msgstr ""
@@ -596,6 +1089,94 @@ msgstr ""
 
 #: patterns/template-my-account.php:20
 msgid "Manage your orders, addresses and account details in one place."
+msgstr ""
+
+#: patterns/page-faq.php:16
+msgid "Quick answers about orders, delivery, returns and your account."
+msgstr ""
+
+#: patterns/page-faq.php:22
+msgid "Orders & payment"
+msgstr ""
+
+#: patterns/page-faq.php:24
+msgid "All major credit and debit cards plus popular digital wallets. Payments are processed over an encrypted connection."
+msgstr ""
+
+#: patterns/page-faq.php:25
+msgid "Can I change or cancel my order?"
+msgstr ""
+
+#: patterns/page-faq.php:25
+msgid "Yes, until your order ships. Contact us with your order number as soon as possible."
+msgstr ""
+
+#: patterns/page-faq.php:26
+msgid "Do I need an account to order?"
+msgstr ""
+
+#: patterns/page-faq.php:26
+msgid "No. You can check out as a guest, or create an account to track orders and save addresses."
+msgstr ""
+
+#: patterns/page-faq.php:32
+msgid "Most orders ship within 1–2 business days and arrive within 3–5 business days."
+msgstr ""
+
+#: patterns/page-faq.php:33
+msgid "How much does shipping cost?"
+msgstr ""
+
+#: patterns/page-faq.php:33
+msgid "Shipping is free on orders over $50. Below that, the cost is shown at checkout before you pay."
+msgstr ""
+
+#: patterns/page-faq.php:34
+msgid "How do I track my order?"
+msgstr ""
+
+#: patterns/page-faq.php:34
+msgid "Use the tracking link in your shipping email, or enter your order ID and email on the Track order page."
+msgstr ""
+
+#: patterns/page-faq.php:40
+msgid "Unused items can be returned within 30 days of delivery for a full refund."
+msgstr ""
+
+#: patterns/page-faq.php:41
+msgid "How long do refunds take?"
+msgstr ""
+
+#: patterns/page-faq.php:41
+msgid "Refunds are issued to the original payment method within 5 business days of receiving your return."
+msgstr ""
+
+#: patterns/page-faq.php:45
+msgid "Your account"
+msgstr ""
+
+#: patterns/page-faq.php:47
+msgid "I forgot my password. What now?"
+msgstr ""
+
+#: patterns/page-faq.php:47
+msgid "Use \"Lost your password?\" on the login page and we will email you a reset link."
+msgstr ""
+
+#: patterns/page-faq.php:48
+msgid "How do I update my address?"
+msgstr ""
+
+#: patterns/page-faq.php:48
+msgid "Log in and go to My account > Addresses to edit your billing and shipping details."
+msgstr ""
+
+#: patterns/page-faq.php:55
+msgid "Still have a question?"
+msgstr ""
+
+#: patterns/page-faq.php:55
+msgid "Our team replies within one business day."
 msgstr ""
 
 #: patterns/hidden-no-results.php:13
@@ -612,10 +1193,6 @@ msgstr ""
 
 #: functions.php:115
 msgid "Pill"
-msgstr ""
-
-#: functions.php:122
-msgid "FAQ"
 msgstr ""
 
 #: functions.php:129
@@ -639,10 +1216,18 @@ msgid "Complete homepages for different kinds of stores."
 msgstr ""
 
 #: functions.php:156
-msgid "Cartiva: Sections"
+msgid "Cartiva: Pages"
 msgstr ""
 
 #: functions.php:157
+msgid "Complete page layouts: Contact, About, FAQ, Shipping & returns, Help center, Terms, Track order."
+msgstr ""
+
+#: functions.php:163
+msgid "Cartiva: Sections"
+msgstr ""
+
+#: functions.php:164
 msgid "General page sections."
 msgstr ""
 
@@ -679,20 +1264,8 @@ msgstr ""
 msgid "Need help?"
 msgstr ""
 
-#: inc/header.php:38
-msgid "Contact us"
-msgstr ""
-
 #: inc/header.php:41
 msgid "Free shipping on orders over $50 · 30-day easy returns"
-msgstr ""
-
-#: inc/header.php:44
-msgid "Track order"
-msgstr ""
-
-#: inc/header.php:44
-msgid "Help center"
 msgstr ""
 
 #: inc/header.php:62 inc/header.php:116

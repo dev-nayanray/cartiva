@@ -38,9 +38,9 @@
 			<h2 class="wp-block-heading has-small-font-size"><?php esc_html_e( 'Shop', 'cartiva' ); ?></h2>
 			<!-- /wp:heading -->
 			<!-- wp:navigation {"overlayMenu":"never","layout":{"type":"flex","orientation":"vertical"},"style":{"spacing":{"blockGap":"0.5rem"}},"fontSize":"small"} -->
-				<!-- wp:navigation-link {"label":"<?php esc_attr_e( 'New arrivals', 'cartiva' ); ?>","url":"#"} /-->
-				<!-- wp:navigation-link {"label":"<?php esc_attr_e( 'Best sellers', 'cartiva' ); ?>","url":"#"} /-->
-				<!-- wp:navigation-link {"label":"<?php esc_attr_e( 'Sale', 'cartiva' ); ?>","url":"#"} /-->
+				<!-- wp:navigation-link {"label":"<?php esc_attr_e( 'New arrivals', 'cartiva' ); ?>","url":"<?php echo esc_url( function_exists( 'wc_get_page_permalink' ) ? wc_get_page_permalink( 'shop' ) : '#' ); ?>"} /-->
+				<!-- wp:navigation-link {"label":"<?php esc_attr_e( 'Best sellers', 'cartiva' ); ?>","url":"<?php echo esc_url( function_exists( 'wc_get_page_permalink' ) ? wc_get_page_permalink( 'shop' ) : '#' ); ?>"} /-->
+				<!-- wp:navigation-link {"label":"<?php esc_attr_e( 'Sale', 'cartiva' ); ?>","url":"<?php echo esc_url( function_exists( 'wc_get_page_permalink' ) ? wc_get_page_permalink( 'shop' ) : '#' ); ?>"} /-->
 			<!-- /wp:navigation -->
 		</div>
 		<!-- /wp:column -->
@@ -51,9 +51,11 @@
 			<h2 class="wp-block-heading has-small-font-size"><?php esc_html_e( 'Help', 'cartiva' ); ?></h2>
 			<!-- /wp:heading -->
 			<!-- wp:navigation {"overlayMenu":"never","layout":{"type":"flex","orientation":"vertical"},"style":{"spacing":{"blockGap":"0.5rem"}},"fontSize":"small"} -->
-				<!-- wp:navigation-link {"label":"<?php esc_attr_e( 'Shipping', 'cartiva' ); ?>","url":"#"} /-->
-				<!-- wp:navigation-link {"label":"<?php esc_attr_e( 'Returns', 'cartiva' ); ?>","url":"#"} /-->
-				<!-- wp:navigation-link {"label":"<?php esc_attr_e( 'Contact', 'cartiva' ); ?>","url":"#"} /-->
+				<!-- wp:navigation-link {"label":"<?php esc_attr_e( 'Shipping', 'cartiva' ); ?>","url":"<?php echo esc_url( cartiva_page_url( 'shipping-returns' ) ); ?>"} /-->
+				<!-- wp:navigation-link {"label":"<?php esc_attr_e( 'Returns', 'cartiva' ); ?>","url":"<?php echo esc_url( cartiva_page_url( 'shipping-returns' ) ); ?>"} /-->
+				<!-- wp:navigation-link {"label":"<?php esc_attr_e( 'Contact', 'cartiva' ); ?>","url":"<?php echo esc_url( cartiva_page_url( 'contact' ) ); ?>"} /-->
+				<!-- wp:navigation-link {"label":"<?php esc_attr_e( 'Track order', 'cartiva' ); ?>","url":"<?php echo esc_url( cartiva_page_url( 'track-order' ) ); ?>"} /-->
+				<!-- wp:navigation-link {"label":"<?php esc_attr_e( 'FAQ', 'cartiva' ); ?>","url":"<?php echo esc_url( cartiva_page_url( 'faq' ) ); ?>"} /-->
 			<!-- /wp:navigation -->
 		</div>
 		<!-- /wp:column -->
@@ -64,9 +66,9 @@
 			<h2 class="wp-block-heading has-small-font-size"><?php esc_html_e( 'Company', 'cartiva' ); ?></h2>
 			<!-- /wp:heading -->
 			<!-- wp:navigation {"overlayMenu":"never","layout":{"type":"flex","orientation":"vertical"},"style":{"spacing":{"blockGap":"0.5rem"}},"fontSize":"small"} -->
-				<!-- wp:navigation-link {"label":"<?php esc_attr_e( 'About', 'cartiva' ); ?>","url":"#"} /-->
-				<!-- wp:navigation-link {"label":"<?php esc_attr_e( 'Blog', 'cartiva' ); ?>","url":"#"} /-->
-				<!-- wp:navigation-link {"label":"<?php esc_attr_e( 'Privacy', 'cartiva' ); ?>","url":"#"} /-->
+				<!-- wp:navigation-link {"label":"<?php esc_attr_e( 'About', 'cartiva' ); ?>","url":"<?php echo esc_url( cartiva_page_url( 'about' ) ); ?>"} /-->
+				<!-- wp:navigation-link {"label":"<?php esc_attr_e( 'Blog', 'cartiva' ); ?>","url":"<?php echo esc_url( get_option( 'page_for_posts' ) ? get_permalink( (int) get_option( 'page_for_posts' ) ) : '#' ); ?>"} /-->
+				<!-- wp:navigation-link {"label":"<?php esc_attr_e( 'Privacy', 'cartiva' ); ?>","url":"<?php echo esc_url( get_privacy_policy_url() ? get_privacy_policy_url() : '#' ); ?>"} /-->
 			<!-- /wp:navigation -->
 		</div>
 		<!-- /wp:column -->

@@ -7,7 +7,7 @@ Description: Cartiva is a lightweight, modern and fast WooCommerce block theme b
 Requires at least: 6.9
 Tested up to: 7.1
 Requires PHP: 7.4
-Version: 1.6.0
+Version: 1.7.0
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: cartiva
@@ -408,3 +408,159 @@ header.wp-block-template-part:has(.cartiva-topbar) {
 	background: transparent;
 }
 .cartiva-404 .wp-block-search__button { border-radius: 999px; margin: 0; }
+
+/* ==========================================================================
+   Page patterns: Contact, About, FAQ, Shipping & returns, Help center, Terms
+   ========================================================================== */
+.cartiva-page-hero h1 { margin-block: .25rem; }
+.cartiva-page-hero p { margin: 0; }
+
+/* Icon cards */
+.cartiva-icon-card {
+	position: relative;
+	height: 100%;
+	padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+	padding-top: 4.25rem;
+	border: 1px solid var(--wp--preset--color--border);
+	border-radius: var(--wp--custom--radius--md);
+	background: var(--wp--preset--color--base);
+	transition: box-shadow .2s ease, transform .2s ease, border-color .2s ease;
+	box-sizing: border-box;
+}
+.cartiva-icon-card:hover {
+	transform: translateY(-2px);
+	border-color: transparent;
+	box-shadow: var(--wp--preset--shadow--soft);
+}
+.cartiva-icon-card > * { margin: 0; }
+.cartiva-icon-card::before {
+	content: "";
+	position: absolute;
+	top: 1.5rem;
+	left: 1.5rem;
+	width: 2.25rem;
+	height: 2.25rem;
+	border-radius: 10px;
+	background: color-mix(in srgb, var(--wp--preset--color--primary) 12%, var(--wp--preset--color--base)) var(--cartiva-card-icon) center / 1.15rem no-repeat;
+}
+.cartiva-icon-card__link { margin-top: auto !important; font-weight: 600; }
+.cartiva-icon-card__link a { color: var(--wp--preset--color--primary); text-decoration: none; }
+.cartiva-icon-card__link a:hover { text-decoration: underline; }
+.cartiva-icon-card--mail { --cartiva-card-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231f4fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='5' width='18' height='14' rx='2'/%3E%3Cpath d='m3 7 9 6 9-6'/%3E%3C/svg%3E"); }
+.cartiva-icon-card--phone { --cartiva-card-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231f4fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z'/%3E%3C/svg%3E"); }
+.cartiva-icon-card--pin { --cartiva-card-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231f4fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z'/%3E%3Ccircle cx='12' cy='9' r='2.5'/%3E%3C/svg%3E"); }
+.cartiva-icon-card--chat { --cartiva-card-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231f4fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z'/%3E%3C/svg%3E"); }
+.cartiva-icon-card--star { --cartiva-card-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231f4fff' stroke-width='2' stroke-linejoin='round'%3E%3Cpath d='m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z'/%3E%3C/svg%3E"); }
+.cartiva-icon-card--leaf { --cartiva-card-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231f4fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 19c0-8 5-14 15-14 0 10-6 15-14 15'/%3E%3Cpath d='M5 19 13 11'/%3E%3C/svg%3E"); }
+.cartiva-icon-card--truck { --cartiva-card-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231f4fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 6h11v10H3zM14 9h4l3 3v4h-7'/%3E%3Ccircle cx='7' cy='17.5' r='1.8'/%3E%3Ccircle cx='17' cy='17.5' r='1.8'/%3E%3C/svg%3E"); }
+.cartiva-icon-card--box { --cartiva-card-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231f4fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 8 12 3 3 8v8l9 5 9-5zM3 8l9 5 9-5M12 13v8'/%3E%3C/svg%3E"); }
+.cartiva-icon-card--return { --cartiva-card-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231f4fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 12a8 8 0 1 0 2.3-5.6M4 4v4h4'/%3E%3C/svg%3E"); }
+.cartiva-icon-card--user { --cartiva-card-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231f4fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='8' r='4'/%3E%3Cpath d='M4 21a8 8 0 0 1 16 0'/%3E%3C/svg%3E"); }
+.cartiva-icon-card--question { --cartiva-card-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231f4fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpath d='M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.6V14M12 17.5h.01'/%3E%3C/svg%3E"); }
+
+/* Contact */
+.cartiva-contact-card {
+	padding: clamp(1.5rem, 4vw, 2.5rem);
+	border-radius: var(--wp--custom--radius--lg);
+	background: var(--wp--preset--color--surface);
+}
+.cartiva-contact-card > * { margin-block: 0; }
+.cartiva-hours {
+	padding: 1.5rem;
+	border: 1px solid var(--wp--preset--color--border);
+	border-radius: var(--wp--custom--radius--md);
+}
+.cartiva-hours > * { margin-block: 0; }
+.cartiva-hours__table table { width: 100%; border-collapse: collapse; }
+.cartiva-hours__table td {
+	padding: .6rem 0;
+	border: 0;
+	border-bottom: 1px solid var(--wp--preset--color--border);
+}
+.cartiva-hours__table tr:last-child td { border-bottom: 0; }
+.cartiva-hours__table td:last-child { text-align: right; font-weight: 600; }
+
+/* Check list */
+.cartiva-check-list {
+	list-style: none;
+	padding: 0;
+	display: grid;
+	gap: .5rem;
+}
+.cartiva-check-list li {
+	position: relative;
+	padding-left: 1.75rem;
+}
+.cartiva-check-list li::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: .2em;
+	width: 1.15rem;
+	height: 1.15rem;
+	border-radius: 50%;
+	background: var(--wp--preset--color--success) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 12 4 4 8-8'/%3E%3C/svg%3E") center / .7rem no-repeat;
+}
+
+/* About: stats */
+.cartiva-stats p { margin: 0; }
+.cartiva-stats__number { line-height: 1.1; }
+
+/* Shipping: steps + table */
+.cartiva-step {
+	height: 100%;
+	padding: 1.5rem;
+	border-radius: var(--wp--custom--radius--md);
+	background: var(--wp--preset--color--surface);
+	box-sizing: border-box;
+}
+.cartiva-step > * { margin: 0; }
+.cartiva-step__number {
+	display: grid;
+	place-items: center;
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 50%;
+	background: var(--wp--preset--color--contrast);
+	color: var(--wp--preset--color--base);
+	font-weight: 800;
+}
+.cartiva-table table {
+	width: 100%;
+	border: 1px solid var(--wp--preset--color--border);
+	border-radius: var(--wp--custom--radius--md);
+	border-collapse: separate;
+	border-spacing: 0;
+	overflow: hidden;
+}
+.cartiva-table :is(th, td) {
+	padding: .9rem 1rem;
+	border: 0;
+	border-top: 1px solid var(--wp--preset--color--border);
+	text-align: left;
+}
+.cartiva-table thead th {
+	border-top: 0;
+	background: var(--wp--preset--color--surface);
+	color: var(--wp--preset--color--muted);
+	font-size: var(--wp--preset--font-size--x-small);
+	letter-spacing: .04em;
+	text-transform: uppercase;
+}
+.cartiva-table thead { border: 0; }
+.cartiva-table td:first-child { font-weight: 600; }
+
+/* FAQ page */
+.cartiva-faq-page .cartiva-faq-group + .cartiva-faq-group { margin-top: var(--wp--preset--spacing--60); }
+
+/* Legal */
+.cartiva-legal__note {
+	padding: .9rem 1.1rem;
+	border-left: 3px solid var(--wp--preset--color--primary);
+	border-radius: 0 var(--wp--custom--radius--sm) var(--wp--custom--radius--sm) 0;
+	background: var(--wp--preset--color--surface);
+}
+.cartiva-legal h2 { margin-top: var(--wp--preset--spacing--50); }
+
+/* CTA band */
+.cartiva-cta-band > * > * { margin: 0; }

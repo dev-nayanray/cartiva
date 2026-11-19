@@ -151,6 +151,13 @@ function cartiva_register_pattern_categories() {
 		)
 	);
 	register_block_pattern_category(
+		'cartiva-pages',
+		array(
+			'label'       => __( 'Cartiva: Pages', 'cartiva' ),
+			'description' => __( 'Complete page layouts: Contact, About, FAQ, Shipping & returns, Help center, Terms, Track order.', 'cartiva' ),
+		)
+	);
+	register_block_pattern_category(
 		'cartiva-sections',
 		array(
 			'label'       => __( 'Cartiva: Sections', 'cartiva' ),

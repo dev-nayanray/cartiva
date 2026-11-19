@@ -10,7 +10,7 @@ Built 100% for the Site Editor (Full Site Editing): no page builder, no jQuery, 
 [![WooCommerce](https://img.shields.io/badge/WooCommerce-ready-7f54b3?logo=woocommerce&logoColor=white)](https://woocommerce.com/)
 [![PHP](https://img.shields.io/badge/PHP-7.4%2B-777bb4?logo=php&logoColor=white)](https://www.php.net/)
 [![License: GPL v2+](https://img.shields.io/badge/License-GPLv2%2B-blue.svg)](https://www.gnu.org/licenses/gpl-2.0.html)
-[![Version](https://img.shields.io/badge/version-1.6.0-111111)](readme.txt)
+[![Version](https://img.shields.io/badge/version-1.7.0-111111)](readme.txt)
 
 [Features](#features) · [Installation](#installation) · [Patterns](#block-patterns) · [Development](#development) · [Roadmap](#roadmap)
 
@@ -38,7 +38,7 @@ Cartiva is developed by **[godevs](https://godevs.net/)** and is being prepared 
 | 🏪 **Starter homepages** | Fashion, Electronics, Grocery and Furniture homepages, inserted with one click. |
 | 🔎 **Shop with filters** | Optional shop layout with a sticky sidebar: categories, price, availability and rating filters. |
 | 🧾 **Distraction-free checkout** | Checkout uses a minimal header and footer to reduce drop-off. |
-| 🚚 **Track Order page** | Page pattern and template around WooCommerce's order tracking form, with help cards. |
+| 📄 **Ready-made pages** | Contact, About, FAQ, Shipping & returns, Help center, Terms and Track order, picked from the new-page pattern chooser. Header and footer links find them automatically. |
 | 🎛️ **Customizable** | Four header designs, three footers, section styles (Dark, Soft, Brand, Sale), color and font variations — all in the Site Editor. |
 | 👤 **Modern My Account** | Profile card, icon navigation, dashboard tiles, coloured order statuses, address cards; tables become cards on mobile. |
 | 🧩 **Block styles** | Card, Sticky, Pill button, Image zoom and FAQ accordion. |
@@ -87,12 +87,15 @@ Then activate **Cartiva** under **Appearance → Themes**.
 | `search` · `404` | `product-search-results` |
 | `page-no-title` · `page-wide` (custom) | `single-product` |
 | | `page-cart` · `page-checkout` · `page-my-account` · `page-track-order` |
+| `page-contact` · `page-about` · `page-faq` | `page-shipping-returns` · `page-help-center` · `page-terms` |
 
 ## Block patterns
 
 **Cartiva: Starter homepages:** Fashion · Electronics · Grocery · Furniture
 
 **Cartiva: Shop:** Hero banner · Trust badges · Category grid · New arrivals · Best sellers · On sale · Featured products · Split promo · Promo banner · Brand strip · Lookbook · Shop with filter sidebar · Full shop homepage
+
+**Cartiva: Pages:** Contact · About · FAQ · Shipping & returns · Help center · Terms & conditions · Track order
 
 **Cartiva: Sections:** FAQ accordion · Newsletter call to action · Posts grid
 
@@ -102,9 +105,21 @@ Then activate **Cartiva** under **Appearance → Themes**.
 
 Go to **Appearance → Editor → Patterns → Header**, open the header and choose **Replace** to switch between *Default*, *Centered logo*, *With category bar* and *No top bar*. Footers work the same way (*Default*, *With newsletter*, *Simple*). Select any Group, Columns or Cover block and pick a section style (*Dark*, *Soft*, *Brand*, *Sale*) in the Styles panel.
 
-### Track Order page
+### Store pages
 
-Create a page, choose the **Track order page** pattern and publish it with the slug `track-order`.
+Go to **Pages → Add New** and pick a layout from **Cartiva: Pages**. Use these slugs so the matching template and the header/footer links apply automatically:
+
+| Page | Slug |
+|---|---|
+| Contact | `contact` |
+| About | `about` |
+| FAQ | `faq` |
+| Shipping & returns | `shipping-returns` |
+| Help center | `help-center` |
+| Terms & conditions | `terms` |
+| Track order | `track-order` |
+
+Contact forms are plugin territory under the WordPress.org guidelines; add any form plugin's block to the Contact page.
 
 ### Switching the shop to the sidebar layout
 
@@ -172,7 +187,8 @@ wp i18n make-pot . languages/cartiva.pot --domain=cartiva
 - [x] **v1.4.0:** My Account redesign, add-to-cart form styling
 - [x] **v1.5.0:** Header, top bar, footer, shop, product, cart/checkout, blog and 404 refresh
 - [x] **v1.6.0:** Header/footer variations, section styles, Track Order page, checkout header fix
-- [ ] **v1.7:** WordPress.org submission, live demo site, documentation on godevs.net
+- [x] **v1.7.0:** Contact, About, FAQ, Shipping & returns, Help center and Terms pages
+- [ ] **v1.8:** WordPress.org submission, live demo site, documentation on godevs.net
 
 ## WordPress.org guidelines
 

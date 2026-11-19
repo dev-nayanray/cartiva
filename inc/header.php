@@ -35,13 +35,13 @@ function cartiva_header( $args = array() ) {
 	<!-- wp:group {"align":"wide","className":"cartiva-topbar__inner","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
 	<div class="wp-block-group alignwide cartiva-topbar__inner">
 		<!-- wp:paragraph {"className":"cartiva-topbar__aside"} -->
-		<p class="cartiva-topbar__aside"><?php esc_html_e( 'Need help?', 'cartiva' ); ?> <a href="#"><?php esc_html_e( 'Contact us', 'cartiva' ); ?></a></p>
+		<p class="cartiva-topbar__aside"><?php esc_html_e( 'Need help?', 'cartiva' ); ?> <a href="<?php echo esc_url( cartiva_page_url( 'contact' ) ); ?>"><?php esc_html_e( 'Contact us', 'cartiva' ); ?></a></p>
 		<!-- /wp:paragraph -->
 		<!-- wp:paragraph {"className":"cartiva-topbar__message","style":{"typography":{"fontWeight":"600"}}} -->
 		<p class="cartiva-topbar__message" style="font-weight:600"><?php esc_html_e( 'Free shipping on orders over $50 · 30-day easy returns', 'cartiva' ); ?></p>
 		<!-- /wp:paragraph -->
 		<!-- wp:paragraph {"className":"cartiva-topbar__aside cartiva-topbar__links"} -->
-		<p class="cartiva-topbar__aside cartiva-topbar__links"><a href="<?php echo esc_url( $cartiva_track_url ); ?>"><?php esc_html_e( 'Track order', 'cartiva' ); ?></a> <a href="#"><?php esc_html_e( 'Help center', 'cartiva' ); ?></a></p>
+		<p class="cartiva-topbar__aside cartiva-topbar__links"><a href="<?php echo esc_url( $cartiva_track_url ); ?>"><?php esc_html_e( 'Track order', 'cartiva' ); ?></a> <a href="<?php echo esc_url( cartiva_page_url( 'help-center', cartiva_page_url( 'faq' ) ) ); ?>"><?php esc_html_e( 'Help center', 'cartiva' ); ?></a></p>
 		<!-- /wp:paragraph -->
 	</div>
 	<!-- /wp:group -->

@@ -203,7 +203,7 @@ function cartiva_category_section( $heading, $categories ) {
 	<!-- wp:heading {"align":"wide"} -->
 	<h2 class="wp-block-heading alignwide"><?php echo esc_html( $heading ); ?></h2>
 	<!-- /wp:heading -->
-	<!-- wp:group {"align":"wide","layout":{"type":"grid","minimumColumnWidth":"14rem"}} -->
+	<!-- wp:group {"align":"wide","layout":{"type":"grid","columnCount":4,"minimumColumnWidth":"12rem"}} -->
 	<div class="wp-block-group alignwide">
 		<?php foreach ( $categories as $category ) : ?>
 		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical"}} -->
@@ -221,5 +221,147 @@ function cartiva_category_section( $heading, $categories ) {
 	<!-- /wp:group -->
 </div>
 <!-- /wp:group -->
+	<?php
+}
+
+/**
+ * Permalink of a page by slug, or a fallback when it does not exist yet.
+ *
+ * Lets the header and footer link to Contact, FAQ, etc. as soon as the
+ * store owner creates those pages.
+ *
+ * @param string $slug     Page slug (path).
+ * @param string $fallback URL used when the page does not exist.
+ * @return string
+ */
+function cartiva_page_url( $slug, $fallback = '#' ) {
+	$page = get_page_by_path( $slug );
+	if ( $page instanceof WP_Post && 'publish' === $page->post_status ) {
+		return get_permalink( $page );
+	}
+	return $fallback;
+}
+
+/**
+ * Output a page header (eyebrow, title, intro) for page patterns.
+ *
+ * @param string $eyebrow Small label above the title.
+ * @param string $title   Page title.
+ * @param string $text    Intro text.
+ */
+function cartiva_page_hero( $eyebrow, $title, $text ) {
+	?>
+<!-- wp:group {"align":"full","className":"cartiva-page-hero","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|60"},"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"surface","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull cartiva-page-hero has-surface-background-color has-background" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--60)">
+	<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained","contentSize":"720px","justifyContent":"left"}} -->
+	<div class="wp-block-group alignwide">
+		<!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.12em","fontWeight":"700"}},"textColor":"primary","fontSize":"x-small"} -->
+		<p class="has-primary-color has-text-color has-x-small-font-size" style="font-weight:700;letter-spacing:0.12em;text-transform:uppercase"><?php echo esc_html( $eyebrow ); ?></p>
+		<!-- /wp:paragraph -->
+		<!-- wp:heading {"level":1,"fontSize":"xx-large"} -->
+		<h1 class="wp-block-heading has-xx-large-font-size"><?php echo esc_html( $title ); ?></h1>
+		<!-- /wp:heading -->
+		<!-- wp:paragraph {"textColor":"muted","fontSize":"large"} -->
+		<p class="has-muted-color has-text-color has-large-font-size"><?php echo esc_html( $text ); ?></p>
+		<!-- /wp:paragraph -->
+	</div>
+	<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+	<?php
+}
+
+/**
+ * Output a closing call-to-action band used at the end of page patterns.
+ *
+ * @param string $title  Heading.
+ * @param string $text   Supporting text.
+ * @param string $button Button label.
+ * @param string $url    Button URL.
+ */
+function cartiva_page_cta( $title, $text, $button, $url ) {
+	?>
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|70"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--70)">
+	<!-- wp:group {"align":"wide","className":"cartiva-cta-band","style":{"border":{"radius":"20px"},"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}}},"backgroundColor":"contrast","textColor":"base","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
+	<div class="wp-block-group alignwide cartiva-cta-band has-base-color has-contrast-background-color has-text-color has-background" style="border-radius:20px;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)">
+		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"flex","orientation":"vertical"}} -->
+		<div class="wp-block-group">
+			<!-- wp:heading {"textColor":"base","fontSize":"x-large"} -->
+			<h2 class="wp-block-heading has-base-color has-text-color has-x-large-font-size"><?php echo esc_html( $title ); ?></h2>
+			<!-- /wp:heading -->
+			<!-- wp:paragraph {"style":{"color":{"text":"#ffffffb3"}}} -->
+			<p class="has-text-color" style="color:#ffffffb3"><?php echo esc_html( $text ); ?></p>
+			<!-- /wp:paragraph -->
+		</div>
+		<!-- /wp:group -->
+		<!-- wp:buttons -->
+		<div class="wp-block-buttons">
+			<!-- wp:button {"backgroundColor":"base","textColor":"contrast","className":"is-style-cartiva-pill"} -->
+			<div class="wp-block-button is-style-cartiva-pill"><a class="wp-block-button__link has-contrast-color has-base-background-color has-text-color has-background wp-element-button" href="<?php echo esc_url( $url ); ?>"><?php echo esc_html( $button ); ?></a></div>
+			<!-- /wp:button -->
+		</div>
+		<!-- /wp:buttons -->
+	</div>
+	<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+	<?php
+}
+
+/**
+ * Output an icon card (used on Contact, About and Help Center).
+ *
+ * @param string $icon  Icon slug (see .cartiva-icon-card--* in style.css).
+ * @param string $title Card title.
+ * @param string $text  Card text.
+ * @param string $link  Optional link label.
+ * @param string $url   Optional link URL.
+ */
+function cartiva_icon_card( $icon, $title, $text, $link = '', $url = '' ) {
+	$icon = sanitize_html_class( $icon );
+	?>
+		<!-- wp:group {"className":"cartiva-icon-card cartiva-icon-card--<?php echo esc_attr( $icon ); ?>","style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical"}} -->
+		<div class="wp-block-group cartiva-icon-card cartiva-icon-card--<?php echo esc_attr( $icon ); ?>">
+			<!-- wp:heading {"level":3,"fontSize":"medium"} -->
+			<h3 class="wp-block-heading has-medium-font-size"><?php echo esc_html( $title ); ?></h3>
+			<!-- /wp:heading -->
+			<!-- wp:paragraph {"textColor":"muted","fontSize":"small"} -->
+			<p class="has-muted-color has-text-color has-small-font-size"><?php echo esc_html( $text ); ?></p>
+			<!-- /wp:paragraph -->
+			<?php if ( $link ) : ?>
+			<!-- wp:paragraph {"className":"cartiva-icon-card__link","fontSize":"small"} -->
+			<p class="cartiva-icon-card__link has-small-font-size"><a href="<?php echo esc_url( $url ); ?>"><?php echo esc_html( $link ); ?></a></p>
+			<!-- /wp:paragraph -->
+			<?php endif; ?>
+		</div>
+		<!-- /wp:group -->
+	<?php
+}
+
+/**
+ * Output a FAQ group (heading + Details blocks).
+ *
+ * @param string $heading Group heading.
+ * @param array  $items   List of array( question, answer ).
+ */
+function cartiva_faq_group( $heading, $items ) {
+	?>
+		<!-- wp:group {"className":"cartiva-faq-group","style":{"spacing":{"blockGap":"0"}},"layout":{"type":"constrained"}} -->
+		<div class="wp-block-group cartiva-faq-group">
+			<!-- wp:heading {"level":2,"fontSize":"large","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|30"}}}} -->
+			<h2 class="wp-block-heading has-large-font-size" style="margin-bottom:var(--wp--preset--spacing--30)"><?php echo esc_html( $heading ); ?></h2>
+			<!-- /wp:heading -->
+			<?php foreach ( $items as $item ) : ?>
+			<!-- wp:details {"className":"is-style-cartiva-faq"} -->
+			<details class="wp-block-details is-style-cartiva-faq"><summary><?php echo esc_html( $item[0] ); ?></summary>
+				<!-- wp:paragraph {"textColor":"muted"} -->
+				<p class="has-muted-color has-text-color"><?php echo esc_html( $item[1] ); ?></p>
+				<!-- /wp:paragraph -->
+			</details>
+			<!-- /wp:details -->
+			<?php endforeach; ?>
+		</div>
+		<!-- /wp:group -->
 	<?php
 }

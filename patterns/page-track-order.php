@@ -2,7 +2,7 @@
 /**
  * Title: Track order page
  * Slug: cartiva/page-track-order
- * Categories: cartiva-shop
+ * Categories: cartiva-pages, cartiva-shop
  * Keywords: track, order, tracking, status, delivery
  * Post Types: page
  * Block Types: core/post-content

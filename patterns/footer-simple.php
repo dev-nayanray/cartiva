@@ -17,10 +17,10 @@
 	<div class="wp-block-group alignwide">
 		<!-- wp:site-title {"level":0} /-->
 		<!-- wp:navigation {"overlayMenu":"never","layout":{"type":"flex","flexWrap":"wrap"},"style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"fontSize":"small"} -->
-			<!-- wp:navigation-link {"label":"<?php echo esc_attr__( 'Shop', 'cartiva' ); ?>","url":"#"} /-->
-			<!-- wp:navigation-link {"label":"<?php echo esc_attr__( 'Shipping', 'cartiva' ); ?>","url":"#"} /-->
-			<!-- wp:navigation-link {"label":"<?php echo esc_attr__( 'Returns', 'cartiva' ); ?>","url":"#"} /-->
-			<!-- wp:navigation-link {"label":"<?php echo esc_attr__( 'Contact', 'cartiva' ); ?>","url":"#"} /-->
+			<!-- wp:navigation-link {"label":"<?php echo esc_attr__( 'Shop', 'cartiva' ); ?>","url":"<?php echo esc_url( function_exists( 'wc_get_page_permalink' ) ? wc_get_page_permalink( 'shop' ) : '#' ); ?>"} /-->
+			<!-- wp:navigation-link {"label":"<?php echo esc_attr__( 'Shipping', 'cartiva' ); ?>","url":"<?php echo esc_url( cartiva_page_url( 'shipping-returns' ) ); ?>"} /-->
+			<!-- wp:navigation-link {"label":"<?php echo esc_attr__( 'Returns', 'cartiva' ); ?>","url":"<?php echo esc_url( cartiva_page_url( 'shipping-returns' ) ); ?>"} /-->
+			<!-- wp:navigation-link {"label":"<?php echo esc_attr__( 'Contact', 'cartiva' ); ?>","url":"<?php echo esc_url( cartiva_page_url( 'contact' ) ); ?>"} /-->
 		<!-- /wp:navigation -->
 		<!-- wp:paragraph {"textColor":"muted","fontSize":"x-small"} -->
 		<p class="has-muted-color has-text-color has-x-small-font-size">
