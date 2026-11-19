@@ -121,7 +121,7 @@ msgstr ""
 msgid "Contact"
 msgstr ""
 
-#: patterns/footer-dark.php:57 patterns/footer.php:57 inc/woocommerce.php:218 inc/header.php:44
+#: patterns/footer-dark.php:57 patterns/footer.php:57 inc/woocommerce.php:219 inc/header.php:44
 msgid "Track order"
 msgstr ""
 
@@ -1988,72 +1988,72 @@ msgstr ""
 msgid "General page sections."
 msgstr ""
 
-#: functions.php:264
+#: functions.php:265
 msgid "Search results"
 msgstr ""
 
-#: functions.php:265
+#: functions.php:266
 msgid "Searching…"
 msgstr ""
 
 #. translators: %s: Search query.
-#: functions.php:267
+#: functions.php:268
 msgid "No results for “%s”"
 msgstr ""
 
 #. translators: %s: Search query.
-#: functions.php:269
+#: functions.php:270
 msgid "See all results for “%s”"
 msgstr ""
 
-#: functions.php:270
+#: functions.php:271
 msgid "1 result found"
 msgstr ""
 
 #. translators: %d: Number of results.
-#: functions.php:272
+#: functions.php:273
 msgid "%d results found"
 msgstr ""
 
-#: functions.php:273
+#: functions.php:274
 msgid "Out of stock"
 msgstr ""
 
-#: functions.php:317
+#: functions.php:318
 msgid "carousel"
 msgstr ""
 
-#: functions.php:318
+#: functions.php:319
 msgid "slide"
 msgstr ""
 
 #. translators: 1: Slide number, 2: Number of slides.
-#: functions.php:320
+#: functions.php:321
 msgid "%1$s of %2$s"
 msgstr ""
 
-#: functions.php:321
+#: functions.php:322
 msgid "Previous"
 msgstr ""
 
-#: functions.php:322
+#: functions.php:323
 msgid "Next"
 msgstr ""
 
 #. translators: %s: Slide number.
-#: functions.php:324
+#: functions.php:325
 msgid "Go to slide %s"
 msgstr ""
 
-#: functions.php:325
+#: functions.php:326
 msgid "Featured"
 msgstr ""
 
-#: functions.php:326
+#: functions.php:327
 msgid "Products"
 msgstr ""
 
-#: functions.php:327
+#: functions.php:328
 msgid "Items"
 msgstr ""
 
@@ -2253,67 +2253,100 @@ msgstr ""
 msgid "Show the free delivery, returns and secure checkout list under the add to cart button"
 msgstr ""
 
-#: inc/settings.php:175
+#. translators: %s: number of items in the wishlist.
+#: inc/settings.php:175 inc/wishlist.php:114 inc/wishlist.php:207 inc/wishlist.php:212
+msgid "Wishlist"
+msgstr ""
+
+#: inc/settings.php:176
+msgid "Used when a wishlist plugin is active: YITH WooCommerce Wishlist, TI WooCommerce Wishlist or WPC Smart Wishlist. Cartiva adds the heart icons and styling; the plugin saves the lists."
+msgstr ""
+
+#: inc/settings.php:179
+msgid "Header wishlist icon"
+msgstr ""
+
+#: inc/settings.php:182
+msgid "Show a heart icon with the item count next to the cart"
+msgstr ""
+
+#: inc/settings.php:185
+msgid "Heart buttons"
+msgstr ""
+
+#: inc/settings.php:188
+msgid "Show a heart button on product cards and next to add to cart on product pages"
+msgstr ""
+
+#: inc/settings.php:191
+msgid "Account menu"
+msgstr ""
+
+#: inc/settings.php:194
+msgid "Add \"Wishlist\" to the My Account menu when the plugin does not add it itself"
+msgstr ""
+
+#: inc/settings.php:199
 msgid "My Account"
 msgstr ""
 
-#: inc/settings.php:178
+#: inc/settings.php:202
 msgid "Profile card"
 msgstr ""
 
-#: inc/settings.php:181
+#: inc/settings.php:205
 msgid "Show the customer name and email above the account menu"
 msgstr ""
 
-#: inc/settings.php:184
+#: inc/settings.php:208
 msgid "Dashboard tiles"
 msgstr ""
 
-#: inc/settings.php:187
+#: inc/settings.php:211
 msgid "Show quick links to orders, addresses and account details on the dashboard"
 msgstr ""
 
-#: inc/settings.php:190
+#: inc/settings.php:214
 msgid "Track order link"
 msgstr ""
 
-#: inc/settings.php:193
+#: inc/settings.php:217
 msgid "Add \"Track order\" to the account menu (links to your Track order page, or to Orders if there is none)"
 msgstr ""
 
-#: inc/settings.php:263
+#: inc/settings.php:290
 msgid "Settings were reset to their defaults."
 msgstr ""
 
-#: inc/settings.php:394 inc/settings.php:395 inc/settings.php:437
+#: inc/settings.php:421 inc/settings.php:422 inc/settings.php:464
 msgid "Cartiva Settings"
 msgstr ""
 
-#: inc/settings.php:430
+#: inc/settings.php:457
 msgid "Colors & fonts"
 msgstr ""
 
-#: inc/settings.php:431
+#: inc/settings.php:458
 msgid "Header & footer designs"
 msgstr ""
 
-#: inc/settings.php:432
+#: inc/settings.php:459
 msgid "Templates"
 msgstr ""
 
-#: inc/settings.php:433
+#: inc/settings.php:460
 msgid "Pages"
 msgstr ""
 
-#: inc/settings.php:438
+#: inc/settings.php:465
 msgid "Layout and behavior options for your store. Everything visual that can be edited block by block lives in the Site Editor:"
 msgstr ""
 
-#: inc/settings.php:451
+#: inc/settings.php:478
 msgid "Save settings"
 msgstr ""
 
-#: inc/settings.php:452
+#: inc/settings.php:479
 msgid "Reset to defaults"
 msgstr ""
 
@@ -2326,27 +2359,31 @@ msgid "Check where your parcel is"
 msgstr ""
 
 #: inc/woocommerce.php:110
-msgid "Your digital products"
+msgid "Products you saved for later"
 msgstr ""
 
 #: inc/woocommerce.php:111
-msgid "Billing and shipping"
+msgid "Your digital products"
 msgstr ""
 
 #: inc/woocommerce.php:112
-msgid "Saved cards and wallets"
+msgid "Billing and shipping"
 msgstr ""
 
 #: inc/woocommerce.php:113
+msgid "Saved cards and wallets"
+msgstr ""
+
+#: inc/woocommerce.php:114
 msgid "Name, email and password"
 msgstr ""
 
 #. translators: %s: number of orders.
-#: inc/woocommerce.php:138
+#: inc/woocommerce.php:139
 msgid "Continue shopping"
 msgstr ""
 
-#: inc/woocommerce.php:139
+#: inc/woocommerce.php:140
 msgid "See what is new in store"
 msgstr ""
 

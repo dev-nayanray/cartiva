@@ -1,0 +1,223 @@
+/**
+ * Cartiva: wishlist plugin styles (YITH, TI, WPC). Loaded only when one is active.
+ */
+:root {
+	--cartiva-heart: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z'/%3E%3C/svg%3E");
+	--cartiva-heart-filled: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23000' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z'/%3E%3C/svg%3E");
+}
+
+/* Screen-reader-only text inside icon buttons */
+.cartiva-wishlist-card .yith-wcwl-add-to-wishlist span,
+.cartiva-wishlist-card .tinvwl_add_to_wishlist-text,
+.cartiva-wishlist-card .tinvwl_remove_from_wishlist-text,
+.cartiva-wishlist-card .tinvwl-tooltip,
+.cartiva-wishlist-card .woosw-btn-text,
+.cartiva-wishlist-header .wishlist_products_counter_text,
+.cartiva-wishlist-header .woosw-menu-item-inner-text {
+	position: absolute !important;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	white-space: nowrap;
+}
+
+/* ---------- Header heart ---------- */
+.cartiva-wishlist-header { display: flex; align-items: center; }
+.cartiva-wishlist-header a,
+.cartiva-wishlist-link {
+	position: relative;
+	display: inline-grid;
+	place-items: center;
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 999px;
+	color: inherit;
+	text-decoration: none;
+	font-size: 0;
+	transition: background-color .15s ease;
+}
+.cartiva-wishlist-header a:hover,
+.cartiva-wishlist-header a:focus-visible { background: var(--wp--preset--color--surface); }
+.cartiva-wishlist-header a::before {
+	content: "";
+	width: 1.35rem;
+	height: 1.35rem;
+	background: currentColor;
+	-webkit-mask: var(--cartiva-heart) center / contain no-repeat;
+	mask: var(--cartiva-heart) center / contain no-repeat;
+}
+.cartiva-wishlist-header a > i,
+.cartiva-wishlist-header a > img,
+.cartiva-wishlist-header a > svg,
+.cartiva-wishlist-header .woosw-menu-item-inner::before { display: none !important; }
+.cartiva-wishlist-link__count,
+.cartiva-wishlist-header .wishlist_products_counter_number,
+.cartiva-wishlist-header .woosw-menu-item-inner::after,
+.cartiva-wishlist-header [data-count]::after {
+	position: absolute;
+	top: .1rem;
+	right: .05rem;
+	min-width: 1.1rem;
+	height: 1.1rem;
+	padding: 0 .3rem;
+	border-radius: 999px;
+	background: var(--wp--preset--color--contrast);
+	color: var(--wp--preset--color--base);
+	font-size: .65rem;
+	font-weight: 700;
+	line-height: 1.1rem;
+	text-align: center;
+	box-sizing: border-box;
+}
+.cartiva-wishlist-link__count:not(.has-items) { display: none; }
+.cartiva-wishlist-header .woosw-menu-item-inner::after { content: attr(data-count); }
+
+/* ---------- Heart on product cards ---------- */
+.wc-block-components-product-image { position: relative; }
+.cartiva-wishlist-card {
+	position: absolute;
+	top: .6rem;
+	right: .6rem;
+	z-index: 3;
+}
+.cartiva-wishlist-card > *,
+.cartiva-wishlist-card .yith-wcwl-add-to-wishlist,
+.cartiva-wishlist-card .tinv-wraper { margin: 0 !important; padding: 0 !important; }
+.cartiva-wishlist-card a,
+.cartiva-wishlist-card button {
+	position: relative;
+	display: inline-grid !important;
+	place-items: center;
+	width: 2.4rem !important;
+	height: 2.4rem !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	border: 0 !important;
+	border-radius: 999px !important;
+	background: rgb(255 255 255 / .92) !important;
+	box-shadow: 0 4px 14px rgb(0 0 0 / .12);
+	color: var(--wp--preset--color--contrast) !important;
+	font-size: 0 !important;
+	text-decoration: none !important;
+	cursor: pointer;
+	transition: transform .15s ease, color .15s ease;
+}
+.cartiva-wishlist-card a:hover,
+.cartiva-wishlist-card button:hover { transform: scale(1.08); color: var(--wp--preset--color--accent) !important; }
+.cartiva-wishlist-card a::before,
+.cartiva-wishlist-card button::before {
+	content: "" !important;
+	display: block !important;
+	width: 1.15rem;
+	height: 1.15rem;
+	margin: 0 !important;
+	background: currentColor;
+	-webkit-mask: var(--cartiva-heart) center / contain no-repeat;
+	mask: var(--cartiva-heart) center / contain no-repeat;
+	font-size: 0;
+}
+.cartiva-wishlist-card svg,
+.cartiva-wishlist-card i,
+.cartiva-wishlist-card img,
+.cartiva-wishlist-card .woosw-btn-icon,
+.cartiva-wishlist-card .yith-wcwl-feedback-message,
+.cartiva-wishlist-card .feedback,
+.cartiva-wishlist-card .ajax-loading,
+.cartiva-wishlist-card .tinvwl-tooltip { display: none !important; }
+
+/* Saved state: filled red heart */
+.cartiva-wishlist-card .yith-wcwl-wishlistexistsbrowse a,
+.cartiva-wishlist-card .yith-wcwl-wishlistaddedbrowse a,
+.cartiva-wishlist-card .exists a,
+.cartiva-wishlist-card .tinvwl-product-in-list,
+.cartiva-wishlist-card .woosw-added,
+.cartiva-wishlist-card .woosw-btn-added { color: var(--wp--preset--color--accent) !important; }
+.cartiva-wishlist-card .yith-wcwl-wishlistexistsbrowse a::before,
+.cartiva-wishlist-card .yith-wcwl-wishlistaddedbrowse a::before,
+.cartiva-wishlist-card .exists a::before,
+.cartiva-wishlist-card .tinvwl-product-in-list::before,
+.cartiva-wishlist-card .woosw-added::before,
+.cartiva-wishlist-card .woosw-btn-added::before {
+	-webkit-mask-image: var(--cartiva-heart-filled);
+	mask-image: var(--cartiva-heart-filled);
+}
+
+/* ---------- Single product ---------- */
+.cartiva-wishlist-single { margin-top: .75rem; }
+.cartiva-wishlist-single a,
+.cartiva-wishlist-single button {
+	display: inline-flex !important;
+	align-items: center;
+	gap: .5rem;
+	padding: .55rem 1rem !important;
+	border: 1px solid var(--wp--preset--color--border) !important;
+	border-radius: 999px !important;
+	background: transparent !important;
+	color: inherit !important;
+	font-size: var(--wp--preset--font-size--small) !important;
+	font-weight: 600;
+	text-decoration: none !important;
+	cursor: pointer;
+}
+.cartiva-wishlist-single a:hover,
+.cartiva-wishlist-single button:hover { border-color: var(--wp--preset--color--contrast) !important; }
+
+/* ---------- Wishlist pages ---------- */
+.wishlist_table,
+.tinvwl-table-manage-list,
+.woosw-items {
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 0;
+	border: 1px solid var(--wp--preset--color--border);
+	border-radius: var(--wp--custom--radius--md, 14px);
+	overflow: hidden;
+}
+.wishlist_table th,
+.wishlist_table td,
+.tinvwl-table-manage-list th,
+.tinvwl-table-manage-list td {
+	padding: 1rem !important;
+	border: 0 !important;
+	border-bottom: 1px solid var(--wp--preset--color--border) !important;
+	vertical-align: middle;
+	text-align: left;
+}
+.wishlist_table thead th,
+.tinvwl-table-manage-list thead th {
+	background: var(--wp--preset--color--surface);
+	font-size: var(--wp--preset--font-size--x-small);
+	letter-spacing: .06em;
+	text-transform: uppercase;
+}
+.wishlist_table img,
+.tinvwl-table-manage-list img,
+.woosw-item img { width: 72px; height: 72px; border-radius: 10px; object-fit: cover; }
+.wishlist_table .button,
+.tinvwl-table-manage-list .button,
+.woosw-item .button,
+.woosw-item .add_to_cart_button {
+	padding: .6rem 1.1rem !important;
+	border: 0 !important;
+	border-radius: 999px !important;
+	background: var(--wp--preset--color--contrast) !important;
+	color: var(--wp--preset--color--base) !important;
+	font-size: var(--wp--preset--font-size--small) !important;
+	font-weight: 600;
+	text-decoration: none !important;
+}
+
+/* ---------- Account menu icon ---------- */
+.woocommerce-MyAccount-navigation-link--cartiva-wishlist,
+.woocommerce-MyAccount-navigation-link--wishlist,
+.woocommerce-MyAccount-navigation-link--tinv_wishlist,
+.woocommerce-MyAccount-navigation-link--woosw { --cartiva-ico: var(--cartiva-heart); }
+.cartiva-account-tile--cartiva-wishlist,
+.cartiva-account-tile--wishlist,
+.cartiva-account-tile--tinv_wishlist,
+.cartiva-account-tile--woosw { --cartiva-ico: var(--cartiva-heart); }
+
+@media (prefers-reduced-motion: reduce) {
+	.cartiva-wishlist-card a, .cartiva-wishlist-card button { transition: none; }
+}

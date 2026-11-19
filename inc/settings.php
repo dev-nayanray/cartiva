@@ -171,6 +171,30 @@ function cartiva_settings_schema() {
 				),
 			),
 		),
+		'wishlist' => array(
+			'title'  => __( 'Wishlist', 'cartiva' ),
+			'intro'  => __( 'Used when a wishlist plugin is active: YITH WooCommerce Wishlist, TI WooCommerce Wishlist or WPC Smart Wishlist. Cartiva adds the heart icons and styling; the plugin saves the lists.', 'cartiva' ),
+			'fields' => array(
+				'wishlist_header'  => array(
+					'label'   => __( 'Header wishlist icon', 'cartiva' ),
+					'type'    => 'checkbox',
+					'default' => true,
+					'text'    => __( 'Show a heart icon with the item count next to the cart', 'cartiva' ),
+				),
+				'wishlist_buttons' => array(
+					'label'   => __( 'Heart buttons', 'cartiva' ),
+					'type'    => 'checkbox',
+					'default' => true,
+					'text'    => __( 'Show a heart button on product cards and next to add to cart on product pages', 'cartiva' ),
+				),
+				'wishlist_account' => array(
+					'label'   => __( 'Account menu', 'cartiva' ),
+					'type'    => 'checkbox',
+					'default' => true,
+					'text'    => __( 'Add "Wishlist" to the My Account menu when the plugin does not add it itself', 'cartiva' ),
+				),
+			),
+		),
 		'account' => array(
 			'title'  => __( 'My Account', 'cartiva' ),
 			'fields' => array(
@@ -230,6 +254,9 @@ function cartiva_settings_defaults() {
 			'account_profile' => true,
 			'account_tiles'   => true,
 			'account_track_link' => true,
+			'wishlist_header'    => true,
+			'wishlist_buttons'   => true,
+			'wishlist_account'   => true,
 		);
 	}
 	return $defaults;

@@ -207,6 +207,7 @@ require_once CARTIVA_DIR . '/inc/settings.php';
 
 if ( cartiva_is_woocommerce_active() ) {
 	require_once CARTIVA_DIR . '/inc/woocommerce.php';
+	require_once CARTIVA_DIR . '/inc/wishlist.php';
 }
 
 /**

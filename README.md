@@ -119,6 +119,8 @@ All patterns are in **Appearance → Editor → Patterns** (or the block inserte
 
 > Product patterns require WooCommerce and appear only when it is active.
 >
+> **Wishlist:** activate the free YITH WooCommerce Wishlist, TI WooCommerce Wishlist or WPC Smart Wishlist plugin and Cartiva adds a header heart with a count, heart buttons on product cards and product pages, a Wishlist account link and matching styles (Appearance → Cartiva Settings → Wishlist).
+>
 > Any Group of cards or Query Loop becomes a swipeable carousel when you add the class `cartiva-card-carousel` (plus `is-cols-3` or `is-cols-5` to change the cards per view).
 
 ## Project structure

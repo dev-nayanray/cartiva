@@ -107,6 +107,7 @@ function cartiva_wc_account_dashboard_tiles() {
 	$meta = array(
 		'orders'              => __( 'Track, return or buy again', 'cartiva' ),
 		'cartiva-track-order' => __( 'Check where your parcel is', 'cartiva' ),
+		'cartiva-wishlist'    => __( 'Products you saved for later', 'cartiva' ),
 		'downloads'           => __( 'Your digital products', 'cartiva' ),
 		'edit-address'        => __( 'Billing and shipping', 'cartiva' ),
 		'payment-methods'     => __( 'Saved cards and wallets', 'cartiva' ),

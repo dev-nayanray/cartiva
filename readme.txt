@@ -57,6 +57,10 @@ Go to Appearance > Cartiva Settings for layout and behavior options: corner styl
 
 Insert "Hero: slider" from Patterns > Cartiva: Hero. In the editor the slides are shown one under another so they are easy to edit; each slide is a Cover block, so you can change its image, text and buttons, duplicate it to add a slide, or delete it. On the site the slides become a swipeable slider with arrows, dots and autoplay. Autoplay pauses on hover and focus and is turned off for visitors who prefer reduced motion. Add the class "is-autoplay-off" to the slider group to disable autoplay.
 
+= Does Cartiva have a wishlist? =
+
+Saving wishlists is plugin territory, so Cartiva works with the free YITH WooCommerce Wishlist, TI WooCommerce Wishlist and WPC Smart Wishlist plugins. Activate one and Cartiva adds a heart icon with a count to the header, heart buttons on product cards and product pages, a Wishlist link in the account menu and matching styles. Each part can be turned off in Appearance > Cartiva Settings > Wishlist.
+
 = How do I make a carousel? =
 
 The "Categories: carousel" and "Blog: post carousel" patterns become swipeable rows with arrows on the site. To turn any Group of cards or any Query Loop into a carousel, add the class "cartiva-card-carousel" under Advanced > Additional CSS class(es). Add "is-cols-3" or "is-cols-5" to change how many cards are visible.
