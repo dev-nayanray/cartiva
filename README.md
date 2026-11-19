@@ -6,11 +6,11 @@
 
 Built 100% for the Site Editor (Full Site Editing): no page builder, no jQuery, system fonts by default.
 
-[![WordPress](https://img.shields.io/badge/WordPress-6.6%2B-21759b?logo=wordpress&logoColor=white)](https://wordpress.org/)
+[![WordPress](https://img.shields.io/badge/WordPress-6.9%2B-21759b?logo=wordpress&logoColor=white)](https://wordpress.org/)
 [![WooCommerce](https://img.shields.io/badge/WooCommerce-ready-7f54b3?logo=woocommerce&logoColor=white)](https://woocommerce.com/)
 [![PHP](https://img.shields.io/badge/PHP-7.4%2B-777bb4?logo=php&logoColor=white)](https://www.php.net/)
 [![License: GPL v2+](https://img.shields.io/badge/License-GPLv2%2B-blue.svg)](https://www.gnu.org/licenses/gpl-2.0.html)
-[![Version](https://img.shields.io/badge/version-1.3.0-111111)](readme.txt)
+[![Version](https://img.shields.io/badge/version-1.3.1-111111)](readme.txt)
 
 [Features](#features) · [Installation](#installation) · [Patterns](#block-patterns) · [Development](#development) · [Roadmap](#roadmap)
 
@@ -46,7 +46,7 @@ Cartiva is developed by **[godevs](https://godevs.net/)** and is being prepared 
 
 | Software | Minimum version |
 |---|---|
-| WordPress | 6.6 |
+| WordPress | 6.9 (tested up to 7.1) |
 | PHP | 7.4 |
 | WooCommerce (optional) | Latest stable release recommended |
 
@@ -155,12 +155,28 @@ wp i18n make-pot . languages/cartiva.pot --domain=cartiva
 - [x] **v1.1:** Best sellers, on sale, featured, split promo, brands and FAQ patterns; translation template
 - [x] **v1.2:** Shop layout with filter sidebar, distraction-free checkout, lookbook pattern
 - [x] **v1.3:** Starter homepages (Fashion, Electronics, Grocery, Furniture) and locally bundled OFL fonts
-- [x] **Cartiva Toolkit** (separate free plugin): quick view, wishlist, variation swatches, sticky add-to-cart
-- [ ] **v1.4:** WordPress.org submission, live demo site, documentation site on godevs.net
+- [x] **v1.3.1:** WordPress.org theme review compliance pass
+- [ ] **v1.4:** WordPress.org submission, live demo site, documentation on godevs.net
 
-## Companion plugin
+## WordPress.org guidelines
 
-**[Cartiva Toolkit](https://github.com/dev-nayanray/cartiva-toolkit)** adds the store features WordPress.org does not allow inside a theme: quick view, wishlist, variation swatches and a sticky add-to-cart bar. It's free, optional and works with any block theme.
+Cartiva follows the [Theme Review Requirements](https://make.wordpress.org/themes/handbook/review/required/):
+
+- **Design only:** no custom post types, shortcodes, custom blocks or other plugin features. Quick view, wishlist and similar store tools belong in plugins.
+- **No bundled plugins**, no plugin recommendations from outside WordPress.org.
+- **Everything bundled:** fonts and images ship with the theme; no CDNs and no external requests.
+- **GPL-compatible:** every bundled resource is listed with its licence in `readme.txt`.
+- **Prefixed and escaped:** all functions, handles, block styles and pattern categories use the `cartiva` prefix, and all output is escaped.
+
+## Building the release zip
+
+Files only needed for development (`README.md`, `docs/`, dotfiles) are marked `export-ignore`, so `git archive` produces a clean, directory-ready zip:
+
+```bash
+git archive --format=zip --prefix=cartiva/ -o cartiva.zip HEAD
+```
+
+Before uploading, run [Theme Check](https://wordpress.org/plugins/theme-check/) with `WP_DEBUG` enabled and test with the [Theme Unit Test data](https://github.com/WordPress/theme-test-data).
 
 See [`docs/PLAN.md`](docs/PLAN.md) for the full market analysis and plan.
 

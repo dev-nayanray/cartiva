@@ -1,9 +1,9 @@
 === Cartiva ===
 Contributors: godevs
-Requires at least: 6.6
-Tested up to: 6.9
+Requires at least: 6.9
+Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 1.3.0
+Stable tag: 1.3.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -36,11 +36,24 @@ Cartiva is a free, lightweight and modern WooCommerce block theme built entirely
 
 No. Store templates and patterns are used only when WooCommerce is active.
 
+= Does Cartiva include quick view, wishlist or swatches? =
+
+No. Under the WordPress.org theme guidelines those are plugin features, so Cartiva focuses on design and layout. You can add any WooCommerce plugin from WordPress.org for them.
+
+= How do I use the shop layout with filters? =
+
+Go to Appearance > Editor > Templates > Product Catalog and replace the template with the "Shop with filter sidebar" pattern.
+
 = How do I change the homepage? =
 
 Go to Appearance > Editor > Templates > Front Page and edit the blocks, or insert patterns from the "Cartiva: Shop" category.
 
 == Changelog ==
+
+= 1.3.1 =
+* Updated for the WordPress.org theme review requirements.
+* Requires WordPress 6.9 or later; tested up to WordPress 7.1.
+* Normalised line endings in bundled font licence files.
 
 = 1.3.0 =
 * Added starter homepages: Fashion, Electronics, Grocery and Furniture (Patterns > Cartiva: Starter homepages).
@@ -76,6 +89,10 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
+== Privacy ==
+
+Cartiva does not collect, store or send any user data, and makes no requests to external services. All fonts and images are bundled with the theme.
+
 == Resources ==
 
 * DM Sans
@@ -86,7 +103,7 @@ GNU General Public License for more details.
 * Lora
   License: SIL Open Font License 1.1, https://openfontlicense.org
   Source: https://github.com/cyrealtype/Lora-Cyrillic
-  Copyright 2011 The Lora Project Authors. Unmodified, packaged as WOFF.
+  Copyright 2011 The Lora Project Authors, with Reserved Font Name "Lora". Unmodified, packaged as WOFF.
 
 * Images in /assets/images and screenshot.png
   License: GPLv2 or later, https://www.gnu.org/licenses/gpl-2.0.html

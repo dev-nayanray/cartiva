@@ -17,6 +17,7 @@ Author: godevs (https://godevs.net) · Developer: Nayan Ray
 ### WordPress.org constraints that shape the product
 - No bundled plugins, no locked/premium-only features in the theme, no custom post types or shortcodes (plugin territory).
 - Recommending plugins is allowed only for plugins hosted on WordPress.org.
+- Requires at least / Tested up to: 6.9 / 7.1 (current major is 7.1, 7.2 due December 2026).
 - All text translatable and escaped; all bundled assets GPL-compatible with sources listed in readme.txt.
 - Block theme required files: `style.css`, `theme.json`, `templates/index.html`, `screenshot.png` (1200×900), `readme.txt`.
 
@@ -54,8 +55,14 @@ Performance budget (front page, WooCommerce active, no products cached):
 - [x] Fashion, Electronics, Grocery, Furniture homepages as full-page patterns
 - Section style variations (block style variations in theme.json)
 
-### Companion plugin (separate, on WordPress.org) — built: dev-nayanray/cartiva-toolkit
-Features WordPress.org does not allow inside a theme — quick view, wishlist, variation swatches, sticky add-to-cart, AJAX search — go into a free "Cartiva Toolkit" plugin, recommended (not bundled) by the theme.
+### Scope decision: theme only
+Cartiva is a design-only theme. WordPress.org does not allow plugin functionality in themes (custom post types, shortcodes, custom blocks, data features), so quick view, wishlist, swatches and AJAX search are out of scope. Store owners can add any WordPress.org plugin for those; the theme styles WooCommerce's own blocks.
+
+### v1.4 — WordPress.org submission
+- [ ] Theme Check clean with WP_DEBUG on
+- [ ] Theme Unit Test data + WooCommerce sample products
+- [ ] Keyboard and contrast check in all style variations
+- [ ] Create the `godevs` WordPress.org account (readme Contributors) and upload
 
 ## 4. Quality checklist before each release
 - PHP lint and WPThemeReview PHPCS ruleset
