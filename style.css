@@ -7,7 +7,7 @@ Description: Cartiva is a lightweight, modern and fast WooCommerce block theme b
 Requires at least: 6.9
 Tested up to: 7.1
 Requires PHP: 7.4
-Version: 1.7.0
+Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: cartiva
@@ -564,3 +564,27 @@ header.wp-block-template-part:has(.cartiva-topbar) {
 
 /* CTA band */
 .cartiva-cta-band > * > * { margin: 0; }
+
+/* Trust badges (homepage) */
+.cartiva-badge {
+	position: relative;
+	padding-left: 3.5rem;
+	min-height: 2.75rem;
+	justify-content: center;
+}
+.cartiva-badge > * { margin: 0; }
+.cartiva-badge::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 2.6rem;
+	height: 2.6rem;
+	margin-top: -1.3rem;
+	border-radius: 50%;
+	background: var(--wp--preset--color--surface) var(--cartiva-badge-icon) center / 1.25rem no-repeat;
+}
+.cartiva-badge--truck { --cartiva-badge-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23111' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 6h11v10H3zM14 9h4l3 3v4h-7'/%3E%3Ccircle cx='7' cy='17.5' r='1.8'/%3E%3Ccircle cx='17' cy='17.5' r='1.8'/%3E%3C/svg%3E"); }
+.cartiva-badge--return { --cartiva-badge-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23111' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 12a8 8 0 1 0 2.3-5.6M4 4v4h4'/%3E%3C/svg%3E"); }
+.cartiva-badge--lock { --cartiva-badge-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23111' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='5' y='11' width='14' height='10' rx='2'/%3E%3Cpath d='M8 11V7a4 4 0 0 1 8 0v4'/%3E%3C/svg%3E"); }
+.cartiva-badge--chat { --cartiva-badge-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23111' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z'/%3E%3C/svg%3E"); }

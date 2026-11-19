@@ -5,7 +5,7 @@
  * Inserter: no
  *
  * @package Cartiva
- * @since 1.6.0
+ * @since 1.0.0
  */
 
 ?>

@@ -11,21 +11,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Sensible image sizes for a modern product grid (square, crisp on retina).
- *
- * @param array $size Image size settings.
- * @return array
- */
-function cartiva_wc_thumbnail_size( $size ) {
-	return array(
-		'width'  => 600,
-		'height' => 600,
-		'crop'   => 1,
-	);
-}
-add_filter( 'woocommerce_get_image_size_thumbnail', 'cartiva_wc_thumbnail_size' );
-
-/**
  * On the My Account page, Cartiva replaces WooCommerce's classic layout
  * stylesheets with its own (assets/css/woocommerce-account.css), so they are
  * removed there only. Everywhere else they stay, so classic shortcode pages

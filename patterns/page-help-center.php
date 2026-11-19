@@ -10,7 +10,7 @@
  * Description: Help topics linking to tracking, shipping, returns, account, FAQ and contact. Publish with the slug "help-center".
  *
  * @package Cartiva
- * @since 1.7.0
+ * @since 1.0.0
  */
 
 $cartiva_account_url = function_exists( 'wc_get_page_permalink' ) ? wc_get_page_permalink( 'myaccount' ) : home_url( '/' );

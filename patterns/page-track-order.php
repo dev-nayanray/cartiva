@@ -10,7 +10,7 @@
  * Description: Order tracking form with help cards. Save the page with the slug "track-order" to use the matching template.
  *
  * @package Cartiva
- * @since 1.6.0
+ * @since 1.0.0
  */
 
 $cartiva_account_url = function_exists( 'wc_get_page_permalink' ) ? wc_get_page_permalink( 'myaccount' ) : home_url( '/' );

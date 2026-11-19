@@ -12,7 +12,7 @@
 				{ "slug": "border", "name": "Border", "color": "#dcebe1" },
 				{ "slug": "primary", "name": "Primary", "color": "#137a43" },
 				{ "slug": "primary-dark", "name": "Primary Dark", "color": "#0d5a31" },
-				{ "slug": "accent", "name": "Accent (Sale)", "color": "#e4572e" },
+				{ "slug": "accent", "name": "Accent (Sale)", "color": "#cf431b" },
 				{ "slug": "success", "name": "Success", "color": "#137a43" }
 			]
 		}

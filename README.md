@@ -10,7 +10,7 @@ Built 100% for the Site Editor (Full Site Editing): no page builder, no jQuery, 
 [![WooCommerce](https://img.shields.io/badge/WooCommerce-ready-7f54b3?logo=woocommerce&logoColor=white)](https://woocommerce.com/)
 [![PHP](https://img.shields.io/badge/PHP-7.4%2B-777bb4?logo=php&logoColor=white)](https://www.php.net/)
 [![License: GPL v2+](https://img.shields.io/badge/License-GPLv2%2B-blue.svg)](https://www.gnu.org/licenses/gpl-2.0.html)
-[![Version](https://img.shields.io/badge/version-1.7.0-111111)](readme.txt)
+[![Version](https://img.shields.io/badge/version-1.0.0-111111)](readme.txt)
 
 [Features](#features) · [Installation](#installation) · [Patterns](#block-patterns) · [Development](#development) · [Roadmap](#roadmap)
 
@@ -179,16 +179,12 @@ wp i18n make-pot . languages/cartiva.pot --domain=cartiva
 
 ## Roadmap
 
-- [x] **v1.0:** Core templates, WooCommerce templates, header/footer, style variations
-- [x] **v1.1:** Best sellers, on sale, featured, split promo, brands and FAQ patterns; translation template
-- [x] **v1.2:** Shop layout with filter sidebar, distraction-free checkout, lookbook pattern
-- [x] **v1.3:** Starter homepages (Fashion, Electronics, Grocery, Furniture) and locally bundled OFL fonts
-- [x] **v1.3.1:** WordPress.org theme review compliance pass
-- [x] **v1.4.0:** My Account redesign, add-to-cart form styling
-- [x] **v1.5.0:** Header, top bar, footer, shop, product, cart/checkout, blog and 404 refresh
-- [x] **v1.6.0:** Header/footer variations, section styles, Track Order page, checkout header fix
-- [x] **v1.7.0:** Contact, About, FAQ, Shipping & returns, Help center and Terms pages
-- [ ] **v1.8:** WordPress.org submission, live demo site, documentation on godevs.net
+- [x] **1.0.0** — first WordPress.org release: block templates for every WooCommerce page, 4 headers, 3 footers, starter homepages, ready-made store pages, My Account and Track Order designs, style and typography variations, section styles
+- [ ] Live demo site and documentation on godevs.net
+- [ ] More starter homepages and section patterns
+- [ ] Additional style variations
+
+See [`docs/PLAN.md`](docs/PLAN.md) for the market analysis and plan.
 
 ## WordPress.org guidelines
 

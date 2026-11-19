@@ -3,7 +3,7 @@
  * Helpers shared by product patterns.
  *
  * @package Cartiva
- * @since 1.1.0
+ * @since 1.0.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {

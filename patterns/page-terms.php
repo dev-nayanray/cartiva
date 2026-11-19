@@ -10,7 +10,7 @@
  * Description: Structure for a terms and conditions page with sample sections to replace. Publish with the slug "terms".
  *
  * @package Cartiva
- * @since 1.7.0
+ * @since 1.0.0
  */
 
 cartiva_page_hero( __( 'Legal', 'cartiva' ), __( 'Terms & conditions', 'cartiva' ), __( 'Please read these terms carefully before placing an order.', 'cartiva' ) );

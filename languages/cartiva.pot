@@ -2,7 +2,7 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Cartiva 1.7.0\n"
+"Project-Id-Version: Cartiva 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/cartiva\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -605,7 +605,7 @@ msgstr ""
 msgid "Track order"
 msgstr ""
 
-#: patterns/footer.php:58 patterns/page-help-center.php:29 functions.php:122
+#: patterns/footer.php:58 patterns/page-help-center.php:29 functions.php:129
 msgid "FAQ"
 msgstr ""
 
@@ -1183,80 +1183,80 @@ msgstr ""
 msgid "Sorry, nothing matched your search. Please try again with different keywords."
 msgstr ""
 
-#: functions.php:101
+#: functions.php:108
 msgid "Card"
 msgstr ""
 
-#: functions.php:108
+#: functions.php:115
 msgid "Sticky"
 msgstr ""
 
-#: functions.php:115
+#: functions.php:122
 msgid "Pill"
 msgstr ""
 
-#: functions.php:129
+#: functions.php:136
 msgid "Zoom on hover"
 msgstr ""
 
-#: functions.php:142
+#: functions.php:149
 msgid "Cartiva: Shop"
 msgstr ""
 
-#: functions.php:143
+#: functions.php:150
 msgid "Store sections such as product grids, categories and promos."
 msgstr ""
 
-#: functions.php:149
+#: functions.php:156
 msgid "Cartiva: Starter homepages"
 msgstr ""
 
-#: functions.php:150
+#: functions.php:157
 msgid "Complete homepages for different kinds of stores."
 msgstr ""
 
-#: functions.php:156
+#: functions.php:163
 msgid "Cartiva: Pages"
 msgstr ""
 
-#: functions.php:157
+#: functions.php:164
 msgid "Complete page layouts: Contact, About, FAQ, Shipping & returns, Help center, Terms, Track order."
 msgstr ""
 
-#: functions.php:163
+#: functions.php:170
 msgid "Cartiva: Sections"
 msgstr ""
 
-#: functions.php:164
+#: functions.php:171
 msgid "General page sections."
 msgstr ""
 
-#: inc/woocommerce.php:117
+#: inc/woocommerce.php:102
 msgid "Track, return or buy again"
 msgstr ""
 
-#: inc/woocommerce.php:118
+#: inc/woocommerce.php:103
 msgid "Your digital products"
 msgstr ""
 
-#: inc/woocommerce.php:119
+#: inc/woocommerce.php:104
 msgid "Billing and shipping"
 msgstr ""
 
-#: inc/woocommerce.php:120
+#: inc/woocommerce.php:105
 msgid "Saved cards and wallets"
 msgstr ""
 
-#: inc/woocommerce.php:121
+#: inc/woocommerce.php:106
 msgid "Name, email and password"
 msgstr ""
 
 #. translators: %s: number of orders.
-#: inc/woocommerce.php:146
+#: inc/woocommerce.php:131
 msgid "Continue shopping"
 msgstr ""
 
-#: inc/woocommerce.php:147
+#: inc/woocommerce.php:132
 msgid "See what is new in store"
 msgstr ""
 

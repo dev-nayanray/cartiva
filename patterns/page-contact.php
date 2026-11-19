@@ -10,7 +10,7 @@
  * Description: Contact details, opening hours and quick answers. Publish with the slug "contact" for the matching full-width layout.
  *
  * @package Cartiva
- * @since 1.7.0
+ * @since 1.0.0
  */
 
 $cartiva_faq_url = cartiva_page_url( 'faq' );

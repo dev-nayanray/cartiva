@@ -7,7 +7,7 @@
  * Inserter: no
  *
  * @package Cartiva
- * @since 1.2.0
+ * @since 1.0.0
  */
 
 $cartiva_cart_url = function_exists( 'wc_get_cart_url' ) ? wc_get_cart_url() : home_url( '/' );

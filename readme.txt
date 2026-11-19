@@ -3,7 +3,7 @@ Contributors: godevs
 Requires at least: 6.9
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 1.7.0
+Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -73,62 +73,6 @@ Go to Appearance > Editor > Templates > Front Page and edit the blocks, or inser
 
 == Changelog ==
 
-= 1.7.0 =
-* New page layouts (Pages > Add New, or Patterns > Cartiva: Pages): Contact, About, FAQ, Shipping & returns, Help center and Terms & conditions, alongside Track order.
-* Matching full-width templates are used automatically for pages with the slugs contact, about, faq, shipping-returns, help-center and terms.
-* Top bar and footer links now point to those pages as soon as they exist (Contact, Help center, Shipping, Returns, Track order, FAQ, About, Blog, Privacy, Shop).
-* Fixed: grid sections (categories, trust badges and the new pages) no longer leave empty columns on wide screens.
-
-= 1.6.0 =
-* Fixed: a second account avatar could appear in the header for logged-in customers. Header icon styles now only touch the blocks' own buttons.
-* Checkout now uses the full site header. Cart and Checkout templates follow WooCommerce's recommended structure (page content wrapper and store notices).
-* WooCommerce's classic layout styles are kept on every page except My Account, so classic shortcode cart, checkout and order tracking pages keep working.
-* New Track Order page: a "Track order page" pattern and a matching template for pages with the slug "track-order". The top bar "Track order" link points to it automatically.
-* New header designs: centered logo, with category bar, and without top bar (Appearance > Editor > Patterns > Header).
-* New footer designs: with newsletter, and simple.
-* New section styles for Group, Columns and Cover blocks: Dark, Soft, Brand and Sale.
-* Styled the mini-cart drawer and the order confirmation page.
-
-= 1.5.0 =
-* Fixed: the sticky header now actually sticks. The top bar scrolls away and the main header row stays pinned, with a soft shadow once the page scrolls (in browsers that support scroll-driven animations).
-* New three-part top bar: help link, promo message and quick links (side links hide on mobile).
-* Header: animated underline on menu links, round icon buttons for search, account and cart, an expanding search field, and on mobile the menu button sits left of the logo.
-* Cleaner mobile menu overlay with large, divided links.
-* Footer: copyright line with the current year and site name, payment method badges, hover effects; link columns sit side by side on mobile.
-* Shop: card add-to-cart buttons, sale badge, rating stars, results count and a pill-shaped sorting dropdown; numbered pagination.
-* Single product: sticky summary column, rounded gallery with thumbnail grid, delivery/returns/secure-checkout list under the add-to-cart button, and redesigned tabs, attributes and reviews.
-* Cart and checkout: totals in a card, rounded fields and larger buttons.
-* Blog: category pills and image hover on post cards.
-* New 404 page with a large gradient 404, search, buttons to home and shop, and best sellers.
-
-= 1.4.0 =
-* Redesigned the WooCommerce My Account page: two-column layout with a profile card, icon navigation, dashboard quick-link tiles, card-style login and register forms, restyled orders table with order-status colours, address cards, modern form fields and notices.
-* My Account tables turn into cards on mobile, and the account menu becomes a swipeable row.
-* Added a My Account page template with a page header.
-* Restyled the single product add-to-cart form: quantity field, full-width button, variation dropdowns and stock status.
-* Fixed: the My Account menu and content no longer stack unstyled after WooCommerce's layout stylesheet was removed.
-
-= 1.3.1 =
-* Updated for the WordPress.org theme review requirements.
-* Requires WordPress 6.9 or later; tested up to WordPress 7.1.
-* Normalised line endings in bundled font licence files.
-
-= 1.3.0 =
-* Added starter homepages: Fashion, Electronics, Grocery and Furniture (Patterns > Cartiva: Starter homepages).
-* Bundled DM Sans and Lora web fonts (SIL OFL) with typography presets: System (fastest), DM Sans, Lora & DM Sans.
-* Sand style variation now uses Lora headings.
-
-= 1.2.0 =
-* Added "Shop with filter sidebar" layout (categories, price, availability and rating filters).
-* Added distraction-free checkout template with a minimal checkout header and footer.
-* Added cart template and Lookbook pattern.
-
-= 1.1.0 =
-* Added patterns: best sellers, on sale, featured products, split promo, brand strip, FAQ.
-* Added FAQ block style for the Details block.
-* Homepage pattern now includes the new sections.
-* Added translation template (languages/cartiva.pot).
-
 = 1.0.0 =
 * Initial release.
 
@@ -164,5 +108,9 @@ Cartiva does not collect, store or send any user data, and makes no requests to 
   Copyright 2011 The Lora Project Authors, with Reserved Font Name "Lora". Unmodified, packaged as WOFF.
 
 * Images in /assets/images and screenshot.png
+  License: GPLv2 or later, https://www.gnu.org/licenses/gpl-2.0.html
+  Source: Created by godevs for this theme.
+
+* Icons (inline SVG in style.css and /assets/css)
   License: GPLv2 or later, https://www.gnu.org/licenses/gpl-2.0.html
   Source: Created by godevs for this theme.

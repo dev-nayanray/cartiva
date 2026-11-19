@@ -8,7 +8,7 @@
  * Viewport width: 1400
  *
  * @package Cartiva
- * @since 1.3.0
+ * @since 1.0.0
  */
 
 cartiva_hero_section(

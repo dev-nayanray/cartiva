@@ -10,7 +10,7 @@
  * Description: Frequently asked questions grouped by topic. Publish with the slug "faq" for the matching full-width layout.
  *
  * @package Cartiva
- * @since 1.7.0
+ * @since 1.0.0
  */
 
 cartiva_page_hero( __( 'Help', 'cartiva' ), __( 'Frequently asked questions', 'cartiva' ), __( 'Quick answers about orders, delivery, returns and your account.', 'cartiva' ) );

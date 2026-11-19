@@ -7,7 +7,7 @@
  * Viewport width: 1400
  *
  * @package Cartiva
- * @since 1.1.0
+ * @since 1.0.0
  */
 
 if ( ! cartiva_is_woocommerce_active() ) {

@@ -3,7 +3,7 @@
  * Header markup shared by the header patterns.
  *
  * @package Cartiva
- * @since 1.6.0
+ * @since 1.0.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {

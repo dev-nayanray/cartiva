@@ -10,7 +10,7 @@
  * Description: Shipping options table, a three-step returns guide and refund details. Publish with the slug "shipping-returns".
  *
  * @package Cartiva
- * @since 1.7.0
+ * @since 1.0.0
  */
 
 $cartiva_steps = array(

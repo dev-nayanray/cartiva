@@ -10,7 +10,7 @@
  * Description: Brand story, numbers, values and a call to action. Publish with the slug "about" for the matching full-width layout.
  *
  * @package Cartiva
- * @since 1.7.0
+ * @since 1.0.0
  */
 
 $cartiva_shop_url = function_exists( 'wc_get_page_permalink' ) ? wc_get_page_permalink( 'shop' ) : home_url( '/' );

@@ -29,7 +29,14 @@ if ( ! function_exists( 'cartiva_setup' ) ) :
 		add_editor_style( 'style.css' );
 
 		// WooCommerce: declare support so WooCommerce uses the block templates.
-		add_theme_support( 'woocommerce' );
+		// Default image sizes only: store owners can still change them in their WooCommerce settings.
+		add_theme_support(
+			'woocommerce',
+			array(
+				'thumbnail_image_width' => 600,
+				'single_image_width'    => 1000,
+			)
+		);
 		add_theme_support( 'wc-product-gallery-zoom' );
 		add_theme_support( 'wc-product-gallery-lightbox' );
 		add_theme_support( 'wc-product-gallery-slider' );

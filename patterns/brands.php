@@ -7,7 +7,7 @@
  * Viewport width: 1400
  *
  * @package Cartiva
- * @since 1.1.0
+ * @since 1.0.0
  */
 
 $cartiva_brands = array( 'NORDA', 'Kiro', 'Velt', 'amber&co', 'LUMA', 'Ostra' );
