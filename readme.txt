@@ -24,6 +24,7 @@ Cartiva is a free, lightweight and modern WooCommerce block theme built entirely
 * A modern My Account area: dashboard tiles, icon navigation, order and address cards.
 * Ready-made pages: Contact, About, FAQ, Shipping & returns, Help center, Terms and Track order.
 * Four header designs, three footer designs and section color styles you can switch in the Site Editor.
+* Store extras, each with an on/off switch: sticky add to cart bar, second image on hover, discount sale badges (-25%), sale countdown and low stock note, filters drawer on phones, mobile bottom bar, back to top button and an optional dark mode switch for visitors.
 * Cartiva Settings (Appearance > Cartiva Settings): corner style, button shape, layout width, sticky header, top bar, live search, product card style, image shape, sale badge and more, alongside the Site Editor's colors and fonts.
 * Live search in the header: product suggestions with image and price appear after two characters, with full keyboard support.
 * Works without WooCommerce as a clean blog/business theme.

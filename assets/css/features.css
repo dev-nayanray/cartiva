@@ -1,0 +1,349 @@
+/**
+ * Cartiva visitor features. Small, loaded once, every rule scoped to its feature.
+ */
+
+/* ==========================================================================
+   Product cards: second image on hover
+   ========================================================================== */
+.cartiva-has-hover-image a { position: relative; display: block; }
+.cartiva-has-hover-image .cartiva-hover-image {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: 0;
+	transition: opacity .35s ease;
+	pointer-events: none;
+}
+@media (hover: hover) {
+	.wc-block-product:hover .cartiva-has-hover-image .cartiva-hover-image,
+	.cartiva-has-hover-image a:focus-visible .cartiva-hover-image { opacity: 1; }
+}
+
+/* ==========================================================================
+   Product page: sale countdown and low stock
+   ========================================================================== */
+.cartiva-urgency { display: grid; gap: .6rem; margin: 1rem 0 .25rem; }
+.cartiva-countdown {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: .5rem 1rem;
+	padding: .75rem 1rem;
+	border-radius: var(--wp--custom--radius--sm, 10px);
+	background: color-mix(in srgb, var(--wp--preset--color--accent) 9%, var(--wp--preset--color--base));
+	color: var(--wp--preset--color--contrast);
+	font-size: var(--wp--preset--font-size--small);
+}
+.cartiva-countdown__label { display: inline-flex; align-items: center; gap: .45rem; font-weight: 600; }
+.cartiva-countdown__label::before {
+	content: "";
+	width: 1.1rem;
+	height: 1.1rem;
+	background: var(--wp--preset--color--accent);
+	-webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpath d='M12 7v5l3 2'/%3E%3C/svg%3E") center / contain no-repeat; mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpath d='M12 7v5l3 2'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+.cartiva-countdown__time {
+	font-variant-numeric: tabular-nums;
+	font-weight: 800;
+	letter-spacing: .02em;
+	color: var(--wp--preset--color--accent);
+}
+.cartiva-countdown.is-ended { opacity: .6; }
+.cartiva-low-stock {
+	display: flex;
+	align-items: center;
+	gap: .5rem;
+	margin: 0;
+	color: var(--wp--preset--color--accent);
+	font-size: var(--wp--preset--font-size--small);
+	font-weight: 600;
+}
+.cartiva-low-stock::before {
+	content: "";
+	width: .55rem;
+	height: .55rem;
+	border-radius: 50%;
+	background: currentColor;
+	box-shadow: 0 0 0 4px color-mix(in srgb, currentColor 20%, transparent);
+}
+
+/* ==========================================================================
+   Sticky add to cart bar
+   ========================================================================== */
+.cartiva-sticky-cart {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 90;
+	border-top: 1px solid var(--wp--preset--color--border);
+	background: color-mix(in srgb, var(--wp--preset--color--base) 94%, transparent);
+	-webkit-backdrop-filter: blur(12px);
+	backdrop-filter: blur(12px);
+	box-shadow: 0 -10px 30px rgb(0 0 0 / .08);
+	transform: translateY(110%);
+	transition: transform .3s ease;
+}
+.cartiva-sticky-cart.is-visible { transform: none; }
+.cartiva-sticky-cart__inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+	max-width: var(--wp--style--global--wide-size, 1280px);
+	margin: 0 auto;
+	padding: .7rem var(--wp--style--root--padding-right, 1.25rem) .7rem var(--wp--style--root--padding-left, 1.25rem);
+}
+.cartiva-sticky-cart__product { display: flex; align-items: center; gap: .85rem; min-width: 0; }
+.cartiva-sticky-cart__image { width: 3.25rem; height: 3.25rem; border-radius: 10px; object-fit: cover; flex: none; }
+.cartiva-sticky-cart__text { min-width: 0; }
+.cartiva-sticky-cart__text p { margin: 0; }
+.cartiva-sticky-cart__title {
+	overflow: hidden;
+	font-weight: 700;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.cartiva-sticky-cart__price { font-size: var(--wp--preset--font-size--small); }
+.cartiva-sticky-cart__price del { color: var(--wp--preset--color--muted); }
+.cartiva-sticky-cart__price ins { color: var(--wp--preset--color--accent); text-decoration: none; }
+.cartiva-sticky-cart__button {
+	flex: none;
+	min-height: 3rem;
+	padding: 0 1.75rem;
+	border: 0;
+	border-radius: var(--wp--custom--radius--sm, 10px);
+	background: var(--wp--preset--color--contrast);
+	color: var(--wp--preset--color--base);
+	font: inherit;
+	font-weight: 700;
+	cursor: pointer;
+}
+.cartiva-sticky-cart__button:hover { background: var(--wp--preset--color--primary); color: #fff; }
+@media (max-width: 600px) {
+	.cartiva-sticky-cart__image, .cartiva-sticky-cart__price { display: none; }
+	.cartiva-sticky-cart__button { padding: 0 1.25rem; }
+}
+@media (prefers-reduced-motion: reduce) { .cartiva-sticky-cart { transition: none; } }
+
+/* ==========================================================================
+   Off-canvas shop filters (phones and small tablets)
+   ========================================================================== */
+.cartiva-filters-open, .cartiva-filters-close, .cartiva-filters-backdrop { display: none; }
+@media (max-width: 781px) {
+	.cartiva-filters-open {
+		display: inline-flex;
+		align-items: center;
+		gap: .5rem;
+		margin-bottom: 1rem;
+		padding: .65rem 1.1rem;
+		border: 1px solid var(--wp--preset--color--border);
+		border-radius: 999px;
+		background: var(--wp--preset--color--base);
+		color: var(--wp--preset--color--contrast);
+		font: inherit;
+		font-weight: 600;
+		cursor: pointer;
+	}
+	.cartiva-filters-open::before {
+		content: "";
+		width: 1.1rem;
+		height: 1.1rem;
+		background: currentColor;
+		-webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 6h16M7 12h10M10 18h4'/%3E%3C/svg%3E") center / contain no-repeat; mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 6h16M7 12h10M10 18h4'/%3E%3C/svg%3E") center / contain no-repeat;
+	}
+	.cartiva-filters-panel {
+		position: fixed !important;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 100001;
+		width: min(88vw, 22rem);
+		max-width: none !important;
+		margin: 0 !important;
+		padding: 3.75rem 1.5rem 2rem !important;
+		overflow-y: auto;
+		background: var(--wp--preset--color--base);
+		box-shadow: 20px 0 50px rgb(0 0 0 / .2);
+		transform: translateX(-105%);
+		visibility: hidden;
+		transition: transform .3s ease, visibility 0s linear .3s;
+	}
+	.cartiva-filters-panel.is-open { transform: none; visibility: visible; transition: transform .3s ease; }
+	.cartiva-filters-close {
+		display: grid;
+		place-items: center;
+		position: absolute;
+		top: .75rem;
+		right: .75rem;
+		width: 2.5rem;
+		height: 2.5rem;
+		border: 0;
+		border-radius: 999px;
+		background: var(--wp--preset--color--surface);
+		color: var(--wp--preset--color--contrast);
+		cursor: pointer;
+	}
+	.cartiva-filters-close::before {
+		content: "";
+		width: 1.1rem;
+		height: 1.1rem;
+		background: currentColor;
+		-webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 6l12 12M18 6 6 18'/%3E%3C/svg%3E") center / contain no-repeat; mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 6l12 12M18 6 6 18'/%3E%3C/svg%3E") center / contain no-repeat;
+	}
+	.cartiva-filters-backdrop {
+		display: block;
+		position: fixed;
+		inset: 0;
+		z-index: 100000;
+		background: rgb(0 0 0 / .45);
+		opacity: 0;
+		pointer-events: none;
+		transition: opacity .3s ease;
+	}
+	.cartiva-filters-backdrop.is-open { opacity: 1; pointer-events: auto; }
+	.cartiva-no-scroll, .cartiva-no-scroll body { overflow: hidden; }
+}
+
+/* ==========================================================================
+   Mobile bottom bar
+   ========================================================================== */
+.cartiva-mobile-bar { display: none; }
+@media (max-width: 781px) {
+	.cartiva-mobile-bar {
+		position: fixed;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 95;
+		display: flex;
+		justify-content: space-around;
+		padding: .35rem .25rem calc(.35rem + env(safe-area-inset-bottom, 0px));
+		border-top: 1px solid var(--wp--preset--color--border);
+		background: color-mix(in srgb, var(--wp--preset--color--base) 96%, transparent);
+		-webkit-backdrop-filter: blur(12px);
+		backdrop-filter: blur(12px);
+	}
+	.cartiva-has-mobile-bar { padding-bottom: calc(3.75rem + env(safe-area-inset-bottom, 0px)); }
+	.cartiva-mobile-bar__item {
+		position: relative;
+		display: flex;
+		flex: 1;
+		flex-direction: column;
+		align-items: center;
+		gap: .2rem;
+		padding: .3rem 0;
+		color: var(--wp--preset--color--contrast);
+		font-size: .7rem;
+		font-weight: 600;
+		text-decoration: none;
+	}
+	.cartiva-mobile-bar__icon {
+		width: 1.35rem;
+		height: 1.35rem;
+		background: currentColor;
+		-webkit-mask: var(--cartiva-bar-icon) center / contain no-repeat;
+		mask: var(--cartiva-bar-icon) center / contain no-repeat;
+	}
+	.cartiva-mobile-bar__count {
+		position: absolute;
+		top: 0;
+		left: calc(50% + .4rem);
+		min-width: 1.05rem;
+		height: 1.05rem;
+		padding: 0 .25rem;
+		border-radius: 999px;
+		background: var(--wp--preset--color--accent);
+		color: #fff;
+		font-size: .62rem;
+		line-height: 1.05rem;
+		text-align: center;
+		box-sizing: border-box;
+	}
+	/* Sticky add to cart sits above the bottom bar */
+	.cartiva-has-mobile-bar .cartiva-sticky-cart { bottom: calc(3.6rem + env(safe-area-inset-bottom, 0px)); }
+	.cartiva-has-mobile-bar .cartiva-to-top { bottom: calc(4.6rem + env(safe-area-inset-bottom, 0px)); }
+	.cartiva-sticky-cart-open .cartiva-to-top { bottom: calc(9rem + env(safe-area-inset-bottom, 0px)); }
+}
+.cartiva-mobile-bar__item--shop { --cartiva-bar-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 9h16l-1.5 11h-13z'/%3E%3Cpath d='M9 9V6a3 3 0 0 1 6 0v3'/%3E%3C/svg%3E"); }
+.cartiva-mobile-bar__item--search { --cartiva-bar-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='m20 20-3.5-3.5'/%3E%3C/svg%3E"); }
+.cartiva-mobile-bar__item--wishlist { --cartiva-bar-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z'/%3E%3C/svg%3E"); }
+.cartiva-mobile-bar__item--account { --cartiva-bar-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='8' r='4'/%3E%3Cpath d='M4 21a8 8 0 0 1 16 0'/%3E%3C/svg%3E"); }
+.cartiva-mobile-bar__item--cart { --cartiva-bar-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='9' cy='20' r='1.5'/%3E%3Ccircle cx='18' cy='20' r='1.5'/%3E%3Cpath d='M2 3h3l2.5 12h11l2-8H6.2'/%3E%3C/svg%3E"); }
+
+/* ==========================================================================
+   Back to top
+   ========================================================================== */
+.cartiva-to-top {
+	position: fixed;
+	right: 1.25rem;
+	bottom: 1.25rem;
+	z-index: 89;
+	display: grid;
+	place-items: center;
+	width: 2.75rem;
+	height: 2.75rem;
+	border: 1px solid var(--wp--preset--color--border);
+	border-radius: 999px;
+	background: var(--wp--preset--color--base);
+	color: var(--wp--preset--color--contrast);
+	box-shadow: 0 8px 24px rgb(0 0 0 / .12);
+	cursor: pointer;
+	opacity: 0;
+	transform: translateY(10px);
+	pointer-events: none;
+	transition: opacity .25s ease, transform .25s ease, bottom .3s ease;
+}
+.cartiva-to-top.is-visible { opacity: 1; transform: none; pointer-events: auto; }
+.cartiva-to-top span {
+	width: 1.2rem;
+	height: 1.2rem;
+	background: currentColor;
+	-webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 15 6-6 6 6'/%3E%3C/svg%3E") center / contain no-repeat; mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 15 6-6 6 6'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+.cartiva-sticky-cart-open .cartiva-to-top { bottom: 5.5rem; }
+.cartiva-to-top:hover { background: var(--wp--preset--color--contrast); color: var(--wp--preset--color--base); }
+
+/* ==========================================================================
+   Dark mode
+   ========================================================================== */
+.cartiva-scheme-toggle {
+	display: inline-grid;
+	place-items: center;
+	width: 2.5rem;
+	height: 2.5rem;
+	padding: 0;
+	border: 0;
+	border-radius: 999px;
+	background: transparent;
+	color: inherit;
+	cursor: pointer;
+}
+.cartiva-scheme-toggle:hover { background: var(--wp--preset--color--surface); }
+.cartiva-scheme-toggle__icon {
+	width: 1.25rem;
+	height: 1.25rem;
+	background: currentColor;
+	-webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z'/%3E%3C/svg%3E") center / contain no-repeat; mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+.cartiva-dark .cartiva-scheme-toggle__icon {
+	-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='4'/%3E%3Cpath d='M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4'/%3E%3C/svg%3E");
+	mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='4'/%3E%3Cpath d='M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4'/%3E%3C/svg%3E");
+}
+html.cartiva-dark {
+	color-scheme: dark;
+	--wp--preset--color--base: #121315;
+	--wp--preset--color--surface: #1c1d21;
+	--wp--preset--color--contrast: #f1f1ef;
+	--wp--preset--color--muted: #a5a8ad;
+	--wp--preset--color--border: #2d2f34;
+	--wp--preset--color--primary: #6b8cff;
+	--wp--preset--color--primary-dark: #4a6dff;
+	--wp--preset--color--accent: #ff6b5c;
+	--wp--preset--color--success: #3fbf86;
+}
+html.cartiva-dark img { filter: brightness(.94); }
+html.cartiva-dark .cartiva-hover-image { filter: brightness(.94); }
+.cartiva-has-hover-image .wc-block-components-product-sale-badge { z-index: 2; }

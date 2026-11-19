@@ -211,10 +211,12 @@ function cartiva_is_woocommerce_active() {
 require_once CARTIVA_DIR . '/inc/pattern-helpers.php';
 require_once CARTIVA_DIR . '/inc/header.php';
 require_once CARTIVA_DIR . '/inc/settings.php';
+require_once CARTIVA_DIR . '/inc/site-features.php';
 
 if ( cartiva_is_woocommerce_active() ) {
 	require_once CARTIVA_DIR . '/inc/woocommerce.php';
 	require_once CARTIVA_DIR . '/inc/wishlist.php';
+	require_once CARTIVA_DIR . '/inc/store-features.php';
 }
 
 /**

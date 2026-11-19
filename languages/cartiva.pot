@@ -93,7 +93,7 @@ msgstr ""
 msgid "Thoughtfully made products, delivered fast. Built with Cartiva — a free, lightweight block theme for WooCommerce."
 msgstr ""
 
-#: patterns/footer-dark.php:38 patterns/footer-centered.php:27 patterns/footer.php:38 patterns/footer-simple.php:20 inc/settings.php:113
+#: patterns/footer-dark.php:38 patterns/footer-centered.php:27 patterns/footer.php:38 patterns/footer-simple.php:20 inc/settings.php:113 inc/store-features.php:223
 msgid "Shop"
 msgstr ""
 
@@ -1988,72 +1988,72 @@ msgstr ""
 msgid "General page sections."
 msgstr ""
 
-#: functions.php:272
+#: functions.php:274
 msgid "Search results"
 msgstr ""
 
-#: functions.php:273
+#: functions.php:275
 msgid "Searching…"
 msgstr ""
 
 #. translators: %s: Search query.
-#: functions.php:275
+#: functions.php:277
 msgid "No results for “%s”"
 msgstr ""
 
 #. translators: %s: Search query.
-#: functions.php:277
+#: functions.php:279
 msgid "See all results for “%s”"
 msgstr ""
 
-#: functions.php:278
+#: functions.php:280
 msgid "1 result found"
 msgstr ""
 
 #. translators: %d: Number of results.
-#: functions.php:280
+#: functions.php:282
 msgid "%d results found"
 msgstr ""
 
-#: functions.php:281
+#: functions.php:283
 msgid "Out of stock"
 msgstr ""
 
-#: functions.php:325
+#: functions.php:327
 msgid "carousel"
 msgstr ""
 
-#: functions.php:326
+#: functions.php:328
 msgid "slide"
 msgstr ""
 
 #. translators: 1: Slide number, 2: Number of slides.
-#: functions.php:328
+#: functions.php:330
 msgid "%1$s of %2$s"
 msgstr ""
 
-#: functions.php:329
+#: functions.php:331
 msgid "Previous"
 msgstr ""
 
-#: functions.php:330
+#: functions.php:332
 msgid "Next"
 msgstr ""
 
 #. translators: %s: Slide number.
-#: functions.php:332
+#: functions.php:334
 msgid "Go to slide %s"
 msgstr ""
 
-#: functions.php:333
+#: functions.php:335
 msgid "Featured"
 msgstr ""
 
-#: functions.php:334
+#: functions.php:336
 msgid "Products"
 msgstr ""
 
-#: functions.php:335
+#: functions.php:337
 msgid "Items"
 msgstr ""
 
@@ -2293,101 +2293,217 @@ msgstr ""
 msgid "Show the free delivery, returns and secure checkout list under the add to cart button"
 msgstr ""
 
-#. translators: %s: number of items in the wishlist.
-#: inc/settings.php:203 inc/wishlist.php:114 inc/wishlist.php:207 inc/wishlist.php:212
-msgid "Wishlist"
+#: inc/settings.php:203
+msgid "Store extras"
 msgstr ""
 
 #: inc/settings.php:204
-msgid "Used when a wishlist plugin is active: YITH WooCommerce Wishlist, TI WooCommerce Wishlist or WPC Smart Wishlist. Cartiva adds the heart icons and styling; the plugin saves the lists."
+msgid "Conversion and mobile features. They only add small, deferred code to the pages that use them."
 msgstr ""
 
 #: inc/settings.php:207
-msgid "Header wishlist icon"
+msgid "Sticky add to cart bar"
 msgstr ""
 
 #: inc/settings.php:210
-msgid "Show a heart icon with the item count next to the cart"
+msgid "Show a bar with the product and an add to cart button when shoppers scroll past the button"
 msgstr ""
 
 #: inc/settings.php:213
-msgid "Heart buttons"
+msgid "Second image on hover"
 msgstr ""
 
 #: inc/settings.php:216
-msgid "Show a heart button on product cards and next to add to cart on product pages"
+msgid "Show the first gallery image when hovering a product card"
 msgstr ""
 
 #: inc/settings.php:219
-msgid "Account menu"
+msgid "Discount on sale badges"
 msgstr ""
 
 #: inc/settings.php:222
+msgid "Show the discount, for example -25%, instead of \"Sale\""
+msgstr ""
+
+#: inc/settings.php:225
+msgid "Sale countdown and low stock"
+msgstr ""
+
+#: inc/settings.php:228
+msgid "Show a countdown for scheduled sales and \"Only 3 left\" when stock is low"
+msgstr ""
+
+#: inc/settings.php:231
+msgid "Filters drawer on phones"
+msgstr ""
+
+#: inc/settings.php:234
+msgid "Open the shop sidebar filters in a slide-out panel on small screens"
+msgstr ""
+
+#: inc/settings.php:237
+msgid "Mobile bottom bar"
+msgstr ""
+
+#: inc/settings.php:240
+msgid "Show Shop, Search, Wishlist, Account and Cart shortcuts at the bottom of the screen on phones"
+msgstr ""
+
+#: inc/settings.php:243
+msgid "Back to top button"
+msgstr ""
+
+#: inc/settings.php:246
+msgid "Show a button to scroll back to the top on long pages"
+msgstr ""
+
+#: inc/settings.php:249
+msgid "Dark mode switch"
+msgstr ""
+
+#: inc/settings.php:252
+msgid "Let visitors switch the site to dark colors from the header (their choice is remembered in their browser)"
+msgstr ""
+
+#. translators: %s: number of items in the wishlist.
+#: inc/settings.php:257 inc/store-features.php:231 inc/wishlist.php:114 inc/wishlist.php:207 inc/wishlist.php:212
+msgid "Wishlist"
+msgstr ""
+
+#: inc/settings.php:258
+msgid "Used when a wishlist plugin is active: YITH WooCommerce Wishlist, TI WooCommerce Wishlist or WPC Smart Wishlist. Cartiva adds the heart icons and styling; the plugin saves the lists."
+msgstr ""
+
+#: inc/settings.php:261
+msgid "Header wishlist icon"
+msgstr ""
+
+#: inc/settings.php:264
+msgid "Show a heart icon with the item count next to the cart"
+msgstr ""
+
+#: inc/settings.php:267
+msgid "Heart buttons"
+msgstr ""
+
+#: inc/settings.php:270
+msgid "Show a heart button on product cards and next to add to cart on product pages"
+msgstr ""
+
+#: inc/settings.php:273
+msgid "Account menu"
+msgstr ""
+
+#: inc/settings.php:276
 msgid "Add \"Wishlist\" to the My Account menu when the plugin does not add it itself"
 msgstr ""
 
-#: inc/settings.php:227
+#: inc/settings.php:281
 msgid "My Account"
 msgstr ""
 
-#: inc/settings.php:230
+#: inc/settings.php:284
 msgid "Profile card"
 msgstr ""
 
-#: inc/settings.php:233
+#: inc/settings.php:287
 msgid "Show the customer name and email above the account menu"
 msgstr ""
 
-#: inc/settings.php:236
+#: inc/settings.php:290
 msgid "Dashboard tiles"
 msgstr ""
 
-#: inc/settings.php:239
+#: inc/settings.php:293
 msgid "Show quick links to orders, addresses and account details on the dashboard"
 msgstr ""
 
-#: inc/settings.php:242
+#: inc/settings.php:296
 msgid "Track order link"
 msgstr ""
 
-#: inc/settings.php:245
+#: inc/settings.php:299
 msgid "Add \"Track order\" to the account menu (links to your Track order page, or to Orders if there is none)"
 msgstr ""
 
-#: inc/settings.php:322
+#: inc/settings.php:384
 msgid "Settings were reset to their defaults."
 msgstr ""
 
-#: inc/settings.php:453 inc/settings.php:454 inc/settings.php:496
+#: inc/settings.php:515 inc/settings.php:516 inc/settings.php:558
 msgid "Cartiva Settings"
 msgstr ""
 
-#: inc/settings.php:489
+#: inc/settings.php:551
 msgid "Colors & fonts"
 msgstr ""
 
-#: inc/settings.php:490
+#: inc/settings.php:552
 msgid "Header & footer designs"
 msgstr ""
 
-#: inc/settings.php:491
+#: inc/settings.php:553
 msgid "Templates"
 msgstr ""
 
-#: inc/settings.php:492
+#: inc/settings.php:554
 msgid "Pages"
 msgstr ""
 
-#: inc/settings.php:497
+#: inc/settings.php:559
 msgid "Layout and behavior options for your store. Everything visual that can be edited block by block lives in the Site Editor:"
 msgstr ""
 
-#: inc/settings.php:510
+#: inc/settings.php:572
 msgid "Save settings"
 msgstr ""
 
-#: inc/settings.php:511
+#: inc/settings.php:573
 msgid "Reset to defaults"
+msgstr ""
+
+#: inc/site-features.php:44 inc/site-features.php:105
+msgid "Dark mode"
+msgstr ""
+
+#: inc/site-features.php:58
+msgid "Back to top"
+msgstr ""
+
+#. translators: Short for days in a countdown, after a number.
+#: inc/site-features.php:95
+msgctxt "countdown days"
+msgid "d"
+msgstr ""
+
+#. translators: Short for hours in a countdown, after a number.
+#: inc/site-features.php:97
+msgctxt "countdown hours"
+msgid "h"
+msgstr ""
+
+#. translators: Short for minutes in a countdown, after a number.
+#: inc/site-features.php:99
+msgctxt "countdown minutes"
+msgid "m"
+msgstr ""
+
+#. translators: Short for seconds in a countdown, after a number.
+#: inc/site-features.php:101
+msgctxt "countdown seconds"
+msgid "s"
+msgstr ""
+
+#: inc/site-features.php:102
+msgid "Filters"
+msgstr ""
+
+#: inc/site-features.php:103
+msgid "Close filters"
+msgstr ""
+
+#: inc/site-features.php:104
+msgid "Light mode"
 msgstr ""
 
 #: inc/woocommerce.php:108
@@ -2429,6 +2545,45 @@ msgstr ""
 
 #: inc/woocommerce.php:283
 msgid "Buy now"
+msgstr ""
+
+#. translators: %s: discount percentage, for example 25.
+#: inc/store-features.php:124
+msgid "-%s%%"
+msgstr ""
+
+#: inc/store-features.php:165
+msgid "Sale ends in"
+msgstr ""
+
+#. translators: 1: days, 2: hours.
+#: inc/store-features.php:167
+msgid "%1$sd %2$sh"
+msgstr ""
+
+#. translators: %s: number of items left.
+#: inc/store-features.php:208
+msgid "Select options"
+msgstr ""
+
+#: inc/store-features.php:208
+msgid "Add to cart"
+msgstr ""
+
+#: inc/store-features.php:224
+msgid "Search"
+msgstr ""
+
+#: inc/store-features.php:225
+msgid "Account"
+msgstr ""
+
+#: inc/store-features.php:226
+msgid "Cart"
+msgstr ""
+
+#: inc/store-features.php:241
+msgid "Shortcuts"
 msgstr ""
 
 #: inc/header.php:38
