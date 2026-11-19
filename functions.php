@@ -37,9 +37,16 @@ if ( ! function_exists( 'cartiva_setup' ) ) :
 				'single_image_width'    => 1000,
 			)
 		);
-		add_theme_support( 'wc-product-gallery-zoom' );
-		add_theme_support( 'wc-product-gallery-lightbox' );
-		add_theme_support( 'wc-product-gallery-slider' );
+		// Product gallery features, controlled in Appearance > Cartiva Settings.
+		if ( cartiva_get_setting( 'gallery_zoom' ) ) {
+			add_theme_support( 'wc-product-gallery-zoom' );
+		}
+		if ( cartiva_get_setting( 'gallery_lightbox' ) ) {
+			add_theme_support( 'wc-product-gallery-lightbox' );
+		}
+		if ( 'grid' !== cartiva_get_setting( 'gallery_layout' ) ) {
+			add_theme_support( 'wc-product-gallery-slider' );
+		}
 	}
 endif;
 add_action( 'after_setup_theme', 'cartiva_setup' );

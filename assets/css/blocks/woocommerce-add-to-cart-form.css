@@ -164,3 +164,15 @@
 @media (prefers-reduced-motion: reduce) {
 	.wp-block-woocommerce-add-to-cart-form .single_add_to_cart_button { transition: none; }
 }
+
+/* Buy now: full-width accent button under Add to cart */
+.wp-block-woocommerce-add-to-cart-form .single_add_to_cart_button.cartiva-buy-now {
+	flex: 1 1 100%;
+	background: var(--wp--preset--color--accent);
+	color: #fff;
+}
+.wp-block-woocommerce-add-to-cart-form .single_add_to_cart_button.cartiva-buy-now:hover {
+	background: var(--wp--preset--color--contrast);
+}
+/* Grouped products: the button row sits after the table */
+.wp-block-woocommerce-add-to-cart-form form.grouped_form .cartiva-buy-now { flex-basis: 100%; }

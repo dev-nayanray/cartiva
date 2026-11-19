@@ -157,6 +157,34 @@ function cartiva_settings_schema() {
 		'product' => array(
 			'title'  => __( 'Product page', 'cartiva' ),
 			'fields' => array(
+				'gallery_layout' => array(
+					'label'   => __( 'Image gallery', 'cartiva' ),
+					'type'    => 'select',
+					'default' => 'below',
+					'choices' => array(
+						'below' => __( 'Slider with thumbnails below', 'cartiva' ),
+						'left'  => __( 'Slider with thumbnails on the left', 'cartiva' ),
+						'grid'  => __( 'All images in a grid', 'cartiva' ),
+					),
+				),
+				'gallery_zoom'   => array(
+					'label'   => __( 'Image zoom', 'cartiva' ),
+					'type'    => 'checkbox',
+					'default' => true,
+					'text'    => __( 'Zoom into the product image on hover', 'cartiva' ),
+				),
+				'gallery_lightbox' => array(
+					'label'   => __( 'Full-screen gallery', 'cartiva' ),
+					'type'    => 'checkbox',
+					'default' => true,
+					'text'    => __( 'Open images full screen when they are clicked', 'cartiva' ),
+				),
+				'buy_now'        => array(
+					'label'   => __( 'Buy now button', 'cartiva' ),
+					'type'    => 'checkbox',
+					'default' => true,
+					'text'    => __( 'Show a "Buy now" button next to add to cart that goes straight to checkout', 'cartiva' ),
+				),
 				'sticky_summary' => array(
 					'label'   => __( 'Sticky product details', 'cartiva' ),
 					'type'    => 'checkbox',
@@ -254,6 +282,10 @@ function cartiva_settings_defaults() {
 			'account_profile' => true,
 			'account_tiles'   => true,
 			'account_track_link' => true,
+			'gallery_layout'     => 'below',
+			'gallery_zoom'       => true,
+			'gallery_lightbox'   => true,
+			'buy_now'            => true,
 			'wishlist_header'    => true,
 			'wishlist_buttons'   => true,
 			'wishlist_account'   => true,
@@ -572,6 +604,7 @@ function cartiva_settings_body_class( $classes ) {
 	if ( 'square' === cartiva_get_setting( 'sale_badge' ) ) {
 		$classes[] = 'cartiva-sale-badge-square';
 	}
+	$classes[] = 'cartiva-gallery-' . sanitize_html_class( cartiva_get_setting( 'gallery_layout' ) );
 	return $classes;
 }
 add_filter( 'body_class', 'cartiva_settings_body_class' );

@@ -258,3 +258,71 @@ function cartiva_wc_track_order_endpoint_url( $url, $endpoint ) {
 	return $orders;
 }
 add_filter( 'woocommerce_get_endpoint_url', 'cartiva_wc_track_order_endpoint_url', 10, 2 );
+
+/**
+ * "Buy now" button next to Add to cart on single product pages.
+ *
+ * It submits the normal add to cart form with one extra query argument, so
+ * WooCommerce adds the product as usual and the shopper lands on checkout.
+ */
+function cartiva_wc_buy_now_button() {
+	if ( ! cartiva_get_setting( 'buy_now' ) || ! is_product() ) {
+		return;
+	}
+	global $product;
+	if ( ! $product instanceof WC_Product || ! $product->is_purchasable() || ! $product->is_in_stock() || $product->is_type( 'external' ) ) {
+		return;
+	}
+	$action = add_query_arg( 'cartiva_buy_now', '1', $product->get_permalink() );
+	$value  = $product->is_type( 'variable' ) || $product->is_type( 'grouped' ) ? '' : (string) $product->get_id();
+	printf(
+		'<button type="submit" class="single_add_to_cart_button button alt cartiva-buy-now%1$s" formaction="%2$s"%3$s>%4$s</button>',
+		$product->is_type( 'variable' ) ? ' disabled wc-variation-selection-needed' : '',
+		esc_url( $action ),
+		'' !== $value ? ' name="add-to-cart" value="' . esc_attr( $value ) . '"' : '',
+		esc_html( apply_filters( 'cartiva_buy_now_text', __( 'Buy now', 'cartiva' ), $product ) )
+	);
+}
+add_action( 'woocommerce_after_add_to_cart_button', 'cartiva_wc_buy_now_button' );
+
+/**
+ * Is the current add to cart request a "Buy now"?
+ *
+ * @return bool
+ */
+function cartiva_wc_is_buy_now_request() {
+	// phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Read-only flag on WooCommerce's own add to cart request.
+	return cartiva_get_setting( 'buy_now' ) && isset( $_GET['cartiva_buy_now'] ) && '1' === sanitize_text_field( wp_unslash( $_GET['cartiva_buy_now'] ) );
+}
+
+/**
+ * Send "Buy now" shoppers straight to checkout, without the
+ * "added to your cart" notice.
+ *
+ * @param string $url Redirect URL.
+ * @return string
+ */
+function cartiva_wc_buy_now_redirect( $url ) {
+	if ( ! cartiva_wc_is_buy_now_request() ) {
+		return $url;
+	}
+	if ( function_exists( 'wc_get_notices' ) && function_exists( 'wc_set_notices' ) ) {
+		$notices = wc_get_notices();
+		unset( $notices['success'] );
+		wc_set_notices( $notices );
+	}
+	return wc_get_checkout_url();
+}
+add_filter( 'woocommerce_add_to_cart_redirect', 'cartiva_wc_buy_now_redirect', 99 );
+
+/**
+ * Grid gallery: every image is shown large, so use the single image size
+ * instead of the small thumbnail size WooCommerce uses without the slider.
+ *
+ * @param string $size Image size.
+ * @return string
+ */
+function cartiva_wc_grid_gallery_image_size( $size ) {
+	return 'grid' === cartiva_get_setting( 'gallery_layout' ) ? 'woocommerce_single' : $size;
+}
+add_filter( 'woocommerce_gallery_image_size', 'cartiva_wc_grid_gallery_image_size' );

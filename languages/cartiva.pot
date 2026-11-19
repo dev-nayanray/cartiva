@@ -125,7 +125,7 @@ msgstr ""
 msgid "Track order"
 msgstr ""
 
-#: patterns/footer-dark.php:58 patterns/footer-centered.php:29 patterns/footer.php:58 patterns/page-help-center.php:29 functions.php:129
+#: patterns/footer-dark.php:58 patterns/footer-centered.php:29 patterns/footer.php:58 patterns/page-help-center.php:29 functions.php:136
 msgid "FAQ"
 msgstr ""
 
@@ -1884,176 +1884,176 @@ msgstr ""
 msgid "Founder"
 msgstr ""
 
-#: functions.php:108
+#: functions.php:115
 msgid "Card"
 msgstr ""
 
-#: functions.php:115
+#: functions.php:122
 msgid "Sticky"
 msgstr ""
 
-#: functions.php:122 inc/settings.php:48 inc/settings.php:151
+#: functions.php:129 inc/settings.php:48 inc/settings.php:151
 msgid "Pill"
 msgstr ""
 
-#: functions.php:136
+#: functions.php:143
 msgid "Zoom on hover"
 msgstr ""
 
-#: functions.php:147
+#: functions.php:154
 msgid "Cartiva: Hero"
 msgstr ""
 
-#: functions.php:147
+#: functions.php:154
 msgid "Hero banners and the hero slider."
 msgstr ""
 
-#: functions.php:148
+#: functions.php:155
 msgid "Cartiva: Products"
 msgstr ""
 
-#: functions.php:148
+#: functions.php:155
 msgid "Product grids and carousels."
 msgstr ""
 
-#: functions.php:149
+#: functions.php:156
 msgid "Cartiva: Categories"
 msgstr ""
 
-#: functions.php:149
+#: functions.php:156
 msgid "Ways to show your shop categories."
 msgstr ""
 
-#: functions.php:150
+#: functions.php:157
 msgid "Cartiva: Blog"
 msgstr ""
 
-#: functions.php:150
+#: functions.php:157
 msgid "Blog and journal sections."
 msgstr ""
 
-#: functions.php:151
+#: functions.php:158
 msgid "Cartiva: Newsletter"
 msgstr ""
 
-#: functions.php:151
+#: functions.php:158
 msgid "Newsletter and sign-up sections."
 msgstr ""
 
-#: functions.php:152
+#: functions.php:159
 msgid "Cartiva: About"
 msgstr ""
 
-#: functions.php:152
+#: functions.php:159
 msgid "Brand story, numbers, values, team and timeline sections."
 msgstr ""
 
-#: functions.php:153
+#: functions.php:160
 msgid "Cartiva: Contact"
 msgstr ""
 
-#: functions.php:153
+#: functions.php:160
 msgid "Contact details, locations, hours and support sections."
 msgstr ""
 
-#: functions.php:167
+#: functions.php:174
 msgid "Cartiva: Shop"
 msgstr ""
 
-#: functions.php:168
+#: functions.php:175
 msgid "Store sections such as product grids, categories and promos."
 msgstr ""
 
-#: functions.php:174
+#: functions.php:181
 msgid "Cartiva: Starter homepages"
 msgstr ""
 
-#: functions.php:175
+#: functions.php:182
 msgid "Complete homepages for different kinds of stores."
 msgstr ""
 
-#: functions.php:181
+#: functions.php:188
 msgid "Cartiva: Pages"
 msgstr ""
 
-#: functions.php:182
+#: functions.php:189
 msgid "Complete page layouts: Contact, About, FAQ, Shipping & returns, Help center, Terms, Track order."
 msgstr ""
 
-#: functions.php:188
+#: functions.php:195
 msgid "Cartiva: Sections"
 msgstr ""
 
-#: functions.php:189
+#: functions.php:196
 msgid "General page sections."
 msgstr ""
 
-#: functions.php:265
+#: functions.php:272
 msgid "Search results"
 msgstr ""
 
-#: functions.php:266
+#: functions.php:273
 msgid "Searching…"
 msgstr ""
 
 #. translators: %s: Search query.
-#: functions.php:268
+#: functions.php:275
 msgid "No results for “%s”"
 msgstr ""
 
 #. translators: %s: Search query.
-#: functions.php:270
+#: functions.php:277
 msgid "See all results for “%s”"
 msgstr ""
 
-#: functions.php:271
+#: functions.php:278
 msgid "1 result found"
 msgstr ""
 
 #. translators: %d: Number of results.
-#: functions.php:273
+#: functions.php:280
 msgid "%d results found"
 msgstr ""
 
-#: functions.php:274
+#: functions.php:281
 msgid "Out of stock"
 msgstr ""
 
-#: functions.php:318
+#: functions.php:325
 msgid "carousel"
 msgstr ""
 
-#: functions.php:319
+#: functions.php:326
 msgid "slide"
 msgstr ""
 
 #. translators: 1: Slide number, 2: Number of slides.
-#: functions.php:321
+#: functions.php:328
 msgid "%1$s of %2$s"
 msgstr ""
 
-#: functions.php:322
+#: functions.php:329
 msgid "Previous"
 msgstr ""
 
-#: functions.php:323
+#: functions.php:330
 msgid "Next"
 msgstr ""
 
 #. translators: %s: Slide number.
-#: functions.php:325
+#: functions.php:332
 msgid "Go to slide %s"
 msgstr ""
 
-#: functions.php:326
+#: functions.php:333
 msgid "Featured"
 msgstr ""
 
-#: functions.php:327
+#: functions.php:334
 msgid "Products"
 msgstr ""
 
-#: functions.php:328
+#: functions.php:335
 msgid "Items"
 msgstr ""
 
@@ -2238,115 +2238,155 @@ msgid "Product page"
 msgstr ""
 
 #: inc/settings.php:161
-msgid "Sticky product details"
+msgid "Image gallery"
 msgstr ""
 
-#: inc/settings.php:164
-msgid "Keep title, price and add to cart in view while scrolling the gallery"
+#: inc/settings.php:165
+msgid "Slider with thumbnails below"
+msgstr ""
+
+#: inc/settings.php:166
+msgid "Slider with thumbnails on the left"
 msgstr ""
 
 #: inc/settings.php:167
+msgid "All images in a grid"
+msgstr ""
+
+#: inc/settings.php:171
+msgid "Image zoom"
+msgstr ""
+
+#: inc/settings.php:174
+msgid "Zoom into the product image on hover"
+msgstr ""
+
+#: inc/settings.php:177
+msgid "Full-screen gallery"
+msgstr ""
+
+#: inc/settings.php:180
+msgid "Open images full screen when they are clicked"
+msgstr ""
+
+#: inc/settings.php:183
+msgid "Buy now button"
+msgstr ""
+
+#: inc/settings.php:186
+msgid "Show a \"Buy now\" button next to add to cart that goes straight to checkout"
+msgstr ""
+
+#: inc/settings.php:189
+msgid "Sticky product details"
+msgstr ""
+
+#: inc/settings.php:192
+msgid "Keep title, price and add to cart in view while scrolling the gallery"
+msgstr ""
+
+#: inc/settings.php:195
 msgid "Delivery and returns list"
 msgstr ""
 
-#: inc/settings.php:170
+#: inc/settings.php:198
 msgid "Show the free delivery, returns and secure checkout list under the add to cart button"
 msgstr ""
 
 #. translators: %s: number of items in the wishlist.
-#: inc/settings.php:175 inc/wishlist.php:114 inc/wishlist.php:207 inc/wishlist.php:212
+#: inc/settings.php:203 inc/wishlist.php:114 inc/wishlist.php:207 inc/wishlist.php:212
 msgid "Wishlist"
 msgstr ""
 
-#: inc/settings.php:176
+#: inc/settings.php:204
 msgid "Used when a wishlist plugin is active: YITH WooCommerce Wishlist, TI WooCommerce Wishlist or WPC Smart Wishlist. Cartiva adds the heart icons and styling; the plugin saves the lists."
 msgstr ""
 
-#: inc/settings.php:179
+#: inc/settings.php:207
 msgid "Header wishlist icon"
 msgstr ""
 
-#: inc/settings.php:182
+#: inc/settings.php:210
 msgid "Show a heart icon with the item count next to the cart"
 msgstr ""
 
-#: inc/settings.php:185
+#: inc/settings.php:213
 msgid "Heart buttons"
 msgstr ""
 
-#: inc/settings.php:188
+#: inc/settings.php:216
 msgid "Show a heart button on product cards and next to add to cart on product pages"
 msgstr ""
 
-#: inc/settings.php:191
+#: inc/settings.php:219
 msgid "Account menu"
 msgstr ""
 
-#: inc/settings.php:194
+#: inc/settings.php:222
 msgid "Add \"Wishlist\" to the My Account menu when the plugin does not add it itself"
 msgstr ""
 
-#: inc/settings.php:199
+#: inc/settings.php:227
 msgid "My Account"
 msgstr ""
 
-#: inc/settings.php:202
+#: inc/settings.php:230
 msgid "Profile card"
 msgstr ""
 
-#: inc/settings.php:205
+#: inc/settings.php:233
 msgid "Show the customer name and email above the account menu"
 msgstr ""
 
-#: inc/settings.php:208
+#: inc/settings.php:236
 msgid "Dashboard tiles"
 msgstr ""
 
-#: inc/settings.php:211
+#: inc/settings.php:239
 msgid "Show quick links to orders, addresses and account details on the dashboard"
 msgstr ""
 
-#: inc/settings.php:214
+#: inc/settings.php:242
 msgid "Track order link"
 msgstr ""
 
-#: inc/settings.php:217
+#: inc/settings.php:245
 msgid "Add \"Track order\" to the account menu (links to your Track order page, or to Orders if there is none)"
 msgstr ""
 
-#: inc/settings.php:290
+#: inc/settings.php:322
 msgid "Settings were reset to their defaults."
 msgstr ""
 
-#: inc/settings.php:421 inc/settings.php:422 inc/settings.php:464
+#: inc/settings.php:453 inc/settings.php:454 inc/settings.php:496
 msgid "Cartiva Settings"
 msgstr ""
 
-#: inc/settings.php:457
+#: inc/settings.php:489
 msgid "Colors & fonts"
 msgstr ""
 
-#: inc/settings.php:458
+#: inc/settings.php:490
 msgid "Header & footer designs"
 msgstr ""
 
-#: inc/settings.php:459
+#: inc/settings.php:491
 msgid "Templates"
 msgstr ""
 
-#: inc/settings.php:460
+#: inc/settings.php:492
 msgid "Pages"
 msgstr ""
 
-#: inc/settings.php:465
+#: inc/settings.php:497
 msgid "Layout and behavior options for your store. Everything visual that can be edited block by block lives in the Site Editor:"
 msgstr ""
 
-#: inc/settings.php:478
+#: inc/settings.php:510
 msgid "Save settings"
 msgstr ""
 
-#: inc/settings.php:479
+#: inc/settings.php:511
 msgid "Reset to defaults"
 msgstr ""
 
@@ -2385,6 +2425,10 @@ msgstr ""
 
 #: inc/woocommerce.php:140
 msgid "See what is new in store"
+msgstr ""
+
+#: inc/woocommerce.php:283
+msgid "Buy now"
 msgstr ""
 
 #: inc/header.php:38
