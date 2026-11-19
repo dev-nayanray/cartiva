@@ -1,0 +1,9 @@
+/* Mini cart badge in the header. */
+.wc-block-mini-cart__badge {
+	background: var(--wp--preset--color--primary) !important;
+	color: var(--wp--preset--color--base) !important;
+	font-weight: 700;
+}
+.wc-block-mini-cart__button:hover {
+	opacity: .8;
+}

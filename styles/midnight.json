@@ -1,0 +1,28 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Midnight",
+	"settings": {
+		"color": {
+			"palette": [
+				{ "slug": "base", "name": "Base", "color": "#0e0f12" },
+				{ "slug": "surface", "name": "Surface", "color": "#17191e" },
+				{ "slug": "contrast", "name": "Contrast", "color": "#f3f3f1" },
+				{ "slug": "muted", "name": "Muted", "color": "#a3a7ae" },
+				{ "slug": "border", "name": "Border", "color": "#2a2d34" },
+				{ "slug": "primary", "name": "Primary", "color": "#8fa6ff" },
+				{ "slug": "primary-dark", "name": "Primary Dark", "color": "#6f89f0" },
+				{ "slug": "accent", "name": "Accent (Sale)", "color": "#ff6b5e" },
+				{ "slug": "success", "name": "Success", "color": "#4cc38a" }
+			]
+		}
+	},
+	"styles": {
+		"elements": {
+			"button": {
+				"color": { "background": "var:preset|color|contrast", "text": "var:preset|color|base" },
+				":hover": { "color": { "background": "var:preset|color|primary", "text": "var:preset|color|base" } }
+			}
+		}
+	}
+}

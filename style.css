@@ -1,0 +1,78 @@
+/*
+Theme Name: Cartiva
+Theme URI: https://godevs.net/themes/cartiva/
+Author: godevs
+Author URI: https://godevs.net/
+Description: Cartiva is a lightweight, modern and fast WooCommerce block theme built 100% for the WordPress Site Editor (Full Site Editing). No page builder, no jQuery, no web-font requests — just native blocks and a carefully tuned theme.json. It ships with ready-made templates for shop, product, search and blog, a header with mini-cart and account links, conversion-focused homepage patterns (hero, category grid, new arrivals, promo banner, trust badges, newsletter) and multiple style variations. Everything is editable visually and works with or without WooCommerce.
+Requires at least: 6.6
+Tested up to: 6.9
+Requires PHP: 7.4
+Version: 1.1.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: cartiva
+Tags: e-commerce, full-site-editing, block-patterns, block-styles, wide-blocks, one-column, two-columns, custom-colors, custom-logo, custom-menu, editor-style, featured-images, style-variations, translation-ready, rtl-language-support, threaded-comments
+*/
+
+/*
+ * Almost all styling lives in theme.json.
+ * This file only holds small rules that theme.json cannot express yet.
+ */
+
+/* Accessible focus ring */
+:where(a, button, input, select, textarea, summary):focus-visible {
+	outline: 2px solid var(--wp--preset--color--primary);
+	outline-offset: 2px;
+}
+
+/* Skip link already provided by core; keep it readable */
+.skip-link.screen-reader-text:focus {
+	background: var(--wp--preset--color--base);
+	color: var(--wp--preset--color--contrast);
+}
+
+/* Sticky header (opt-in via the "Sticky" block style on Group) */
+.is-style-cartiva-sticky {
+	position: sticky;
+	top: 0;
+	z-index: 50;
+}
+.admin-bar .is-style-cartiva-sticky {
+	top: var(--wp-admin--admin-bar--height, 32px);
+}
+
+/* Card block style for Group */
+.is-style-cartiva-card {
+	background: var(--wp--preset--color--base);
+	border: 1px solid var(--wp--preset--color--border);
+	border-radius: var(--wp--custom--radius--md);
+	transition: box-shadow .2s ease, transform .2s ease;
+}
+.is-style-cartiva-card:hover {
+	box-shadow: var(--wp--preset--shadow--soft);
+	transform: translateY(-2px);
+}
+
+/* Pill button block style */
+.wp-block-button.is-style-cartiva-pill .wp-block-button__link {
+	border-radius: 999px;
+}
+
+/* Image zoom on hover (Image block style) */
+.is-style-cartiva-zoom {
+	overflow: hidden;
+	border-radius: var(--wp--custom--radius--md);
+}
+.is-style-cartiva-zoom img {
+	transition: transform .5s ease;
+}
+.is-style-cartiva-zoom:hover img {
+	transform: scale(1.05);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*, *::before, *::after {
+		transition-duration: .01ms !important;
+		animation-duration: .01ms !important;
+	}
+}

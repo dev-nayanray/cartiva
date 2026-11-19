@@ -1,0 +1,37 @@
+/* Product card polish – loaded only when a Product Collection block is on the page. */
+.wp-block-woocommerce-product-collection .wc-block-product {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: .35rem;
+}
+.wp-block-woocommerce-product-collection .wc-block-components-product-image img {
+	aspect-ratio: 1 / 1;
+	object-fit: cover;
+	transition: transform .45s ease;
+}
+.wp-block-woocommerce-product-collection .wc-block-components-product-image {
+	overflow: hidden;
+	border-radius: var(--wp--custom--radius--md);
+	background: var(--wp--preset--color--surface);
+}
+.wp-block-woocommerce-product-collection .wc-block-product:hover .wc-block-components-product-image img {
+	transform: scale(1.04);
+}
+.wp-block-woocommerce-product-collection .wp-block-post-title {
+	margin-top: .5rem;
+}
+.wp-block-woocommerce-product-collection .wp-block-post-title a {
+	text-decoration: none;
+}
+.wp-block-woocommerce-product-collection .wc-block-components-product-button {
+	margin-top: auto;
+}
+.wp-block-woocommerce-product-collection del {
+	color: var(--wp--preset--color--muted);
+	font-weight: 400;
+}
+.wp-block-woocommerce-product-collection ins {
+	color: var(--wp--preset--color--accent);
+	text-decoration: none;
+}

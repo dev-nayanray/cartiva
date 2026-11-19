@@ -1,0 +1,340 @@
+# Copyright (C) 2026 godevs
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Cartiva 1.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/cartiva\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Domain: cartiva\n"
+
+#: patterns/brands.php:18
+msgid "Brands we carry"
+msgstr ""
+
+#: patterns/template-single.php:24 patterns/template-single-product.php:38
+msgid "Tags: "
+msgstr ""
+
+#: patterns/faq.php:14
+msgid "How long does shipping take?"
+msgstr ""
+
+#: patterns/faq.php:14
+msgid "Most orders ship within 1–2 business days and arrive in 3–5 business days. You will receive a tracking link by email."
+msgstr ""
+
+#: patterns/faq.php:15
+msgid "What is your return policy?"
+msgstr ""
+
+#: patterns/faq.php:15
+msgid "You can return unused items within 30 days of delivery for a full refund. Start a return from your account page."
+msgstr ""
+
+#: patterns/faq.php:16
+msgid "Which payment methods do you accept?"
+msgstr ""
+
+#: patterns/faq.php:16
+msgid "We accept all major cards and popular digital wallets. Every payment is processed over an encrypted connection."
+msgstr ""
+
+#: patterns/faq.php:17
+msgid "Do you ship internationally?"
+msgstr ""
+
+#: patterns/faq.php:17
+msgid "Yes, we ship to most countries. Shipping costs and delivery times are shown at checkout."
+msgstr ""
+
+#: patterns/faq.php:23
+msgid "Frequently asked questions"
+msgstr ""
+
+#: patterns/template-home.php:15 patterns/footer.php:69
+msgid "Blog"
+msgstr ""
+
+#: patterns/trust-badges.php:14
+msgid "Free shipping"
+msgstr ""
+
+#: patterns/trust-badges.php:14
+msgid "On all orders over $50."
+msgstr ""
+
+#: patterns/trust-badges.php:15
+msgid "Easy returns"
+msgstr ""
+
+#: patterns/trust-badges.php:15
+msgid "30 days, no questions asked."
+msgstr ""
+
+#: patterns/trust-badges.php:16
+msgid "Secure checkout"
+msgstr ""
+
+#: patterns/trust-badges.php:16
+msgid "Encrypted payments, always."
+msgstr ""
+
+#: patterns/trust-badges.php:17
+msgid "Real support"
+msgstr ""
+
+#: patterns/trust-badges.php:17
+msgid "Friendly humans, 7 days a week."
+msgstr ""
+
+#: patterns/hidden-404.php:15
+msgid "Page not found"
+msgstr ""
+
+#: patterns/hidden-404.php:18
+msgid "The page you are looking for does not exist or has moved. Try a search instead."
+msgstr ""
+
+#: patterns/hidden-404.php:20 patterns/template-search.php:15 patterns/hidden-no-results.php:15 patterns/header.php:41
+msgctxt "search label"
+msgid "Search"
+msgstr ""
+
+#: patterns/hidden-404.php:20
+msgctxt "search placeholder"
+msgid "Search…"
+msgstr ""
+
+#: patterns/hidden-404.php:20 patterns/template-search.php:15 patterns/hidden-no-results.php:15 patterns/header.php:41
+msgctxt "search button"
+msgid "Search"
+msgstr ""
+
+#: patterns/footer.php:23
+msgid "Thoughtfully made products, delivered fast. Built with Cartiva — a free, lightweight block theme for WooCommerce."
+msgstr ""
+
+#: patterns/footer.php:39
+msgid "Shop"
+msgstr ""
+
+#: patterns/footer.php:42 patterns/new-arrivals.php:20
+msgid "New arrivals"
+msgstr ""
+
+#: patterns/footer.php:43 patterns/best-sellers.php:19
+msgid "Best sellers"
+msgstr ""
+
+#: patterns/footer.php:44
+msgid "Sale"
+msgstr ""
+
+#: patterns/footer.php:52
+msgid "Help"
+msgstr ""
+
+#: patterns/footer.php:55
+msgid "Shipping"
+msgstr ""
+
+#: patterns/footer.php:56
+msgid "Returns"
+msgstr ""
+
+#: patterns/footer.php:57
+msgid "Contact"
+msgstr ""
+
+#: patterns/footer.php:65
+msgid "Company"
+msgstr ""
+
+#: patterns/footer.php:68
+msgid "About"
+msgstr ""
+
+#: patterns/footer.php:70
+msgid "Privacy"
+msgstr ""
+
+#. translators: %s: WordPress link.
+#: patterns/footer.php:88
+msgid "Designed with %s"
+msgstr ""
+
+#: patterns/footer.php:89
+msgid "https://wordpress.org"
+msgstr ""
+
+#: patterns/footer.php:95
+msgid "Visa · Mastercard · PayPal · Apple Pay"
+msgstr ""
+
+#: patterns/split-promo.php:14
+msgid "The home edit"
+msgstr ""
+
+#: patterns/split-promo.php:14
+msgid "Warm textures for cosy spaces."
+msgstr ""
+
+#: patterns/split-promo.php:14
+msgid "Shop home"
+msgstr ""
+
+#: patterns/split-promo.php:15
+msgid "Tech that fits"
+msgstr ""
+
+#: patterns/split-promo.php:15
+msgid "Smart gear for every day."
+msgstr ""
+
+#: patterns/split-promo.php:15
+msgid "Shop tech"
+msgstr ""
+
+#: patterns/on-sale.php:19
+msgid "On sale now"
+msgstr ""
+
+#: patterns/category-grid.php:14
+msgid "Home & Living"
+msgstr ""
+
+#: patterns/category-grid.php:15
+msgid "Accessories"
+msgstr ""
+
+#: patterns/category-grid.php:16
+msgid "Tech & Gadgets"
+msgstr ""
+
+#: patterns/category-grid.php:17
+msgid "Wellness"
+msgstr ""
+
+#: patterns/category-grid.php:25
+msgid "Shop by category"
+msgstr ""
+
+#: patterns/category-grid.php:28 inc/pattern-helpers.php:105
+msgid "View all"
+msgstr ""
+
+#: patterns/template-single-product.php:37
+msgid "Category: "
+msgstr ""
+
+#: patterns/template-single-product.php:55
+msgid "You may also like"
+msgstr ""
+
+#: patterns/newsletter.php:17
+msgid "Get 10% off your first order"
+msgstr ""
+
+#: patterns/newsletter.php:20
+msgid "Join our newsletter for early access to drops, restocks and members-only deals. Add your favourite newsletter form block here."
+msgstr ""
+
+#: patterns/newsletter.php:25
+msgid "Subscribe"
+msgstr ""
+
+#: patterns/featured-products.php:19
+msgid "Featured picks"
+msgstr ""
+
+#: patterns/promo-banner.php:21
+msgid "Up to 40% off"
+msgstr ""
+
+#: patterns/promo-banner.php:24
+msgid "Our biggest seasonal sale. Limited stock — while it lasts."
+msgstr ""
+
+#: patterns/promo-banner.php:31
+msgid "Shop the sale"
+msgstr ""
+
+#: patterns/hero.php:22
+msgid "New season collection"
+msgstr ""
+
+#: patterns/hero.php:25
+msgid "Everyday essentials, made to last."
+msgstr ""
+
+#: patterns/hero.php:28
+msgid "Discover quality products at honest prices. Fast delivery, secure checkout and free returns on every order."
+msgstr ""
+
+#: patterns/hero.php:33
+msgid "Shop now"
+msgstr ""
+
+#: patterns/hero.php:36
+msgid "Browse categories"
+msgstr ""
+
+#: patterns/hero.php:45
+msgid "Product arrangement on a soft background"
+msgstr ""
+
+#: patterns/template-shop.php:44 patterns/template-product-search.php:44
+msgid "No products were found matching your selection."
+msgstr ""
+
+#: patterns/hidden-no-results.php:13
+msgid "Sorry, nothing matched your search. Please try again with different keywords."
+msgstr ""
+
+#: patterns/header.php:20
+msgid "Free shipping on orders over $50 · 30-day easy returns"
+msgstr ""
+
+#: patterns/header.php:41
+msgctxt "search placeholder"
+msgid "Search products…"
+msgstr ""
+
+#: functions.php:95
+msgid "Card"
+msgstr ""
+
+#: functions.php:102
+msgid "Sticky"
+msgstr ""
+
+#: functions.php:109
+msgid "Pill"
+msgstr ""
+
+#: functions.php:116
+msgid "FAQ"
+msgstr ""
+
+#: functions.php:123
+msgid "Zoom on hover"
+msgstr ""
+
+#: functions.php:136
+msgid "Cartiva: Shop"
+msgstr ""
+
+#: functions.php:137
+msgid "Store sections such as product grids, categories and promos."
+msgstr ""
+
+#: functions.php:143
+msgid "Cartiva: Sections"
+msgstr ""
+
+#: functions.php:144
+msgid "General page sections."
+msgstr ""
+
