@@ -35,3 +35,11 @@
 	color: var(--wp--preset--color--accent);
 	text-decoration: none;
 }
+
+/* Shop sidebar: sticky on desktop, collapses above products on mobile. */
+@media (min-width: 782px) {
+	.cartiva-shop-sidebar {
+		position: sticky;
+		top: calc(var(--wp-admin--admin-bar--height, 0px) + 6rem);
+	}
+}

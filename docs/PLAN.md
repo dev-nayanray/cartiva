@@ -44,17 +44,17 @@ Performance budget (front page, WooCommerce active, no products cached):
 
 ### v1.1 — Store depth
 - [x] More patterns: best sellers, on-sale grid, featured products, split promo, brand logos, FAQ
-- [ ] Lookbook pattern
+- [x] Lookbook pattern
 - [x] Translation template (.pot)
-- Product filters sidebar layout (WooCommerce Product Filters block)
-- Typography presets (style variations for fonts) with locally bundled OFL fonts
-- Cart & checkout header pattern (distraction-free checkout)
+- [x] Product filters sidebar layout
+- [x] Typography presets with locally bundled OFL fonts (DM Sans, Lora)
+- [x] Distraction-free checkout header + cart/checkout templates
 
 ### v1.2 — Starter sites (as patterns)
-- Fashion, Electronics, Grocery, Furniture homepages as full-page patterns
+- [x] Fashion, Electronics, Grocery, Furniture homepages as full-page patterns
 - Section style variations (block style variations in theme.json)
 
-### Companion plugin (separate, on WordPress.org)
+### Companion plugin (separate, on WordPress.org) — built: dev-nayanray/cartiva-toolkit
 Features WordPress.org does not allow inside a theme — quick view, wishlist, variation swatches, sticky add-to-cart, AJAX search — go into a free "Cartiva Toolkit" plugin, recommended (not bundled) by the theme.
 
 ## 4. Quality checklist before each release

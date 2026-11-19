@@ -2,15 +2,107 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Cartiva 1.1.0\n"
+"Project-Id-Version: Cartiva 1.3.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/cartiva\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Domain: cartiva\n"
 
+#: patterns/starter-furniture.php:16
+msgid "The living room edit"
+msgstr ""
+
+#: patterns/starter-furniture.php:17
+msgid "Made for slow living."
+msgstr ""
+
+#: patterns/starter-furniture.php:18
+msgid "Solid wood furniture and handmade decor, built to be lived with and loved for years."
+msgstr ""
+
+#: patterns/starter-furniture.php:19
+msgid "Explore furniture"
+msgstr ""
+
+#: patterns/starter-furniture.php:21
+msgid "Wooden sofa on a warm background"
+msgstr ""
+
+#: patterns/starter-furniture.php:27 patterns/starter-fashion.php:27 patterns/starter-electronics.php:27 patterns/category-grid.php:25 patterns/starter-grocery.php:27
+msgid "Shop by category"
+msgstr ""
+
+#: patterns/starter-furniture.php:29
+msgid "Living room"
+msgstr ""
+
+#: patterns/starter-furniture.php:30
+msgid "Bedroom"
+msgstr ""
+
+#: patterns/starter-furniture.php:31
+msgid "Dining"
+msgstr ""
+
+#: patterns/starter-furniture.php:32
+msgid "Decor"
+msgstr ""
+
+#: patterns/starter-furniture.php:39 patterns/footer.php:42 patterns/new-arrivals.php:20
+msgid "New arrivals"
+msgstr ""
+
+#: patterns/starter-furniture.php:50
+msgid "Designer picks"
+msgstr ""
+
 #: patterns/brands.php:18
 msgid "Brands we carry"
+msgstr ""
+
+#: patterns/starter-fashion.php:16
+msgid "Spring / Summer drop"
+msgstr ""
+
+#: patterns/starter-fashion.php:17
+msgid "Wear what feels like you."
+msgstr ""
+
+#: patterns/starter-fashion.php:18
+msgid "Effortless pieces in natural fabrics, designed to mix, match and last for seasons."
+msgstr ""
+
+#: patterns/starter-fashion.php:19
+msgid "Shop the collection"
+msgstr ""
+
+#: patterns/starter-fashion.php:21
+msgid "Dress on a pink background"
+msgstr ""
+
+#: patterns/starter-fashion.php:29
+msgid "Women"
+msgstr ""
+
+#: patterns/starter-fashion.php:30
+msgid "Men"
+msgstr ""
+
+#: patterns/starter-fashion.php:31
+msgid "Shoes"
+msgstr ""
+
+#: patterns/starter-fashion.php:32 patterns/starter-electronics.php:32 patterns/category-grid.php:15
+msgid "Accessories"
+msgstr ""
+
+#: patterns/starter-fashion.php:39
+msgid "New in"
+msgstr ""
+
+#: patterns/starter-fashion.php:50
+msgid "Most loved"
 msgstr ""
 
 #: patterns/template-single.php:24 patterns/template-single-product.php:38
@@ -53,8 +145,48 @@ msgstr ""
 msgid "Frequently asked questions"
 msgstr ""
 
+#: patterns/checkout-footer.php:16
+msgid "Encrypted payments · 30-day returns · Real human support"
+msgstr ""
+
 #: patterns/template-home.php:15 patterns/footer.php:69
 msgid "Blog"
+msgstr ""
+
+#: patterns/lookbook.php:14
+msgid "Look 01"
+msgstr ""
+
+#: patterns/lookbook.php:14
+msgid "Quiet layers"
+msgstr ""
+
+#: patterns/lookbook.php:14
+msgid "Soft neutrals and relaxed shapes for slow weekends."
+msgstr ""
+
+#: patterns/lookbook.php:15
+msgid "Look 02"
+msgstr ""
+
+#: patterns/lookbook.php:15
+msgid "Bold basics"
+msgstr ""
+
+#: patterns/lookbook.php:15
+msgid "Saturated colour on clean, everyday pieces."
+msgstr ""
+
+#: patterns/lookbook.php:24
+msgid "Lookbook"
+msgstr ""
+
+#: patterns/lookbook.php:27
+msgid "Styled for the season"
+msgstr ""
+
+#: patterns/lookbook.php:52
+msgid "Shop the look →"
 msgstr ""
 
 #: patterns/trust-badges.php:14
@@ -89,6 +221,30 @@ msgstr ""
 msgid "Friendly humans, 7 days a week."
 msgstr ""
 
+#: patterns/template-shop-sidebar.php:30 patterns/template-shop-sidebar.php:33
+msgid "Active filters"
+msgstr ""
+
+#: patterns/template-shop-sidebar.php:44
+msgid "Categories"
+msgstr ""
+
+#: patterns/template-shop-sidebar.php:50 patterns/template-shop-sidebar.php:53
+msgid "Price"
+msgstr ""
+
+#: patterns/template-shop-sidebar.php:61 patterns/template-shop-sidebar.php:64
+msgid "Availability"
+msgstr ""
+
+#: patterns/template-shop-sidebar.php:72 patterns/template-shop-sidebar.php:75
+msgid "Rating"
+msgstr ""
+
+#: patterns/template-shop-sidebar.php:115 patterns/template-shop.php:44 patterns/template-product-search.php:44
+msgid "No products were found matching your selection."
+msgstr ""
+
 #: patterns/hidden-404.php:15
 msgid "Page not found"
 msgstr ""
@@ -118,10 +274,6 @@ msgstr ""
 
 #: patterns/footer.php:39
 msgid "Shop"
-msgstr ""
-
-#: patterns/footer.php:42 patterns/new-arrivals.php:20
-msgid "New arrivals"
 msgstr ""
 
 #: patterns/footer.php:43 patterns/best-sellers.php:19
@@ -173,6 +325,50 @@ msgstr ""
 msgid "Visa · Mastercard · PayPal · Apple Pay"
 msgstr ""
 
+#: patterns/starter-electronics.php:16
+msgid "Just launched"
+msgstr ""
+
+#: patterns/starter-electronics.php:17
+msgid "Tech that keeps up with you."
+msgstr ""
+
+#: patterns/starter-electronics.php:18
+msgid "Laptops, tablets, audio and smart home gear with fast shipping and a two-year warranty."
+msgstr ""
+
+#: patterns/starter-electronics.php:19 patterns/split-promo.php:15
+msgid "Shop tech"
+msgstr ""
+
+#: patterns/starter-electronics.php:21
+msgid "Laptop and tablet on a blue background"
+msgstr ""
+
+#: patterns/starter-electronics.php:29
+msgid "Laptops & tablets"
+msgstr ""
+
+#: patterns/starter-electronics.php:30
+msgid "Audio"
+msgstr ""
+
+#: patterns/starter-electronics.php:31
+msgid "Smart home"
+msgstr ""
+
+#: patterns/starter-electronics.php:39
+msgid "Featured deals"
+msgstr ""
+
+#: patterns/starter-electronics.php:50
+msgid "Flash sale"
+msgstr ""
+
+#: patterns/starter-electronics.php:61
+msgid "Top rated"
+msgstr ""
+
 #: patterns/split-promo.php:14
 msgid "The home edit"
 msgstr ""
@@ -193,20 +389,12 @@ msgstr ""
 msgid "Smart gear for every day."
 msgstr ""
 
-#: patterns/split-promo.php:15
-msgid "Shop tech"
-msgstr ""
-
 #: patterns/on-sale.php:19
 msgid "On sale now"
 msgstr ""
 
 #: patterns/category-grid.php:14
 msgid "Home & Living"
-msgstr ""
-
-#: patterns/category-grid.php:15
-msgid "Accessories"
 msgstr ""
 
 #: patterns/category-grid.php:16
@@ -217,12 +405,16 @@ msgstr ""
 msgid "Wellness"
 msgstr ""
 
-#: patterns/category-grid.php:25
-msgid "Shop by category"
-msgstr ""
-
 #: patterns/category-grid.php:28 inc/pattern-helpers.php:105
 msgid "View all"
+msgstr ""
+
+#: patterns/checkout-header.php:28
+msgid "🔒 Secure checkout"
+msgstr ""
+
+#: patterns/checkout-header.php:31
+msgid "← Back to cart"
 msgstr ""
 
 #: patterns/template-single-product.php:37
@@ -243,6 +435,50 @@ msgstr ""
 
 #: patterns/newsletter.php:25
 msgid "Subscribe"
+msgstr ""
+
+#: patterns/starter-grocery.php:16
+msgid "Fresh every morning"
+msgstr ""
+
+#: patterns/starter-grocery.php:17
+msgid "Groceries delivered in an hour."
+msgstr ""
+
+#: patterns/starter-grocery.php:18
+msgid "Seasonal produce, pantry staples and local favourites, picked fresh and brought to your door."
+msgstr ""
+
+#: patterns/starter-grocery.php:19
+msgid "Start shopping"
+msgstr ""
+
+#: patterns/starter-grocery.php:21
+msgid "Fresh fruit on a green background"
+msgstr ""
+
+#: patterns/starter-grocery.php:29
+msgid "Fruit & veg"
+msgstr ""
+
+#: patterns/starter-grocery.php:30
+msgid "Bakery"
+msgstr ""
+
+#: patterns/starter-grocery.php:31
+msgid "Dairy & eggs"
+msgstr ""
+
+#: patterns/starter-grocery.php:32
+msgid "Pantry"
+msgstr ""
+
+#: patterns/starter-grocery.php:39
+msgid "This week's offers"
+msgstr ""
+
+#: patterns/starter-grocery.php:50
+msgid "Customer favourites"
 msgstr ""
 
 #: patterns/featured-products.php:19
@@ -273,7 +509,7 @@ msgstr ""
 msgid "Discover quality products at honest prices. Fast delivery, secure checkout and free returns on every order."
 msgstr ""
 
-#: patterns/hero.php:33
+#: patterns/hero.php:33 inc/pattern-helpers.php:146
 msgid "Shop now"
 msgstr ""
 
@@ -283,10 +519,6 @@ msgstr ""
 
 #: patterns/hero.php:45
 msgid "Product arrangement on a soft background"
-msgstr ""
-
-#: patterns/template-shop.php:44 patterns/template-product-search.php:44
-msgid "No products were found matching your selection."
 msgstr ""
 
 #: patterns/hidden-no-results.php:13
@@ -331,10 +563,18 @@ msgid "Store sections such as product grids, categories and promos."
 msgstr ""
 
 #: functions.php:143
-msgid "Cartiva: Sections"
+msgid "Cartiva: Starter homepages"
 msgstr ""
 
 #: functions.php:144
+msgid "Complete homepages for different kinds of stores."
+msgstr ""
+
+#: functions.php:150
+msgid "Cartiva: Sections"
+msgstr ""
+
+#: functions.php:151
 msgid "General page sections."
 msgstr ""
 

@@ -1,0 +1,15 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Lora & DM Sans",
+	"slug": "typography-lora-dm-sans",
+	"styles": {
+		"typography": { "fontFamily": "var:preset|font-family|dm-sans" },
+		"elements": {
+			"heading": { "typography": { "fontFamily": "var:preset|font-family|lora", "fontWeight": "600", "letterSpacing": "-0.01em" } }
+		},
+		"blocks": {
+			"core/site-title": { "typography": { "fontFamily": "var:preset|font-family|lora", "fontWeight": "700" } }
+		}
+	}
+}

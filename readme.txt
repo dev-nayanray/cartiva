@@ -3,7 +3,7 @@ Contributors: godevs
 Requires at least: 6.6
 Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 1.1.0
+Stable tag: 1.3.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,11 +14,13 @@ A lightweight, modern and fast WooCommerce block theme for the Site Editor.
 Cartiva is a free, lightweight and modern WooCommerce block theme built entirely for the WordPress Site Editor (Full Site Editing).
 
 * 100% blocks: no page builder, no jQuery, no theme options panel.
-* Zero web-font requests: a native system font stack keeps pages fast.
+* Fast by default: a native system font stack, with optional bundled DM Sans and Lora fonts that load only when selected.
 * Per-block CSS: styles load only on pages where the block is used.
 * WooCommerce ready: shop, product, category, tag and product search templates built with WooCommerce blocks, plus a header with mini-cart and account icon.
 * Homepage patterns: hero, trust badges, category grid, new arrivals, best sellers, on sale, featured products, split promo, brands, FAQ, promo banner and newsletter.
-* Style variations: Default, Midnight (dark), Sand and Fresh.
+* Style variations: Default, Midnight (dark), Sand and Fresh, plus three typography presets.
+* Starter homepages: Fashion, Electronics, Grocery and Furniture.
+* Shop layout with a filter sidebar and a distraction-free checkout.
 * Works without WooCommerce as a clean blog/business theme.
 
 == Installation ==
@@ -39,6 +41,16 @@ No. Store templates and patterns are used only when WooCommerce is active.
 Go to Appearance > Editor > Templates > Front Page and edit the blocks, or insert patterns from the "Cartiva: Shop" category.
 
 == Changelog ==
+
+= 1.3.0 =
+* Added starter homepages: Fashion, Electronics, Grocery and Furniture (Patterns > Cartiva: Starter homepages).
+* Bundled DM Sans and Lora web fonts (SIL OFL) with typography presets: System (fastest), DM Sans, Lora & DM Sans.
+* Sand style variation now uses Lora headings.
+
+= 1.2.0 =
+* Added "Shop with filter sidebar" layout (categories, price, availability and rating filters).
+* Added distraction-free checkout template with a minimal checkout header and footer.
+* Added cart template and Lookbook pattern.
 
 = 1.1.0 =
 * Added patterns: best sellers, on sale, featured products, split promo, brand strip, FAQ.
@@ -65,6 +77,16 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
 == Resources ==
+
+* DM Sans
+  License: SIL Open Font License 1.1, https://openfontlicense.org
+  Source: https://github.com/googlefonts/dm-fonts
+  Copyright 2014 The DM Sans Project Authors. Subset to Latin for the web.
+
+* Lora
+  License: SIL Open Font License 1.1, https://openfontlicense.org
+  Source: https://github.com/cyrealtype/Lora-Cyrillic
+  Copyright 2011 The Lora Project Authors. Unmodified, packaged as WOFF.
 
 * Images in /assets/images and screenshot.png
   License: GPLv2 or later, https://www.gnu.org/licenses/gpl-2.0.html

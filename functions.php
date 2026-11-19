@@ -138,6 +138,13 @@ function cartiva_register_pattern_categories() {
 		)
 	);
 	register_block_pattern_category(
+		'cartiva-starter',
+		array(
+			'label'       => __( 'Cartiva: Starter homepages', 'cartiva' ),
+			'description' => __( 'Complete homepages for different kinds of stores.', 'cartiva' ),
+		)
+	);
+	register_block_pattern_category(
 		'cartiva-sections',
 		array(
 			'label'       => __( 'Cartiva: Sections', 'cartiva' ),

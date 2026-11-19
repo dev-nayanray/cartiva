@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "System (fastest)",
+	"slug": "typography-system",
+	"styles": {
+		"typography": { "fontFamily": "var:preset|font-family|system" },
+		"elements": {
+			"heading": { "typography": { "fontFamily": "var:preset|font-family|system" } }
+		}
+	}
+}

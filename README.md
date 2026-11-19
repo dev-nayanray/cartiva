@@ -4,13 +4,13 @@
 
 **A free, lightweight and modern WooCommerce block theme for WordPress.**
 
-Built 100% for the Site Editor (Full Site Editing): no page builder, no jQuery, no web-font requests.
+Built 100% for the Site Editor (Full Site Editing): no page builder, no jQuery, system fonts by default.
 
 [![WordPress](https://img.shields.io/badge/WordPress-6.6%2B-21759b?logo=wordpress&logoColor=white)](https://wordpress.org/)
 [![WooCommerce](https://img.shields.io/badge/WooCommerce-ready-7f54b3?logo=woocommerce&logoColor=white)](https://woocommerce.com/)
 [![PHP](https://img.shields.io/badge/PHP-7.4%2B-777bb4?logo=php&logoColor=white)](https://www.php.net/)
 [![License: GPL v2+](https://img.shields.io/badge/License-GPLv2%2B-blue.svg)](https://www.gnu.org/licenses/gpl-2.0.html)
-[![Version](https://img.shields.io/badge/version-1.1.0-111111)](readme.txt)
+[![Version](https://img.shields.io/badge/version-1.3.0-111111)](readme.txt)
 
 [Features](#features) · [Installation](#installation) · [Patterns](#block-patterns) · [Development](#development) · [Roadmap](#roadmap)
 
@@ -30,11 +30,14 @@ Cartiva is developed by **[godevs](https://godevs.net/)** and is being prepared 
 
 | | |
 |---|---|
-| ⚡ **Performance first** | Zero theme JavaScript, zero font requests (native system font stack) and per-block CSS loaded only where a block is used. |
+| ⚡ **Performance first** | Zero theme JavaScript, system fonts by default (bundled DM Sans and Lora load only when chosen) and per-block CSS loaded only where a block is used. |
 | 🧱 **True block theme** | Templates, template parts and patterns, all designed in `theme.json`. No custom options panel. |
 | 🛒 **WooCommerce ready** | Shop, product category, product tag, product search and single product templates built with WooCommerce blocks. |
 | 🧭 **Store header** | Announcement bar, logo, navigation, product search, account icon and mini-cart. |
-| 🎨 **Style variations** | Default, Midnight (dark), Sand and Fresh, switchable with one click. |
+| 🎨 **Style variations** | Default, Midnight (dark), Sand and Fresh, plus typography presets: System, DM Sans, Lora & DM Sans. |
+| 🏪 **Starter homepages** | Fashion, Electronics, Grocery and Furniture homepages, inserted with one click. |
+| 🔎 **Shop with filters** | Optional shop layout with a sticky sidebar: categories, price, availability and rating filters. |
+| 🧾 **Distraction-free checkout** | Checkout uses a minimal header and footer to reduce drop-off. |
 | 🧩 **Block styles** | Card, Sticky, Pill button, Image zoom and FAQ accordion. |
 | 🌍 **Translation ready** | Every string is translatable and ships with `languages/cartiva.pot`; RTL compatible. |
 | 🔌 **Works without WooCommerce** | Store sections only load when WooCommerce is active, so it also works as a clean blog or business theme. |
@@ -80,14 +83,21 @@ Then activate **Cartiva** under **Appearance → Themes**.
 | `single` · `page` · `archive` | `taxonomy-product_cat` · `taxonomy-product_tag` |
 | `search` · `404` | `product-search-results` |
 | `page-no-title` · `page-wide` (custom) | `single-product` |
+| | `page-cart` · `page-checkout` (distraction-free) |
 
 ## Block patterns
 
-**Cartiva: Shop:** Hero banner · Trust badges · Category grid · New arrivals · Best sellers · On sale · Featured products · Split promo · Promo banner · Brand strip · Full shop homepage
+**Cartiva: Starter homepages:** Fashion · Electronics · Grocery · Furniture
+
+**Cartiva: Shop:** Hero banner · Trust badges · Category grid · New arrivals · Best sellers · On sale · Featured products · Split promo · Promo banner · Brand strip · Lookbook · Shop with filter sidebar · Full shop homepage
 
 **Cartiva: Sections:** FAQ accordion · Newsletter call to action · Posts grid
 
 > Product patterns require WooCommerce and appear only when it is active.
+
+### Switching the shop to the sidebar layout
+
+Go to **Appearance → Editor → Templates → Product Catalog**, open the template options and choose **Shop with filter sidebar** (or insert it from the pattern library).
 
 ## Project structure
 
@@ -102,9 +112,10 @@ cartiva/
 ├── templates/             Block templates (.html)
 ├── parts/                 Header and footer template parts
 ├── patterns/              Translatable PHP block patterns
-├── styles/                Style variations
+├── styles/                Color variations and typography presets
 ├── assets/
 │   ├── css/blocks/          Per-block CSS, loaded on demand
+│   ├── fonts/               DM Sans and Lora (SIL OFL)
 │   └── images/              Pattern images (original, GPL)
 ├── languages/             Translation template (cartiva.pot)
 └── docs/PLAN.md           Market analysis and roadmap
@@ -142,9 +153,14 @@ wp i18n make-pot . languages/cartiva.pot --domain=cartiva
 
 - [x] **v1.0:** Core templates, WooCommerce templates, header/footer, style variations
 - [x] **v1.1:** Best sellers, on sale, featured, split promo, brands and FAQ patterns; translation template
-- [ ] **v1.2:** Shop layout with filter sidebar, distraction-free checkout header, lookbook pattern
-- [ ] **v1.3:** Starter homepages (Fashion, Electronics, Grocery, Furniture) and locally bundled OFL fonts
-- [ ] **Cartiva Toolkit** (separate free plugin): quick view, wishlist, variation swatches, sticky add-to-cart
+- [x] **v1.2:** Shop layout with filter sidebar, distraction-free checkout, lookbook pattern
+- [x] **v1.3:** Starter homepages (Fashion, Electronics, Grocery, Furniture) and locally bundled OFL fonts
+- [x] **Cartiva Toolkit** (separate free plugin): quick view, wishlist, variation swatches, sticky add-to-cart
+- [ ] **v1.4:** WordPress.org submission, live demo site, documentation site on godevs.net
+
+## Companion plugin
+
+**[Cartiva Toolkit](https://github.com/dev-nayanray/cartiva-toolkit)** adds the store features WordPress.org does not allow inside a theme: quick view, wishlist, variation swatches and a sticky add-to-cart bar. It's free, optional and works with any block theme.
 
 See [`docs/PLAN.md`](docs/PLAN.md) for the full market analysis and plan.
 
@@ -168,6 +184,7 @@ See [`readme.txt`](readme.txt) for the full changelog.
 - Designed and developed by **[godevs](https://godevs.net/)**, lead developer [Nayan Ray](https://nayanray.com/)
 - Built on [WordPress](https://wordpress.org/) and [WooCommerce](https://woocommerce.com/) blocks
 - Images in `assets/images` and `screenshot.png` are original works created for Cartiva and released under GPLv2 or later
+- [DM Sans](https://github.com/googlefonts/dm-fonts) and [Lora](https://github.com/cyrealtype/Lora-Cyrillic) fonts, SIL Open Font License 1.1
 
 ## License
 
