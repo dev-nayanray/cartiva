@@ -259,61 +259,6 @@ function cartiva_wc_track_order_endpoint_url( $url, $endpoint ) {
 }
 add_filter( 'woocommerce_get_endpoint_url', 'cartiva_wc_track_order_endpoint_url', 10, 2 );
 
-/**
- * "Buy now" button next to Add to cart on single product pages.
- *
- * It submits the normal add to cart form with one extra query argument, so
- * WooCommerce adds the product as usual and the shopper lands on checkout.
- */
-function cartiva_wc_buy_now_button() {
-	if ( ! cartiva_get_setting( 'buy_now' ) || ! is_product() ) {
-		return;
-	}
-	global $product;
-	if ( ! $product instanceof WC_Product || ! $product->is_purchasable() || ! $product->is_in_stock() || $product->is_type( 'external' ) ) {
-		return;
-	}
-	$action = add_query_arg( 'cartiva_buy_now', '1', $product->get_permalink() );
-	$value  = $product->is_type( 'variable' ) || $product->is_type( 'grouped' ) ? '' : (string) $product->get_id();
-	printf(
-		'<button type="submit" class="single_add_to_cart_button button alt cartiva-buy-now%1$s" formaction="%2$s"%3$s>%4$s</button>',
-		$product->is_type( 'variable' ) ? ' disabled wc-variation-selection-needed' : '',
-		esc_url( $action ),
-		'' !== $value ? ' name="add-to-cart" value="' . esc_attr( $value ) . '"' : '',
-		esc_html( apply_filters( 'cartiva_buy_now_text', __( 'Buy now', 'cartiva' ), $product ) )
-	);
-}
-add_action( 'woocommerce_after_add_to_cart_button', 'cartiva_wc_buy_now_button' );
-
-/**
- * Is the current add to cart request a "Buy now"?
- *
- * @return bool
- */
-function cartiva_wc_is_buy_now_request() {
-	// phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Read-only flag on WooCommerce's own add to cart request.
-	return cartiva_get_setting( 'buy_now' ) && isset( $_GET['cartiva_buy_now'] ) && '1' === sanitize_text_field( wp_unslash( $_GET['cartiva_buy_now'] ) );
-}
-
-/**
- * Send "Buy now" shoppers straight to checkout, without the
- * "added to your cart" notice.
- *
- * @param string $url Redirect URL.
- * @return string
- */
-function cartiva_wc_buy_now_redirect( $url ) {
-	if ( ! cartiva_wc_is_buy_now_request() ) {
-		return $url;
-	}
-	if ( function_exists( 'wc_get_notices' ) && function_exists( 'wc_set_notices' ) ) {
-		$notices = wc_get_notices();
-		unset( $notices['success'] );
-		wc_set_notices( $notices );
-	}
-	return wc_get_checkout_url();
-}
-add_filter( 'woocommerce_add_to_cart_redirect', 'cartiva_wc_buy_now_redirect', 99 );
 
 /**
  * Grid gallery: every image is shown large, so use the single image size
@@ -326,3 +271,77 @@ function cartiva_wc_grid_gallery_image_size( $size ) {
 	return 'grid' === cartiva_get_setting( 'gallery_layout' ) ? 'woocommerce_single' : $size;
 }
 add_filter( 'woocommerce_gallery_image_size', 'cartiva_wc_grid_gallery_image_size' );
+
+/**
+ * Names of the payment methods enabled in WooCommerce > Settings > Payments.
+ *
+ * Display only: nothing about checkout or payments is changed.
+ *
+ * @return array<string,string> Gateway ID => title.
+ */
+function cartiva_wc_enabled_payment_methods() {
+	static $methods = null;
+	if ( null !== $methods ) {
+		return $methods;
+	}
+	$methods = array();
+	if ( ! function_exists( 'WC' ) || ! WC()->payment_gateways() ) {
+		return $methods;
+	}
+	foreach ( WC()->payment_gateways()->payment_gateways() as $id => $gateway ) {
+		if ( isset( $gateway->enabled ) && 'yes' === $gateway->enabled ) {
+			$title = trim( wp_strip_all_tags( (string) $gateway->get_title() ) );
+			if ( '' !== $title ) {
+				$methods[ (string) $id ] = $title;
+			}
+		}
+	}
+	/**
+	 * Filters the payment methods listed on product pages.
+	 *
+	 * @param array<string,string> $methods Gateway ID => title.
+	 */
+	$methods = (array) apply_filters( 'cartiva_payment_methods', $methods );
+	return $methods;
+}
+
+/**
+ * Icon group for a payment method: cash, bank or card.
+ *
+ * @param string $id Gateway ID.
+ * @return string
+ */
+function cartiva_wc_payment_icon( $id ) {
+	if ( 'cod' === $id || false !== strpos( $id, 'cash' ) ) {
+		return 'cash';
+	}
+	if ( in_array( $id, array( 'bacs', 'cheque' ), true ) || false !== strpos( $id, 'bank' ) ) {
+		return 'bank';
+	}
+	if ( preg_match( '/bkash|nagad|rocket|upay|mobile|wallet|momo|mpesa/', $id ) ) {
+		return 'mobile';
+	}
+	return 'card';
+}
+
+/**
+ * "We accept" row under the add to cart form.
+ *
+ * @param string $content Block HTML.
+ * @return string
+ */
+function cartiva_wc_payment_methods_row( $content ) {
+	if ( is_admin() || ! cartiva_get_setting( 'payment_methods' ) || ! is_product() ) {
+		return $content;
+	}
+	$methods = cartiva_wc_enabled_payment_methods();
+	if ( empty( $methods ) ) {
+		return $content;
+	}
+	$items = '';
+	foreach ( $methods as $id => $title ) {
+		$items .= '<li class="cartiva-pay-methods__item cartiva-pay-methods__item--' . esc_attr( cartiva_wc_payment_icon( (string) $id ) ) . '">' . esc_html( $title ) . '</li>';
+	}
+	return $content . '<div class="cartiva-pay-methods"><p class="cartiva-pay-methods__label">' . esc_html__( 'We accept', 'cartiva' ) . '</p><ul class="cartiva-pay-methods__list">' . $items . '</ul></div>';
+}
+add_filter( 'render_block_woocommerce/add-to-cart-form', 'cartiva_wc_payment_methods_row', 30 );

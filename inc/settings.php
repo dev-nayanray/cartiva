@@ -197,11 +197,11 @@ function cartiva_settings_schema() {
 					'default' => true,
 					'text'    => __( 'Open images full screen when they are clicked', 'cartiva' ),
 				),
-				'buy_now'        => array(
-					'label'   => __( 'Buy now button', 'cartiva' ),
+				'payment_methods' => array(
+					'label'   => __( 'Payment methods', 'cartiva' ),
 					'type'    => 'checkbox',
 					'default' => true,
-					'text'    => __( 'Show a "Buy now" button next to add to cart that goes straight to checkout', 'cartiva' ),
+					'text'    => __( 'Show the payment methods you have enabled in WooCommerce under the add to cart button', 'cartiva' ),
 				),
 				'sticky_summary' => array(
 					'label'   => __( 'Sticky product details', 'cartiva' ),
@@ -345,7 +345,7 @@ function cartiva_settings_defaults() {
 			'gallery_layout'     => 'below',
 			'gallery_zoom'       => true,
 			'gallery_lightbox'   => true,
-			'buy_now'            => true,
+			'payment_methods'    => true,
 			'sticky_cart' => true,
 			'hover_image' => true,
 			'sale_percent' => true,

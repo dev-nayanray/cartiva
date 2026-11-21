@@ -486,6 +486,13 @@
 			"postTypes": [
 				"page"
 			]
+		},
+		{
+			"name": "single-product-landing",
+			"title": "Product landing page",
+			"postTypes": [
+				"product"
+			]
 		}
 	]
 }

@@ -165,14 +165,46 @@
 	.wp-block-woocommerce-add-to-cart-form .single_add_to_cart_button { transition: none; }
 }
 
-/* Buy now: full-width accent button under Add to cart */
-.wp-block-woocommerce-add-to-cart-form .single_add_to_cart_button.cartiva-buy-now {
-	flex: 1 1 100%;
-	background: var(--wp--preset--color--accent);
-	color: #fff;
+/* Payment methods row ("We accept") */
+.cartiva-pay-methods {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: .5rem .75rem;
+	margin-top: 1.1rem;
+	padding-top: 1rem;
+	border-top: 1px solid var(--wp--preset--color--border);
 }
-.wp-block-woocommerce-add-to-cart-form .single_add_to_cart_button.cartiva-buy-now:hover {
-	background: var(--wp--preset--color--contrast);
+.cartiva-pay-methods__label {
+	margin: 0;
+	color: var(--wp--preset--color--muted);
+	font-size: var(--wp--preset--font-size--x-small);
+	font-weight: 700;
+	letter-spacing: .06em;
+	text-transform: uppercase;
 }
-/* Grouped products: the button row sits after the table */
-.wp-block-woocommerce-add-to-cart-form form.grouped_form .cartiva-buy-now { flex-basis: 100%; }
+.cartiva-pay-methods__list { display: flex; flex-wrap: wrap; gap: .4rem; margin: 0; padding: 0; list-style: none; }
+.cartiva-pay-methods__item {
+	display: inline-flex;
+	align-items: center;
+	gap: .4rem;
+	padding: .35rem .7rem;
+	border: 1px solid var(--wp--preset--color--border);
+	border-radius: 999px;
+	background: var(--wp--preset--color--base);
+	font-size: var(--wp--preset--font-size--small);
+	font-weight: 600;
+}
+.cartiva-pay-methods__item::before {
+	content: "";
+	width: 1rem;
+	height: 1rem;
+	flex: none;
+	background: var(--wp--preset--color--primary);
+	-webkit-mask: var(--cartiva-pay-icon) center / contain no-repeat;
+	mask: var(--cartiva-pay-icon) center / contain no-repeat;
+}
+.cartiva-pay-methods__item--cash { --cartiva-pay-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='2' y='6' width='20' height='12' rx='2'/%3E%3Ccircle cx='12' cy='12' r='2.5'/%3E%3C/svg%3E"); }
+.cartiva-pay-methods__item--bank { --cartiva-pay-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 10h18M5 10v8M9.5 10v8M14.5 10v8M19 10v8M3 20h18M12 3l9 5H3z'/%3E%3C/svg%3E"); }
+.cartiva-pay-methods__item--mobile { --cartiva-pay-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='7' y='2' width='10' height='20' rx='2'/%3E%3Cpath d='M11 18h2'/%3E%3C/svg%3E"); }
+.cartiva-pay-methods__item--card { --cartiva-pay-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='2' y='5' width='20' height='14' rx='2'/%3E%3Cpath d='M2 10h20M6 15h4'/%3E%3C/svg%3E"); }

@@ -15,7 +15,7 @@ Cartiva is a free, fast and modern WooCommerce block theme. You design everythin
 
 = Designs =
 
-* 80+ patterns in the pattern library: 10 hero sections (including full-width and boxed sliders), 10 product sections, 8 category layouts, 8 blog sections, 5 newsletter, 6 about and 5 contact sections.
+* 90+ patterns in the pattern library: 10 hero sections (including full-width and boxed sliders), 10 product sections, 8 category layouts, 8 blog sections, 8 landing page sections, 5 newsletter, 6 about and 5 contact sections.
 * 6 header designs and 5 footer designs you can swap at any time.
 * 4 starter homepages: Fashion, Electronics, Grocery and Furniture.
 * 7 ready-made pages: Contact, About, FAQ, Shipping & returns, Help center, Terms and Track order.
@@ -25,7 +25,8 @@ Cartiva is a free, fast and modern WooCommerce block theme. You design everythin
 
 * Templates for shop, categories, tags, product search, product, cart, checkout and My Account, built with WooCommerce blocks.
 * Live search in the header: product suggestions with image and price after two characters, with keyboard support.
-* Product page: three gallery layouts, hover zoom, full-screen view, a Buy now button straight to checkout, sale countdown, low stock note and a sticky add to cart bar.
+* Product page: three gallery layouts, hover zoom, full-screen view, a "We accept" row with your enabled payment methods, sale countdown, low stock note and a sticky add to cart bar.
+* Product landing page template: turn any product into a one-product sales page (offer bar, benefits, steps, reviews, guarantee, questions and order band) from the product's Template setting.
 * Shop: second image on hover, discount sale badges (-25%), card styles and a filter sidebar that becomes a drawer on phones.
 * A modern My Account area with a profile card, quick-link tiles, icon menu and a Track order link.
 * Mobile bottom bar with Shop, Search, Wishlist, Account and Cart.
@@ -63,7 +64,7 @@ No. Store templates, patterns and settings appear only when WooCommerce is activ
 
 = Where are the theme settings? =
 
-Go to Appearance > Cartiva Settings. It has sections for Design, Header, Site extras, Shop, Product page, Store extras, Wishlist and My Account, with a menu at the top to jump between them. Colors, fonts and spacing are edited in Appearance > Editor > Styles. All settings are saved in one option, cartiva_settings, and can be reset with one click.
+Go to Appearance > Cartiva Settings. It has design and layout options for Design, Header, Site extras, Shop, Product page, Store extras, Wishlist and My Account, with a menu at the top to jump between them. Colors, fonts and spacing are edited in Appearance > Editor > Styles. All settings are saved in one option, cartiva_settings, and can be reset with one click.
 
 = How do I change the header or footer? =
 
@@ -97,9 +98,13 @@ Go to Appearance > Editor > Templates > Product Catalog and insert the "Shop wit
 
 Saving wishlists, quick view and variation swatches are plugin features under the WordPress.org theme rules. For wishlists, install the free YITH WooCommerce Wishlist, TI WooCommerce Wishlist or WPC Smart Wishlist plugin and Cartiva adds a header heart with a count, hearts on product cards and product pages, a Wishlist account link and matching styles. For quick view or swatches, use any WooCommerce plugin from WordPress.org.
 
-= How does the Buy now button work? =
+= How do I make a product landing page? =
 
-It adds the product to the cart with WooCommerce's own form and goes straight to checkout. For products with options, it waits until the shopper chooses them. Turn it off in Cartiva Settings > Product page.
+Edit the product, open the Template setting in the sidebar and choose "Product landing page". The product gets a one-product sales page with an offer bar, image gallery, price, countdown, order form, payment methods, benefits, steps, details and reviews, guarantee, questions and an "Order now" band. Every "Order now" button jumps to the order form. Change the sections in Appearance > Editor > Templates > Product landing page, or build your own page with the patterns in "Cartiva: Landing".
+
+= Which payment methods show on product pages? =
+
+The "We accept" row lists the payment methods you have enabled in WooCommerce > Settings > Payments, such as Cash on delivery, bKash or card. It updates on its own when you enable or disable a method. Turn it off in Cartiva Settings > Product page.
 
 = Why is there no sale countdown or low stock note on a product? =
 

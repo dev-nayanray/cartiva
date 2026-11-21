@@ -125,7 +125,7 @@ msgstr ""
 msgid "Track order"
 msgstr ""
 
-#: patterns/footer-dark.php:58 patterns/footer-centered.php:29 patterns/footer.php:58 patterns/page-help-center.php:29 functions.php:226
+#: patterns/footer-dark.php:58 patterns/footer-centered.php:29 patterns/footer.php:58 patterns/landing-faq.php:23 patterns/page-help-center.php:29 functions.php:232
 msgid "FAQ"
 msgstr ""
 
@@ -297,6 +297,10 @@ msgstr ""
 
 #: patterns/category-pills.php:33
 msgid "Popular right now"
+msgstr ""
+
+#: patterns/template-product-landing.php:50
+msgid "Details and reviews"
 msgstr ""
 
 #: patterns/brands.php:18
@@ -472,6 +476,46 @@ msgstr ""
 msgid "Shop home"
 msgstr ""
 
+#: patterns/landing-guarantee.php:19
+msgid "Money-back guarantee"
+msgstr ""
+
+#: patterns/landing-guarantee.php:19
+msgid "Full refund within 7 days if you are not happy."
+msgstr ""
+
+#: patterns/landing-guarantee.php:20
+msgid "Check before you pay"
+msgstr ""
+
+#: patterns/landing-guarantee.php:20
+msgid "Open the parcel, check the product, then pay."
+msgstr ""
+
+#: patterns/landing-guarantee.php:21
+msgid "Delivery everywhere"
+msgstr ""
+
+#: patterns/landing-guarantee.php:21
+msgid "We deliver to every city and district."
+msgstr ""
+
+#: patterns/landing-cta.php:17
+msgid "Last chance"
+msgstr ""
+
+#: patterns/landing-cta.php:20
+msgid "Ready to order?"
+msgstr ""
+
+#: patterns/landing-cta.php:23
+msgid "Stock is limited at this price. Order now and pay when it arrives."
+msgstr ""
+
+#: patterns/landing-cta.php:28 patterns/landing-hero.php:43
+msgid "Order now"
+msgstr ""
+
 #: patterns/product-carousel.php:19
 msgid "Trending now"
 msgstr ""
@@ -605,7 +649,7 @@ msgstr ""
 msgid "On all orders over $50."
 msgstr ""
 
-#: patterns/trust-badges.php:15
+#: patterns/trust-badges.php:15 patterns/landing-benefits.php:27
 msgid "Easy returns"
 msgstr ""
 
@@ -617,7 +661,7 @@ msgstr ""
 msgid "Encrypted payments, always."
 msgstr ""
 
-#: patterns/trust-badges.php:17
+#: patterns/trust-badges.php:17 patterns/landing-benefits.php:28
 msgid "Real support"
 msgstr ""
 
@@ -916,6 +960,14 @@ msgstr ""
 msgid "Track your order"
 msgstr ""
 
+#: patterns/landing-offer.php:17
+msgid "Today only: free delivery and 30% off"
+msgstr ""
+
+#: patterns/landing-offer.php:20
+msgid "Order now →"
+msgstr ""
+
 #: patterns/blog-magazine.php:20
 msgid "The magazine"
 msgstr ""
@@ -1006,6 +1058,38 @@ msgstr ""
 
 #: patterns/footer-newsletter.php:24
 msgid "New drops, restocks and members-only deals, straight to your inbox."
+msgstr ""
+
+#: patterns/landing-steps.php:14
+msgid "Place your order"
+msgstr ""
+
+#: patterns/landing-steps.php:14
+msgid "Fill in your name, phone number and address. It takes one minute."
+msgstr ""
+
+#: patterns/landing-steps.php:15
+msgid "We confirm by phone"
+msgstr ""
+
+#: patterns/landing-steps.php:15
+msgid "Our team calls to confirm your order and delivery time."
+msgstr ""
+
+#: patterns/landing-steps.php:16
+msgid "Pay when it arrives"
+msgstr ""
+
+#: patterns/landing-steps.php:16
+msgid "Check the product at your door, then pay the courier."
+msgstr ""
+
+#: patterns/landing-steps.php:22
+msgid "3 easy steps"
+msgstr ""
+
+#: patterns/landing-steps.php:25
+msgid "How it works"
 msgstr ""
 
 #: patterns/page-contact.php:18
@@ -1116,7 +1200,7 @@ msgstr ""
 msgid "Quick answers"
 msgstr ""
 
-#: patterns/page-contact.php:91 patterns/contact-faq.php:14 patterns/page-faq.php:32
+#: patterns/page-contact.php:91 patterns/landing-faq.php:14 patterns/contact-faq.php:14 patterns/page-faq.php:32
 msgid "How long does delivery take?"
 msgstr ""
 
@@ -1150,6 +1234,38 @@ msgstr ""
 
 #: patterns/split-promo.php:16
 msgid "Smart gear for every day."
+msgstr ""
+
+#: patterns/landing-benefits.php:17
+msgid "Benefits"
+msgstr ""
+
+#: patterns/landing-benefits.php:20
+msgid "Why customers love it"
+msgstr ""
+
+#: patterns/landing-benefits.php:25
+msgid "Premium quality"
+msgstr ""
+
+#: patterns/landing-benefits.php:25
+msgid "Made from durable materials and checked by hand before it ships."
+msgstr ""
+
+#: patterns/landing-benefits.php:26
+msgid "Fast delivery"
+msgstr ""
+
+#: patterns/landing-benefits.php:26
+msgid "At your door in 2-3 days, with tracking on every order."
+msgstr ""
+
+#: patterns/landing-benefits.php:27
+msgid "Not happy? Return it within 7 days for a full refund."
+msgstr ""
+
+#: patterns/landing-benefits.php:28
+msgid "Call or message us any day. A real person answers."
 msgstr ""
 
 #: patterns/template-track-order.php:20
@@ -1190,6 +1306,38 @@ msgstr ""
 
 #: patterns/checkout-header.php:31
 msgid "← Back to cart"
+msgstr ""
+
+#: patterns/landing-faq.php:14
+msgid "Most orders arrive in 2-3 days in the city and 3-5 days elsewhere."
+msgstr ""
+
+#: patterns/landing-faq.php:15
+msgid "Can I pay on delivery?"
+msgstr ""
+
+#: patterns/landing-faq.php:15
+msgid "Yes. Pay the courier when the product arrives. Other payment methods are shown at checkout."
+msgstr ""
+
+#: patterns/landing-faq.php:16
+msgid "What if I do not like it?"
+msgstr ""
+
+#: patterns/landing-faq.php:16
+msgid "Return it within 7 days in its original condition for a full refund."
+msgstr ""
+
+#: patterns/landing-faq.php:17
+msgid "How do I know my order is confirmed?"
+msgstr ""
+
+#: patterns/landing-faq.php:17
+msgid "We call or message you after you order, and you can track it any time on the Track order page."
+msgstr ""
+
+#: patterns/landing-faq.php:26
+msgid "Questions before you order"
 msgstr ""
 
 #: patterns/contact-faq.php:14
@@ -1484,6 +1632,50 @@ msgstr ""
 msgid "Email support"
 msgstr ""
 
+#: patterns/landing-comparison.php:14
+msgid "Quality checked before shipping"
+msgstr ""
+
+#: patterns/landing-comparison.php:15
+msgid "Cash on delivery"
+msgstr ""
+
+#: patterns/landing-comparison.php:16
+msgid "7-day returns"
+msgstr ""
+
+#: patterns/landing-comparison.php:17
+msgid "Delivery in 2-3 days"
+msgstr ""
+
+#: patterns/landing-comparison.php:17
+msgid "5-7 days"
+msgstr ""
+
+#: patterns/landing-comparison.php:18
+msgid "Support every day"
+msgstr ""
+
+#: patterns/landing-comparison.php:24
+msgid "The difference"
+msgstr ""
+
+#: patterns/landing-comparison.php:27
+msgid "Why choose us"
+msgstr ""
+
+#: patterns/landing-comparison.php:30
+msgid "What you get"
+msgstr ""
+
+#: patterns/landing-comparison.php:30
+msgid "Us"
+msgstr ""
+
+#: patterns/landing-comparison.php:30
+msgid "Others"
+msgstr ""
+
 #: patterns/page-track-order.php:18
 msgid "Where do I find my order ID?"
 msgstr ""
@@ -1594,6 +1786,30 @@ msgstr ""
 
 #: patterns/category-cards.php:23
 msgid "Shop the collections"
+msgstr ""
+
+#: patterns/landing-hero.php:14
+msgid "Free delivery in 2-3 days"
+msgstr ""
+
+#: patterns/landing-hero.php:14
+msgid "Cash on delivery available"
+msgstr ""
+
+#: patterns/landing-hero.php:14
+msgid "7-day easy returns"
+msgstr ""
+
+#: patterns/landing-hero.php:23
+msgid "Limited offer: 30% off"
+msgstr ""
+
+#: patterns/landing-hero.php:26
+msgid "The one product your day was missing."
+msgstr ""
+
+#: patterns/landing-hero.php:29
+msgid "Say in one sentence what problem it solves and why it is better. Keep it short and clear."
 msgstr ""
 
 #: patterns/about-team.php:15 patterns/about-story.php:40
@@ -1884,176 +2100,184 @@ msgstr ""
 msgid "Founder"
 msgstr ""
 
-#: functions.php:205
+#: functions.php:211
 msgid "Card"
 msgstr ""
 
-#: functions.php:212
+#: functions.php:218
 msgid "Sticky"
 msgstr ""
 
-#: functions.php:219 inc/settings.php:48 inc/settings.php:169
+#: functions.php:225 inc/settings.php:48 inc/settings.php:169
 msgid "Pill"
 msgstr ""
 
-#: functions.php:233
+#: functions.php:239
 msgid "Zoom on hover"
 msgstr ""
 
-#: functions.php:244
+#: functions.php:250
 msgid "Cartiva: Hero"
 msgstr ""
 
-#: functions.php:244
+#: functions.php:250
 msgid "Hero banners and the hero slider."
 msgstr ""
 
-#: functions.php:245
+#: functions.php:251
 msgid "Cartiva: Products"
 msgstr ""
 
-#: functions.php:245
+#: functions.php:251
 msgid "Product grids and carousels."
 msgstr ""
 
-#: functions.php:246
+#: functions.php:252
 msgid "Cartiva: Categories"
 msgstr ""
 
-#: functions.php:246
+#: functions.php:252
 msgid "Ways to show your shop categories."
 msgstr ""
 
-#: functions.php:247
+#: functions.php:253
 msgid "Cartiva: Blog"
 msgstr ""
 
-#: functions.php:247
+#: functions.php:253
 msgid "Blog and journal sections."
 msgstr ""
 
-#: functions.php:248
+#: functions.php:254
 msgid "Cartiva: Newsletter"
 msgstr ""
 
-#: functions.php:248
+#: functions.php:254
 msgid "Newsletter and sign-up sections."
 msgstr ""
 
-#: functions.php:249
+#: functions.php:255
 msgid "Cartiva: About"
 msgstr ""
 
-#: functions.php:249
+#: functions.php:255
 msgid "Brand story, numbers, values, team and timeline sections."
 msgstr ""
 
-#: functions.php:250
+#: functions.php:256
 msgid "Cartiva: Contact"
 msgstr ""
 
-#: functions.php:250
+#: functions.php:256
 msgid "Contact details, locations, hours and support sections."
 msgstr ""
 
-#: functions.php:264
-msgid "Cartiva: Shop"
+#: functions.php:257
+msgid "Cartiva: Landing"
 msgstr ""
 
-#: functions.php:265
-msgid "Store sections such as product grids, categories and promos."
+#: functions.php:257
+msgid "Sales page sections for a single product: hero, benefits, steps, comparison, guarantee, questions and order band."
 msgstr ""
 
 #: functions.php:271
-msgid "Cartiva: Starter homepages"
+msgid "Cartiva: Shop"
 msgstr ""
 
 #: functions.php:272
-msgid "Complete homepages for different kinds of stores."
+msgid "Store sections such as product grids, categories and promos."
 msgstr ""
 
 #: functions.php:278
-msgid "Cartiva: Pages"
+msgid "Cartiva: Starter homepages"
 msgstr ""
 
 #: functions.php:279
-msgid "Complete page layouts: Contact, About, FAQ, Shipping & returns, Help center, Terms, Track order."
+msgid "Complete homepages for different kinds of stores."
 msgstr ""
 
 #: functions.php:285
-msgid "Cartiva: Sections"
+msgid "Cartiva: Pages"
 msgstr ""
 
 #: functions.php:286
+msgid "Complete page layouts: Contact, About, FAQ, Shipping & returns, Help center, Terms, Track order."
+msgstr ""
+
+#: functions.php:292
+msgid "Cartiva: Sections"
+msgstr ""
+
+#: functions.php:293
 msgid "General page sections."
 msgstr ""
 
-#: functions.php:364
+#: functions.php:371
 msgid "Search results"
 msgstr ""
 
-#: functions.php:365
+#: functions.php:372
 msgid "Searching…"
 msgstr ""
 
 #. translators: %s: Search query.
-#: functions.php:367
+#: functions.php:374
 msgid "No results for “%s”"
 msgstr ""
 
 #. translators: %s: Search query.
-#: functions.php:369
+#: functions.php:376
 msgid "See all results for “%s”"
 msgstr ""
 
-#: functions.php:370
+#: functions.php:377
 msgid "1 result found"
 msgstr ""
 
 #. translators: %d: Number of results.
-#: functions.php:372
+#: functions.php:379
 msgid "%d results found"
 msgstr ""
 
-#: functions.php:373
+#: functions.php:380
 msgid "Out of stock"
 msgstr ""
 
-#: functions.php:417
+#: functions.php:424
 msgid "carousel"
 msgstr ""
 
-#: functions.php:418
+#: functions.php:425
 msgid "slide"
 msgstr ""
 
 #. translators: 1: Slide number, 2: Number of slides.
-#: functions.php:420
+#: functions.php:427
 msgid "%1$s of %2$s"
 msgstr ""
 
-#: functions.php:421
+#: functions.php:428
 msgid "Previous"
 msgstr ""
 
-#: functions.php:422
+#: functions.php:429
 msgid "Next"
 msgstr ""
 
 #. translators: %s: Slide number.
-#: functions.php:424
+#: functions.php:431
 msgid "Go to slide %s"
 msgstr ""
 
-#: functions.php:425
+#: functions.php:432
 msgid "Featured"
 msgstr ""
 
-#: functions.php:426
+#: functions.php:433
 msgid "Products"
 msgstr ""
 
-#: functions.php:427
+#: functions.php:434
 msgid "Items"
 msgstr ""
 
@@ -2294,11 +2518,11 @@ msgid "Open images full screen when they are clicked"
 msgstr ""
 
 #: inc/settings.php:201
-msgid "Buy now button"
+msgid "Payment methods"
 msgstr ""
 
 #: inc/settings.php:204
-msgid "Show a \"Buy now\" button next to add to cart that goes straight to checkout"
+msgid "Show the payment methods you have enabled in WooCommerce under the add to cart button"
 msgstr ""
 
 #: inc/settings.php:207
@@ -2594,8 +2818,8 @@ msgstr ""
 msgid "See what is new in store"
 msgstr ""
 
-#: inc/woocommerce.php:283
-msgid "Buy now"
+#: inc/woocommerce.php:345
+msgid "We accept"
 msgstr ""
 
 #. translators: %s: discount percentage, for example 25.

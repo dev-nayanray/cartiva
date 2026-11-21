@@ -105,6 +105,7 @@ All patterns are in **Appearance → Editor → Patterns** (or the block inserte
 | **Cartiva: Newsletter** (5) | Centered · Split with image · Dark band · Card with perks · Inline bar |
 | **Cartiva: About** (6) | Our story · Numbers band · Values · Meet the team · Timeline · Mission statement |
 | **Cartiva: Contact** (5) | Contact cards · Details with image · Store locations · Support band · Questions and contact |
+| **Cartiva: Landing** (8) | Product hero · Benefits · How it works · Comparison table · Guarantee band · Questions · Order now band · Offer bar |
 | **Cartiva: Pages** | Contact · About · FAQ · Shipping & returns · Help center · Terms · Track order |
 | **Cartiva: Starter homepages** | Fashion · Electronics · Grocery · Furniture |
 | **Cartiva: Shop / Sections** | Trust badges · Split promo · Promo banner · Brands · Lookbook · FAQ · Shop with filter sidebar |
@@ -118,6 +119,8 @@ All patterns are in **Appearance → Editor → Patterns** (or the block inserte
 - In the editor, slides stay stacked for easy editing.
 
 > Product patterns require WooCommerce and appear only when it is active.
+>
+> **Product landing page:** choose the "Product landing page" template on any product to get a one-product sales page with an order form, countdown, payment methods, benefits, reviews and FAQ. The product page also shows a "We accept" row with your enabled payment methods.
 >
 > **Store extras** (each can be switched off): sticky add to cart bar, second image on hover, discount badges (-25%), sale countdown and low stock note, filters drawer on phones, mobile bottom bar, back to top and a visitor dark mode switch.
 >

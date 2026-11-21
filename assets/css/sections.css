@@ -573,3 +573,63 @@
 	.cartiva-category-mosaic .wp-block-cover:not(.cartiva-mosaic-large) p { font-size: var(--wp--preset--font-size--small) !important; }
 	.wp-block-columns:has(.cartiva-category-list) .wp-block-image img { aspect-ratio: 16 / 9 !important; }
 }
+
+/* ==========================================================================
+   Landing sections (Cartiva: Landing and the Product landing page template)
+   ========================================================================== */
+.cartiva-landing-step {
+	position: relative;
+	height: 100%;
+	padding: 1.75rem;
+	border-radius: var(--wp--custom--radius--md);
+	background: var(--wp--preset--color--base);
+	box-sizing: border-box;
+}
+.cartiva-landing-step > * { margin: 0; }
+.cartiva-landing-step__number {
+	display: grid;
+	place-items: center;
+	width: 2.75rem;
+	height: 2.75rem;
+	margin-bottom: .5rem !important;
+	border-radius: 50%;
+	background: var(--wp--preset--color--contrast);
+	color: var(--wp--preset--color--base);
+	font-size: 1.1rem;
+	font-weight: 800;
+}
+.cartiva-compare-table table {
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 0;
+	overflow: hidden;
+	border: 1px solid var(--wp--preset--color--border);
+	border-radius: var(--wp--custom--radius--md);
+}
+.cartiva-compare-table th,
+.cartiva-compare-table td {
+	padding: .9rem 1.1rem;
+	border: 0;
+	border-bottom: 1px solid var(--wp--preset--color--border);
+	text-align: center;
+}
+.cartiva-compare-table th:first-child,
+.cartiva-compare-table td:first-child { text-align: left; }
+.cartiva-compare-table tbody tr:last-child td { border-bottom: 0; }
+.cartiva-compare-table thead th { background: var(--wp--preset--color--surface); font-size: var(--wp--preset--font-size--small); }
+.cartiva-compare-table th:nth-child(2),
+.cartiva-compare-table td:nth-child(2) {
+	background: color-mix(in srgb, var(--wp--preset--color--primary) 8%, var(--wp--preset--color--base));
+	color: var(--wp--preset--color--primary);
+	font-weight: 800;
+}
+.cartiva-compare-table td:nth-child(3) { color: var(--wp--preset--color--muted); }
+.cartiva-landing-guarantee { border-block: 1px solid var(--wp--preset--color--border); }
+.cartiva-landing-offer { gap: .5rem 1.5rem; text-align: center; }
+.cartiva-landing-offer p { margin: 0; }
+.cartiva-landing-offer a { color: inherit; text-underline-offset: 3px; }
+.cartiva-landing-order { scroll-margin-top: 7rem; }
+.cartiva-product-landing .cartiva-product-summary .wp-block-post-title { line-height: 1.1; }
+@media (max-width: 781px) {
+	.cartiva-compare-table th, .cartiva-compare-table td { padding: .7rem .6rem; font-size: var(--wp--preset--font-size--small); }
+}

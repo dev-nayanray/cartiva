@@ -103,6 +103,12 @@ function cartiva_section_style_classes() {
 		'cartiva-legal',
 		'cartiva-location',
 		'cartiva-mission',
+		'cartiva-landing-step',
+		'cartiva-compare-table',
+		'cartiva-landing-offer',
+		'cartiva-landing-guarantee',
+		'cartiva-landing-order',
+		'cartiva-product-landing',
 		'cartiva-mosaic',
 		'cartiva-mosaic-large',
 		'cartiva-newsletter-card',
@@ -248,6 +254,7 @@ function cartiva_register_pattern_categories() {
 		'cartiva-newsletter' => array( __( 'Cartiva: Newsletter', 'cartiva' ), __( 'Newsletter and sign-up sections.', 'cartiva' ) ),
 		'cartiva-about'      => array( __( 'Cartiva: About', 'cartiva' ), __( 'Brand story, numbers, values, team and timeline sections.', 'cartiva' ) ),
 		'cartiva-contact'    => array( __( 'Cartiva: Contact', 'cartiva' ), __( 'Contact details, locations, hours and support sections.', 'cartiva' ) ),
+		'cartiva-landing'    => array( __( 'Cartiva: Landing', 'cartiva' ), __( 'Sales page sections for a single product: hero, benefits, steps, comparison, guarantee, questions and order band.', 'cartiva' ) ),
 	);
 	foreach ( $cartiva_categories as $cartiva_slug => $cartiva_category ) {
 		register_block_pattern_category(
