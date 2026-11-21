@@ -1,0 +1,67 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Noir & Gold",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"name": "Base",
+					"color": "#fbf9f4"
+				},
+				{
+					"slug": "surface",
+					"name": "Surface",
+					"color": "#f2ede2"
+				},
+				{
+					"slug": "contrast",
+					"name": "Contrast",
+					"color": "#141210"
+				},
+				{
+					"slug": "muted",
+					"name": "Muted",
+					"color": "#5f5a50"
+				},
+				{
+					"slug": "border",
+					"name": "Border",
+					"color": "#e4dccb"
+				},
+				{
+					"slug": "primary",
+					"name": "Primary",
+					"color": "#141210"
+				},
+				{
+					"slug": "primary-dark",
+					"name": "Primary Dark",
+					"color": "#000000"
+				},
+				{
+					"slug": "accent",
+					"name": "Accent (Sale)",
+					"color": "#8a5a0b"
+				},
+				{
+					"slug": "success",
+					"name": "Success",
+					"color": "#3f6212"
+				}
+			]
+		}
+	},
+	"styles": {
+		"elements": {
+			"heading": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|lora",
+					"fontWeight": "600",
+					"letterSpacing": "-0.01em"
+				}
+			}
+		}
+	}
+}

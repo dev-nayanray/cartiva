@@ -1,0 +1,56 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Bazaar",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"name": "Base",
+					"color": "#fffdf8"
+				},
+				{
+					"slug": "surface",
+					"name": "Surface",
+					"color": "#fdf3e2"
+				},
+				{
+					"slug": "contrast",
+					"name": "Contrast",
+					"color": "#2b1608"
+				},
+				{
+					"slug": "muted",
+					"name": "Muted",
+					"color": "#6b5544"
+				},
+				{
+					"slug": "border",
+					"name": "Border",
+					"color": "#f1e1c7"
+				},
+				{
+					"slug": "primary",
+					"name": "Primary",
+					"color": "#b91c1c"
+				},
+				{
+					"slug": "primary-dark",
+					"name": "Primary Dark",
+					"color": "#8f1414"
+				},
+				{
+					"slug": "accent",
+					"name": "Accent (Sale)",
+					"color": "#a3460a"
+				},
+				{
+					"slug": "success",
+					"name": "Success",
+					"color": "#166534"
+				}
+			]
+		}
+	}
+}

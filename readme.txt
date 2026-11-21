@@ -3,7 +3,7 @@ Contributors: godevs
 Requires at least: 6.9
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 1.0.0
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,14 +16,14 @@ Cartiva is a free, fast and modern WooCommerce block theme. You design everythin
 = Designs =
 
 * 90+ patterns in the pattern library: 10 hero sections (including full-width and boxed sliders), 10 product sections, 8 category layouts, 8 blog sections, 8 landing page sections, 5 newsletter, 6 about and 5 contact sections.
-* 6 header designs and 5 footer designs you can swap at any time.
+* 6 header designs and 5 footer designs you can swap at any time, plus a distraction-free landing header and footer (logo, call-to-order number and policy links) for sales pages.
 * 4 starter homepages: Fashion, Electronics, Grocery and Furniture.
 * 7 ready-made pages: Contact, About, FAQ, Shipping & returns, Help center, Terms and Track order.
-* 3 color styles (Fresh, Midnight, Sand), 3 font sets and 4 section styles.
+* 7 color styles (Fresh, Midnight, Sand, Blossom, Circuit, Noir & Gold, Bazaar), 3 font sets and 4 section styles.
 
 = Store =
 
-* Templates for shop, categories, tags, product search, product, cart, checkout and My Account, built with WooCommerce blocks.
+* Templates for shop, categories, tags, product attributes, product search, product, cart, checkout, order confirmation and My Account, built with WooCommerce blocks.
 * Live search in the header: product suggestions with image and price after two characters, with keyboard support.
 * Product page: three gallery layouts, hover zoom, full-screen view, a "We accept" row with your enabled payment methods, sale countdown, low stock note and a sticky add to cart bar.
 * Product landing page template: turn any product into a one-product sales page (offer bar, benefits, steps, reviews, guarantee, questions and order band) from the product's Template setting.
@@ -31,12 +31,19 @@ Cartiva is a free, fast and modern WooCommerce block theme. You design everythin
 * A modern My Account area with a profile card, quick-link tiles, icon menu and a Track order link.
 * Mobile bottom bar with Shop, Search, Wishlist, Account and Cart.
 * Wishlist support for the free YITH, TI and WPC wishlist plugins.
+* Made for the free Cartiva Commerce plugin (optional): funnel step designs (checkout, upsell, downsell, thank you), and the header and mobile bar carts open its slide-out cart.
+
+= Languages =
+
+* Bangla (bn_BD) translation included.
+* Bangla text uses good Bangla fonts available on the visitor's device (Noto Sans Bengali, Hind Siliguri, Nirmala UI), with no extra download.
+* Right-to-left languages such as Arabic and Urdu are supported.
 
 = Settings and speed =
 
 * Cartiva Settings (Appearance > Cartiva Settings) with a Getting started checklist and an on/off switch for every feature.
 * About 5 KB of compressed CSS on every page; other styles and scripts load only where they are used.
-* No jQuery, no page builder and no external requests. Fonts and images are bundled.
+* No jQuery, no page builder and no external requests. Fonts and images are bundled, and the fonts load only for the letters they cover.
 * Optional dark mode switch for visitors and a back to top button.
 * Accessible: focus outlines, labeled icon buttons, correct heading order and reduced-motion support.
 
@@ -131,6 +138,15 @@ Clear your host cache, caching plugin and browser cache, then reload. If a patte
 No. Changes made in the Site Editor and in Cartiva Settings are saved in your database. Use a child theme for code changes.
 
 == Changelog ==
+
+= 1.1.0 =
+* New: Bangla (bn_BD) translation and Bangla font fallbacks.
+* New: Right-to-left language support.
+* New: Four color styles: Blossom, Circuit, Noir & Gold and Bazaar.
+* New: Distraction-free Landing header and Landing footer template parts, used by the Product landing page template.
+* New: Order confirmation and product attribute templates.
+* New: Funnel step patterns for the optional Cartiva Commerce plugin; the header and mobile bar carts open its slide-out cart.
+* Improved: Lora font file is about half the size.
 
 = 1.0.0 =
 * Initial release.

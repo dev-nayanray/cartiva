@@ -57,7 +57,7 @@
 .cartiva-wishlist-header [data-count]::after {
 	position: absolute;
 	top: .1rem;
-	right: .05rem;
+	inset-inline-end: .05rem;
 	min-width: 1.1rem;
 	height: 1.1rem;
 	padding: 0 .3rem;
@@ -78,7 +78,7 @@
 .cartiva-wishlist-card {
 	position: absolute;
 	top: .6rem;
-	right: .6rem;
+	inset-inline-end: .6rem;
 	z-index: 3;
 }
 .cartiva-wishlist-card > *,
@@ -182,7 +182,7 @@
 	border: 0 !important;
 	border-bottom: 1px solid var(--wp--preset--color--border) !important;
 	vertical-align: middle;
-	text-align: left;
+	text-align: start;
 }
 .wishlist_table thead th,
 .tinvwl-table-manage-list thead th {

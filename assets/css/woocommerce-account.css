@@ -35,7 +35,7 @@
 .woocommerce-account :is(.woocommerce-message, .woocommerce-info, .woocommerce-error)::before {
 	content: "";
 	position: absolute;
-	left: 1rem;
+	inset-inline-start: 1rem;
 	top: 50%;
 	width: 1.1rem;
 	height: 1.1rem;
@@ -133,7 +133,7 @@
 }
 .woocommerce-account .woocommerce .show-password-input {
 	position: absolute;
-	right: .5rem;
+	inset-inline-end: .5rem;
 	top: 50%;
 	transform: translateY(-50%);
 	width: 2rem;
@@ -498,7 +498,7 @@
 	padding: .85rem 1rem;
 	border: 0;
 	border-top: 1px solid var(--wp--preset--color--border);
-	text-align: left;
+	text-align: start;
 	vertical-align: middle;
 }
 .woocommerce-account .woocommerce table.shop_table thead th {
@@ -558,7 +558,7 @@
 	display: inline-block;
 	width: .5em;
 	height: .5em;
-	margin-right: .45em;
+	margin-inline-end: .45em;
 	border-radius: 50%;
 	background: currentColor;
 	vertical-align: .1em;
@@ -657,7 +657,7 @@
 		gap: .35rem;
 		-webkit-mask-image: linear-gradient(to right, #000 85%, transparent);
 		mask-image: linear-gradient(to right, #000 85%, transparent);
-		padding-right: 2rem;
+		padding-inline-end: 2rem;
 	}
 	.woocommerce-account .woocommerce-MyAccount-navigation ul::-webkit-scrollbar { display: none; }
 	.woocommerce-account .woocommerce-MyAccount-navigation li { flex: none; scroll-snap-align: start; }
@@ -691,10 +691,10 @@
 		display: block;
 		padding: .5rem 1rem;
 		border: 0;
-		text-align: right !important;
+		text-align: end !important;
 	}
 	.woocommerce-account .woocommerce table.shop_table_responsive tbody th {
-		text-align: left !important;
+		text-align: start !important;
 		font-size: var(--wp--preset--font-size--medium);
 		padding-bottom: .75rem;
 		margin-bottom: .25rem;
@@ -702,8 +702,8 @@
 	}
 	.woocommerce-account .woocommerce table.shop_table_responsive td::before {
 		content: attr(data-title);
-		float: left;
-		margin-right: 1rem;
+		float: inline-start;
+		margin-inline-end: 1rem;
 		color: var(--wp--preset--color--muted);
 		font-size: var(--wp--preset--font-size--x-small);
 		font-weight: 600;
@@ -721,7 +721,7 @@
 	.woocommerce-account .woocommerce table.shop_table_responsive td.woocommerce-orders-table__cell-order-actions::before,
 	.woocommerce-account .woocommerce table.shop_table_responsive td.download-file::before { content: none; }
 	.woocommerce-account .woocommerce table.shop_table_responsive td.woocommerce-orders-table__cell-order-actions {
-		text-align: left !important;
+		text-align: start !important;
 		border-top: 1px solid var(--wp--preset--color--border);
 		margin-top: .25rem;
 		padding-top: .75rem;

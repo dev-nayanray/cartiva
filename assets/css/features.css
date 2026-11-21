@@ -74,8 +74,8 @@
    ========================================================================== */
 .cartiva-sticky-cart {
 	position: fixed;
-	left: 0;
-	right: 0;
+	inset-inline-start: 0;
+	inset-inline-end: 0;
 	bottom: 0;
 	z-index: 90;
 	border-top: 1px solid var(--wp--preset--color--border);
@@ -158,7 +158,7 @@
 		position: fixed !important;
 		top: 0;
 		bottom: 0;
-		left: 0;
+		inset-inline-start: 0;
 		z-index: 100001;
 		width: min(88vw, 22rem);
 		max-width: none !important;
@@ -177,7 +177,7 @@
 		place-items: center;
 		position: absolute;
 		top: .75rem;
-		right: .75rem;
+		inset-inline-end: .75rem;
 		width: 2.5rem;
 		height: 2.5rem;
 		border: 0;
@@ -214,8 +214,8 @@
 @media (max-width: 781px) {
 	.cartiva-mobile-bar {
 		position: fixed;
-		left: 0;
-		right: 0;
+		inset-inline-start: 0;
+		inset-inline-end: 0;
 		bottom: 0;
 		z-index: 95;
 		display: flex;
@@ -250,7 +250,7 @@
 	.cartiva-mobile-bar__count {
 		position: absolute;
 		top: 0;
-		left: calc(50% + .4rem);
+		inset-inline-start: calc(50% + .4rem);
 		min-width: 1.05rem;
 		height: 1.05rem;
 		padding: 0 .25rem;
@@ -278,7 +278,7 @@
    ========================================================================== */
 .cartiva-to-top {
 	position: fixed;
-	right: 1.25rem;
+	inset-inline-end: 1.25rem;
 	bottom: 1.25rem;
 	z-index: 89;
 	display: grid;
@@ -370,4 +370,17 @@ html.cartiva-dark .cartiva-banner-cover.cartiva-cover-wide .wp-block-cover__inne
 @media (max-width: 781px) {
 	.cartiva-has-mobile-bar .cartiva-header .wp-block-woocommerce-customer-account,
 	.cartiva-has-mobile-bar .cartiva-wishlist-header { display: none !important; }
+}
+
+/* Cartiva Commerce pieces in dark mode (their green badges use fixed colors). */
+html.cartiva-dark .cartiva-sc__gift,
+html.cartiva-dark .cartiva-gift-badge { background: rgb(62 207 122 / .18); color: #8ee6b3; }
+html.cartiva-dark .cartiva-offer__save { color: #8ee6b3; }
+html.cartiva-dark .cartiva-ship.is-done .cartiva-ship__track span { background: #3ecf7a; }
+html.cartiva-dark .cartiva-sc__overlay { background: rgb(0 0 0 / .65); }
+
+/* Right-to-left languages: the filters drawer slides in from the right. */
+@media (max-width: 781px) {
+	[dir="rtl"] .cartiva-filters-panel:not(.is-open) { transform: translateX(105%); }
+	[dir="rtl"] .cartiva-filters-panel { box-shadow: -20px 0 50px rgb(0 0 0 / .2); }
 }

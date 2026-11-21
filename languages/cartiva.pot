@@ -2,12 +2,33 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Cartiva 1.0.0\n"
+"Project-Id-Version: Cartiva 1.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/cartiva\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Domain: cartiva\n"
+
+#: patterns/funnel-downsell.php:18
+msgid "How about this instead?"
+msgstr ""
+
+#: patterns/funnel-downsell.php:21
+msgid "A smaller offer at an even better price, added to the same order with one click."
+msgstr ""
+
+#: patterns/funnel-thankyou.php:18
+msgid "Thank you, your order is placed!"
+msgstr ""
+
+#: patterns/funnel-thankyou.php:21
+msgid "We will call you soon to confirm it. Keep your phone close."
+msgstr ""
+
+#. translators: %s: number of orders.
+#: patterns/funnel-thankyou.php:35 patterns/template-order-confirmation.php:54 inc/woocommerce.php:139
+msgid "Continue shopping"
+msgstr ""
 
 #: patterns/newsletter-dark.php:18
 msgid "Newsletter"
@@ -141,12 +162,12 @@ msgstr ""
 msgid "Blog"
 msgstr ""
 
-#: patterns/footer-dark.php:71 patterns/footer.php:71
+#: patterns/footer-dark.php:71 patterns/landing-footer.php:28 patterns/footer.php:71
 msgid "Privacy"
 msgstr ""
 
 #. translators: 1: Current year, 2: Site name.
-#: patterns/footer-dark.php:89 patterns/footer.php:89 patterns/footer-simple.php:30
+#: patterns/footer-dark.php:89 patterns/landing-footer.php:23 patterns/footer.php:89 patterns/footer-simple.php:30
 msgid "© %1$s %2$s. All rights reserved."
 msgstr ""
 
@@ -307,12 +328,20 @@ msgstr ""
 msgid "Brands we carry"
 msgstr ""
 
-#: patterns/page-terms.php:16
-msgid "Legal"
+#: patterns/landing-footer.php:28 patterns/page-shipping-returns.php:22
+msgid "Shipping & returns"
+msgstr ""
+
+#: patterns/landing-footer.php:28 patterns/page-terms.php:16
+msgid "Terms & conditions"
+msgstr ""
+
+#: patterns/landing-footer.php:28 patterns/contact-faq.php:38 patterns/page-help-center.php:30 patterns/page-help-center.php:37 patterns/page-faq.php:55 inc/header.php:38
+msgid "Contact us"
 msgstr ""
 
 #: patterns/page-terms.php:16
-msgid "Terms & conditions"
+msgid "Legal"
 msgstr ""
 
 #: patterns/page-terms.php:16
@@ -577,6 +606,22 @@ msgstr ""
 msgid "Find what you need"
 msgstr ""
 
+#: patterns/template-order-confirmation.php:21
+msgid "Order details"
+msgstr ""
+
+#: patterns/template-order-confirmation.php:33
+msgid "Delivery address"
+msgstr ""
+
+#: patterns/template-order-confirmation.php:41
+msgid "Billing address"
+msgstr ""
+
+#: patterns/template-order-confirmation.php:57 patterns/page-shipping-returns.php:86
+msgid "Track your order"
+msgstr ""
+
 #: patterns/hidden-product-trust.php:15
 msgid "Free delivery"
 msgstr ""
@@ -649,7 +694,7 @@ msgstr ""
 msgid "On all orders over $50."
 msgstr ""
 
-#: patterns/trust-badges.php:15 patterns/landing-benefits.php:27
+#: patterns/trust-badges.php:15 patterns/landing-benefits.php:27 patterns/funnel-checkout.php:37
 msgid "Easy returns"
 msgstr ""
 
@@ -865,10 +910,6 @@ msgid "Policies"
 msgstr ""
 
 #: patterns/page-shipping-returns.php:22
-msgid "Shipping & returns"
-msgstr ""
-
-#: patterns/page-shipping-returns.php:22
 msgid "Fast, tracked delivery and easy 30-day returns on every order."
 msgstr ""
 
@@ -954,10 +995,6 @@ msgstr ""
 
 #: patterns/page-shipping-returns.php:86
 msgid "Check its status with your order ID and email."
-msgstr ""
-
-#: patterns/page-shipping-returns.php:86
-msgid "Track your order"
 msgstr ""
 
 #: patterns/landing-offer.php:17
@@ -1252,7 +1289,7 @@ msgstr ""
 msgid "Made from durable materials and checked by hand before it ships."
 msgstr ""
 
-#: patterns/landing-benefits.php:26
+#: patterns/landing-benefits.php:26 patterns/funnel-checkout.php:36
 msgid "Fast delivery"
 msgstr ""
 
@@ -1366,10 +1403,6 @@ msgstr ""
 
 #: patterns/contact-faq.php:33
 msgid "Quick answers to the questions we hear most. Still stuck? Our team is one message away."
-msgstr ""
-
-#: patterns/contact-faq.php:38 patterns/page-help-center.php:30 patterns/page-help-center.php:37 patterns/page-faq.php:55 inc/header.php:38
-msgid "Contact us"
 msgstr ""
 
 #: patterns/template-single-product.php:38
@@ -1538,6 +1571,14 @@ msgstr ""
 
 #: patterns/hero-spotlight.php:47
 msgid "$499"
+msgstr ""
+
+#: patterns/landing-header.php:28
+msgid "✓ Cash on delivery"
+msgstr ""
+
+#: patterns/landing-header.php:31
+msgid "Call to order:"
 msgstr ""
 
 #: patterns/starter-grocery.php:16
@@ -1770,6 +1811,30 @@ msgstr ""
 
 #: patterns/category-carousel.php:22
 msgid "58 products"
+msgstr ""
+
+#: patterns/funnel-checkout.php:18
+msgid "Complete your order"
+msgstr ""
+
+#: patterns/funnel-checkout.php:21
+msgid "Fill in your details below. You pay when the parcel arrives."
+msgstr ""
+
+#: patterns/funnel-checkout.php:35
+msgid "Pay on delivery"
+msgstr ""
+
+#: patterns/funnel-checkout.php:35
+msgid "Check the parcel first, then pay."
+msgstr ""
+
+#: patterns/funnel-checkout.php:36
+msgid "Delivered to your door in a few days."
+msgstr ""
+
+#: patterns/funnel-checkout.php:37
+msgid "Not happy? Return it within 7 days."
 msgstr ""
 
 #: patterns/category-cards.php:15
@@ -2064,6 +2129,14 @@ msgstr ""
 msgid "Explore the store"
 msgstr ""
 
+#: patterns/funnel-upsell.php:18
+msgid "Wait! Your order is not complete yet"
+msgstr ""
+
+#: patterns/funnel-upsell.php:21
+msgid "Add this to the same order now at a special price. This offer is only on this page."
+msgstr ""
+
 #: patterns/about-mission.php:17
 msgid "Our mission"
 msgstr ""
@@ -2212,72 +2285,72 @@ msgstr ""
 msgid "General page sections."
 msgstr ""
 
-#: functions.php:371
+#: functions.php:389
 msgid "Search results"
 msgstr ""
 
-#: functions.php:372
+#: functions.php:390
 msgid "Searching…"
 msgstr ""
 
 #. translators: %s: Search query.
-#: functions.php:374
+#: functions.php:392
 msgid "No results for “%s”"
 msgstr ""
 
 #. translators: %s: Search query.
-#: functions.php:376
+#: functions.php:394
 msgid "See all results for “%s”"
 msgstr ""
 
-#: functions.php:377
+#: functions.php:395
 msgid "1 result found"
 msgstr ""
 
 #. translators: %d: Number of results.
-#: functions.php:379
+#: functions.php:397
 msgid "%d results found"
 msgstr ""
 
-#: functions.php:380
+#: functions.php:398
 msgid "Out of stock"
 msgstr ""
 
-#: functions.php:424
+#: functions.php:442
 msgid "carousel"
 msgstr ""
 
-#: functions.php:425
+#: functions.php:443
 msgid "slide"
 msgstr ""
 
 #. translators: 1: Slide number, 2: Number of slides.
-#: functions.php:427
+#: functions.php:445
 msgid "%1$s of %2$s"
 msgstr ""
 
-#: functions.php:428
+#: functions.php:446
 msgid "Previous"
 msgstr ""
 
-#: functions.php:429
+#: functions.php:447
 msgid "Next"
 msgstr ""
 
 #. translators: %s: Slide number.
-#: functions.php:431
+#: functions.php:449
 msgid "Go to slide %s"
 msgstr ""
 
-#: functions.php:432
+#: functions.php:450
 msgid "Featured"
 msgstr ""
 
-#: functions.php:433
+#: functions.php:451
 msgid "Products"
 msgstr ""
 
-#: functions.php:434
+#: functions.php:452
 msgid "Items"
 msgstr ""
 
@@ -2662,7 +2735,7 @@ msgstr ""
 msgid "Settings were reset to their defaults."
 msgstr ""
 
-#: inc/settings.php:521 inc/settings.php:522 inc/settings.php:629
+#: inc/settings.php:521 inc/settings.php:522 inc/settings.php:634
 msgid "Cartiva Settings"
 msgstr ""
 
@@ -2671,7 +2744,7 @@ msgstr ""
 msgid "Install and activate WooCommerce (%s)."
 msgstr ""
 
-#: inc/settings.php:576
+#: inc/settings.php:576 inc/settings.php:594
 msgid "find it here"
 msgstr ""
 
@@ -2692,48 +2765,53 @@ msgstr ""
 msgid "Create Contact, About, FAQ and Help center pages (slugs contact, about, faq, help-center) and insert the matching \"Cartiva: Pages\" pattern."
 msgstr ""
 
-#: inc/settings.php:593
+#. translators: %s: link to install plugins.
+#: inc/settings.php:594
+msgid "Recommended: install the free Cartiva Commerce plugin for sales funnels, one-page order forms, upsells, order bumps, abandoned checkout recovery and a slide-out cart (%s). It is made for this theme, and the theme works fully without it."
+msgstr ""
+
+#: inc/settings.php:598
 msgid "Optional: install a free wishlist plugin (YITH WooCommerce Wishlist, TI WooCommerce Wishlist or WPC Smart Wishlist). Cartiva adds the hearts and styling."
 msgstr ""
 
 #. translators: 1: completed steps, 2: total steps.
-#: inc/settings.php:602
+#: inc/settings.php:607
 msgid "Getting started (%1$s of %2$s done)"
 msgstr ""
 
-#: inc/settings.php:622
+#: inc/settings.php:627
 msgid "Colors & fonts"
 msgstr ""
 
-#: inc/settings.php:623
+#: inc/settings.php:628
 msgid "Header & footer designs"
 msgstr ""
 
-#: inc/settings.php:624
+#: inc/settings.php:629
 msgid "Templates"
 msgstr ""
 
-#: inc/settings.php:625
+#: inc/settings.php:630
 msgid "Pages"
 msgstr ""
 
-#: inc/settings.php:630
+#: inc/settings.php:635
 msgid "Layout and behavior options for your store. Everything visual that can be edited block by block lives in the Site Editor:"
 msgstr ""
 
-#: inc/settings.php:638
+#: inc/settings.php:643
 msgid "Settings sections"
 msgstr ""
 
-#: inc/settings.php:644
+#: inc/settings.php:649
 msgid "Shop, product page, store extras, wishlist and account options appear here once WooCommerce is active."
 msgstr ""
 
-#: inc/settings.php:652
+#: inc/settings.php:657
 msgid "Save settings"
 msgstr ""
 
-#: inc/settings.php:653
+#: inc/settings.php:658
 msgid "Reset to defaults"
 msgstr ""
 
@@ -2809,17 +2887,28 @@ msgstr ""
 msgid "Name, email and password"
 msgstr ""
 
-#. translators: %s: number of orders.
-#: inc/woocommerce.php:139
-msgid "Continue shopping"
-msgstr ""
-
 #: inc/woocommerce.php:140
 msgid "See what is new in store"
 msgstr ""
 
 #: inc/woocommerce.php:345
 msgid "We accept"
+msgstr ""
+
+#: inc/integrations.php:49
+msgid "Get more from Cartiva with the free Cartiva Commerce plugin"
+msgstr ""
+
+#: inc/integrations.php:50
+msgid "Sales funnels, one-page order forms for Cash on delivery, upsells, order bumps, abandoned checkout recovery and a slide-out cart, made to match this theme. Optional: the theme works fully without it."
+msgstr ""
+
+#: inc/integrations.php:52
+msgid "Find the plugin"
+msgstr ""
+
+#: inc/integrations.php:53
+msgid "Dismiss"
 msgstr ""
 
 #. translators: %s: discount percentage, for example 25.

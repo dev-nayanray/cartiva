@@ -309,6 +309,7 @@ require_once CARTIVA_DIR . '/inc/pattern-helpers.php';
 require_once CARTIVA_DIR . '/inc/header.php';
 require_once CARTIVA_DIR . '/inc/settings.php';
 require_once CARTIVA_DIR . '/inc/site-features.php';
+require_once CARTIVA_DIR . '/inc/integrations.php';
 
 if ( cartiva_is_woocommerce_active() ) {
 	require_once CARTIVA_DIR . '/inc/woocommerce.php';
@@ -333,6 +334,23 @@ function cartiva_unregister_store_patterns() {
 	}
 }
 add_action( 'init', 'cartiva_unregister_store_patterns', 20 );
+
+/**
+ * Funnel patterns use blocks from the Cartiva Commerce plugin: hide them
+ * when it is not active.
+ */
+function cartiva_unregister_funnel_patterns() {
+	if ( defined( 'CARTIVA_COMMERCE_VERSION' ) || ! class_exists( 'WP_Block_Patterns_Registry' ) ) {
+		return;
+	}
+	$registry = WP_Block_Patterns_Registry::get_instance();
+	foreach ( array( 'funnel-checkout', 'funnel-upsell', 'funnel-downsell', 'funnel-thankyou' ) as $slug ) {
+		if ( $registry->is_registered( 'cartiva/' . $slug ) ) {
+			unregister_block_pattern( 'cartiva/' . $slug );
+		}
+	}
+}
+add_action( 'init', 'cartiva_unregister_funnel_patterns', 20 );
 
 /**
  * Live search for the header Search block.

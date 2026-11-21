@@ -240,7 +240,7 @@ function cartiva_store_mobile_bar() {
 	?>
 	<nav class="cartiva-mobile-bar" aria-label="<?php esc_attr_e( 'Shortcuts', 'cartiva' ); ?>">
 		<?php foreach ( $items as $key => $item ) : ?>
-		<a class="cartiva-mobile-bar__item cartiva-mobile-bar__item--<?php echo esc_attr( sanitize_html_class( $key ) ); ?>" href="<?php echo esc_url( $item[1] ); ?>">
+		<a class="cartiva-mobile-bar__item cartiva-mobile-bar__item--<?php echo esc_attr( sanitize_html_class( $key ) ); ?>" href="<?php echo esc_url( $item[1] ); ?>"<?php echo ( 'cart' === $key && function_exists( 'cartiva_commerce_drawer_active' ) && cartiva_commerce_drawer_active() ) ? ' data-cartiva-open-cart' : ''; ?>>
 			<span class="cartiva-mobile-bar__icon" aria-hidden="true"></span>
 			<span class="cartiva-mobile-bar__label"><?php echo esc_html( $item[0] ); ?></span>
 			<?php if ( 'cart' === $key ) : ?>

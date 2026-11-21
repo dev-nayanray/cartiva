@@ -1,0 +1,2970 @@
+# Bengali (Bangladesh) translation of Cartiva 1.1.0.
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Cartiva 1.1.0\n"
+"Language: bn_BD\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: cartiva\n"
+
+#: patterns/funnel-downsell.php:18
+msgid "How about this instead?"
+msgstr "এটা কেমন হয়?"
+
+#: patterns/funnel-downsell.php:21
+msgid "A smaller offer at an even better price, added to the same order with one click."
+msgstr "আরও ভালো দামে ছোট একটি অফার, এক ক্লিকে একই অর্ডারে যোগ হবে।"
+
+#: patterns/funnel-thankyou.php:18
+msgid "Thank you, your order is placed!"
+msgstr "ধন্যবাদ, আপনার অর্ডার সম্পন্ন হয়েছে!"
+
+#: patterns/funnel-thankyou.php:21
+msgid "We will call you soon to confirm it. Keep your phone close."
+msgstr "অর্ডার নিশ্চিত করতে আমরা শিগগিরই কল করব। ফোনটি কাছে রাখুন।"
+
+#. translators: %s: number of orders.
+#: patterns/funnel-thankyou.php:35 patterns/template-order-confirmation.php:54 inc/woocommerce.php:139
+msgid "Continue shopping"
+msgstr "কেনাকাটা চালিয়ে যান"
+
+#: patterns/newsletter-dark.php:18
+msgid "Newsletter"
+msgstr "নিউজলেটার"
+
+#: patterns/newsletter-dark.php:21
+msgid "Good things, delivered weekly"
+msgstr "প্রতি সপ্তাহে ভালো ভালো খবর"
+
+#: patterns/newsletter-dark.php:24
+msgid "New products, restocks and members-only deals. No spam, ever."
+msgstr "নতুন পণ্য, আবার স্টকে আসা পণ্য আর শুধু সদস্যদের জন্য অফার। কোনো স্প্যাম নয়।"
+
+#: patterns/newsletter-dark.php:29 patterns/footer-newsletter.php:31 patterns/newsletter.php:26 patterns/newsletter-split.php:50
+msgid "Subscribe"
+msgstr "সাবস্ক্রাইব করুন"
+
+#: patterns/starter-furniture.php:16
+msgid "The living room edit"
+msgstr "লিভিং রুম কালেকশন"
+
+#: patterns/starter-furniture.php:17
+msgid "Made for slow living."
+msgstr "ধীর-স্থির জীবনের জন্য তৈরি।"
+
+#: patterns/starter-furniture.php:18
+msgid "Solid wood furniture and handmade decor, built to be lived with and loved for years."
+msgstr "সলিড কাঠের ফার্নিচার আর হাতে তৈরি সাজসজ্জা, বছরের পর বছর ব্যবহার আর ভালোবাসার জন্য।"
+
+#: patterns/starter-furniture.php:19
+msgid "Explore furniture"
+msgstr "ফার্নিচার দেখুন"
+
+#: patterns/starter-furniture.php:21
+msgid "Wooden sofa on a warm background"
+msgstr "উষ্ণ রঙের পটভূমিতে কাঠের সোফা"
+
+#: patterns/starter-furniture.php:27 patterns/starter-fashion.php:27 patterns/category-auto.php:21 patterns/category-circles.php:26 patterns/starter-electronics.php:27 patterns/category-grid.php:26 patterns/starter-grocery.php:27 patterns/category-carousel.php:28
+msgid "Shop by category"
+msgstr "ক্যাটাগরি অনুযায়ী কেনাকাটা"
+
+#: patterns/starter-furniture.php:29
+msgid "Living room"
+msgstr "লিভিং রুম"
+
+#: patterns/starter-furniture.php:30
+msgid "Bedroom"
+msgstr "বেডরুম"
+
+#: patterns/starter-furniture.php:31
+msgid "Dining"
+msgstr "ডাইনিং"
+
+#: patterns/starter-furniture.php:32
+msgid "Decor"
+msgstr "সাজসজ্জা"
+
+#: patterns/starter-furniture.php:39 patterns/hero-centered.php:18 patterns/footer-dark.php:41 patterns/products-lists.php:25 patterns/footer.php:41 patterns/new-arrivals.php:23
+msgid "New arrivals"
+msgstr "নতুন এসেছে"
+
+#: patterns/starter-furniture.php:50
+msgid "Designer picks"
+msgstr "ডিজাইনারের পছন্দ"
+
+#: patterns/hero-centered.php:18
+msgid "Welcome to the store"
+msgstr "স্টোরে স্বাগতম"
+
+#: patterns/hero-centered.php:18
+msgid "Find something you will love."
+msgstr "আপনার ভালো লাগবে এমন কিছু খুঁজে নিন।"
+
+#: patterns/hero-centered.php:18
+msgid "Thoughtfully designed products for every day, delivered fast with free returns."
+msgstr "প্রতিদিনের জন্য যত্নে ডিজাইন করা পণ্য, দ্রুত ডেলিভারি আর ফ্রি রিটার্নসহ।"
+
+#: patterns/hero-centered.php:18 patterns/starter-grocery.php:19
+msgid "Start shopping"
+msgstr "কেনাকাটা শুরু করুন"
+
+#: patterns/footer-dark.php:22 patterns/footer.php:22
+msgid "Thoughtfully made products, delivered fast. Built with Cartiva — a free, lightweight block theme for WooCommerce."
+msgstr "যত্নে তৈরি পণ্য, দ্রুত ডেলিভারি। Cartiva দিয়ে তৈরি — WooCommerce-এর জন্য একটি ফ্রি, হালকা ব্লক থিম।"
+
+#: patterns/footer-dark.php:38 patterns/footer-centered.php:27 patterns/footer.php:38 patterns/footer-simple.php:20 inc/settings.php:131 inc/store-features.php:223
+msgid "Shop"
+msgstr "শপ"
+
+#: patterns/footer-dark.php:42 patterns/products-lists.php:50 patterns/footer.php:42 patterns/best-sellers.php:19
+msgid "Best sellers"
+msgstr "সবচেয়ে বেশি বিক্রি"
+
+#: patterns/footer-dark.php:43 patterns/category-pills.php:27 patterns/footer.php:43 patterns/hero-minimal.php:14 inc/header.php:212
+msgid "Sale"
+msgstr "সেল"
+
+#: patterns/footer-dark.php:51 patterns/footer.php:51 patterns/contact-faq.php:27 patterns/page-faq.php:16
+msgid "Help"
+msgstr "সাহায্য"
+
+#: patterns/footer-dark.php:54 patterns/footer-centered.php:30 patterns/footer.php:54 patterns/footer-simple.php:21
+msgid "Shipping"
+msgstr "ডেলিভারি"
+
+#: patterns/footer-dark.php:55 patterns/page-terms.php:48 patterns/footer.php:55 patterns/footer-simple.php:22
+msgid "Returns"
+msgstr "রিটার্ন"
+
+#: patterns/footer-dark.php:56 patterns/page-terms.php:54 patterns/footer-centered.php:31 patterns/footer.php:56 patterns/page-contact.php:18 patterns/footer-simple.php:23 patterns/contact-cards.php:17
+msgid "Contact"
+msgstr "যোগাযোগ"
+
+#: patterns/footer-dark.php:57 patterns/footer.php:57 inc/woocommerce.php:219 inc/header.php:44
+msgid "Track order"
+msgstr "অর্ডার ট্র্যাক করুন"
+
+#: patterns/footer-dark.php:58 patterns/footer-centered.php:29 patterns/footer.php:58 patterns/landing-faq.php:23 patterns/page-help-center.php:29 functions.php:232
+msgid "FAQ"
+msgstr "প্রশ্নোত্তর"
+
+#: patterns/footer-dark.php:66 patterns/footer.php:66
+msgid "Company"
+msgstr "প্রতিষ্ঠান"
+
+#: patterns/footer-dark.php:69 patterns/footer-centered.php:28 patterns/footer.php:69
+msgid "About"
+msgstr "আমাদের সম্পর্কে"
+
+#: patterns/footer-dark.php:70 patterns/template-home.php:15 patterns/footer.php:70
+msgid "Blog"
+msgstr "ব্লগ"
+
+#: patterns/footer-dark.php:71 patterns/landing-footer.php:28 patterns/footer.php:71
+msgid "Privacy"
+msgstr "প্রাইভেসি"
+
+#. translators: 1: Current year, 2: Site name.
+#: patterns/footer-dark.php:89 patterns/landing-footer.php:23 patterns/footer.php:89 patterns/footer-simple.php:30
+msgid "© %1$s %2$s. All rights reserved."
+msgstr "© %1$s %2$s। সর্বস্বত্ব সংরক্ষিত।"
+
+#. translators: %s: WordPress link.
+#: patterns/footer-dark.php:104 patterns/footer.php:104
+msgid "Designed with %s"
+msgstr "%s দিয়ে ডিজাইন করা"
+
+#: patterns/footer-dark.php:105 patterns/footer-centered.php:52 patterns/footer.php:105
+msgid "https://wordpress.org"
+msgstr "https://bn.wordpress.org"
+
+#: patterns/page-about.php:18
+msgid "Founded"
+msgstr "প্রতিষ্ঠার বছর"
+
+#: patterns/page-about.php:19 patterns/about-stats.php:15
+msgid "Happy customers"
+msgstr "সন্তুষ্ট গ্রাহক"
+
+#: patterns/page-about.php:20 patterns/about-stats.php:16
+msgid "Products designed in-house"
+msgstr "নিজেদের ডিজাইন করা পণ্য"
+
+#: patterns/page-about.php:21 patterns/about-stats.php:17
+msgid "Average review score"
+msgstr "গড় রিভিউ স্কোর"
+
+#: patterns/page-about.php:24
+msgid "About us"
+msgstr "আমাদের সম্পর্কে"
+
+#: patterns/page-about.php:24
+msgid "Good things, made to last"
+msgstr "টেকসই করে তৈরি ভালো জিনিস"
+
+#: patterns/page-about.php:24
+msgid "We started with one simple idea: everyday products should be beautiful, honest and built to be used for years."
+msgstr "আমরা একটি সহজ ভাবনা থেকে শুরু করেছিলাম: প্রতিদিনের পণ্য হবে সুন্দর, সৎ এবং বছরের পর বছর ব্যবহারের উপযোগী।"
+
+#: patterns/page-about.php:33
+msgid "Our studio"
+msgstr "আমাদের স্টুডিও"
+
+#: patterns/page-about.php:40 patterns/about-story.php:28
+msgid "Our story"
+msgstr "আমাদের গল্প"
+
+#: patterns/page-about.php:43
+msgid "What began as a small workshop is now a team of designers, makers and friendly support people who care about every order."
+msgstr "যা শুরু হয়েছিল ছোট একটি ওয়ার্কশপ হিসেবে, তা এখন ডিজাইনার, কারিগর আর আন্তরিক সাপোর্ট টিমের একটি দল, যারা প্রতিটি অর্ডারের যত্ন নেয়।"
+
+#: patterns/page-about.php:46
+msgid "We work directly with a handful of trusted makers, choose durable materials and keep our prices fair by selling only online. Every product is tested by our team before it reaches you."
+msgstr "আমরা কয়েকজন বিশ্বস্ত কারিগরের সাথে সরাসরি কাজ করি, টেকসই উপকরণ বেছে নিই এবং শুধু অনলাইনে বিক্রি করে দাম ন্যায্য রাখি। প্রতিটি পণ্য আপনার কাছে পৌঁছানোর আগে আমাদের টিম পরীক্ষা করে।"
+
+#: patterns/page-about.php:49
+msgid "Thank you for being part of the story."
+msgstr "এই গল্পের অংশ হওয়ার জন্য ধন্যবাদ।"
+
+#: patterns/page-about.php:81 patterns/about-values.php:20
+msgid "What we stand for"
+msgstr "আমরা যা বিশ্বাস করি"
+
+#: patterns/page-about.php:86 patterns/about-values.php:25
+msgid "Quality first"
+msgstr "মানই প্রথম"
+
+#: patterns/page-about.php:86 patterns/about-values.php:25
+msgid "Durable materials and careful finishing, tested by our team before anything goes on sale."
+msgstr "টেকসই উপকরণ ও যত্নশীল ফিনিশিং; বিক্রির আগে আমাদের টিম সবকিছু পরীক্ষা করে।"
+
+#: patterns/page-about.php:87 patterns/about-values.php:26
+msgid "Kinder to the planet"
+msgstr "পরিবেশের প্রতি যত্ন"
+
+#: patterns/page-about.php:87
+msgid "Recycled packaging, carbon-neutral delivery and products designed to be repaired, not replaced."
+msgstr "রিসাইকেল করা প্যাকেজিং, কার্বন-নিরপেক্ষ ডেলিভারি আর এমন পণ্য, যা বদলানো নয়, মেরামত করার জন্য তৈরি।"
+
+#: patterns/page-about.php:88 patterns/about-values.php:27
+msgid "People who care"
+msgstr "যারা যত্ন নেয়"
+
+#: patterns/page-about.php:88
+msgid "A real support team that knows the products and is happy to help before and after you buy."
+msgstr "একটি সত্যিকারের সাপোর্ট টিম, যারা পণ্যগুলো চেনে এবং কেনার আগে ও পরে সাহায্য করতে আগ্রহী।"
+
+#: patterns/page-about.php:95
+msgid "Find something you will love"
+msgstr "আপনার ভালো লাগবে এমন কিছু খুঁজে নিন"
+
+#: patterns/page-about.php:95
+msgid "Browse the full collection, with free shipping on orders over $50."
+msgstr "পুরো কালেকশন দেখুন, $50-এর বেশি অর্ডারে ফ্রি ডেলিভারি।"
+
+#: patterns/page-about.php:95 patterns/hero-spotlight.php:52 patterns/hero.php:33 inc/pattern-helpers.php:150 inc/pattern-helpers.php:499
+msgid "Shop now"
+msgstr "এখনই কিনুন"
+
+#: patterns/category-pills.php:15 patterns/starter-fashion.php:39 patterns/hero-minimal.php:14 inc/header.php:206
+msgid "New in"
+msgstr "নতুন"
+
+#: patterns/category-pills.php:16 patterns/category-list.php:15
+msgid "Clothing"
+msgstr "পোশাক"
+
+#: patterns/category-pills.php:17 patterns/starter-fashion.php:31 patterns/category-list.php:16
+msgid "Shoes"
+msgstr "জুতা"
+
+#: patterns/category-pills.php:18
+msgid "Bags"
+msgstr "ব্যাগ"
+
+#: patterns/category-pills.php:19
+msgid "Jewelry"
+msgstr "গয়না"
+
+#: patterns/category-pills.php:20 patterns/hero-banners.php:31 patterns/hero-slider-boxed.php:24 patterns/category-circles.php:15 patterns/hero-minimal.php:14 patterns/category-carousel.php:16 patterns/category-cards.php:17 patterns/category-mosaic.php:16
+msgid "Home"
+msgstr "ঘর"
+
+#: patterns/category-pills.php:21
+msgid "Kitchen"
+msgstr "রান্নাঘর"
+
+#: patterns/category-pills.php:22 patterns/category-list.php:19 inc/header.php:211
+msgid "Beauty"
+msgstr "বিউটি"
+
+#: patterns/category-pills.php:23 patterns/category-circles.php:17 patterns/category-carousel.php:18 patterns/category-mosaic.php:17 inc/header.php:210
+msgid "Tech"
+msgstr "টেক"
+
+#: patterns/category-pills.php:24
+msgid "Outdoor"
+msgstr "আউটডোর"
+
+#: patterns/category-pills.php:25
+msgid "Kids"
+msgstr "শিশু"
+
+#: patterns/category-pills.php:26 patterns/category-list.php:20
+msgid "Gifts"
+msgstr "উপহার"
+
+#: patterns/category-pills.php:33
+msgid "Popular right now"
+msgstr "এখন জনপ্রিয়"
+
+#: patterns/template-product-landing.php:50
+msgid "Details and reviews"
+msgstr "বিস্তারিত ও রিভিউ"
+
+#: patterns/brands.php:18
+msgid "Brands we carry"
+msgstr "আমাদের ব্র্যান্ডসমূহ"
+
+#: patterns/landing-footer.php:28 patterns/page-shipping-returns.php:22
+msgid "Shipping & returns"
+msgstr "ডেলিভারি ও রিটার্ন"
+
+#: patterns/landing-footer.php:28 patterns/page-terms.php:16
+msgid "Terms & conditions"
+msgstr "শর্তাবলি"
+
+#: patterns/landing-footer.php:28 patterns/contact-faq.php:38 patterns/page-help-center.php:30 patterns/page-help-center.php:37 patterns/page-faq.php:55 inc/header.php:38
+msgid "Contact us"
+msgstr "যোগাযোগ করুন"
+
+#: patterns/page-terms.php:16
+msgid "Legal"
+msgstr "আইনি"
+
+#: patterns/page-terms.php:16
+msgid "Please read these terms carefully before placing an order."
+msgstr "অর্ডার করার আগে এই শর্তাবলি মনোযোগ দিয়ে পড়ুন।"
+
+#: patterns/page-terms.php:21
+msgid "Sample text: replace these sections with your store's own terms. This template is not legal advice."
+msgstr "নমুনা লেখা: এই অংশগুলো আপনার স্টোরের নিজস্ব শর্তাবলি দিয়ে বদলে নিন। এই টেমপ্লেট আইনি পরামর্শ নয়।"
+
+#. translators: 1: Section number, 2: Section title.
+#: patterns/page-terms.php:24 patterns/page-terms.php:30 patterns/page-terms.php:36 patterns/page-terms.php:42 patterns/page-terms.php:48 patterns/page-terms.php:54
+msgid "%1$d. %2$s"
+msgstr "%1$d. %2$s"
+
+#: patterns/page-terms.php:24
+msgid "Overview"
+msgstr "সারসংক্ষেপ"
+
+#: patterns/page-terms.php:27
+msgid "These terms apply to every purchase made on this website. By placing an order you agree to them."
+msgstr "এই শর্তাবলি এই ওয়েবসাইটের প্রতিটি কেনাকাটায় প্রযোজ্য। অর্ডার করে আপনি এগুলোতে সম্মত হচ্ছেন।"
+
+#: patterns/page-terms.php:30
+msgid "Orders"
+msgstr "অর্ডার"
+
+#: patterns/page-terms.php:33
+msgid "We confirm every order by email. We may decline or cancel an order if a product is unavailable or a price was shown in error, and will refund any payment in full."
+msgstr "আমরা প্রতিটি অর্ডার ইমেইলে নিশ্চিত করি। কোনো পণ্য না থাকলে বা ভুল দাম দেখানো হলে আমরা অর্ডার বাতিল করতে পারি এবং পুরো টাকা ফেরত দেব।"
+
+#: patterns/page-terms.php:36
+msgid "Prices and payment"
+msgstr "দাম ও পেমেন্ট"
+
+#: patterns/page-terms.php:39
+msgid "Prices are shown in the store currency and include applicable taxes unless stated otherwise. Payment is taken when your order is placed."
+msgstr "অন্যভাবে উল্লেখ না থাকলে দাম স্টোরের মুদ্রায় এবং প্রযোজ্য কর সহ দেখানো হয়। অর্ডার করার সময় পেমেন্ট নেওয়া হয়।"
+
+#: patterns/page-terms.php:42
+msgid "Delivery"
+msgstr "ডেলিভারি"
+
+#: patterns/page-terms.php:45
+msgid "Delivery times are estimates. Risk passes to you once the order has been delivered to the address you provided."
+msgstr "ডেলিভারির সময় আনুমানিক। আপনার দেওয়া ঠিকানায় অর্ডার পৌঁছানোর পর দায়িত্ব আপনার কাছে চলে যায়।"
+
+#: patterns/page-terms.php:51
+msgid "You can return unused items within 30 days of delivery. See our Shipping & returns page for details."
+msgstr "ডেলিভারির ৩০ দিনের মধ্যে অব্যবহৃত পণ্য ফেরত দিতে পারেন। বিস্তারিত জানতে আমাদের ডেলিভারি ও রিটার্ন পেজ দেখুন।"
+
+#: patterns/page-terms.php:57
+msgid "Questions about these terms? Contact us and we will be happy to help."
+msgstr "এই শর্তাবলি নিয়ে প্রশ্ন আছে? আমাদের সাথে যোগাযোগ করুন, আমরা খুশি মনে সাহায্য করব।"
+
+#: patterns/starter-fashion.php:16
+msgid "Spring / Summer drop"
+msgstr "বসন্ত / গ্রীষ্মের কালেকশন"
+
+#: patterns/starter-fashion.php:17
+msgid "Wear what feels like you."
+msgstr "যা আপনার মতো, তাই পরুন।"
+
+#: patterns/starter-fashion.php:18
+msgid "Effortless pieces in natural fabrics, designed to mix, match and last for seasons."
+msgstr "প্রাকৃতিক কাপড়ে আরামদায়ক পোশাক, মিলিয়ে পরার জন্য আর অনেক মৌসুম টেকার জন্য তৈরি।"
+
+#: patterns/starter-fashion.php:19 patterns/products-banner.php:39 patterns/hero-minimal.php:30 patterns/hero-slider.php:22 patterns/hero-mosaic.php:22
+msgid "Shop the collection"
+msgstr "কালেকশন দেখুন"
+
+#: patterns/starter-fashion.php:21
+msgid "Dress on a pink background"
+msgstr "গোলাপি পটভূমিতে একটি পোশাক"
+
+#: patterns/starter-fashion.php:29 patterns/hero-banners.php:22 patterns/hero-minimal.php:14 patterns/category-cards.php:15 inc/header.php:207
+msgid "Women"
+msgstr "নারী"
+
+#: patterns/starter-fashion.php:30 patterns/hero-minimal.php:14 patterns/category-cards.php:16 inc/header.php:208
+msgid "Men"
+msgstr "পুরুষ"
+
+#: patterns/starter-fashion.php:32 patterns/category-circles.php:20 patterns/starter-electronics.php:32 patterns/category-grid.php:16 patterns/category-carousel.php:21 patterns/category-mosaic.php:19
+msgid "Accessories"
+msgstr "এক্সেসরিজ"
+
+#: patterns/starter-fashion.php:50
+msgid "Most loved"
+msgstr "সবচেয়ে প্রিয়"
+
+#: patterns/template-single.php:24 patterns/template-single-product.php:39
+msgid "Tags: "
+msgstr "ট্যাগ:"
+
+#: patterns/faq.php:14
+msgid "How long does shipping take?"
+msgstr "ডেলিভারিতে কত সময় লাগে?"
+
+#: patterns/faq.php:14
+msgid "Most orders ship within 1–2 business days and arrive in 3–5 business days. You will receive a tracking link by email."
+msgstr "বেশিরভাগ অর্ডার ১–২ কর্মদিবসের মধ্যে পাঠানো হয় এবং ৩–৫ কর্মদিবসে পৌঁছায়। ইমেইলে একটি ট্র্যাকিং লিংক পাবেন।"
+
+#: patterns/faq.php:15 patterns/page-faq.php:40
+msgid "What is your return policy?"
+msgstr "আপনাদের রিটার্ন পলিসি কী?"
+
+#: patterns/faq.php:15
+msgid "You can return unused items within 30 days of delivery for a full refund. Start a return from your account page."
+msgstr "ডেলিভারির ৩০ দিনের মধ্যে অব্যবহৃত পণ্য ফেরত দিয়ে পুরো টাকা ফেরত পেতে পারেন। আপনার অ্যাকাউন্ট পেজ থেকে রিটার্ন শুরু করুন।"
+
+#: patterns/faq.php:16 patterns/page-faq.php:24
+msgid "Which payment methods do you accept?"
+msgstr "কোন কোন পেমেন্ট পদ্ধতি গ্রহণ করেন?"
+
+#: patterns/faq.php:16
+msgid "We accept all major cards and popular digital wallets. Every payment is processed over an encrypted connection."
+msgstr "আমরা সব প্রধান কার্ড ও জনপ্রিয় ডিজিটাল ওয়ালেট গ্রহণ করি। প্রতিটি পেমেন্ট এনক্রিপ্টেড সংযোগে প্রক্রিয়া করা হয়।"
+
+#: patterns/faq.php:17 patterns/contact-faq.php:17
+msgid "Do you ship internationally?"
+msgstr "দেশের বাইরে ডেলিভারি দেন?"
+
+#: patterns/faq.php:17
+msgid "Yes, we ship to most countries. Shipping costs and delivery times are shown at checkout."
+msgstr "হ্যাঁ, বেশিরভাগ দেশে ডেলিভারি দিই। ডেলিভারি খরচ ও সময় চেকআউটে দেখানো হয়।"
+
+#: patterns/faq.php:23 patterns/page-faq.php:16
+msgid "Frequently asked questions"
+msgstr "সচরাচর জিজ্ঞাসা"
+
+#: patterns/checkout-footer.php:16
+msgid "Encrypted payments · 30-day returns · Real human support"
+msgstr "এনক্রিপ্টেড পেমেন্ট · ৩০ দিনে রিটার্ন · সত্যিকারের মানুষের সাপোর্ট"
+
+#: patterns/blog-carousel.php:21 patterns/blog-latest.php:20
+msgid "From the journal"
+msgstr "আমাদের ব্লগ থেকে"
+
+#: patterns/blog-carousel.php:24 patterns/blog-minimal.php:23 patterns/blog-overlay.php:23 patterns/blog-magazine.php:23 patterns/blog-list.php:23 patterns/blog-featured.php:23 patterns/blog-latest.php:23
+msgid "All articles →"
+msgstr "সব লেখা →"
+
+#: patterns/blog-carousel.php:38
+msgid "No posts yet."
+msgstr "এখনো কোনো লেখা নেই।"
+
+#: patterns/hero-banners.php:22
+msgid "Light layers for warm days"
+msgstr "গরমের দিনের হালকা পোশাক"
+
+#: patterns/hero-banners.php:22
+msgid "Shop women"
+msgstr "নারীদের জন্য কিনুন"
+
+#: patterns/hero-banners.php:31
+msgid "Pieces made to stay"
+msgstr "টিকে থাকার মতো জিনিস"
+
+#: patterns/hero-banners.php:31 patterns/split-promo.php:15
+msgid "Shop home"
+msgstr "ঘরের জন্য কিনুন"
+
+#: patterns/landing-guarantee.php:19
+msgid "Money-back guarantee"
+msgstr "টাকা ফেরতের নিশ্চয়তা"
+
+#: patterns/landing-guarantee.php:19
+msgid "Full refund within 7 days if you are not happy."
+msgstr "পছন্দ না হলে ৭ দিনের মধ্যে পুরো টাকা ফেরত।"
+
+#: patterns/landing-guarantee.php:20
+msgid "Check before you pay"
+msgstr "টাকা দেওয়ার আগে দেখে নিন"
+
+#: patterns/landing-guarantee.php:20
+msgid "Open the parcel, check the product, then pay."
+msgstr "পার্সেল খুলুন, পণ্য দেখুন, তারপর টাকা দিন।"
+
+#: patterns/landing-guarantee.php:21
+msgid "Delivery everywhere"
+msgstr "সারা দেশে ডেলিভারি"
+
+#: patterns/landing-guarantee.php:21
+msgid "We deliver to every city and district."
+msgstr "আমরা প্রতিটি শহর ও জেলায় ডেলিভারি দিই।"
+
+#: patterns/landing-cta.php:17
+msgid "Last chance"
+msgstr "শেষ সুযোগ"
+
+#: patterns/landing-cta.php:20
+msgid "Ready to order?"
+msgstr "অর্ডার করতে প্রস্তুত?"
+
+#: patterns/landing-cta.php:23
+msgid "Stock is limited at this price. Order now and pay when it arrives."
+msgstr "এই দামে স্টক সীমিত। এখনই অর্ডার করুন, পণ্য হাতে পেয়ে টাকা দিন।"
+
+#: patterns/landing-cta.php:28 patterns/landing-hero.php:43
+msgid "Order now"
+msgstr "এখনই অর্ডার করুন"
+
+#: patterns/product-carousel.php:19
+msgid "Trending now"
+msgstr "এখন ট্রেন্ডিং"
+
+#: patterns/about-values.php:17
+msgid "Our values"
+msgstr "আমাদের মূল্যবোধ"
+
+#: patterns/about-values.php:26
+msgid "Recycled packaging, carbon-neutral delivery and products designed to be repaired."
+msgstr "রিসাইকেল করা প্যাকেজিং, কার্বন-নিরপেক্ষ ডেলিভারি আর মেরামতযোগ্য করে ডিজাইন করা পণ্য।"
+
+#: patterns/about-values.php:27
+msgid "A real support team that knows every product and is happy to help."
+msgstr "একটি সত্যিকারের সাপোর্ট টিম, যারা প্রতিটি পণ্য চেনে এবং সাহায্য করতে আগ্রহী।"
+
+#: patterns/footer-centered.php:22
+msgid "Thoughtfully made products, delivered fast."
+msgstr "যত্নে তৈরি পণ্য, দ্রুত ডেলিভারি।"
+
+#. translators: 1: Current year, 2: Site name, 3: WordPress link.
+#: patterns/footer-centered.php:49
+msgid "© %1$s %2$s. Designed with %3$s"
+msgstr "© %1$s %2$s। %3$s দিয়ে ডিজাইন করা"
+
+#: patterns/category-list.php:15 patterns/category-carousel.php:17
+msgid "128 products"
+msgstr "১২৮টি পণ্য"
+
+#: patterns/category-list.php:16 patterns/category-carousel.php:18
+msgid "64 products"
+msgstr "৬৪টি পণ্য"
+
+#: patterns/category-list.php:17
+msgid "Bags & accessories"
+msgstr "ব্যাগ ও এক্সেসরিজ"
+
+#: patterns/category-list.php:17 patterns/category-carousel.php:21
+msgid "92 products"
+msgstr "৯২টি পণ্য"
+
+#: patterns/category-list.php:18 patterns/hero-slider.php:25
+msgid "Home & living"
+msgstr "ঘর ও জীবনযাপন"
+
+#: patterns/category-list.php:18 patterns/category-carousel.php:16
+msgid "150 products"
+msgstr "১৫০টি পণ্য"
+
+#: patterns/category-list.php:19 patterns/category-carousel.php:19
+msgid "47 products"
+msgstr "৪৭টি পণ্য"
+
+#: patterns/category-list.php:20
+msgid "36 products"
+msgstr "৩৬টি পণ্য"
+
+#: patterns/category-list.php:37
+msgid "Find what you need"
+msgstr "যা দরকার খুঁজে নিন"
+
+#: patterns/template-order-confirmation.php:21
+msgid "Order details"
+msgstr "অর্ডারের বিস্তারিত"
+
+#: patterns/template-order-confirmation.php:33
+msgid "Delivery address"
+msgstr "ডেলিভারির ঠিকানা"
+
+#: patterns/template-order-confirmation.php:41
+msgid "Billing address"
+msgstr "বিলিং ঠিকানা"
+
+#: patterns/template-order-confirmation.php:57 patterns/page-shipping-returns.php:86
+msgid "Track your order"
+msgstr "আপনার অর্ডার ট্র্যাক করুন"
+
+#: patterns/hidden-product-trust.php:15
+msgid "Free delivery"
+msgstr "ফ্রি ডেলিভারি"
+
+#: patterns/hidden-product-trust.php:15
+msgid "on orders over $50"
+msgstr "$50-এর বেশি অর্ডারে"
+
+#: patterns/hidden-product-trust.php:18
+msgid "30-day returns"
+msgstr "৩০ দিনে রিটার্ন"
+
+#: patterns/hidden-product-trust.php:18
+msgid "no questions asked"
+msgstr "কোনো প্রশ্ন ছাড়াই"
+
+#: patterns/hidden-product-trust.php:21 patterns/trust-badges.php:16
+msgid "Secure checkout"
+msgstr "নিরাপদ চেকআউট"
+
+#: patterns/hidden-product-trust.php:21
+msgid "encrypted payments"
+msgstr "এনক্রিপ্টেড পেমেন্ট"
+
+#: patterns/blog-minimal.php:20
+msgid "Notes from the team"
+msgstr "টিমের কাছ থেকে"
+
+#: patterns/lookbook.php:14
+msgid "Look 01"
+msgstr "লুক ০১"
+
+#: patterns/lookbook.php:14
+msgid "Quiet layers"
+msgstr "শান্ত লেয়ার"
+
+#: patterns/lookbook.php:14
+msgid "Soft neutrals and relaxed shapes for slow weekends."
+msgstr "ধীর-স্থির ছুটির দিনের জন্য নরম রং আর আরামদায়ক কাট।"
+
+#: patterns/lookbook.php:15
+msgid "Look 02"
+msgstr "লুক ০২"
+
+#: patterns/lookbook.php:15
+msgid "Bold basics"
+msgstr "সাহসী বেসিক"
+
+#: patterns/lookbook.php:15
+msgid "Saturated colour on clean, everyday pieces."
+msgstr "পরিচ্ছন্ন, প্রতিদিনের পোশাকে উজ্জ্বল রং।"
+
+#: patterns/lookbook.php:24
+msgid "Lookbook"
+msgstr "লুকবুক"
+
+#: patterns/lookbook.php:27
+msgid "Styled for the season"
+msgstr "এই মৌসুমের স্টাইল"
+
+#: patterns/lookbook.php:52
+msgid "Shop the look →"
+msgstr "লুকটি কিনুন →"
+
+#: patterns/trust-badges.php:14
+msgid "Free shipping"
+msgstr "ফ্রি ডেলিভারি"
+
+#: patterns/trust-badges.php:14
+msgid "On all orders over $50."
+msgstr "$50-এর বেশি সব অর্ডারে।"
+
+#: patterns/trust-badges.php:15 patterns/landing-benefits.php:27 patterns/funnel-checkout.php:37
+msgid "Easy returns"
+msgstr "সহজ রিটার্ন"
+
+#: patterns/trust-badges.php:15
+msgid "30 days, no questions asked."
+msgstr "৩০ দিন, কোনো প্রশ্ন ছাড়াই।"
+
+#: patterns/trust-badges.php:16
+msgid "Encrypted payments, always."
+msgstr "সবসময় এনক্রিপ্টেড পেমেন্ট।"
+
+#: patterns/trust-badges.php:17 patterns/landing-benefits.php:28
+msgid "Real support"
+msgstr "সত্যিকারের সাপোর্ট"
+
+#: patterns/trust-badges.php:17
+msgid "Friendly humans, 7 days a week."
+msgstr "আন্তরিক মানুষ, সপ্তাহে ৭ দিন।"
+
+#: patterns/about-timeline.php:14
+msgid "The first workshop"
+msgstr "প্রথম ওয়ার্কশপ"
+
+#: patterns/about-timeline.php:14
+msgid "We opened a tiny studio and sold our first ten products to friends."
+msgstr "আমরা একটি ছোট্ট স্টুডিও খুলি এবং বন্ধুদের কাছে প্রথম দশটি পণ্য বিক্রি করি।"
+
+#: patterns/about-timeline.php:15
+msgid "Going online"
+msgstr "অনলাইনে যাত্রা"
+
+#: patterns/about-timeline.php:15
+msgid "Our online store launched and orders started arriving from all over the country."
+msgstr "আমাদের অনলাইন স্টোর চালু হয় এবং সারা দেশ থেকে অর্ডার আসতে থাকে।"
+
+#: patterns/about-timeline.php:16
+msgid "A growing team"
+msgstr "বড় হচ্ছে টিম"
+
+#: patterns/about-timeline.php:16
+msgid "We moved into a bigger studio and welcomed designers, makers and support staff."
+msgstr "আমরা বড় স্টুডিওতে উঠি এবং ডিজাইনার, কারিগর ও সাপোর্ট কর্মীদের দলে নিই।"
+
+#: patterns/about-timeline.php:17
+msgid "Today"
+msgstr "আজ"
+
+#: patterns/about-timeline.php:17
+msgid "More than 120 products, 50,000 happy customers and the same simple idea."
+msgstr "১২০টির বেশি পণ্য, ৫০,০০০ সন্তুষ্ট গ্রাহক আর সেই একই সহজ ভাবনা।"
+
+#: patterns/about-timeline.php:23
+msgid "Our journey"
+msgstr "আমাদের যাত্রা"
+
+#: patterns/about-timeline.php:26
+msgid "How we got here"
+msgstr "আমরা কীভাবে এখানে এলাম"
+
+#: patterns/template-shop-sidebar.php:30 patterns/template-shop-sidebar.php:33
+msgid "Active filters"
+msgstr "চালু থাকা ফিল্টার"
+
+#: patterns/template-shop-sidebar.php:44
+msgid "Categories"
+msgstr "ক্যাটাগরি"
+
+#: patterns/template-shop-sidebar.php:50 patterns/template-shop-sidebar.php:53
+msgid "Price"
+msgstr "দাম"
+
+#: patterns/template-shop-sidebar.php:61 patterns/template-shop-sidebar.php:64
+msgid "Availability"
+msgstr "স্টক"
+
+#: patterns/template-shop-sidebar.php:72 patterns/template-shop-sidebar.php:75
+msgid "Rating"
+msgstr "রেটিং"
+
+#: patterns/template-shop-sidebar.php:115 patterns/template-shop.php:44 patterns/template-product-search.php:44
+msgid "No products were found matching your selection."
+msgstr "আপনার বাছাইয়ের সাথে মেলে এমন কোনো পণ্য পাওয়া যায়নি।"
+
+#: patterns/hero-slider-boxed.php:21
+msgid "Just landed"
+msgstr "সবে এসেছে"
+
+#: patterns/hero-slider-boxed.php:21
+msgid "The new season edit is here."
+msgstr "নতুন মৌসুমের কালেকশন চলে এসেছে।"
+
+#: patterns/hero-slider-boxed.php:21
+msgid "Fresh colors, easy shapes and fabrics that feel good all day."
+msgstr "নতুন রং, আরামদায়ক কাট আর সারাদিন ভালো লাগার মতো কাপড়।"
+
+#: patterns/hero-slider-boxed.php:21 patterns/hero-slider.php:19
+msgid "Shop new in"
+msgstr "নতুন পণ্য দেখুন"
+
+#: patterns/hero-slider-boxed.php:24
+msgid "Make every room feel calm."
+msgstr "প্রতিটি ঘরকে করে তুলুন প্রশান্ত।"
+
+#: patterns/hero-slider-boxed.php:24
+msgid "Solid wood, soft linen and handmade ceramics."
+msgstr "সলিড কাঠ, নরম লিনেন আর হাতে তৈরি সিরামিক।"
+
+#: patterns/hero-slider-boxed.php:24 patterns/hero-slider.php:25
+msgid "Explore home"
+msgstr "ঘরের পণ্য দেখুন"
+
+#: patterns/hero-slider-boxed.php:27
+msgid "Members"
+msgstr "সদস্য"
+
+#: patterns/hero-slider-boxed.php:27
+msgid "Free delivery on every order."
+msgstr "প্রতিটি অর্ডারে ফ্রি ডেলিভারি।"
+
+#: patterns/hero-slider-boxed.php:27
+msgid "Create an account and save on shipping, every time."
+msgstr "একটি অ্যাকাউন্ট খুলুন আর প্রতিবার ডেলিভারি খরচ বাঁচান।"
+
+#: patterns/hero-slider-boxed.php:27
+msgid "Join now"
+msgstr "এখনই যোগ দিন"
+
+#: patterns/products-lists.php:75
+msgid "On sale"
+msgstr "সেলে আছে"
+
+#: patterns/hero-sale.php:22
+msgid "-50%"
+msgstr "-৫০%"
+
+#: patterns/hero-sale.php:29
+msgid "Season sale · This week only"
+msgstr "মৌসুমি সেল · শুধু এই সপ্তাহে"
+
+#: patterns/hero-sale.php:32
+msgid "Up to half off hundreds of favorites."
+msgstr "শত শত প্রিয় পণ্যে অর্ধেক পর্যন্ত ছাড়।"
+
+#: patterns/hero-sale.php:35
+msgid "Free shipping on every sale order. While stocks last."
+msgstr "সেলের প্রতিটি অর্ডারে ফ্রি ডেলিভারি। স্টক থাকা পর্যন্ত।"
+
+#: patterns/hero-sale.php:40 patterns/promo-banner.php:32
+msgid "Shop the sale"
+msgstr "সেলের পণ্য দেখুন"
+
+#: patterns/blog-overlay.php:20
+msgid "Read & get inspired"
+msgstr "পড়ুন ও অনুপ্রাণিত হোন"
+
+#: patterns/hidden-404.php:19
+msgid "This page wandered off"
+msgstr "পেজটি হারিয়ে গেছে"
+
+#: patterns/hidden-404.php:22
+msgid "The page you are looking for does not exist or has moved. Search the store or head back to somewhere familiar."
+msgstr "আপনি যে পেজটি খুঁজছেন তা নেই বা সরানো হয়েছে। স্টোরে খুঁজুন অথবা পরিচিত কোথাও ফিরে যান।"
+
+#: patterns/hidden-404.php:24 patterns/template-search.php:15 patterns/hidden-no-results.php:15 inc/header.php:62 inc/header.php:112 inc/header.php:157 inc/header.php:188
+msgctxt "search label"
+msgid "Search"
+msgstr "খুঁজুন"
+
+#: patterns/hidden-404.php:24
+msgctxt "search placeholder"
+msgid "What are you looking for?"
+msgstr "আপনি কী খুঁজছেন?"
+
+#: patterns/hidden-404.php:24 patterns/template-search.php:15 patterns/hidden-no-results.php:15 inc/header.php:62 inc/header.php:112 inc/header.php:157 inc/header.php:188
+msgctxt "search button"
+msgid "Search"
+msgstr "খুঁজুন"
+
+#: patterns/hidden-404.php:28
+msgid "Back to home"
+msgstr "হোমে ফিরে যান"
+
+#: patterns/hidden-404.php:32
+msgid "Browse the shop"
+msgstr "শপ ঘুরে দেখুন"
+
+#: patterns/page-shipping-returns.php:17
+msgid "Start your return"
+msgstr "রিটার্ন শুরু করুন"
+
+#: patterns/page-shipping-returns.php:17
+msgid "Log in to your account or contact us with your order number within 30 days of delivery."
+msgstr "ডেলিভারির ৩০ দিনের মধ্যে আপনার অ্যাকাউন্টে লগইন করুন অথবা অর্ডার নম্বরসহ আমাদের সাথে যোগাযোগ করুন।"
+
+#: patterns/page-shipping-returns.php:18
+msgid "Pack it up"
+msgstr "প্যাক করুন"
+
+#: patterns/page-shipping-returns.php:18
+msgid "Use the original packaging if you can, and include the return slip we send you."
+msgstr "সম্ভব হলে আসল প্যাকেজিং ব্যবহার করুন এবং আমাদের পাঠানো রিটার্ন স্লিপটি দিন।"
+
+#: patterns/page-shipping-returns.php:19
+msgid "Get your refund"
+msgstr "টাকা ফেরত পান"
+
+#: patterns/page-shipping-returns.php:19
+msgid "Once your parcel arrives, we refund the original payment method within 5 business days."
+msgstr "পার্সেল পৌঁছানোর পর ৫ কর্মদিবসের মধ্যে আগের পেমেন্ট পদ্ধতিতে টাকা ফেরত দিই।"
+
+#: patterns/page-shipping-returns.php:22
+msgid "Policies"
+msgstr "নীতিমালা"
+
+#: patterns/page-shipping-returns.php:22
+msgid "Fast, tracked delivery and easy 30-day returns on every order."
+msgstr "প্রতিটি অর্ডারে দ্রুত, ট্র্যাকযোগ্য ডেলিভারি আর ৩০ দিনে সহজ রিটার্ন।"
+
+#: patterns/page-shipping-returns.php:27
+msgid "Shipping options"
+msgstr "ডেলিভারির ধরন"
+
+#: patterns/page-shipping-returns.php:30
+msgid "Method"
+msgstr "পদ্ধতি"
+
+#: patterns/page-shipping-returns.php:30
+msgid "Delivery time"
+msgstr "ডেলিভারির সময়"
+
+#: patterns/page-shipping-returns.php:30
+msgid "Cost"
+msgstr "খরচ"
+
+#: patterns/page-shipping-returns.php:30
+msgid "Standard"
+msgstr "সাধারণ"
+
+#: patterns/page-shipping-returns.php:30
+msgid "3–5 business days"
+msgstr "৩–৫ কর্মদিবস"
+
+#: patterns/page-shipping-returns.php:30
+msgid "$4.95 · free over $50"
+msgstr "$4.95 · $50-এর বেশিতে ফ্রি"
+
+#: patterns/page-shipping-returns.php:30
+msgid "Express"
+msgstr "এক্সপ্রেস"
+
+#: patterns/page-shipping-returns.php:30
+msgid "1–2 business days"
+msgstr "১–২ কর্মদিবস"
+
+#: patterns/page-shipping-returns.php:30
+msgid "$12.95"
+msgstr "$12.95"
+
+#: patterns/page-shipping-returns.php:30
+msgid "International"
+msgstr "আন্তর্জাতিক"
+
+#: patterns/page-shipping-returns.php:30
+msgid "6–12 business days"
+msgstr "৬–১২ কর্মদিবস"
+
+#: patterns/page-shipping-returns.php:30
+msgid "Calculated at checkout"
+msgstr "চেকআউটে হিসাব করা হবে"
+
+#: patterns/page-shipping-returns.php:33
+msgid "Orders placed before 2pm on business days ship the same day. You will receive a tracking link by email as soon as your order leaves our warehouse."
+msgstr "কর্মদিবসে দুপুর ২টার আগে করা অর্ডার সেদিনই পাঠানো হয়। আপনার অর্ডার আমাদের গুদাম থেকে বের হওয়ামাত্র ইমেইলে একটি ট্র্যাকিং লিংক পাবেন।"
+
+#: patterns/page-shipping-returns.php:41
+msgid "Returns in three steps"
+msgstr "তিন ধাপে রিটার্ন"
+
+#: patterns/page-shipping-returns.php:68
+msgid "Good to know"
+msgstr "জেনে রাখুন"
+
+#: patterns/page-shipping-returns.php:73
+msgid "Items must be unused and in their original condition."
+msgstr "পণ্য অব্যবহৃত ও আসল অবস্থায় থাকতে হবে।"
+
+#: patterns/page-shipping-returns.php:76
+msgid "Sale items can be returned for store credit."
+msgstr "সেলের পণ্য ফেরত দিলে স্টোর ক্রেডিট দেওয়া হয়।"
+
+#: patterns/page-shipping-returns.php:79
+msgid "Faulty or damaged items are always replaced free of charge."
+msgstr "ত্রুটিপূর্ণ বা ক্ষতিগ্রস্ত পণ্য সবসময় বিনামূল্যে বদলে দেওয়া হয়।"
+
+#: patterns/page-shipping-returns.php:86
+msgid "Where is my order?"
+msgstr "আমার অর্ডার কোথায়?"
+
+#: patterns/page-shipping-returns.php:86
+msgid "Check its status with your order ID and email."
+msgstr "অর্ডার আইডি ও ইমেইল দিয়ে অবস্থা দেখুন।"
+
+#: patterns/landing-offer.php:17
+msgid "Today only: free delivery and 30% off"
+msgstr "শুধু আজ: ফ্রি ডেলিভারি আর ৩০% ছাড়"
+
+#: patterns/landing-offer.php:20
+msgid "Order now →"
+msgstr "এখনই অর্ডার করুন →"
+
+#: patterns/blog-magazine.php:20
+msgid "The magazine"
+msgstr "ম্যাগাজিন"
+
+#: patterns/hero-cover.php:14
+msgid "Limited edition"
+msgstr "সীমিত সংস্করণ"
+
+#: patterns/hero-cover.php:14
+msgid "Designed to stand out."
+msgstr "সবার থেকে আলাদা হওয়ার জন্য ডিজাইন করা।"
+
+#: patterns/hero-cover.php:14
+msgid "A small-batch collection made with the best materials we could find."
+msgstr "সেরা উপকরণে অল্প সংখ্যায় তৈরি একটি কালেকশন।"
+
+#: patterns/hero-cover.php:14
+msgid "Shop the drop"
+msgstr "কালেকশনটি কিনুন"
+
+#: patterns/hero-cover.php:14
+msgid "Learn more"
+msgstr "আরও জানুন"
+
+#: patterns/category-auto.php:24
+msgid "Updates automatically with your product categories and their images."
+msgstr "আপনার পণ্যের ক্যাটাগরি ও তাদের ছবি দিয়ে নিজে থেকেই হালনাগাদ হয়।"
+
+#: patterns/category-circles.php:16 patterns/category-carousel.php:17
+msgid "Fashion"
+msgstr "ফ্যাশন"
+
+#: patterns/category-circles.php:18 patterns/category-grid.php:18 patterns/category-carousel.php:19 patterns/category-mosaic.php:18
+msgid "Wellness"
+msgstr "সুস্থতা"
+
+#: patterns/category-circles.php:19 patterns/category-carousel.php:20
+msgid "Grocery"
+msgstr "মুদি"
+
+#: patterns/starter-electronics.php:16
+msgid "Just launched"
+msgstr "সবে চালু হলো"
+
+#: patterns/starter-electronics.php:17 patterns/hero-spotlight.php:30
+msgid "Tech that keeps up with you."
+msgstr "আপনার সাথে তাল মিলিয়ে চলা প্রযুক্তি।"
+
+#: patterns/starter-electronics.php:18
+msgid "Laptops, tablets, audio and smart home gear with fast shipping and a two-year warranty."
+msgstr "ল্যাপটপ, ট্যাবলেট, অডিও ও স্মার্ট হোম পণ্য, দ্রুত ডেলিভারি আর দুই বছরের ওয়ারেন্টিসহ।"
+
+#: patterns/starter-electronics.php:19 patterns/split-promo.php:16
+msgid "Shop tech"
+msgstr "টেক পণ্য কিনুন"
+
+#: patterns/starter-electronics.php:21
+msgid "Laptop and tablet on a blue background"
+msgstr "নীল পটভূমিতে ল্যাপটপ ও ট্যাবলেট"
+
+#: patterns/starter-electronics.php:29
+msgid "Laptops & tablets"
+msgstr "ল্যাপটপ ও ট্যাবলেট"
+
+#: patterns/starter-electronics.php:30
+msgid "Audio"
+msgstr "অডিও"
+
+#: patterns/starter-electronics.php:31
+msgid "Smart home"
+msgstr "স্মার্ট হোম"
+
+#: patterns/starter-electronics.php:39
+msgid "Featured deals"
+msgstr "বিশেষ অফার"
+
+#: patterns/starter-electronics.php:50
+msgid "Flash sale"
+msgstr "ফ্ল্যাশ সেল"
+
+#: patterns/starter-electronics.php:61 patterns/top-rated.php:19
+msgid "Top rated"
+msgstr "সেরা রেটিং"
+
+#: patterns/footer-newsletter.php:21
+msgid "Join the list, get 10% off"
+msgstr "তালিকায় যোগ দিন, ১০% ছাড় পান"
+
+#: patterns/footer-newsletter.php:24
+msgid "New drops, restocks and members-only deals, straight to your inbox."
+msgstr "নতুন পণ্য, আবার স্টকে আসা পণ্য আর শুধু সদস্যদের অফার, সরাসরি আপনার ইনবক্সে।"
+
+#: patterns/landing-steps.php:14
+msgid "Place your order"
+msgstr "অর্ডার করুন"
+
+#: patterns/landing-steps.php:14
+msgid "Fill in your name, phone number and address. It takes one minute."
+msgstr "আপনার নাম, ফোন নম্বর ও ঠিকানা দিন। এক মিনিট লাগে।"
+
+#: patterns/landing-steps.php:15
+msgid "We confirm by phone"
+msgstr "আমরা ফোনে নিশ্চিত করি"
+
+#: patterns/landing-steps.php:15
+msgid "Our team calls to confirm your order and delivery time."
+msgstr "আমাদের টিম কল করে আপনার অর্ডার ও ডেলিভারির সময় নিশ্চিত করে।"
+
+#: patterns/landing-steps.php:16
+msgid "Pay when it arrives"
+msgstr "পণ্য পেয়ে টাকা দিন"
+
+#: patterns/landing-steps.php:16
+msgid "Check the product at your door, then pay the courier."
+msgstr "দরজায় পণ্য দেখে নিন, তারপর কুরিয়ারকে টাকা দিন।"
+
+#: patterns/landing-steps.php:22
+msgid "3 easy steps"
+msgstr "৩টি সহজ ধাপ"
+
+#: patterns/landing-steps.php:25
+msgid "How it works"
+msgstr "যেভাবে কাজ করে"
+
+#: patterns/page-contact.php:18
+msgid "We would love to hear from you"
+msgstr "আপনার কথা শুনতে চাই"
+
+#: patterns/page-contact.php:18
+msgid "Questions about an order, a product or a partnership? Our team answers every message within one business day."
+msgstr "অর্ডার, পণ্য বা পার্টনারশিপ নিয়ে প্রশ্ন? আমাদের টিম এক কর্মদিবসের মধ্যে প্রতিটি বার্তার উত্তর দেয়।"
+
+#: patterns/page-contact.php:25 patterns/contact-cards.php:25
+msgid "Email us"
+msgstr "আমাদের ইমেইল করুন"
+
+#: patterns/page-contact.php:25 patterns/contact-cards.php:25 patterns/contact-split.php:14
+msgid "hello@example.com"
+msgstr "hello@example.com"
+
+#: patterns/page-contact.php:25 patterns/contact-cards.php:25
+msgid "Send an email →"
+msgstr "ইমেইল পাঠান →"
+
+#: patterns/page-contact.php:26 patterns/contact-support.php:37 patterns/contact-cards.php:26
+msgid "Call us"
+msgstr "আমাদের কল করুন"
+
+#: patterns/page-contact.php:26 patterns/contact-cards.php:26
+msgid "+1 (555) 010-2030 · Mon–Fri, 9am–6pm"
+msgstr "+1 (555) 010-2030 · সোম–শুক্র, সকাল ৯টা–সন্ধ্যা ৬টা"
+
+#: patterns/page-contact.php:26 patterns/contact-cards.php:26
+msgid "Call now →"
+msgstr "এখনই কল করুন →"
+
+#: patterns/page-contact.php:27 patterns/contact-cards.php:27
+msgid "Visit the studio"
+msgstr "স্টুডিওতে আসুন"
+
+#: patterns/page-contact.php:27
+msgid "12 Market Street, Springfield · Sat 10am–4pm"
+msgstr "12 Market Street, Springfield · শনি সকাল ১০টা–বিকাল ৪টা"
+
+#: patterns/page-contact.php:28 patterns/contact-cards.php:28
+msgid "Order help"
+msgstr "অর্ডারে সাহায্য"
+
+#: patterns/page-contact.php:28 patterns/contact-cards.php:28
+msgid "Track an order, start a return or change an address."
+msgstr "অর্ডার ট্র্যাক করুন, রিটার্ন শুরু করুন বা ঠিকানা বদলান।"
+
+#: patterns/page-contact.php:28 patterns/contact-cards.php:28
+msgid "Track your order →"
+msgstr "আপনার অর্ডার ট্র্যাক করুন →"
+
+#: patterns/page-contact.php:44
+msgid "Send us a message"
+msgstr "আমাদের বার্তা পাঠান"
+
+#: patterns/page-contact.php:47
+msgid "Tell us your order number if you have one, and we will get back to you with everything we can find."
+msgstr "অর্ডার নম্বর থাকলে জানান, আমরা যা পাই সব নিয়ে আপনার কাছে ফিরে আসব।"
+
+#: patterns/page-contact.php:52
+msgid "Replies within one business day"
+msgstr "এক কর্মদিবসের মধ্যে উত্তর"
+
+#: patterns/page-contact.php:55
+msgid "Real people, no bots"
+msgstr "সত্যিকারের মানুষ, কোনো বট নয়"
+
+#: patterns/page-contact.php:58
+msgid "Help in English and Spanish"
+msgstr "বাংলা ও ইংরেজিতে সাহায্য"
+
+#: patterns/page-contact.php:65
+msgid "Write to us"
+msgstr "আমাদের লিখুন"
+
+#: patterns/page-contact.php:78
+msgid "Opening hours"
+msgstr "খোলার সময়"
+
+#: patterns/page-contact.php:81
+msgid "Monday – Friday"
+msgstr "সোমবার – শুক্রবার"
+
+#: patterns/page-contact.php:81
+msgid "9:00 – 18:00"
+msgstr "৯:০০ – ১৮:০০"
+
+#: patterns/page-contact.php:81
+msgid "Saturday"
+msgstr "শনিবার"
+
+#: patterns/page-contact.php:81
+msgid "10:00 – 16:00"
+msgstr "১০:০০ – ১৬:০০"
+
+#: patterns/page-contact.php:81
+msgid "Sunday"
+msgstr "রবিবার"
+
+#: patterns/page-contact.php:81
+msgid "Closed"
+msgstr "বন্ধ"
+
+#: patterns/page-contact.php:88
+msgid "Quick answers"
+msgstr "দ্রুত উত্তর"
+
+#: patterns/page-contact.php:91 patterns/landing-faq.php:14 patterns/contact-faq.php:14 patterns/page-faq.php:32
+msgid "How long does delivery take?"
+msgstr "ডেলিভারিতে কত সময় লাগে?"
+
+#: patterns/page-contact.php:93
+msgid "Most orders arrive in 3–5 business days."
+msgstr "বেশিরভাগ অর্ডার ৩–৫ কর্মদিবসে পৌঁছায়।"
+
+#: patterns/page-contact.php:98 patterns/contact-faq.php:15
+msgid "Can I change my order?"
+msgstr "আমি কি অর্ডার বদলাতে পারব?"
+
+#: patterns/page-contact.php:100
+msgid "Yes, until it ships. Email us with your order number as soon as possible."
+msgstr "হ্যাঁ, পাঠানোর আগ পর্যন্ত। যত দ্রুত সম্ভব অর্ডার নম্বরসহ আমাদের ইমেইল করুন।"
+
+#: patterns/page-contact.php:105
+msgid "See all FAQs →"
+msgstr "সব প্রশ্নোত্তর দেখুন →"
+
+#: patterns/split-promo.php:15
+msgid "The home edit"
+msgstr "ঘরের কালেকশন"
+
+#: patterns/split-promo.php:15
+msgid "Warm textures for cosy spaces."
+msgstr "আরামদায়ক জায়গার জন্য উষ্ণ টেক্সচার।"
+
+#: patterns/split-promo.php:16
+msgid "Tech that fits"
+msgstr "মানানসই প্রযুক্তি"
+
+#: patterns/split-promo.php:16
+msgid "Smart gear for every day."
+msgstr "প্রতিদিনের জন্য স্মার্ট গ্যাজেট।"
+
+#: patterns/landing-benefits.php:17
+msgid "Benefits"
+msgstr "সুবিধা"
+
+#: patterns/landing-benefits.php:20
+msgid "Why customers love it"
+msgstr "গ্রাহকরা কেন ভালোবাসেন"
+
+#: patterns/landing-benefits.php:25
+msgid "Premium quality"
+msgstr "প্রিমিয়াম মান"
+
+#: patterns/landing-benefits.php:25
+msgid "Made from durable materials and checked by hand before it ships."
+msgstr "টেকসই উপকরণে তৈরি, পাঠানোর আগে হাতে পরীক্ষা করা।"
+
+#: patterns/landing-benefits.php:26 patterns/funnel-checkout.php:36
+msgid "Fast delivery"
+msgstr "দ্রুত ডেলিভারি"
+
+#: patterns/landing-benefits.php:26
+msgid "At your door in 2-3 days, with tracking on every order."
+msgstr "২-৩ দিনে আপনার দরজায়, প্রতিটি অর্ডারে ট্র্যাকিংসহ।"
+
+#: patterns/landing-benefits.php:27
+msgid "Not happy? Return it within 7 days for a full refund."
+msgstr "পছন্দ হয়নি? ৭ দিনের মধ্যে ফেরত দিন, পুরো টাকা ফেরত পাবেন।"
+
+#: patterns/landing-benefits.php:28
+msgid "Call or message us any day. A real person answers."
+msgstr "যেকোনো দিন কল বা মেসেজ করুন। সত্যিকারের মানুষ উত্তর দেয়।"
+
+#: patterns/template-track-order.php:20
+msgid "Check the status of your order at any time, no account needed."
+msgstr "যেকোনো সময় অর্ডারের অবস্থা দেখুন, অ্যাকাউন্ট লাগবে না।"
+
+#: patterns/on-sale.php:19
+msgid "On sale now"
+msgstr "এখন সেলে"
+
+#: patterns/category-grid.php:15 inc/header.php:209
+msgid "Home & Living"
+msgstr "ঘর ও জীবনযাপন"
+
+#: patterns/category-grid.php:17
+msgid "Tech & Gadgets"
+msgstr "টেক ও গ্যাজেট"
+
+#: patterns/category-grid.php:29 patterns/new-arrivals.php:26 patterns/products-large.php:27 inc/pattern-helpers.php:109
+msgid "View all"
+msgstr "সব দেখুন"
+
+#: patterns/products-banner.php:31
+msgid "Collection"
+msgstr "কালেকশন"
+
+#: patterns/products-banner.php:34
+msgid "Bold basics for every day"
+msgstr "প্রতিদিনের জন্য সাহসী বেসিক"
+
+#: patterns/products-banner.php:55
+msgid "Featured in this collection"
+msgstr "এই কালেকশনে"
+
+#: patterns/checkout-header.php:28
+msgid "🔒 Secure checkout"
+msgstr "🔒 নিরাপদ চেকআউট"
+
+#: patterns/checkout-header.php:31
+msgid "← Back to cart"
+msgstr "← কার্টে ফিরে যান"
+
+#: patterns/landing-faq.php:14
+msgid "Most orders arrive in 2-3 days in the city and 3-5 days elsewhere."
+msgstr "বেশিরভাগ অর্ডার শহরে ২-৩ দিনে এবং অন্য জায়গায় ৩-৫ দিনে পৌঁছায়।"
+
+#: patterns/landing-faq.php:15
+msgid "Can I pay on delivery?"
+msgstr "আমি কি পণ্য পেয়ে টাকা দিতে পারব?"
+
+#: patterns/landing-faq.php:15
+msgid "Yes. Pay the courier when the product arrives. Other payment methods are shown at checkout."
+msgstr "হ্যাঁ। পণ্য পৌঁছালে কুরিয়ারকে টাকা দিন। অন্যান্য পেমেন্ট পদ্ধতি চেকআউটে দেখানো হয়।"
+
+#: patterns/landing-faq.php:16
+msgid "What if I do not like it?"
+msgstr "পছন্দ না হলে কী হবে?"
+
+#: patterns/landing-faq.php:16
+msgid "Return it within 7 days in its original condition for a full refund."
+msgstr "আসল অবস্থায় ৭ দিনের মধ্যে ফেরত দিন, পুরো টাকা ফেরত পাবেন।"
+
+#: patterns/landing-faq.php:17
+msgid "How do I know my order is confirmed?"
+msgstr "আমার অর্ডার নিশ্চিত হয়েছে কীভাবে বুঝব?"
+
+#: patterns/landing-faq.php:17
+msgid "We call or message you after you order, and you can track it any time on the Track order page."
+msgstr "অর্ডারের পর আমরা আপনাকে কল বা মেসেজ করি, আর যেকোনো সময় অর্ডার ট্র্যাক পেজে অর্ডারটি দেখতে পারেন।"
+
+#: patterns/landing-faq.php:26
+msgid "Questions before you order"
+msgstr "অর্ডারের আগের প্রশ্ন"
+
+#: patterns/contact-faq.php:14
+msgid "Most orders arrive within 3–5 business days."
+msgstr "বেশিরভাগ অর্ডার ৩–৫ কর্মদিবসের মধ্যে পৌঁছায়।"
+
+#: patterns/contact-faq.php:15
+msgid "Yes, until it ships. Contact us with your order number as soon as possible."
+msgstr "হ্যাঁ, পাঠানোর আগ পর্যন্ত। যত দ্রুত সম্ভব অর্ডার নম্বরসহ আমাদের সাথে যোগাযোগ করুন।"
+
+#: patterns/contact-faq.php:16
+msgid "How do returns work?"
+msgstr "রিটার্ন কীভাবে কাজ করে?"
+
+#: patterns/contact-faq.php:16
+msgid "Return unused items within 30 days for a full refund."
+msgstr "৩০ দিনের মধ্যে অব্যবহৃত পণ্য ফেরত দিন, পুরো টাকা ফেরত পাবেন।"
+
+#: patterns/contact-faq.php:17
+msgid "Yes, to most countries. Costs and times are shown at checkout."
+msgstr "হ্যাঁ, বেশিরভাগ দেশে। খরচ ও সময় চেকআউটে দেখানো হয়।"
+
+#: patterns/contact-faq.php:30
+msgid "Questions? Start here."
+msgstr "প্রশ্ন আছে? এখান থেকে শুরু করুন।"
+
+#: patterns/contact-faq.php:33
+msgid "Quick answers to the questions we hear most. Still stuck? Our team is one message away."
+msgstr "সবচেয়ে বেশি শোনা প্রশ্নগুলোর দ্রুত উত্তর। এখনো আটকে আছেন? আমাদের টিম মাত্র একটি বার্তা দূরে।"
+
+#: patterns/template-single-product.php:38
+msgid "Category: "
+msgstr "ক্যাটাগরি:"
+
+#: patterns/template-single-product.php:56
+msgid "You may also like"
+msgstr "আপনার পছন্দ হতে পারে"
+
+#: patterns/newsletter.php:18 patterns/newsletter-inline.php:22
+msgid "Get 10% off your first order"
+msgstr "প্রথম অর্ডারে ১০% ছাড় পান"
+
+#: patterns/newsletter.php:21
+msgid "Join our newsletter for early access to new drops, restocks and members-only deals."
+msgstr "নতুন পণ্য, আবার স্টকে আসা পণ্য আর শুধু সদস্যদের অফার আগে পেতে আমাদের নিউজলেটারে যোগ দিন।"
+
+#: patterns/page-help-center.php:18 inc/header.php:44
+msgid "Help center"
+msgstr "সাহায্য কেন্দ্র"
+
+#: patterns/page-help-center.php:18
+msgid "How can we help?"
+msgstr "কীভাবে সাহায্য করতে পারি?"
+
+#: patterns/page-help-center.php:18
+msgid "Find answers, follow your order or get in touch with our team."
+msgstr "উত্তর খুঁজুন, অর্ডার ট্র্যাক করুন বা আমাদের টিমের সাথে যোগাযোগ করুন।"
+
+#: patterns/page-help-center.php:25
+msgid "Track an order"
+msgstr "অর্ডার ট্র্যাক করুন"
+
+#: patterns/page-help-center.php:25
+msgid "See where your parcel is with your order ID and email."
+msgstr "অর্ডার আইডি ও ইমেইল দিয়ে আপনার পার্সেল কোথায় আছে দেখুন।"
+
+#: patterns/page-help-center.php:25
+msgid "Track order →"
+msgstr "অর্ডার ট্র্যাক করুন →"
+
+#: patterns/page-help-center.php:26 patterns/page-faq.php:30
+msgid "Shipping & delivery"
+msgstr "ডেলিভারি"
+
+#: patterns/page-help-center.php:26
+msgid "Delivery options, times and costs."
+msgstr "ডেলিভারির ধরন, সময় ও খরচ।"
+
+#: patterns/page-help-center.php:26
+msgid "Shipping info →"
+msgstr "ডেলিভারির তথ্য →"
+
+#: patterns/page-help-center.php:27 patterns/page-faq.php:38
+msgid "Returns & refunds"
+msgstr "রিটার্ন ও রিফান্ড"
+
+#: patterns/page-help-center.php:27
+msgid "Start a return and learn how refunds work."
+msgstr "রিটার্ন শুরু করুন এবং টাকা ফেরত কীভাবে হয় জানুন।"
+
+#: patterns/page-help-center.php:27
+msgid "Returns policy →"
+msgstr "রিটার্ন পলিসি →"
+
+#: patterns/page-help-center.php:28
+msgid "My account"
+msgstr "আমার অ্যাকাউন্ট"
+
+#: patterns/page-help-center.php:28
+msgid "Orders, addresses, password and account details."
+msgstr "অর্ডার, ঠিকানা, পাসওয়ার্ড ও অ্যাকাউন্টের তথ্য।"
+
+#: patterns/page-help-center.php:28
+msgid "Go to my account →"
+msgstr "আমার অ্যাকাউন্টে যান →"
+
+#: patterns/page-help-center.php:29
+msgid "Quick answers to the most common questions."
+msgstr "সাধারণ প্রশ্নগুলোর দ্রুত উত্তর।"
+
+#: patterns/page-help-center.php:29
+msgid "Read the FAQ →"
+msgstr "প্রশ্নোত্তর পড়ুন →"
+
+#: patterns/page-help-center.php:30
+msgid "Email, phone and opening hours."
+msgstr "ইমেইল, ফোন ও খোলার সময়।"
+
+#: patterns/page-help-center.php:30
+msgid "Get in touch →"
+msgstr "যোগাযোগ করুন →"
+
+#: patterns/page-help-center.php:37
+msgid "Can't find what you need?"
+msgstr "যা দরকার খুঁজে পাচ্ছেন না?"
+
+#: patterns/page-help-center.php:37
+msgid "Send us a message and we will get back to you within one business day."
+msgstr "আমাদের একটি বার্তা পাঠান, এক কর্মদিবসের মধ্যে আমরা উত্তর দেব।"
+
+#: patterns/contact-locations.php:14
+msgid "Springfield"
+msgstr "স্প্রিংফিল্ড"
+
+#: patterns/contact-locations.php:14
+msgid "12 Market Street"
+msgstr "12 Market Street"
+
+#: patterns/contact-locations.php:14
+msgid "Mon–Sat 10:00–18:00"
+msgstr "সোম–শনি ১০:০০–১৮:০০"
+
+#: patterns/contact-locations.php:15
+msgid "Riverside"
+msgstr "রিভারসাইড"
+
+#: patterns/contact-locations.php:15
+msgid "48 Harbor Road"
+msgstr "48 Harbor Road"
+
+#: patterns/contact-locations.php:15
+msgid "Mon–Sat 10:00–19:00"
+msgstr "সোম–শনি ১০:০০–১৯:০০"
+
+#: patterns/contact-locations.php:16
+msgid "Hillcrest"
+msgstr "হিলক্রেস্ট"
+
+#: patterns/contact-locations.php:16
+msgid "7 Garden Lane"
+msgstr "7 Garden Lane"
+
+#: patterns/contact-locations.php:16
+msgid "Tue–Sun 11:00–17:00"
+msgstr "মঙ্গল–রবি ১১:০০–১৭:০০"
+
+#: patterns/contact-locations.php:22
+msgid "Locations"
+msgstr "শাখাসমূহ"
+
+#: patterns/contact-locations.php:25
+msgid "Visit our stores"
+msgstr "আমাদের স্টোরে আসুন"
+
+#: patterns/hero-spotlight.php:15
+msgid "All-day battery life"
+msgstr "সারাদিনের ব্যাটারি"
+
+#: patterns/hero-spotlight.php:16
+msgid "Fast wireless charging"
+msgstr "দ্রুত ওয়্যারলেস চার্জিং"
+
+#: patterns/hero-spotlight.php:17
+msgid "Free 2-year warranty"
+msgstr "ফ্রি ২ বছরের ওয়ারেন্টি"
+
+#: patterns/hero-spotlight.php:27
+msgid "New launch"
+msgstr "নতুন লঞ্চ"
+
+#: patterns/hero-spotlight.php:33
+msgid "Our thinnest, lightest devices yet, built for work, play and everything in between."
+msgstr "আমাদের সবচেয়ে পাতলা ও হালকা ডিভাইস, কাজ, বিনোদন আর সবকিছুর জন্য তৈরি।"
+
+#: patterns/hero-spotlight.php:47
+msgid "$499"
+msgstr "$499"
+
+#: patterns/landing-header.php:28
+msgid "✓ Cash on delivery"
+msgstr "✓ ক্যাশ অন ডেলিভারি"
+
+#: patterns/landing-header.php:31
+msgid "Call to order:"
+msgstr "অর্ডার করতে কল করুন:"
+
+#: patterns/starter-grocery.php:16
+msgid "Fresh every morning"
+msgstr "প্রতিদিন সকালে টাটকা"
+
+#: patterns/starter-grocery.php:17
+msgid "Groceries delivered in an hour."
+msgstr "এক ঘণ্টায় বাজার দরজায়।"
+
+#: patterns/starter-grocery.php:18
+msgid "Seasonal produce, pantry staples and local favourites, picked fresh and brought to your door."
+msgstr "মৌসুমি ফল-সবজি, নিত্যপ্রয়োজনীয় পণ্য আর স্থানীয় প্রিয় জিনিস, টাটকা বেছে আপনার দরজায় পৌঁছে দেওয়া।"
+
+#: patterns/starter-grocery.php:21
+msgid "Fresh fruit on a green background"
+msgstr "সবুজ পটভূমিতে টাটকা ফল"
+
+#: patterns/starter-grocery.php:29
+msgid "Fruit & veg"
+msgstr "ফল ও সবজি"
+
+#: patterns/starter-grocery.php:30
+msgid "Bakery"
+msgstr "বেকারি"
+
+#: patterns/starter-grocery.php:31
+msgid "Dairy & eggs"
+msgstr "দুধ ও ডিম"
+
+#: patterns/starter-grocery.php:32
+msgid "Pantry"
+msgstr "নিত্যপ্রয়োজনীয়"
+
+#: patterns/starter-grocery.php:39
+msgid "This week's offers"
+msgstr "এই সপ্তাহের অফার"
+
+#: patterns/starter-grocery.php:50
+msgid "Customer favourites"
+msgstr "গ্রাহকদের প্রিয়"
+
+#: patterns/hero-minimal.php:19
+msgid "Spring / Summer"
+msgstr "বসন্ত / গ্রীষ্ম"
+
+#: patterns/hero-minimal.php:22
+msgid "Less, but better."
+msgstr "কম, তবে আরও ভালো।"
+
+#: patterns/hero-minimal.php:25
+msgid "A small collection of things we love, made well and priced fairly."
+msgstr "আমাদের প্রিয় কিছু জিনিসের ছোট্ট কালেকশন, ভালো করে তৈরি আর ন্যায্য দামে।"
+
+#: patterns/about-stats.php:14
+msgid "Founded in a small studio"
+msgstr "একটি ছোট স্টুডিওতে প্রতিষ্ঠিত"
+
+#: patterns/blog-list.php:20
+msgid "Latest articles"
+msgstr "সাম্প্রতিক লেখা"
+
+#: patterns/featured-products.php:19 patterns/products-large.php:24
+msgid "Featured picks"
+msgstr "বাছাই করা পণ্য"
+
+#: patterns/promo-banner.php:22
+msgid "Up to 40% off"
+msgstr "৪০% পর্যন্ত ছাড়"
+
+#: patterns/promo-banner.php:25
+msgid "Our biggest seasonal sale. Limited stock — while it lasts."
+msgstr "আমাদের সবচেয়ে বড় মৌসুমি সেল। স্টক সীমিত — যতক্ষণ থাকে।"
+
+#: patterns/blog-featured.php:20
+msgid "Stories & guides"
+msgstr "গল্প ও গাইড"
+
+#: patterns/contact-support.php:21
+msgid "Support"
+msgstr "সাপোর্ট"
+
+#: patterns/contact-support.php:24
+msgid "Need a hand? We are here."
+msgstr "সাহায্য লাগবে? আমরা আছি।"
+
+#: patterns/contact-support.php:27
+msgid "Real people, quick answers: we reply within one business day."
+msgstr "সত্যিকারের মানুষ, দ্রুত উত্তর: এক কর্মদিবসের মধ্যে উত্তর দিই।"
+
+#: patterns/contact-support.php:34
+msgid "Email support"
+msgstr "ইমেইল সাপোর্ট"
+
+#: patterns/landing-comparison.php:14
+msgid "Quality checked before shipping"
+msgstr "পাঠানোর আগে মান যাচাই করা"
+
+#: patterns/landing-comparison.php:15
+msgid "Cash on delivery"
+msgstr "ক্যাশ অন ডেলিভারি"
+
+#: patterns/landing-comparison.php:16
+msgid "7-day returns"
+msgstr "৭ দিনে রিটার্ন"
+
+#: patterns/landing-comparison.php:17
+msgid "Delivery in 2-3 days"
+msgstr "২-৩ দিনে ডেলিভারি"
+
+#: patterns/landing-comparison.php:17
+msgid "5-7 days"
+msgstr "৫-৭ দিন"
+
+#: patterns/landing-comparison.php:18
+msgid "Support every day"
+msgstr "প্রতিদিন সাপোর্ট"
+
+#: patterns/landing-comparison.php:24
+msgid "The difference"
+msgstr "পার্থক্য"
+
+#: patterns/landing-comparison.php:27
+msgid "Why choose us"
+msgstr "কেন আমাদের বেছে নেবেন"
+
+#: patterns/landing-comparison.php:30
+msgid "What you get"
+msgstr "আপনি যা পাবেন"
+
+#: patterns/landing-comparison.php:30
+msgid "Us"
+msgstr "আমরা"
+
+#: patterns/landing-comparison.php:30
+msgid "Others"
+msgstr "অন্যরা"
+
+#: patterns/page-track-order.php:18
+msgid "Where do I find my order ID?"
+msgstr "আমার অর্ডার আইডি কোথায় পাব?"
+
+#: patterns/page-track-order.php:18
+msgid "It is in your order confirmation email, next to \"Order #\"."
+msgstr "অর্ডার নিশ্চিতকরণ ইমেইলে \"Order #\"-এর পাশে আছে।"
+
+#: patterns/page-track-order.php:19
+msgid "Have an account?"
+msgstr "অ্যাকাউন্ট আছে?"
+
+#: patterns/page-track-order.php:19
+msgid "Log in to see every order and its tracking details in one place."
+msgstr "লগইন করে এক জায়গায় সব অর্ডার ও তাদের ট্র্যাকিং তথ্য দেখুন।"
+
+#: patterns/page-track-order.php:20
+msgid "Still need help?"
+msgstr "এখনো সাহায্য লাগবে?"
+
+#: patterns/page-track-order.php:20
+msgid "Our support team is happy to check on your delivery for you."
+msgstr "আমাদের সাপোর্ট টিম খুশি মনে আপনার ডেলিভারির খোঁজ নিয়ে দেবে।"
+
+#: patterns/page-track-order.php:30
+msgid "Find your order"
+msgstr "আপনার অর্ডার খুঁজুন"
+
+#: patterns/page-track-order.php:58
+msgid "Go to my account"
+msgstr "আমার অ্যাকাউন্টে যান"
+
+#: patterns/hero-slider.php:19 patterns/category-mosaic.php:15
+msgid "New season"
+msgstr "নতুন মৌসুম"
+
+#: patterns/hero-slider.php:19 patterns/hero.php:25
+msgid "Everyday essentials, made to last."
+msgstr "প্রতিদিনের প্রয়োজনীয় জিনিস, টেকসই করে তৈরি।"
+
+#: patterns/hero-slider.php:19
+msgid "Quality products at honest prices, with free returns on every order."
+msgstr "সৎ দামে মানসম্মত পণ্য, প্রতিটি অর্ডারে ফ্রি রিটার্ন।"
+
+#: patterns/hero-slider.php:19 patterns/hero.php:36
+msgid "Browse categories"
+msgstr "ক্যাটাগরি দেখুন"
+
+#: patterns/hero-slider.php:22
+msgid "The edit"
+msgstr "কালেকশন"
+
+#: patterns/hero-slider.php:22
+msgid "Soft layers for slow weekends."
+msgstr "ধীর-স্থির ছুটির দিনের নরম লেয়ার।"
+
+#: patterns/hero-slider.php:22
+msgid "Natural fabrics and relaxed shapes in warm, easy colors."
+msgstr "উষ্ণ, সহজ রঙে প্রাকৃতিক কাপড় আর আরামদায়ক কাট।"
+
+#: patterns/hero-slider.php:25
+msgid "Made for the way you live."
+msgstr "আপনার জীবনযাপনের মতো করে তৈরি।"
+
+#: patterns/hero-slider.php:25
+msgid "Solid wood furniture and handmade decor, delivered free."
+msgstr "সলিড কাঠের ফার্নিচার আর হাতে তৈরি সাজসজ্জা, ফ্রি ডেলিভারিতে।"
+
+#: patterns/hero-slider.php:25
+msgid "See the lookbook"
+msgstr "লুকবুক দেখুন"
+
+#: patterns/hero.php:22
+msgid "New season collection"
+msgstr "নতুন মৌসুমের কালেকশন"
+
+#: patterns/hero.php:28
+msgid "Discover quality products at honest prices. Fast delivery, secure checkout and free returns on every order."
+msgstr "সৎ দামে মানসম্মত পণ্য খুঁজে নিন। দ্রুত ডেলিভারি, নিরাপদ চেকআউট আর প্রতিটি অর্ডারে ফ্রি রিটার্ন।"
+
+#: patterns/hero.php:45
+msgid "Product arrangement on a soft background"
+msgstr "নরম পটভূমিতে সাজানো পণ্য"
+
+#: patterns/category-carousel.php:20
+msgid "210 products"
+msgstr "২১০টি পণ্য"
+
+#: patterns/category-carousel.php:22
+msgid "Furniture"
+msgstr "ফার্নিচার"
+
+#: patterns/category-carousel.php:22
+msgid "58 products"
+msgstr "৫৮টি পণ্য"
+
+#: patterns/funnel-checkout.php:18
+msgid "Complete your order"
+msgstr "আপনার অর্ডার সম্পন্ন করুন"
+
+#: patterns/funnel-checkout.php:21
+msgid "Fill in your details below. You pay when the parcel arrives."
+msgstr "নিচে আপনার তথ্য দিন। পার্সেল পৌঁছালে টাকা দেবেন।"
+
+#: patterns/funnel-checkout.php:35
+msgid "Pay on delivery"
+msgstr "পণ্য পেয়ে টাকা"
+
+#: patterns/funnel-checkout.php:35
+msgid "Check the parcel first, then pay."
+msgstr "আগে পার্সেল দেখে নিন, তারপর টাকা দিন।"
+
+#: patterns/funnel-checkout.php:36
+msgid "Delivered to your door in a few days."
+msgstr "কয়েক দিনের মধ্যে আপনার দরজায় পৌঁছে যাবে।"
+
+#: patterns/funnel-checkout.php:37
+msgid "Not happy? Return it within 7 days."
+msgstr "পছন্দ হয়নি? ৭ দিনের মধ্যে ফেরত দিন।"
+
+#: patterns/category-cards.php:15
+msgid "Effortless everyday pieces"
+msgstr "সহজ প্রতিদিনের পোশাক"
+
+#: patterns/category-cards.php:16
+msgid "Bold basics and layers"
+msgstr "সাহসী বেসিক ও লেয়ার"
+
+#: patterns/category-cards.php:17
+msgid "Furniture and decor"
+msgstr "ফার্নিচার ও সাজসজ্জা"
+
+#: patterns/category-cards.php:23
+msgid "Shop the collections"
+msgstr "কালেকশনগুলো দেখুন"
+
+#: patterns/landing-hero.php:14
+msgid "Free delivery in 2-3 days"
+msgstr "২-৩ দিনে ফ্রি ডেলিভারি"
+
+#: patterns/landing-hero.php:14
+msgid "Cash on delivery available"
+msgstr "ক্যাশ অন ডেলিভারি সুবিধা আছে"
+
+#: patterns/landing-hero.php:14
+msgid "7-day easy returns"
+msgstr "৭ দিনে সহজ রিটার্ন"
+
+#: patterns/landing-hero.php:23
+msgid "Limited offer: 30% off"
+msgstr "সীমিত অফার: ৩০% ছাড়"
+
+#: patterns/landing-hero.php:26
+msgid "The one product your day was missing."
+msgstr "আপনার দিনের যে পণ্যটির অভাব ছিল।"
+
+#: patterns/landing-hero.php:29
+msgid "Say in one sentence what problem it solves and why it is better. Keep it short and clear."
+msgstr "এক বাক্যে বলুন এটি কোন সমস্যার সমাধান করে এবং কেন ভালো। ছোট ও পরিষ্কার রাখুন।"
+
+#: patterns/about-team.php:15 patterns/about-story.php:40
+msgid "Alex Morgan"
+msgstr "Alex Morgan"
+
+#: patterns/about-team.php:15
+msgid "Founder & CEO"
+msgstr "প্রতিষ্ঠাতা ও সিইও"
+
+#: patterns/about-team.php:16
+msgid "Jamie Rivera"
+msgstr "Jamie Rivera"
+
+#: patterns/about-team.php:16
+msgid "Head of Design"
+msgstr "ডিজাইন প্রধান"
+
+#: patterns/about-team.php:17
+msgid "Sam Kim"
+msgstr "Sam Kim"
+
+#: patterns/about-team.php:17
+msgid "Operations"
+msgstr "অপারেশনস"
+
+#: patterns/about-team.php:18
+msgid "Taylor Patel"
+msgstr "Taylor Patel"
+
+#: patterns/about-team.php:18
+msgid "Customer Care"
+msgstr "গ্রাহক সেবা"
+
+#: patterns/about-team.php:24
+msgid "The people"
+msgstr "আমাদের মানুষেরা"
+
+#: patterns/about-team.php:27
+msgid "Meet the team"
+msgstr "টিমের সাথে পরিচিত হোন"
+
+#: patterns/newsletter-inline.php:25
+msgid "Plus early access to sales. Unsubscribe any time."
+msgstr "সাথে সেলে আগে সুযোগ। যেকোনো সময় আনসাবস্ক্রাইব করুন।"
+
+#: patterns/newsletter-inline.php:32
+msgid "Sign me up"
+msgstr "আমাকে যুক্ত করুন"
+
+#: patterns/contact-cards.php:20
+msgid "Get in touch"
+msgstr "যোগাযোগ করুন"
+
+#: patterns/contact-cards.php:27 patterns/contact-split.php:16
+msgid "12 Market Street, Springfield"
+msgstr "12 Market Street, Springfield"
+
+#: patterns/newsletter-split.php:29
+msgid "Be the first to know"
+msgstr "সবার আগে জানুন"
+
+#: patterns/newsletter-split.php:32
+msgid "Sign up for new arrivals, exclusive offers and styling tips from our team."
+msgstr "নতুন পণ্য, বিশেষ অফার আর আমাদের টিমের স্টাইলিং টিপস পেতে সাইন আপ করুন।"
+
+#: patterns/newsletter-split.php:37 patterns/newsletter-card.php:28
+msgid "10% off your first order"
+msgstr "প্রথম অর্ডারে ১০% ছাড়"
+
+#: patterns/newsletter-split.php:40 patterns/newsletter-card.php:31
+msgid "Early access to new drops and sales"
+msgstr "নতুন পণ্য ও সেলে আগে সুযোগ"
+
+#: patterns/newsletter-split.php:43 patterns/newsletter-card.php:34
+msgid "One email a week, unsubscribe any time"
+msgstr "সপ্তাহে একটি ইমেইল, যেকোনো সময় আনসাবস্ক্রাইব"
+
+#: patterns/hero-mosaic.php:22
+msgid "Spring collection"
+msgstr "বসন্ত কালেকশন"
+
+#: patterns/hero-mosaic.php:22
+msgid "Fresh looks for brighter days."
+msgstr "উজ্জ্বল দিনের নতুন লুক।"
+
+#: patterns/hero-mosaic.php:22
+msgid "Light layers, bold colors and the essentials you will reach for all season."
+msgstr "হালকা লেয়ার, সাহসী রং আর সারা মৌসুম ব্যবহারের প্রয়োজনীয় পোশাক।"
+
+#: patterns/product-deal.php:26
+msgid "Deal of the week"
+msgstr "সপ্তাহের সেরা অফার"
+
+#: patterns/product-deal.php:29
+msgid "Up to 40% off our favorites"
+msgstr "আমাদের প্রিয় পণ্যে ৪০% পর্যন্ত ছাড়"
+
+#: patterns/product-deal.php:32
+msgid "Hand-picked by our team and only at this price while stock lasts. New deals every Monday."
+msgstr "আমাদের টিমের বাছাই করা, স্টক থাকা পর্যন্তই এই দামে। প্রতি সোমবার নতুন অফার।"
+
+#: patterns/product-deal.php:37
+msgid "See all deals"
+msgstr "সব অফার দেখুন"
+
+#: patterns/template-my-account.php:20
+msgid "Manage your orders, addresses and account details in one place."
+msgstr "আপনার অর্ডার, ঠিকানা ও অ্যাকাউন্টের তথ্য এক জায়গায় পরিচালনা করুন।"
+
+#: patterns/contact-split.php:14
+msgid "Email"
+msgstr "ইমেইল"
+
+#: patterns/contact-split.php:15
+msgid "Phone"
+msgstr "ফোন"
+
+#: patterns/contact-split.php:15
+msgid "+1 (555) 010-2030"
+msgstr "+1 (555) 010-2030"
+
+#: patterns/contact-split.php:16
+msgid "Address"
+msgstr "ঠিকানা"
+
+#: patterns/contact-split.php:17
+msgid "Hours"
+msgstr "সময়"
+
+#: patterns/contact-split.php:17
+msgid "Mon–Fri 9:00–18:00 · Sat 10:00–16:00"
+msgstr "সোম–শুক্র ৯:০০–১৮:০০ · শনি ১০:০০–১৬:০০"
+
+#: patterns/contact-split.php:27
+msgid "Visit or write"
+msgstr "আসুন বা লিখুন"
+
+#: patterns/contact-split.php:30
+msgid "Come say hello"
+msgstr "দেখা করে যান"
+
+#: patterns/contact-split.php:33
+msgid "Questions about an order, a product or a partnership? We answer every message within one business day."
+msgstr "অর্ডার, পণ্য বা পার্টনারশিপ নিয়ে প্রশ্ন? এক কর্মদিবসের মধ্যে আমরা প্রতিটি বার্তার উত্তর দিই।"
+
+#: patterns/page-faq.php:16
+msgid "Quick answers about orders, delivery, returns and your account."
+msgstr "অর্ডার, ডেলিভারি, রিটার্ন ও আপনার অ্যাকাউন্ট নিয়ে দ্রুত উত্তর।"
+
+#: patterns/page-faq.php:22
+msgid "Orders & payment"
+msgstr "অর্ডার ও পেমেন্ট"
+
+#: patterns/page-faq.php:24
+msgid "All major credit and debit cards plus popular digital wallets. Payments are processed over an encrypted connection."
+msgstr "সব প্রধান ক্রেডিট ও ডেবিট কার্ড এবং জনপ্রিয় ডিজিটাল ওয়ালেট। পেমেন্ট এনক্রিপ্টেড সংযোগে প্রক্রিয়া করা হয়।"
+
+#: patterns/page-faq.php:25
+msgid "Can I change or cancel my order?"
+msgstr "আমি কি অর্ডার বদলাতে বা বাতিল করতে পারব?"
+
+#: patterns/page-faq.php:25
+msgid "Yes, until your order ships. Contact us with your order number as soon as possible."
+msgstr "হ্যাঁ, অর্ডার পাঠানোর আগ পর্যন্ত। যত দ্রুত সম্ভব অর্ডার নম্বরসহ আমাদের সাথে যোগাযোগ করুন।"
+
+#: patterns/page-faq.php:26
+msgid "Do I need an account to order?"
+msgstr "অর্ডার করতে কি অ্যাকাউন্ট লাগবে?"
+
+#: patterns/page-faq.php:26
+msgid "No. You can check out as a guest, or create an account to track orders and save addresses."
+msgstr "না। অতিথি হিসেবে চেকআউট করতে পারেন, অথবা অর্ডার ট্র্যাক ও ঠিকানা সংরক্ষণের জন্য অ্যাকাউন্ট খুলতে পারেন।"
+
+#: patterns/page-faq.php:32
+msgid "Most orders ship within 1–2 business days and arrive within 3–5 business days."
+msgstr "বেশিরভাগ অর্ডার ১–২ কর্মদিবসের মধ্যে পাঠানো হয় এবং ৩–৫ কর্মদিবসের মধ্যে পৌঁছায়।"
+
+#: patterns/page-faq.php:33
+msgid "How much does shipping cost?"
+msgstr "ডেলিভারি খরচ কত?"
+
+#: patterns/page-faq.php:33
+msgid "Shipping is free on orders over $50. Below that, the cost is shown at checkout before you pay."
+msgstr "$50-এর বেশি অর্ডারে ডেলিভারি ফ্রি। এর কম হলে পেমেন্টের আগে চেকআউটে খরচ দেখানো হয়।"
+
+#: patterns/page-faq.php:34
+msgid "How do I track my order?"
+msgstr "আমার অর্ডার কীভাবে ট্র্যাক করব?"
+
+#: patterns/page-faq.php:34
+msgid "Use the tracking link in your shipping email, or enter your order ID and email on the Track order page."
+msgstr "ডেলিভারি ইমেইলের ট্র্যাকিং লিংক ব্যবহার করুন, অথবা অর্ডার ট্র্যাক পেজে অর্ডার আইডি ও ইমেইল দিন।"
+
+#: patterns/page-faq.php:40
+msgid "Unused items can be returned within 30 days of delivery for a full refund."
+msgstr "ডেলিভারির ৩০ দিনের মধ্যে অব্যবহৃত পণ্য ফেরত দিলে পুরো টাকা ফেরত পাবেন।"
+
+#: patterns/page-faq.php:41
+msgid "How long do refunds take?"
+msgstr "টাকা ফেরত পেতে কত সময় লাগে?"
+
+#: patterns/page-faq.php:41
+msgid "Refunds are issued to the original payment method within 5 business days of receiving your return."
+msgstr "আপনার ফেরত পণ্য পাওয়ার ৫ কর্মদিবসের মধ্যে আগের পেমেন্ট পদ্ধতিতে টাকা ফেরত দেওয়া হয়।"
+
+#: patterns/page-faq.php:45
+msgid "Your account"
+msgstr "আপনার অ্যাকাউন্ট"
+
+#: patterns/page-faq.php:47
+msgid "I forgot my password. What now?"
+msgstr "পাসওয়ার্ড ভুলে গেছি। এখন কী করব?"
+
+#: patterns/page-faq.php:47
+msgid "Use \"Lost your password?\" on the login page and we will email you a reset link."
+msgstr "লগইন পেজে \"Lost your password?\" ব্যবহার করুন, আমরা আপনাকে রিসেট লিংক ইমেইল করব।"
+
+#: patterns/page-faq.php:48
+msgid "How do I update my address?"
+msgstr "ঠিকানা কীভাবে হালনাগাদ করব?"
+
+#: patterns/page-faq.php:48
+msgid "Log in and go to My account > Addresses to edit your billing and shipping details."
+msgstr "লগইন করে আমার অ্যাকাউন্ট > ঠিকানা-তে গিয়ে বিলিং ও ডেলিভারির তথ্য এডিট করুন।"
+
+#: patterns/page-faq.php:55
+msgid "Still have a question?"
+msgstr "আরও প্রশ্ন আছে?"
+
+#: patterns/page-faq.php:55
+msgid "Our team replies within one business day."
+msgstr "আমাদের টিম এক কর্মদিবসের মধ্যে উত্তর দেয়।"
+
+#: patterns/newsletter-card.php:20
+msgid "Join the club"
+msgstr "ক্লাবে যোগ দিন"
+
+#: patterns/newsletter-card.php:23
+msgid "Members get more from every visit. Joining takes ten seconds and costs nothing."
+msgstr "সদস্যরা প্রতিবার বেশি পান। যোগ দিতে দশ সেকেন্ড লাগে, কোনো খরচ নেই।"
+
+#: patterns/newsletter-card.php:41
+msgid "Become a member"
+msgstr "সদস্য হোন"
+
+#: patterns/hidden-no-results.php:13
+msgid "Sorry, nothing matched your search. Please try again with different keywords."
+msgstr "দুঃখিত, আপনার খোঁজের সাথে কিছু মেলেনি। অন্য শব্দ দিয়ে আবার চেষ্টা করুন।"
+
+#: patterns/category-mosaic.php:25
+msgid "Explore the store"
+msgstr "স্টোর ঘুরে দেখুন"
+
+#: patterns/funnel-upsell.php:18
+msgid "Wait! Your order is not complete yet"
+msgstr "একটু দাঁড়ান! আপনার অর্ডার এখনো শেষ হয়নি"
+
+#: patterns/funnel-upsell.php:21
+msgid "Add this to the same order now at a special price. This offer is only on this page."
+msgstr "বিশেষ দামে এখনই এটি একই অর্ডারে যোগ করুন। এই অফার শুধু এই পেজে।"
+
+#: patterns/about-mission.php:17
+msgid "Our mission"
+msgstr "আমাদের লক্ষ্য"
+
+#: patterns/about-mission.php:20
+msgid "To make well-made, honest products easy to find, fair to buy and good to live with."
+msgstr "ভালো করে তৈরি, সৎ পণ্য খুঁজে পাওয়া সহজ, কেনা ন্যায্য আর ব্যবহারে আনন্দময় করা।"
+
+#: patterns/about-mission.php:25
+msgid "Designed to last"
+msgstr "টেকসই করে ডিজাইন করা"
+
+#: patterns/about-mission.php:28
+msgid "Fairly priced"
+msgstr "ন্যায্য দাম"
+
+#: patterns/about-mission.php:31
+msgid "Responsibly made"
+msgstr "দায়িত্বশীলভাবে তৈরি"
+
+#: patterns/about-story.php:31
+msgid "It started with one good idea."
+msgstr "সবকিছুর শুরু একটি ভালো ভাবনা থেকে।"
+
+#: patterns/about-story.php:34
+msgid "We wanted everyday things that look beautiful, work well and last for years. We could not find them, so we started making them."
+msgstr "আমরা চেয়েছিলাম দেখতে সুন্দর, ভালো কাজ করে আর বছরের পর বছর টেকে এমন প্রতিদিনের জিনিস। খুঁজে পাইনি, তাই নিজেরাই বানাতে শুরু করি।"
+
+#: patterns/about-story.php:37
+msgid "Today we are a small team of designers and makers working with trusted workshops. Every product is tested by us before it is sold to you, and we stand behind it long after."
+msgstr "আজ আমরা ডিজাইনার ও কারিগরদের একটি ছোট দল, বিশ্বস্ত কারখানার সাথে কাজ করি। প্রতিটি পণ্য বিক্রির আগে আমরা নিজেরা পরীক্ষা করি, আর বিক্রির অনেক পরেও এর দায়িত্ব নিই।"
+
+#: patterns/about-story.php:40
+msgid "Founder"
+msgstr "প্রতিষ্ঠাতা"
+
+#: functions.php:211
+msgid "Card"
+msgstr "কার্ড"
+
+#: functions.php:218
+msgid "Sticky"
+msgstr "স্টিকি"
+
+#: functions.php:225 inc/settings.php:48 inc/settings.php:169
+msgid "Pill"
+msgstr "পিল"
+
+#: functions.php:239
+msgid "Zoom on hover"
+msgstr "হোভারে জুম"
+
+#: functions.php:250
+msgid "Cartiva: Hero"
+msgstr "Cartiva: হিরো"
+
+#: functions.php:250
+msgid "Hero banners and the hero slider."
+msgstr "হিরো ব্যানার ও হিরো স্লাইডার।"
+
+#: functions.php:251
+msgid "Cartiva: Products"
+msgstr "Cartiva: পণ্য"
+
+#: functions.php:251
+msgid "Product grids and carousels."
+msgstr "পণ্যের গ্রিড ও ক্যারোসেল।"
+
+#: functions.php:252
+msgid "Cartiva: Categories"
+msgstr "Cartiva: ক্যাটাগরি"
+
+#: functions.php:252
+msgid "Ways to show your shop categories."
+msgstr "শপের ক্যাটাগরি দেখানোর নানা উপায়।"
+
+#: functions.php:253
+msgid "Cartiva: Blog"
+msgstr "Cartiva: ব্লগ"
+
+#: functions.php:253
+msgid "Blog and journal sections."
+msgstr "ব্লগ ও জার্নালের অংশ।"
+
+#: functions.php:254
+msgid "Cartiva: Newsletter"
+msgstr "Cartiva: নিউজলেটার"
+
+#: functions.php:254
+msgid "Newsletter and sign-up sections."
+msgstr "নিউজলেটার ও সাইন-আপের অংশ।"
+
+#: functions.php:255
+msgid "Cartiva: About"
+msgstr "Cartiva: আমাদের সম্পর্কে"
+
+#: functions.php:255
+msgid "Brand story, numbers, values, team and timeline sections."
+msgstr "ব্র্যান্ডের গল্প, সংখ্যা, মূল্যবোধ, টিম ও টাইমলাইনের অংশ।"
+
+#: functions.php:256
+msgid "Cartiva: Contact"
+msgstr "Cartiva: যোগাযোগ"
+
+#: functions.php:256
+msgid "Contact details, locations, hours and support sections."
+msgstr "যোগাযোগের তথ্য, শাখা, সময় ও সাপোর্টের অংশ।"
+
+#: functions.php:257
+msgid "Cartiva: Landing"
+msgstr "Cartiva: ল্যান্ডিং"
+
+#: functions.php:257
+msgid "Sales page sections for a single product: hero, benefits, steps, comparison, guarantee, questions and order band."
+msgstr "একটি পণ্যের সেলস পেজের অংশ: হিরো, সুবিধা, ধাপ, তুলনা, নিশ্চয়তা, প্রশ্ন ও অর্ডার ব্যান্ড।"
+
+#: functions.php:271
+msgid "Cartiva: Shop"
+msgstr "Cartiva: শপ"
+
+#: functions.php:272
+msgid "Store sections such as product grids, categories and promos."
+msgstr "স্টোরের অংশ, যেমন পণ্যের গ্রিড, ক্যাটাগরি ও প্রোমো।"
+
+#: functions.php:278
+msgid "Cartiva: Starter homepages"
+msgstr "Cartiva: স্টার্টার হোমপেজ"
+
+#: functions.php:279
+msgid "Complete homepages for different kinds of stores."
+msgstr "বিভিন্ন ধরনের স্টোরের জন্য পূর্ণাঙ্গ হোমপেজ।"
+
+#: functions.php:285
+msgid "Cartiva: Pages"
+msgstr "Cartiva: পেজ"
+
+#: functions.php:286
+msgid "Complete page layouts: Contact, About, FAQ, Shipping & returns, Help center, Terms, Track order."
+msgstr "পূর্ণাঙ্গ পেজ লেআউট: যোগাযোগ, আমাদের সম্পর্কে, প্রশ্নোত্তর, ডেলিভারি ও রিটার্ন, সাহায্য কেন্দ্র, শর্তাবলি, অর্ডার ট্র্যাক।"
+
+#: functions.php:292
+msgid "Cartiva: Sections"
+msgstr "Cartiva: অংশ"
+
+#: functions.php:293
+msgid "General page sections."
+msgstr "পেজের সাধারণ অংশ।"
+
+#: functions.php:389
+msgid "Search results"
+msgstr "খোঁজের ফলাফল"
+
+#: functions.php:390
+msgid "Searching…"
+msgstr "খোঁজা হচ্ছে…"
+
+#. translators: %s: Search query.
+#: functions.php:392
+msgid "No results for “%s”"
+msgstr "“%s”-এর জন্য কোনো ফলাফল নেই"
+
+#. translators: %s: Search query.
+#: functions.php:394
+msgid "See all results for “%s”"
+msgstr "“%s”-এর সব ফলাফল দেখুন"
+
+#: functions.php:395
+msgid "1 result found"
+msgstr "১টি ফলাফল পাওয়া গেছে"
+
+#. translators: %d: Number of results.
+#: functions.php:397
+msgid "%d results found"
+msgstr "%dটি ফলাফল পাওয়া গেছে"
+
+#: functions.php:398
+msgid "Out of stock"
+msgstr "স্টক শেষ"
+
+#: functions.php:442
+msgid "carousel"
+msgstr "ক্যারোসেল"
+
+#: functions.php:443
+msgid "slide"
+msgstr "স্লাইড"
+
+#. translators: 1: Slide number, 2: Number of slides.
+#: functions.php:445
+msgid "%1$s of %2$s"
+msgstr "%2$s-এর মধ্যে %1$s"
+
+#: functions.php:446
+msgid "Previous"
+msgstr "আগের"
+
+#: functions.php:447
+msgid "Next"
+msgstr "পরের"
+
+#. translators: %s: Slide number.
+#: functions.php:449
+msgid "Go to slide %s"
+msgstr "স্লাইড %s-এ যান"
+
+#: functions.php:450
+msgid "Featured"
+msgstr "বিশেষ"
+
+#: functions.php:451
+msgid "Products"
+msgstr "পণ্যসমূহ"
+
+#: functions.php:452
+msgid "Items"
+msgstr "আইটেম"
+
+#: inc/settings.php:27
+msgid "Design"
+msgstr "ডিজাইন"
+
+#: inc/settings.php:28
+msgid "Shape and width of the whole site. Colors and fonts are set in Appearance > Editor > Styles."
+msgstr "পুরো সাইটের আকার ও প্রস্থ। রং ও ফন্ট ঠিক করা হয় Appearance > Editor > Styles-এ।"
+
+#: inc/settings.php:31
+msgid "Corner style"
+msgstr "কোণার ধরন"
+
+#: inc/settings.php:35
+msgid "Sharp"
+msgstr "ধারালো"
+
+#: inc/settings.php:36
+msgid "Soft (default)"
+msgstr "নরম (ডিফল্ট)"
+
+#: inc/settings.php:37
+msgid "Rounded"
+msgstr "গোলাকার"
+
+#: inc/settings.php:39
+msgid "Corner radius of cards, images, fields and buttons."
+msgstr "কার্ড, ছবি, ঘর ও বাটনের কোণার গোলাকৃতি।"
+
+#: inc/settings.php:42
+msgid "Button shape"
+msgstr "বাটনের আকৃতি"
+
+#: inc/settings.php:46
+msgid "Match corner style"
+msgstr "কোণার ধরনের সাথে মিলিয়ে"
+
+#: inc/settings.php:47 inc/settings.php:170
+msgid "Square"
+msgstr "চৌকো"
+
+#: inc/settings.php:52
+msgid "Layout width"
+msgstr "লেআউটের প্রস্থ"
+
+#: inc/settings.php:56
+msgid "Use the Site Editor setting"
+msgstr "সাইট এডিটরের সেটিং ব্যবহার করুন"
+
+#: inc/settings.php:57
+msgid "Narrow (1140px)"
+msgstr "সরু (1140px)"
+
+#: inc/settings.php:58
+msgid "Standard (1320px)"
+msgstr "সাধারণ (1320px)"
+
+#: inc/settings.php:59
+msgid "Wide (1480px)"
+msgstr "চওড়া (1480px)"
+
+#: inc/settings.php:60
+msgid "Extra wide (1680px)"
+msgstr "অনেক চওড়া (1680px)"
+
+#: inc/settings.php:62
+msgid "Maximum width of wide sections such as product grids and the header."
+msgstr "পণ্যের গ্রিড ও হেডারের মতো চওড়া অংশের সর্বোচ্চ প্রস্থ।"
+
+#: inc/settings.php:65
+msgid "Hover animations"
+msgstr "হোভার অ্যানিমেশন"
+
+#: inc/settings.php:68
+msgid "Lift cards and zoom images on hover"
+msgstr "হোভারে কার্ড উপরে ওঠা ও ছবি জুম"
+
+#: inc/settings.php:73
+msgid "Header"
+msgstr "হেডার"
+
+#: inc/settings.php:74
+msgid "Change the header layout itself in Appearance > Editor > Patterns > Header."
+msgstr "হেডারের লেআউট বদলান Appearance > Editor > Patterns > Header-এ।"
+
+#: inc/settings.php:77
+msgid "Sticky header"
+msgstr "স্টিকি হেডার"
+
+#: inc/settings.php:80
+msgid "Keep the header visible while scrolling"
+msgstr "স্ক্রল করার সময় হেডার দেখা যাবে"
+
+#: inc/settings.php:83
+msgid "Header shadow"
+msgstr "হেডারের ছায়া"
+
+#: inc/settings.php:86
+msgid "Add a soft shadow once the page scrolls"
+msgstr "পেজ স্ক্রল হলে হালকা ছায়া যোগ করুন"
+
+#: inc/settings.php:89
+msgid "Top bar"
+msgstr "টপ বার"
+
+#: inc/settings.php:92
+msgid "Show the top bar above the header"
+msgstr "হেডারের উপরে টপ বার দেখান"
+
+#: inc/settings.php:95
+msgid "Live search"
+msgstr "লাইভ সার্চ"
+
+#: inc/settings.php:98
+msgid "Show suggestions in a dropdown while typing"
+msgstr "লেখার সময় ড্রপডাউনে পরামর্শ দেখান"
+
+#: inc/settings.php:101
+msgid "Live search results"
+msgstr "লাইভ সার্চের ফলাফল"
+
+#: inc/settings.php:113
+msgid "Site extras"
+msgstr "সাইটের বাড়তি সুবিধা"
+
+#: inc/settings.php:114
+msgid "Small visitor features that work on every page."
+msgstr "প্রতিটি পেজে কাজ করা ভিজিটরদের ছোট সুবিধা।"
+
+#: inc/settings.php:117
+msgid "Back to top button"
+msgstr "উপরে ফেরার বাটন"
+
+#: inc/settings.php:120
+msgid "Show a button to scroll back to the top on long pages"
+msgstr "লম্বা পেজে উপরে ফিরে যাওয়ার বাটন দেখান"
+
+#: inc/settings.php:123
+msgid "Dark mode switch"
+msgstr "ডার্ক মোড সুইচ"
+
+#: inc/settings.php:126
+msgid "Let visitors switch the site to dark colors from the header (their choice is remembered in their browser)"
+msgstr "ভিজিটরদের হেডার থেকে সাইটটি গাঢ় রঙে বদলাতে দিন (তাদের পছন্দ ব্রাউজারে মনে রাখা হয়)"
+
+#: inc/settings.php:132
+msgid "Product cards in the shop, categories, search results and product sections."
+msgstr "শপ, ক্যাটাগরি, খোঁজের ফলাফল ও পণ্যের অংশে পণ্যের কার্ড।"
+
+#: inc/settings.php:135
+msgid "Product card style"
+msgstr "পণ্যের কার্ডের ধরন"
+
+#: inc/settings.php:139
+msgid "Clean (default)"
+msgstr "পরিচ্ছন্ন (ডিফল্ট)"
+
+#: inc/settings.php:140
+msgid "Bordered"
+msgstr "বর্ডারসহ"
+
+#: inc/settings.php:141
+msgid "Boxed"
+msgstr "বক্স"
+
+#: inc/settings.php:145
+msgid "Product image shape"
+msgstr "পণ্যের ছবির আকৃতি"
+
+#: inc/settings.php:149
+msgid "Square (1:1)"
+msgstr "বর্গাকার (1:1)"
+
+#: inc/settings.php:150
+msgid "Portrait (4:5)"
+msgstr "পোর্ট্রেট (4:5)"
+
+#: inc/settings.php:151
+msgid "Tall (3:4)"
+msgstr "লম্বা (3:4)"
+
+#: inc/settings.php:152
+msgid "Landscape (4:3)"
+msgstr "ল্যান্ডস্কেপ (4:3)"
+
+#: inc/settings.php:156
+msgid "Add to cart button"
+msgstr "কার্টে যোগ করার বাটন"
+
+#: inc/settings.php:160
+msgid "Always visible"
+msgstr "সবসময় দেখা যাবে"
+
+#: inc/settings.php:161
+msgid "Show on hover (desktop)"
+msgstr "হোভারে দেখান (ডেস্কটপ)"
+
+#: inc/settings.php:165
+msgid "Sale badge"
+msgstr "সেল ব্যাজ"
+
+#: inc/settings.php:176
+msgid "Product page"
+msgstr "পণ্যের পেজ"
+
+#: inc/settings.php:179
+msgid "Image gallery"
+msgstr "ছবির গ্যালারি"
+
+#: inc/settings.php:183
+msgid "Slider with thumbnails below"
+msgstr "নিচে থাম্বনেইলসহ স্লাইডার"
+
+#: inc/settings.php:184
+msgid "Slider with thumbnails on the left"
+msgstr "বাঁয়ে থাম্বনেইলসহ স্লাইডার"
+
+#: inc/settings.php:185
+msgid "All images in a grid"
+msgstr "গ্রিডে সব ছবি"
+
+#: inc/settings.php:189
+msgid "Image zoom"
+msgstr "ছবি জুম"
+
+#: inc/settings.php:192
+msgid "Zoom into the product image on hover"
+msgstr "হোভারে পণ্যের ছবিতে জুম"
+
+#: inc/settings.php:195
+msgid "Full-screen gallery"
+msgstr "পূর্ণ পর্দার গ্যালারি"
+
+#: inc/settings.php:198
+msgid "Open images full screen when they are clicked"
+msgstr "ক্লিক করলে ছবি পূর্ণ পর্দায় খুলুন"
+
+#: inc/settings.php:201
+msgid "Payment methods"
+msgstr "পেমেন্ট পদ্ধতি"
+
+#: inc/settings.php:204
+msgid "Show the payment methods you have enabled in WooCommerce under the add to cart button"
+msgstr "কার্টে যোগ করার বাটনের নিচে WooCommerce-এ চালু করা পেমেন্ট পদ্ধতিগুলো দেখান"
+
+#: inc/settings.php:207
+msgid "Sticky product details"
+msgstr "স্টিকি পণ্যের তথ্য"
+
+#: inc/settings.php:210
+msgid "Keep title, price and add to cart in view while scrolling the gallery"
+msgstr "গ্যালারি স্ক্রল করার সময় শিরোনাম, দাম ও কার্টে যোগ করার বাটন দেখা যাবে"
+
+#: inc/settings.php:213
+msgid "Delivery and returns list"
+msgstr "ডেলিভারি ও রিটার্নের তালিকা"
+
+#: inc/settings.php:216
+msgid "Show the free delivery, returns and secure checkout list under the add to cart button"
+msgstr "কার্টে যোগ করার বাটনের নিচে ফ্রি ডেলিভারি, রিটার্ন ও নিরাপদ চেকআউটের তালিকা দেখান"
+
+#: inc/settings.php:221
+msgid "Store extras"
+msgstr "স্টোরের বাড়তি সুবিধা"
+
+#: inc/settings.php:222
+msgid "Conversion and mobile features for your store. They only add small, deferred code to the pages that use them."
+msgstr "আপনার স্টোরের জন্য বিক্রি বাড়ানো ও মোবাইলের সুবিধা। যে পেজে লাগে শুধু সেখানেই ছোট, দেরিতে লোড হওয়া কোড যোগ হয়।"
+
+#: inc/settings.php:225
+msgid "Sticky add to cart bar"
+msgstr "স্টিকি কার্ট বার"
+
+#: inc/settings.php:228
+msgid "Show a bar with the product and an add to cart button when shoppers scroll past the button"
+msgstr "ক্রেতা বাটনের নিচে স্ক্রল করলে পণ্য ও কার্টে যোগ করার বাটনসহ একটি বার দেখান"
+
+#: inc/settings.php:231
+msgid "Second image on hover"
+msgstr "হোভারে দ্বিতীয় ছবি"
+
+#: inc/settings.php:234
+msgid "Show the first gallery image when hovering a product card"
+msgstr "পণ্যের কার্ডে হোভার করলে গ্যালারির প্রথম ছবি দেখান"
+
+#: inc/settings.php:237
+msgid "Discount on sale badges"
+msgstr "সেল ব্যাজে ছাড়"
+
+#: inc/settings.php:240
+msgid "Show the discount, for example -25%, instead of \"Sale\""
+msgstr "\"সেল\"-এর বদলে ছাড় দেখান, যেমন -25%"
+
+#: inc/settings.php:243
+msgid "Sale countdown and low stock"
+msgstr "সেল কাউন্টডাউন ও কম স্টক"
+
+#: inc/settings.php:246
+msgid "Show a countdown for scheduled sales and \"Only 3 left\" when stock is low"
+msgstr "নির্ধারিত সেলের কাউন্টডাউন এবং স্টক কম হলে \"আর মাত্র ৩টি বাকি\" দেখান"
+
+#: inc/settings.php:249
+msgid "Filters drawer on phones"
+msgstr "ফোনে ফিল্টার ড্রয়ার"
+
+#: inc/settings.php:252
+msgid "Open the shop sidebar filters in a slide-out panel on small screens"
+msgstr "ছোট পর্দায় শপের সাইডবার ফিল্টার স্লাইড-আউট প্যানেলে খুলুন"
+
+#: inc/settings.php:255
+msgid "Mobile bottom bar"
+msgstr "মোবাইলের নিচের বার"
+
+#: inc/settings.php:258
+msgid "Show Shop, Search, Wishlist, Account and Cart shortcuts at the bottom of the screen on phones"
+msgstr "ফোনে পর্দার নিচে শপ, খোঁজ, উইশলিস্ট, অ্যাকাউন্ট ও কার্টের শর্টকাট দেখান"
+
+#. translators: %s: number of items in the wishlist.
+#: inc/settings.php:263 inc/store-features.php:231 inc/wishlist.php:114 inc/wishlist.php:207 inc/wishlist.php:212
+msgid "Wishlist"
+msgstr "উইশলিস্ট"
+
+#: inc/settings.php:264
+msgid "Used when a wishlist plugin is active: YITH WooCommerce Wishlist, TI WooCommerce Wishlist or WPC Smart Wishlist. Cartiva adds the heart icons and styling; the plugin saves the lists."
+msgstr "উইশলিস্ট প্লাগইন চালু থাকলে ব্যবহার হয়: YITH WooCommerce Wishlist, TI WooCommerce Wishlist বা WPC Smart Wishlist। Cartiva হার্ট আইকন ও ডিজাইন যোগ করে; প্লাগইন তালিকা সংরক্ষণ করে।"
+
+#: inc/settings.php:267
+msgid "Header wishlist icon"
+msgstr "হেডারে উইশলিস্ট আইকন"
+
+#: inc/settings.php:270
+msgid "Show a heart icon with the item count next to the cart"
+msgstr "কার্টের পাশে আইটেম সংখ্যাসহ হার্ট আইকন দেখান"
+
+#: inc/settings.php:273
+msgid "Heart buttons"
+msgstr "হার্ট বাটন"
+
+#: inc/settings.php:276
+msgid "Show a heart button on product cards and next to add to cart on product pages"
+msgstr "পণ্যের কার্ডে এবং পণ্যের পেজে কার্টে যোগ করার পাশে হার্ট বাটন দেখান"
+
+#: inc/settings.php:279
+msgid "Account menu"
+msgstr "অ্যাকাউন্ট মেনু"
+
+#: inc/settings.php:282
+msgid "Add \"Wishlist\" to the My Account menu when the plugin does not add it itself"
+msgstr "প্লাগইন নিজে না দিলে আমার অ্যাকাউন্ট মেনুতে \"উইশলিস্ট\" যোগ করুন"
+
+#: inc/settings.php:287
+msgid "My Account"
+msgstr "আমার অ্যাকাউন্ট"
+
+#: inc/settings.php:290
+msgid "Profile card"
+msgstr "প্রোফাইল কার্ড"
+
+#: inc/settings.php:293
+msgid "Show the customer name and email above the account menu"
+msgstr "অ্যাকাউন্ট মেনুর উপরে ক্রেতার নাম ও ইমেইল দেখান"
+
+#: inc/settings.php:296
+msgid "Dashboard tiles"
+msgstr "ড্যাশবোর্ড টাইল"
+
+#: inc/settings.php:299
+msgid "Show quick links to orders, addresses and account details on the dashboard"
+msgstr "ড্যাশবোর্ডে অর্ডার, ঠিকানা ও অ্যাকাউন্ট তথ্যের দ্রুত লিংক দেখান"
+
+#: inc/settings.php:302
+msgid "Track order link"
+msgstr "অর্ডার ট্র্যাক লিংক"
+
+#: inc/settings.php:305
+msgid "Add \"Track order\" to the account menu (links to your Track order page, or to Orders if there is none)"
+msgstr "অ্যাকাউন্ট মেনুতে \"অর্ডার ট্র্যাক করুন\" যোগ করুন (আপনার অর্ডার ট্র্যাক পেজে নিয়ে যায়, না থাকলে অর্ডারে)"
+
+#: inc/settings.php:390
+msgid "Settings were reset to their defaults."
+msgstr "সেটিংস ডিফল্টে ফিরিয়ে আনা হয়েছে।"
+
+#: inc/settings.php:521 inc/settings.php:522 inc/settings.php:634
+msgid "Cartiva Settings"
+msgstr "Cartiva সেটিংস"
+
+#. translators: %s: link to install plugins.
+#: inc/settings.php:576
+msgid "Install and activate WooCommerce (%s)."
+msgstr "WooCommerce ইনস্টল ও চালু করুন (%s)।"
+
+#: inc/settings.php:576 inc/settings.php:594
+msgid "find it here"
+msgstr "এখানে পাবেন"
+
+#. translators: %s: link to the Site Editor.
+#: inc/settings.php:581
+msgid "Add your logo and pick a header and footer design in the %s."
+msgstr "%s-এ আপনার লোগো যোগ করুন এবং হেডার ও ফুটারের ডিজাইন বাছাই করুন।"
+
+#: inc/settings.php:581
+msgid "Site Editor"
+msgstr "সাইট এডিটর"
+
+#: inc/settings.php:585
+msgid "Create a page called \"Track order\" (slug track-order). Cartiva gives it the tracking form design automatically."
+msgstr "\"Track order\" নামে একটি পেজ তৈরি করুন (স্লাগ track-order)। Cartiva নিজে থেকেই এতে ট্র্যাকিং ফর্মের ডিজাইন দেয়।"
+
+#: inc/settings.php:589
+msgid "Create Contact, About, FAQ and Help center pages (slugs contact, about, faq, help-center) and insert the matching \"Cartiva: Pages\" pattern."
+msgstr "যোগাযোগ, আমাদের সম্পর্কে, প্রশ্নোত্তর ও সাহায্য কেন্দ্র পেজ তৈরি করুন (স্লাগ contact, about, faq, help-center) এবং মিলে যাওয়া \"Cartiva: Pages\" প্যাটার্ন যোগ করুন।"
+
+#. translators: %s: link to install plugins.
+#: inc/settings.php:594
+msgid "Recommended: install the free Cartiva Commerce plugin for sales funnels, one-page order forms, upsells, order bumps, abandoned checkout recovery and a slide-out cart (%s). It is made for this theme, and the theme works fully without it."
+msgstr "প্রস্তাবিত: সেলস ফানেল, এক পেজের অর্ডার ফর্ম, আপসেল, অর্ডার বাম্প, অসম্পূর্ণ চেকআউট রিকভারি ও স্লাইড-আউট কার্টের জন্য ফ্রি Cartiva Commerce প্লাগইন ইনস্টল করুন (%s)। এটি এই থিমের জন্য তৈরি, আর এটি ছাড়াও থিমটি পুরোপুরি কাজ করে।"
+
+#: inc/settings.php:598
+msgid "Optional: install a free wishlist plugin (YITH WooCommerce Wishlist, TI WooCommerce Wishlist or WPC Smart Wishlist). Cartiva adds the hearts and styling."
+msgstr "ঐচ্ছিক: একটি ফ্রি উইশলিস্ট প্লাগইন ইনস্টল করুন (YITH WooCommerce Wishlist, TI WooCommerce Wishlist বা WPC Smart Wishlist)। Cartiva হার্ট ও ডিজাইন যোগ করে।"
+
+#. translators: 1: completed steps, 2: total steps.
+#: inc/settings.php:607
+msgid "Getting started (%1$s of %2$s done)"
+msgstr "শুরু করুন (%2$s-এর মধ্যে %1$s সম্পন্ন)"
+
+#: inc/settings.php:627
+msgid "Colors & fonts"
+msgstr "রং ও ফন্ট"
+
+#: inc/settings.php:628
+msgid "Header & footer designs"
+msgstr "হেডার ও ফুটারের ডিজাইন"
+
+#: inc/settings.php:629
+msgid "Templates"
+msgstr "টেমপ্লেট"
+
+#: inc/settings.php:630
+msgid "Pages"
+msgstr "পেজ"
+
+#: inc/settings.php:635
+msgid "Layout and behavior options for your store. Everything visual that can be edited block by block lives in the Site Editor:"
+msgstr "আপনার স্টোরের লেআউট ও আচরণের অপশন। ব্লক ধরে ধরে এডিট করা যায় এমন সব দৃশ্যমান জিনিস সাইট এডিটরে থাকে:"
+
+#: inc/settings.php:643
+msgid "Settings sections"
+msgstr "সেটিংসের অংশ"
+
+#: inc/settings.php:649
+msgid "Shop, product page, store extras, wishlist and account options appear here once WooCommerce is active."
+msgstr "WooCommerce চালু হলে শপ, পণ্যের পেজ, স্টোরের বাড়তি সুবিধা, উইশলিস্ট ও অ্যাকাউন্টের অপশন এখানে দেখা যাবে।"
+
+#: inc/settings.php:657
+msgid "Save settings"
+msgstr "সেটিংস সংরক্ষণ করুন"
+
+#: inc/settings.php:658
+msgid "Reset to defaults"
+msgstr "ডিফল্টে ফিরিয়ে নিন"
+
+#: inc/site-features.php:44 inc/site-features.php:105
+msgid "Dark mode"
+msgstr "ডার্ক মোড"
+
+#: inc/site-features.php:58
+msgid "Back to top"
+msgstr "উপরে ফিরুন"
+
+#. translators: Short for days in a countdown, after a number.
+#: inc/site-features.php:95
+msgctxt "countdown days"
+msgid "d"
+msgstr "দি"
+
+#. translators: Short for hours in a countdown, after a number.
+#: inc/site-features.php:97
+msgctxt "countdown hours"
+msgid "h"
+msgstr "ঘ"
+
+#. translators: Short for minutes in a countdown, after a number.
+#: inc/site-features.php:99
+msgctxt "countdown minutes"
+msgid "m"
+msgstr "মি"
+
+#. translators: Short for seconds in a countdown, after a number.
+#: inc/site-features.php:101
+msgctxt "countdown seconds"
+msgid "s"
+msgstr "সে"
+
+#: inc/site-features.php:102
+msgid "Filters"
+msgstr "ফিল্টার"
+
+#: inc/site-features.php:103
+msgid "Close filters"
+msgstr "ফিল্টার বন্ধ করুন"
+
+#: inc/site-features.php:104
+msgid "Light mode"
+msgstr "লাইট মোড"
+
+#: inc/woocommerce.php:108
+msgid "Track, return or buy again"
+msgstr "ট্র্যাক করুন, ফেরত দিন বা আবার কিনুন"
+
+#: inc/woocommerce.php:109
+msgid "Check where your parcel is"
+msgstr "আপনার পার্সেল কোথায় আছে দেখুন"
+
+#: inc/woocommerce.php:110
+msgid "Products you saved for later"
+msgstr "পরে কেনার জন্য সংরক্ষিত পণ্য"
+
+#: inc/woocommerce.php:111
+msgid "Your digital products"
+msgstr "আপনার ডিজিটাল পণ্য"
+
+#: inc/woocommerce.php:112
+msgid "Billing and shipping"
+msgstr "বিলিং ও ডেলিভারি"
+
+#: inc/woocommerce.php:113
+msgid "Saved cards and wallets"
+msgstr "সংরক্ষিত কার্ড ও ওয়ালেট"
+
+#: inc/woocommerce.php:114
+msgid "Name, email and password"
+msgstr "নাম, ইমেইল ও পাসওয়ার্ড"
+
+#: inc/woocommerce.php:140
+msgid "See what is new in store"
+msgstr "স্টোরে নতুন কী এসেছে দেখুন"
+
+#: inc/woocommerce.php:345
+msgid "We accept"
+msgstr "আমরা গ্রহণ করি"
+
+#: inc/integrations.php:49
+msgid "Get more from Cartiva with the free Cartiva Commerce plugin"
+msgstr "ফ্রি Cartiva Commerce প্লাগইন দিয়ে Cartiva থেকে আরও বেশি পান"
+
+#: inc/integrations.php:50
+msgid "Sales funnels, one-page order forms for Cash on delivery, upsells, order bumps, abandoned checkout recovery and a slide-out cart, made to match this theme. Optional: the theme works fully without it."
+msgstr "সেলস ফানেল, ক্যাশ অন ডেলিভারির জন্য এক পেজের অর্ডার ফর্ম, আপসেল, অর্ডার বাম্প, অসম্পূর্ণ চেকআউট রিকভারি ও স্লাইড-আউট কার্ট, এই থিমের সাথে মিলিয়ে তৈরি। ঐচ্ছিক: এটি ছাড়াও থিমটি পুরোপুরি কাজ করে।"
+
+#: inc/integrations.php:52
+msgid "Find the plugin"
+msgstr "প্লাগইনটি খুঁজুন"
+
+#: inc/integrations.php:53
+msgid "Dismiss"
+msgstr "বাদ দিন"
+
+#. translators: %s: discount percentage, for example 25.
+#: inc/store-features.php:124
+msgid "-%s%%"
+msgstr "-%s%%"
+
+#: inc/store-features.php:165
+msgid "Sale ends in"
+msgstr "সেল শেষ হবে"
+
+#. translators: 1: days, 2: hours.
+#: inc/store-features.php:167
+msgid "%1$sd %2$sh"
+msgstr "%1$sদি %2$sঘ"
+
+#. translators: %s: number of items left.
+#: inc/store-features.php:208
+msgid "Select options"
+msgstr "অপশন বাছাই করুন"
+
+#: inc/store-features.php:208
+msgid "Add to cart"
+msgstr "কার্টে যোগ করুন"
+
+#: inc/store-features.php:224
+msgid "Search"
+msgstr "খুঁজুন"
+
+#: inc/store-features.php:225
+msgid "Account"
+msgstr "অ্যাকাউন্ট"
+
+#: inc/store-features.php:226
+msgid "Cart"
+msgstr "কার্ট"
+
+#: inc/store-features.php:241
+msgid "Shortcuts"
+msgstr "শর্টকাট"
+
+#: inc/header.php:38
+msgid "Need help?"
+msgstr "সাহায্য লাগবে?"
+
+#: inc/header.php:41
+msgid "Free shipping on orders over $50 · 30-day easy returns"
+msgstr "$50-এর বেশি অর্ডারে ফ্রি ডেলিভারি · ৩০ দিনে সহজ রিটার্ন"
+
+#: inc/header.php:62 inc/header.php:157 inc/header.php:188
+msgctxt "search placeholder"
+msgid "Search products…"
+msgstr "পণ্য খুঁজুন…"
+
+#: inc/header.php:112
+msgctxt "search placeholder"
+msgid "Search for products, brands and more…"
+msgstr "পণ্য, ব্র্যান্ড ও আরও অনেক কিছু খুঁজুন…"

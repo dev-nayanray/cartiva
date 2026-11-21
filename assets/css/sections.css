@@ -32,7 +32,7 @@
 	content: "";
 	position: absolute;
 	top: 1.5rem;
-	left: 1.5rem;
+	inset-inline-start: 1.5rem;
 	width: 2.25rem;
 	height: 2.25rem;
 	border-radius: 10px;
@@ -73,7 +73,7 @@
 	border-bottom: 1px solid var(--wp--preset--color--border);
 }
 .cartiva-hours__table tr:last-child td { border-bottom: 0; }
-.cartiva-hours__table td:last-child { text-align: right; font-weight: 600; }
+.cartiva-hours__table td:last-child { text-align: end; font-weight: 600; }
 
 /* Check list */
 .cartiva-check-list {
@@ -84,12 +84,12 @@
 }
 .cartiva-check-list li {
 	position: relative;
-	padding-left: 1.75rem;
+	padding-inline-start: 1.75rem;
 }
 .cartiva-check-list li::before {
 	content: "";
 	position: absolute;
-	left: 0;
+	inset-inline-start: 0;
 	top: .2em;
 	width: 1.15rem;
 	height: 1.15rem;
@@ -132,7 +132,7 @@
 	padding: .9rem 1rem;
 	border: 0;
 	border-top: 1px solid var(--wp--preset--color--border);
-	text-align: left;
+	text-align: start;
 }
 .cartiva-table thead th {
 	border-top: 0;
@@ -151,7 +151,7 @@
 /* Legal */
 .cartiva-legal__note {
 	padding: .9rem 1.1rem;
-	border-left: 3px solid var(--wp--preset--color--primary);
+	border-inline-start: 3px solid var(--wp--preset--color--primary);
 	border-radius: 0 var(--wp--custom--radius--sm) var(--wp--custom--radius--sm) 0;
 	background: var(--wp--preset--color--surface);
 }
@@ -163,7 +163,7 @@
 /* Trust badges (homepage) */
 .cartiva-badge {
 	position: relative;
-	padding-left: 3.5rem;
+	padding-inline-start: 3.5rem;
 	min-height: 2.75rem;
 	justify-content: center;
 }
@@ -171,7 +171,7 @@
 .cartiva-badge::before {
 	content: "";
 	position: absolute;
-	left: 0;
+	inset-inline-start: 0;
 	top: 50%;
 	width: 2.6rem;
 	height: 2.6rem;
@@ -328,7 +328,7 @@
    ========================================================================== */
 .cartiva-signature { margin-top: var(--wp--preset--spacing--20); padding-top: var(--wp--preset--spacing--20); border-top: 1px solid var(--wp--preset--color--border); }
 .cartiva-stats--light .cartiva-stats__number { color: var(--wp--preset--color--base); }
-.cartiva-stats--light > * { padding-left: 1.25rem; border-left: 2px solid rgb(255 255 255 / .18); }
+.cartiva-stats--light > * { padding-inline-start: 1.25rem; border-inline-start: 2px solid rgb(255 255 255 / .18); }
 
 .cartiva-team-card {
 	padding: 1.75rem 1.25rem;
@@ -358,7 +358,7 @@
 .cartiva-timeline::before {
 	content: "";
 	position: absolute;
-	left: .45rem;
+	inset-inline-start: .45rem;
 	top: .5rem;
 	bottom: .5rem;
 	width: 2px;
@@ -370,7 +370,7 @@
 .cartiva-timeline__item::before {
 	content: "";
 	position: absolute;
-	left: 0;
+	inset-inline-start: 0;
 	top: .2rem;
 	width: 1rem;
 	height: 1rem;
@@ -403,13 +403,13 @@
 .cartiva-contact-list__row {
 	position: relative;
 	margin: 0;
-	padding-left: 2rem;
+	padding-inline-start: 2rem;
 }
 .cartiva-contact-list__row strong { display: inline-block; min-width: 5.5rem; }
 .cartiva-contact-list__row::before {
 	content: "";
 	position: absolute;
-	left: 0;
+	inset-inline-start: 0;
 	top: 50%;
 	width: 1.15rem;
 	height: 1.15rem;
@@ -512,12 +512,12 @@
 	font-weight: 700;
 	letter-spacing: -.01em;
 	text-decoration: none;
-	transition: padding-left .2s ease, color .2s ease;
+	transition: padding-inline-start .2s ease, color .2s ease;
 }
 .cartiva-category-list__item a::after {
 	content: "";
 	position: absolute;
-	right: .25rem;
+	inset-inline-end: .25rem;
 	top: 50%;
 	width: 1.25rem;
 	height: 1.25rem;
@@ -527,7 +527,7 @@
 	mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14M13 6l6 6-6 6'/%3E%3C/svg%3E") center / contain no-repeat;
 	transition: transform .2s ease;
 }
-.cartiva-category-list__item a:hover { padding-left: .5rem; color: var(--wp--preset--color--primary); }
+.cartiva-category-list__item a:hover { padding-inline-start: .5rem; color: var(--wp--preset--color--primary); }
 .cartiva-category-list__item a:hover::after { transform: translate(.25rem, -50%); }
 .cartiva-category-list__count {
 	color: var(--wp--preset--color--muted);
@@ -614,7 +614,7 @@
 	text-align: center;
 }
 .cartiva-compare-table th:first-child,
-.cartiva-compare-table td:first-child { text-align: left; }
+.cartiva-compare-table td:first-child { text-align: start; }
 .cartiva-compare-table tbody tr:last-child td { border-bottom: 0; }
 .cartiva-compare-table thead th { background: var(--wp--preset--color--surface); font-size: var(--wp--preset--font-size--small); }
 .cartiva-compare-table th:nth-child(2),
@@ -633,3 +633,7 @@
 @media (max-width: 781px) {
 	.cartiva-compare-table th, .cartiva-compare-table td { padding: .7rem .6rem; font-size: var(--wp--preset--font-size--small); }
 }
+
+/* Right-to-left languages: arrows point the other way. */
+[dir="rtl"] .cartiva-category-list__item a::after { transform: translateY(-50%) scaleX(-1); }
+[dir="rtl"] .cartiva-category-list__item a:hover::after { transform: translate(-.25rem, -50%) scaleX(-1); }

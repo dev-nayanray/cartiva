@@ -98,7 +98,7 @@
 	display: block;
 	padding: 0;
 	border: 0;
-	text-align: left;
+	text-align: start;
 }
 .wp-block-woocommerce-add-to-cart-form table.variations label {
 	font-size: var(--wp--preset--font-size--x-small);

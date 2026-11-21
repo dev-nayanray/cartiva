@@ -86,7 +86,7 @@
 	content: "";
 	position: absolute;
 	top: 1.25rem;
-	left: 1.25rem;
+	inset-inline-start: 1.25rem;
 	width: 1.5rem;
 	height: 1.5rem;
 	background: var(--wp--preset--color--primary);

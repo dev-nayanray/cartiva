@@ -589,6 +589,11 @@ function cartiva_render_getting_started() {
 			'text' => __( 'Create Contact, About, FAQ and Help center pages (slugs contact, about, faq, help-center) and insert the matching "Cartiva: Pages" pattern.', 'cartiva' ),
 		),
 		array(
+			'done' => defined( 'CARTIVA_COMMERCE_VERSION' ),
+			/* translators: %s: link to install plugins. */
+			'text' => sprintf( __( 'Recommended: install the free Cartiva Commerce plugin for sales funnels, one-page order forms, upsells, order bumps, abandoned checkout recovery and a slide-out cart (%s). It is made for this theme, and the theme works fully without it.', 'cartiva' ), '<a href="' . esc_url( admin_url( 'plugin-install.php?s=cartiva-commerce&tab=search&type=term' ) ) . '">' . esc_html__( 'find it here', 'cartiva' ) . '</a>' ),
+		),
+		array(
 			'done' => $has_list,
 			'text' => __( 'Optional: install a free wishlist plugin (YITH WooCommerce Wishlist, TI WooCommerce Wishlist or WPC Smart Wishlist). Cartiva adds the hearts and styling.', 'cartiva' ),
 		),
